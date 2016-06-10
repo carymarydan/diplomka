@@ -1,0 +1,83 @@
+\documentclass[12pt,twoside]{report}
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+\usepackage[cp1250]{inputenc}
+\usepackage[czech]{babel}
+\usepackage[IL2]{fontenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\graphicspath{ {images/} }
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{Thesis Title}
+\fancyfoot{}
+\fancyfoot[LE,RO]{\thepage}
+\fancyfoot[LO,CE]{Chapter \thechapter}
+\fancyfoot[CO,RE]{Author Name}
+
+\begin{document}
+
+\tableofcontents
+
+\chapter{Úvod}
+\input{chapters/introduction}
+\section{Historie NTK}
+\input{chapters/historieNTK}
+\section{O VuFindu (pøedstavení systému)}
+\input{chapters/vufind}
+
+\chapter{(Virtuální) prostøedí NTK}
+\input{chapters/chapter02}
+\section{Hardware}
+\input{chapters/hwntk}
+\section{Software}
+\input{chapters/swntk}
+
+\chapter{VuFind v NTK}
+\input{chapters/chapter03}
+\section{Instalace}
+\input{chapters/instalace}
+\section{Implementace}
+\input{chapters/implementace}
+\subsection{Kustomizace}
+\input{chapters/kustomizace}
+\subsection{WorkFlow}
+\input{chapters/workflow}
+\section{Provoz}
+\input{chapters/provoz}
+
+\chapter{Další Open source software}
+\input{chapters/opensource}
+
+\chapter{Použití VuFindu v ostatních knihovnách (ÈR, zahranièí)}
+\input{chapters/chapter04}
+
+\chapter{Budoucí vývoj systému}
+\input{chapters/chapter05}
+
+\chapter{Závìr (zhodnocení)}
+\input{chapters/conclusion}
+
+\medskip
+
+\begin{thebibliography}{9}
+\bibitem{techlib} 
+O NTK: Váš partner ve svìtì technických informací. \textit{Národní technická knihovna} [online]. Praha [cit. 2016-06-09]. Dostupné z: https://www.techlib.cz/cs/82794-o-ntk
+
+\bibitem{stk} 
+\textit{Státní technická knihovna} [online]. Praha [cit. 2016-06-09]. Dostupné z: http://old.stk.cz/index.html
+\end{thebibliography}
+
+\appendix
+\chapter{Pøíloha}
+\input{chapters/appendix}
+
+\end{document}

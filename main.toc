@@ -1,0 +1,19 @@
+\select@language {czech}
+\contentsline {chapter}{\numberline {1}\'Uvod}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Historie NTK}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}O VuFindu (p\v redstaven\IeC {\'\i } syst\'emu)}{3}{section.1.2}
+\contentsline {chapter}{\numberline {2}(Virtu\'aln\IeC {\'\i }) prost\v red\IeC {\'\i } NTK}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Hardware}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Software}{4}{section.2.2}
+\contentsline {chapter}{\numberline {3}VuFind v NTK}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Instalace}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Implementace}{5}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Kustomizace}{5}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}WorkFlow}{6}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Provoz}{6}{section.3.3}
+\contentsline {chapter}{\numberline {4}Dal\v s\IeC {\'\i } Open source software}{7}{chapter.4}
+\contentsline {chapter}{\numberline {5}Pou\v zit\IeC {\'\i } VuFindu v ostatn\IeC {\'\i }ch knihovn\'ach (\v CR, zahrani\v c\IeC {\'\i })}{8}{chapter.5}
+\contentsline {chapter}{\numberline {6}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{9}{chapter.6}
+\contentsline {chapter}{\numberline {7}Z\'av\v er (zhodnocen\IeC {\'\i })}{10}{chapter.7}
+\contentsline {chapter}{Literatura}{11}{chapter*.2}
+\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{12}{appendix.A}

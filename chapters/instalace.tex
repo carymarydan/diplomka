@@ -1,2 +1,13 @@
 \label{sec:instalace}
-krok po kroku
+Nejprve je nutné aktualizovat operaèní systém serveru, v tomto pøípadì se jedná o linuxovou distribuci Red Hat Enterprise Linux Server release 7.1 (Maipo). O to se postará pøíkaz: \begin{verbatim}yum update
+\end{verbatim}
+Dále je nutné mít server vybaven nezbytnými komponentami jako jsou webový server, databázový systém, php interpretr vèetnì nìkolika jeho modulù a v poslední øadì java prostøedí. K použití jsou následující pøíkazy:
+\begin{verbatim}
+yum install httpd
+yum install mysql-server
+yum install php php-devel php-intl php-ldap php-mysql php-xsl php-gd php-mbstring php-mcrypt
+yum install java-*-openjdk-devel
+\end{verbatim}
+
+pokraèování
+\cite{vufind.org}

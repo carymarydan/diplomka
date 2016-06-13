@@ -7,8 +7,8 @@
 \contentsline {section}{\numberline {2.2}Software}{4}{section.2.2}
 \contentsline {chapter}{\numberline {3}VuFind v NTK}{5}{chapter.3}
 \contentsline {section}{\numberline {3.1}Instalace}{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}Implementace}{5}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Kustomizace}{5}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.2}Implementace}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Kustomizace}{6}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}WorkFlow}{6}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}Provoz}{6}{section.3.3}
 \contentsline {chapter}{\numberline {4}Dal\v s\IeC {\'\i } Open source software}{7}{chapter.4}

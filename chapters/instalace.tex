@@ -1,2 +1,25 @@
 \label{sec:instalace}
-krok po kroku
+Nejprve je nutné aktualizovat operaèní systém serveru, kterým je v tomto pøípadì linuxová distribuce Red Hat Enterprise Linux Server release 7.1 (Maipo). O to se postará pøíkaz: \begin{verbatim}yum update
+\end{verbatim}
+Dále je nutné mít server vybaven nezbytnými komponentami jako jsou webový server, databázový systém, php interpretr vèetnì nìkolika jeho modulù a v poslední øadì java prostøedí. K použití jsou následující pøíkazy:
+\begin{verbatim}
+yum install httpd
+yum install mysql-server
+yum install php php-devel php-intl php-ldap php-mysql php-xsl php-gd php-mbstring php-mcrypt
+yum install java-*-openjdk-devel
+\end{verbatim}
+Nyní pøichází na øadu stažení samotného systému VuFind. To je možné provést z úložištì \url{https://sourceforge.net/projects/vufind/files/VuFind/}, kde jsou k dispozici všechny verze VuFindu od jeho vzniku až po souèasnost. V našem pøípadì stahujeme poslední verzi, tedy verzi 3.0.1, pøíkazem:
+\begin{verbatim}
+wget http://downloads.sourceforge.net/vufind/vufind-3.0.1.tar.gz?use_mirror=osdn -O vufind-3.0.1.tar.gz
+\end{verbatim}
+Po rozbalení staženého archivu, spustíme instalaci VuFindu pøíkazem:
+\begin{verbatim}
+php install.php
+\end{verbatim}
+Systém je nainstalován. Nyní je ještì potøeba provést nìkterá nezbytná nastavení pro správný chod systému. Musíme dát vìdìt webovému serveru Apache o našem novì nainstalovaném VuFindu. K tomu slouží konfiguraèní soubor httpd-vufind.conf, který se nachází v adresáøi /local. Apache standardnì naèítá konfiguraèní soubory ze svého umístìní, kterým je:
+\begin{verbatim}
+/etc/httpd/conf.d
+\end{verbatim}
+kam konfiguraèní soubor pro VuFind zkopírujeme. Alternativním øešením je použití symbolického linku z konfiguraèního prostøedí Apache na konfiguraèní soubor VuFindu v jeho pùvodním umístìní.
+Dále nastavujeme firewall. 
+\cite{vufind.org}

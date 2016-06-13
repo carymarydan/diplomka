@@ -21,5 +21,21 @@ Systém je nainstalován. Nyní je ještì potøeba provést nìkterá nezbytná nastavení
 /etc/httpd/conf.d
 \end{verbatim}
 kam konfiguraèní soubor pro VuFind zkopírujeme. Alternativním øešením je pouití symbolického linku z konfiguraèního prostøedí Apache na konfiguraèní soubor VuFindu v jeho pùvodním umístìní.
-Dále nastavujeme firewall. 
+Dále je nastaveno síové zabezpeèení, tzn. firewall. Ten zamezuje neádoucím pøístupùm na server. Aby však bylo moné k VuFindu pøistupovat, resp. byl dostupnı ze sítì internet, v nastavení firewall se povoluje port 80, kterı slouí právì k pøenosu http protokolu. Provede se pøíkazem:
+\begin{verbatim}
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+\end{verbatim}
+V posledním kroku se pøepne zabezpeèení rozšíøeného jádra operaèního systému, tzv. Security-Enhanced, do permisivního módu, pøíkazem:
+\begin{verbatim}
+setenforce 0
+\end{verbatim}
+Kdy je VuFind úspìšnì nainstalován a okolní prostøedí správnì nastaveno, zapíná se v koøenovém adresáøi spouštìcím skriptem s parametrem start takto:
+\begin{verbatim}
+./solr.sh start
+\end{verbatim}
+V tuto chvíli se v otevøeném prohlíeèi po zadání pøíslušné URL zobrazí úvodní stránka novì nainstalovaného portálu VuFind.
 \cite{vufind.org}
+
+Nyní nastává fáze tzv. automatické konfigurace, která probíhá na URL adresa-vufindu/Install/Home, kde vidíme seznam s celkem 7 polokami, viz. obrázek. Poloky jsou barevnì rozlišeny podle toho, zda je daná oblast nastavena správnì (zelená barva) èi nikoli (barva èervená). Zkontrolujeme všechna nastavení a popøípadì opravíme problematické oblasti kliknutím na tlaèítko "Fix". To provede opravu nastavení dané oblasti buï automaticky, nebo uvede návod, jak vyøešit problém manuálnì, popøípadì se spustí prùvodce nastavením.
+
+

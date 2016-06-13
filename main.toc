@@ -7,13 +7,14 @@
 \contentsline {section}{\numberline {2.2}Software}{4}{section.2.2}
 \contentsline {chapter}{\numberline {3}VuFind v NTK}{5}{chapter.3}
 \contentsline {section}{\numberline {3.1}Instalace}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}GIT}{6}{subsection.3.1.1}
 \contentsline {section}{\numberline {3.2}Implementace}{6}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Kustomizace}{6}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}WorkFlow}{6}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Provoz}{6}{section.3.3}
-\contentsline {chapter}{\numberline {4}Dal\v s\IeC {\'\i } Open source software}{7}{chapter.4}
-\contentsline {chapter}{\numberline {5}Pou\v zit\IeC {\'\i } VuFindu v ostatn\IeC {\'\i }ch knihovn\'ach (\v CR, zahrani\v c\IeC {\'\i })}{8}{chapter.5}
-\contentsline {chapter}{\numberline {6}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{9}{chapter.6}
-\contentsline {chapter}{\numberline {7}Z\'av\v er (zhodnocen\IeC {\'\i })}{10}{chapter.7}
-\contentsline {chapter}{Literatura}{11}{chapter*.2}
-\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{12}{appendix.A}
+\contentsline {subsection}{\numberline {3.2.1}Kustomizace}{7}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}WorkFlow}{7}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Provoz}{7}{section.3.3}
+\contentsline {chapter}{\numberline {4}Dal\v s\IeC {\'\i } Open source software}{8}{chapter.4}
+\contentsline {chapter}{\numberline {5}Pou\v zit\IeC {\'\i } VuFindu v ostatn\IeC {\'\i }ch knihovn\'ach (\v CR, zahrani\v c\IeC {\'\i })}{9}{chapter.5}
+\contentsline {chapter}{\numberline {6}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{10}{chapter.6}
+\contentsline {chapter}{\numberline {7}Z\'av\v er (zhodnocen\IeC {\'\i })}{11}{chapter.7}
+\contentsline {chapter}{Literatura}{12}{chapter*.2}
+\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{13}{appendix.A}

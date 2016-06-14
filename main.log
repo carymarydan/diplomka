@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.10)  13 JUN 2016 15:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.11)  14 JUN 2016 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -506,12 +506,12 @@ Here is how much of TeX's memory you used:
  9794 multiletter control sequences out of 15000+600000
  11849 words of font info for 33 fonts, out of 8000000 for 9000
  46 hyphenation exceptions out of 8191
- 29i,11n,43p,1722b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,11n,43p,1580b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/cs/csbx12.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/cs/csr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/cs/csti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/cs/cstt12.pfb>
-Output written on main.pdf (13 pages, 66713 bytes).
+Output written on main.pdf (13 pages, 63255 bytes).
 PDF statistics:
  214 PDF objects out of 1000 (max. 8388607)
  193 compressed objects within 2 object streams

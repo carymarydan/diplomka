@@ -1,0 +1,667 @@
+Obsah
+1 Úvod
+1.1 Historie NTK . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.2 O VuFindu (představení systému) . . . . . . . . . . . . . . . . . . . .
+
+2
+2
+3
+
+2 (Virtuální) prostředí NTK
+2.1 Hardware . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.2 Software . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+4
+4
+4
+
+3 Svobodý software
+3.1 Evergreen . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.2 Koha . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+5
+6
+7
+
+4 VuFind v NTK
+4.1 Instalace . . . . . .
+4.1.1 GIT . . . .
+4.2 Implementace . . .
+4.2.1 Kustomizace
+4.2.2 WorkFlow .
+4.3 Provoz . . . . . . .
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+
+9
+9
+10
+11
+11
+11
+11
+
+5 Použití VuFindu v ostatních knihovnách (ČR, zahraničí)
+
+12
+
+6 Budoucí vývoj systému
+
+13
+
+7 Závěr (zhodnocení)
+
+14
+
+Literatura
+
+15
+
+A Příloha
+
+16
+
+1
+
+Kapitola 1
+Úvod
+Předmětem tohoto zkoumání je systém VuFind a jeho implementace v konkrétním prostředí. Práce se zaměřuje především na technické aspekty nasazení tohoto
+systému v Národní technické knihovně. V následujících kapitolách je představena
+knihovna s její historií včetně pracovního týmu, který se tímto systémem zabývá,
+a prvního spuštění VuFindu v tomto prostředí [kapitola 1.1], dále je stručně popsán systém obecně [kapitola 1.2]. V druhé kapitole je podrobně popsáno související
+technické prostředí Národní technické knihovny pokrývající jak hardwarovou část
+[kapitola 2.1], tj. servery, sít, atd., tak i softwarovou část [kapitola 2.2], tj. aplikace,
+programy, operační systémy. Třetí kapitola se zaměřuje na oblast svobodného softwaru a uvádí některé příklady v knihovnictví. Čtvrtá kapitola se věnuje stěžejnímu
+tématu, systému VuFind. Je v ní popsán průběh instalace [kapitola 4.1], samotná
+implementace [kapitola 4.2], která zahrnuje proces uživatelského přizpůsobování [kapitola 4.2.1] a nastavení pracovního workflow [kapitola 4.2.2], a v poslední řadě nasazení do provozu [kapitola 4.3]. V páté kapitole jsou uvedeny tuzemské i zahraniční
+knihovny používající portál VuFind. Šestá kapitola nastiňuje směr, jakým by se mohl
+vývoj systému ubírat a poslední kapitola diskutuje hodnocení dosažených cílů této
+práce.
+
+1.1
+
+Historie NTK
+
+Národní technická knihovna je největší a nejstarší knihovnou technické literatury v
+České republice s kapacitou přes 1,5 milionu svazků [1]. S přestěhováním z Mariánského náměstí v areálu Klementina na Starém městě v Praze 1 do areálu VŠ v Praze
+6 - Dejvice v roce 2009 opustila i předchozí název Státní technická knihovna [2]. Primární funkcí knihovny je poskytování odborných informačních služeb a zdrojů jak
+tištěných tak elektronických. Na dálku poskytuje NTK elektronickou cestou kolem
+18 tisíc odborných časopisů z oblasti techniky, přírodních věd a medicíny. Zákazníci
+mají přístup i do vybraných on-line databází a dalších elektronických zdrojů. Součástí fondu NTK je také NUŠL (Národní úložiště šedé literatury) [1]. První verze
+rozhraní VuFind v Národní technické knihovně byla instalována na počátku roku
+2011 pod vedením Ing. Milana Janíčka. Jednalo se o vývojovou verzi 1.1, která během
+zhruba dvouletého testování a ladění pracovním týmem NTK (společně s Danielem
+Marečekem) přešla do verze 1.3. Tato verze přizpůsobená místním podmínkám byla
+ve zkušebním provozu zhruba rok a od počátku roku 2014 se stala hlavním vyhledávácím rozhraním veřejného online katalogu Národní technické knihovny. V létě roku
+2
+
+Thesis Title
+2015 jednočlenný pracovní tým (Daniel Mareček) pod supervizí Mgr. Jana Kolátora
+a ve spolupráci s externím grafickým designerem upgradoval systém na zcela novou
+vývojovou řadu 2, konkrétně verzi 2.3.1 společně s jednotnou vizuální prezentací
+korespondující s webem knihovny.
+
+1.2
+
+O VuFindu (představení systému)
+
+V reakci na nedostatky tradičních knihovnických OAPCů byl na půdě americké univerzitní knihovny Villanova University’s Falvey Memorial Library ve státě Pensylvánie spuštěn vývoj knihovnického portálu VuFind. Název tohoto systému se proto
+skládá z akronymu názvu univerzity ”Vu”(Villanova university) a anglického slova
+”Find”(česky hledat). Tento portál je navržený a vyvíjený knihovnami pro knihovny
+za účelem umožnit jejich uživatelům vyhledávat a procházet všechny možné zdroje,
+kterými daná knihovna disponuje. Jeho první verze 1.0 spatřila světlo světa v červenci roku 2010[3].
+VuFind je plně modulární, což znamená, že je možné implementovat samostatně
+pouze základní jádro systému s běžnou funkcionalitou, i zároveň nadstavbové komponenty, které funkcionalitu celkového systému značně rozšiřují. Díky tomu, že tento
+portál patří mezi svobodné softwary, je možné upravovat i přidávat jednotlivé moduly dle požadavků konkrétní knihovny a docílit tak maximálního komfortu. Kromě
+toho, díky široké škále konfiguračních možností je možné systém rozsáhle customizovat bez nutnosti měnit zdrojový kód.
+Vyhledávacím jádrem VuFindu je Solr. Tato platforma, Apache Solr, je produktem neziskové organizace Apache Software Foundation, která produkuje, podporuje
+a vyvíjí více než 350 projektů svobodného software[?]. Solr je open source software
+napsaný v programovacím jazyce Java a nabízí úžasný výkon a škálovatelnost, díky
+čemuž se odezvy na vyhledávací dotazy pohybují v řádech milisekund. Je-li potřeba
+rozložit zatížení katalogu na více serverů, uplatní se jeho schopnost distribuovanosti.
+VuFind je poskytován zcela zdarma pod licencí GPL pro svobodný software. To
+znamená jeho volné užívání a upravování a sdílení v rámci komunity. [4]
+Specifikace, requirements,. . Solr, hardware, linux, windows, Apache, Tom Cat,. .
+Výčet software NTK takové požadavky samozřejmě splňuje a navíc používá ještě
+další související software. . .
+
+Chapter 1
+
+Author Name
+
+3
+
+Kapitola 2
+(Virtuální) prostředí NTK
+V Národní technické knihovně je servrovna, kde běží lokální virtuální servery. Na
+jednom z nich běží testovací verze VuFind. Zde probíhá vývoj systému. Na dalším
+serveru, výkonnějším, běží produkční verze VuFind. Zatímco produkční server je
+samozřejmě dostupný z vnějšího prostředí knihovny v síti internet, testovací verze
+je přístupná pouze z počítačů uvnitř instituce.
+
+2.1
+
+Hardware
+
+Servery - Aleph, SFX, Redmine, VuFind1, VuFind2, VuFind.test, VuFind-eiz.test
+
+2.2
+
+Software
+
+OS Apache - Http server Jetty - Java servlet zabezpečení - firewall sledovací server
+Zabbix cron shibboleth ssh git
+
+4
+
+Kapitola 3
+Svobodý software
+Filozofie open source. Open source software
+Pojmem open source lze označit cokoli, co je možné upravit a dále sdílet díky
+veřejné přístupnosti. I když toto označení vzniklo v souvislosti s rozvojem počítačového software, dnes se termín používá také pro projekty, produkty, iniciativy, které
+ctí hodnoty jakými jsou otevřená výměna, kooperativní spolupráce, transparentnost,
+meritokracie, rapid prototyping a komunitní rozvoj.
+Open source software, je takový software, jehož zdrojový kód je dostupný komukoliv za účelem jeho zlepšení či jakékoliv jeho modifikace.
+Zdrojový kód je část software, kterou většina uživatelů počítače vůbec nevidí; je
+to kód, kterým počítačoví programátoři mohou manipulovat tak, aby měnili chování
+daného programu či aplikace. Programátoři, kteří mají přístup k zdrojovému kódu
+počítačového programu jej mohou vylepšovat přidáním funkcionality nebo opravením částí, které ne vždy fungují správně. https://opensource.com/resources/whatopen-source
+Open source software, v českém překladu software s otevřeným zdrojovým kódem, někdy označován i jako svobodný software však nutně neznamená, že jeho užití
+je zcela zdarma. Proto nedílnou součástí tohoto typu softwaru je licencování, které
+stanovuje podmínky nakládání s daným programem. http://www.gnu.org/philosophy/freesoftware-for-freedom.cs.html
+Existuje mnoho rozdílných typů licencí pro svobodný software. Některé softwary
+používají autorské právo způsobem copyleft. To umožňuje šíření svobodného software ve veřejném prostoru bez rizika, že se po jeho jakékoli částečné modifikaci
+stane softwarem proprietárním, tedy uzavře se jeho zdrojový kód a jeho použití
+se zpoplatnění. https://www.gnu.org/copyleft/ Předním zástupcem takového typu
+licencí je licence GNU GPL (GNU General Public License), která tedy chrání svobodu svobodného počítačového programu i po jeho modifikaci a ukládá tak uživatelům povinnost šířit odvozené dílo pod stejnou licencí. http://www.webopedia.
+com/DidYouKnow/Computer_Science/open_source.asp Celou oblast svobodného
+software zastřešuje nezisková korporace Open Source Initiative (OSI) založená v roce
+1998 se sídlem v Kalifornii, která vytváří licence, definuje open source a příslušné
+standardy. https://opensource.org/ Vývoj konkrétního open source software obvykle
+vede jedna konkrétní společnost, která se rozhodne pro způsob v duchu spolupráce
+a distribuované činnosti. Tím se projekt rozjede, třeba i za finanční podpory.[?] Postupem času, díky veřejnému šíření, se začíná vytvářet komunita participujících vývojářů, kteří našli ve vznikajícím produktu smysl a práce se tak může stát dobrovol5
+
+Thesis Title
+
+nou, tedy radostnou a plodnou. V případě dílčích úspěchů přibývající potenciál stále
+roste. Nejinak tomu bylo i v open source projetu VuFind. Ten vznikl na akademické
+půdě v USA a dnes má širokou komunitu přispěvatelů po celém světě, která čítá okolo
+70 aktivních členů. https://github.com/vufind-org/vufind/graphs/contributors
+mailing-list
+potom Evergreen, Evergreen je knihovní software [6]
+Koha hostingový server pro open source projekty https://sourceforge.net Docela
+dobré představení nejen VuFindu. http://ikaros.cz/opacy-nove-generace-ii-
+
+3.1
+
+Evergreen
+
+Filozofie open source. Open source software
+Pojmem open source lze označit cokoli, co je možné upravit a dále sdílet díky
+veřejné přístupnosti. I když toto označení vzniklo v souvislosti s rozvojem počítačového software, dnes se termín používá také pro projekty, produkty, iniciativy, které
+ctí hodnoty jakými jsou otevřená výměna, kooperativní spolupráce, transparentnost,
+meritokracie, rapid prototyping a komunitní rozvoj.
+Open source software, je takový software, jehož zdrojový kód je dostupný komukoliv za účelem jeho zlepšení či jakékoliv jeho modifikace.
+Zdrojový kód je část software, kterou většina uživatelů počítače vůbec nevidí; je
+to kód, kterým počítačoví programátoři mohou manipulovat tak, aby měnili chování
+daného programu či aplikace. Programátoři, kteří mají přístup k zdrojovému kódu
+počítačového programu jej mohou vylepšovat přidáním funkcionality nebo opravením částí, které ne vždy fungují správně. https://opensource.com/resources/whatopen-source
+Open source software, v českém překladu software s otevřeným zdrojovým kódem, někdy označován i jako svobodný software však nutně neznamená, že jeho užití
+je zcela zdarma. Proto nedílnou součástí tohoto typu softwaru je licencování, které
+stanovuje podmínky nakládání s daným programem. http://www.gnu.org/philosophy/freesoftware-for-freedom.cs.html
+Existuje mnoho rozdílných typů licencí pro svobodný software. Některé softwary
+používají autorské právo způsobem copyleft. To umožňuje šíření svobodného software ve veřejném prostoru bez rizika, že se po jeho jakékoli částečné modifikaci
+stane softwarem proprietárním, tedy uzavře se jeho zdrojový kód a jeho použití
+se zpoplatnění. https://www.gnu.org/copyleft/ Předním zástupcem takového typu
+licencí je licence GNU GPL (GNU General Public License), která tedy chrání svobodu svobodného počítačového programu i po jeho modifikaci a ukládá tak uživatelům povinnost šířit odvozené dílo pod stejnou licencí. http://www.webopedia.
+com/DidYouKnow/Computer_Science/open_source.asp Celou oblast svobodného
+software zastřešuje nezisková korporace Open Source Initiative (OSI) založená v roce
+1998 se sídlem v Kalifornii, která vytváří licence, definuje open source a příslušné
+standardy. https://opensource.org/ Vývoj konkrétního open source software obvykle
+vede jedna konkrétní společnost, která se rozhodne pro způsob v duchu spolupráce
+a distribuované činnosti. Tím se projekt rozjede, třeba i za finanční podpory.[?] Postupem času, díky veřejnému šíření, se začíná vytvářet komunita participujících vývojářů, kteří našli ve vznikajícím produktu smysl a práce se tak může stát dobrovolnou, tedy radostnou a plodnou. V případě dílčích úspěchů přibývající potenciál stále
+roste. Nejinak tomu bylo i v open source projetu VuFind. Ten vznikl na akademické
+6
+
+Chapter 3
+
+Author Name
+
+Thesis Title
+
+půdě v USA a dnes má širokou komunitu přispěvatelů po celém světě, která čítá okolo
+70 aktivních členů. https://github.com/vufind-org/vufind/graphs/contributors
+mailing-list
+potom Evergreen, Evergreen je knihovní software [6]
+Koha hostingový server pro open source projekty https://sourceforge.net Docela
+dobré představení nejen VuFindu. http://ikaros.cz/opacy-nove-generace-ii-
+
+3.2
+
+Koha
+
+Filozofie open source. Open source software
+Pojmem open source lze označit cokoli, co je možné upravit a dále sdílet díky
+veřejné přístupnosti. I když toto označení vzniklo v souvislosti s rozvojem počítačového software, dnes se termín používá také pro projekty, produkty, iniciativy, které
+ctí hodnoty jakými jsou otevřená výměna, kooperativní spolupráce, transparentnost,
+meritokracie, rapid prototyping a komunitní rozvoj.
+Open source software, je takový software, jehož zdrojový kód je dostupný komukoliv za účelem jeho zlepšení či jakékoliv jeho modifikace.
+Zdrojový kód je část software, kterou většina uživatelů počítače vůbec nevidí; je
+to kód, kterým počítačoví programátoři mohou manipulovat tak, aby měnili chování
+daného programu či aplikace. Programátoři, kteří mají přístup k zdrojovému kódu
+počítačového programu jej mohou vylepšovat přidáním funkcionality nebo opravením částí, které ne vždy fungují správně. https://opensource.com/resources/whatopen-source
+Open source software, v českém překladu software s otevřeným zdrojovým kódem, někdy označován i jako svobodný software však nutně neznamená, že jeho užití
+je zcela zdarma. Proto nedílnou součástí tohoto typu softwaru je licencování, které
+stanovuje podmínky nakládání s daným programem. http://www.gnu.org/philosophy/freesoftware-for-freedom.cs.html
+Existuje mnoho rozdílných typů licencí pro svobodný software. Některé softwary
+používají autorské právo způsobem copyleft. To umožňuje šíření svobodného software ve veřejném prostoru bez rizika, že se po jeho jakékoli částečné modifikaci
+stane softwarem proprietárním, tedy uzavře se jeho zdrojový kód a jeho použití
+se zpoplatnění. https://www.gnu.org/copyleft/ Předním zástupcem takového typu
+licencí je licence GNU GPL (GNU General Public License), která tedy chrání svobodu svobodného počítačového programu i po jeho modifikaci a ukládá tak uživatelům povinnost šířit odvozené dílo pod stejnou licencí. http://www.webopedia.
+com/DidYouKnow/Computer_Science/open_source.asp Celou oblast svobodného
+software zastřešuje nezisková korporace Open Source Initiative (OSI) založená v roce
+1998 se sídlem v Kalifornii, která vytváří licence, definuje open source a příslušné
+standardy. https://opensource.org/ Vývoj konkrétního open source software obvykle
+vede jedna konkrétní společnost, která se rozhodne pro způsob v duchu spolupráce
+a distribuované činnosti. Tím se projekt rozjede, třeba i za finanční podpory.[?] Postupem času, díky veřejnému šíření, se začíná vytvářet komunita participujících vývojářů, kteří našli ve vznikajícím produktu smysl a práce se tak může stát dobrovolnou, tedy radostnou a plodnou. V případě dílčích úspěchů přibývající potenciál stále
+roste. Nejinak tomu bylo i v open source projetu VuFind. Ten vznikl na akademické
+půdě v USA a dnes má širokou komunitu přispěvatelů po celém světě, která čítá okolo
+70 aktivních členů. https://github.com/vufind-org/vufind/graphs/contributors
+Chapter 3
+
+Author Name
+
+7
+
+Thesis Title
+
+mailing-list
+potom Evergreen, Evergreen je knihovní software [6]
+Koha hostingový server pro open source projekty https://sourceforge.net Docela
+dobré představení nejen VuFindu. http://ikaros.cz/opacy-nove-generace-ii-
+
+8
+
+Chapter 3
+
+Author Name
+
+Kapitola 4
+VuFind v NTK
+Lokální požadavky - velikost fondu, zavedený ILS, provoz - fluktuace, výpůjčky,
+počet uživatelů
+Důvodem pro nasazení open source portálu VuFind v Národní technické knihovně
+byl fakt, že dosavadně používaný OPAC Aleph je jako rozhraní pro knihovní katalog
+v kontextu dnešní doby, plné moderních rychle se vyvíjejících technologií, konkrétně
+v oblasti programování webových aplikací, již zastaralý. Aleph má však stále své
+uplatnění jako integrovaný knihovní systém, i v Národní technické knihovně.
+Fasety, moderní vzhled, nejnovější html, css, možnost modifikace, integrace s
+dalšími webovými službami (citacepro, sociální sítě, sdílení), uživatelské konto (oblíbené)
+Lze instalovat na windows, linux - ubuntu, fedora.
+
+4.1
+
+Instalace
+
+Nejprve je nutné aktualizovat operační systém serveru, kterým je v tomto případě
+linuxová distribuce Red Hat Enterprise Linux Server release 7.1 (Maipo). O to se
+postará příkaz:
+yum update
+Dále je nutné mít server vybaven nezbytnými komponentami jako jsou webový server, databázový systém, php interpretr včetně několika jeho modulů a v poslední
+řadě java prostředí. K použití jsou následující příkazy:
+yum
+yum
+yum
+yum
+
+install
+install
+install
+install
+
+httpd
+mysql-server
+php php-devel php-intl php-ldap php-mysql php-xsl php-gd php-mbstring phpjava-*-openjdk-devel
+
+Nyní přichází na řadu stažení samotného systému VuFind. To je možné provést z
+úložiště https://sourceforge.net/projects/vufind/files/VuFind/, kde jsou k
+dispozici všechny verze VuFindu od jeho vzniku až po současnost. V našem případě
+stahujeme poslední verzi, tedy verzi 3.0.1, příkazem:
+
+wget http://downloads.sourceforge.net/vufind/vufind-3.0.1.tar.gz?use_mirror=osdn -O vu
+Po rozbalení staženého archivu, spustíme instalaci VuFindu příkazem:
+9
+
+Thesis Title
+
+php install.php
+Systém je nainstalován. Nyní je ještě potřeba provést některá nezbytná nastavení
+pro správný chod systému. Musíme dát vědět webovému serveru Apache o našem
+nově nainstalovaném VuFindu. K tomu slouží konfigurační soubor httpd-vufind.conf,
+který se nachází v adresáři /local. Apache standardně načítá konfigurační soubory
+ze svého umístění, kterým je:
+/etc/httpd/conf.d
+kam konfigurační soubor pro VuFind zkopírujeme. Alternativním řešením je použití
+symbolického linku z konfiguračního prostředí Apache na konfigurační soubor VuFindu v jeho původním umístění. Dále je nastaveno síťové zabezpečení, tzn. firewall.
+Ten zamezuje nežádoucím přístupům na server. Aby však bylo možné k VuFindu
+přistupovat, resp. byl dostupný ze sítě internet, v nastavení firewall se povoluje port
+80, který slouží právě k přenosu http protokolu. Provede se příkazem:
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+V posledním kroku se přepne zabezpečení rozšířeného jádra operačního systému,
+tzv. Security-Enhanced, do permisivního módu, příkazem:
+setenforce 0
+Když je VuFind úspěšně nainstalován a okolní prostředí správně nastaveno, zapíná
+se v kořenovém adresáři spouštěcím skriptem s parametrem start takto:
+./solr.sh start
+V tuto chvíli se v otevřeném prohlížeči po zadání příslušné URL zobrazí úvodní
+stránka nově nainstalovaného portálu VuFind. [4]
+Nyní nastává fáze tzv. automatické konfigurace, která probíhá na URL adresavufindu/Install/Home, kde vidíme seznam s celkem 7 položkami, viz. obrázek. Položky jsou barevně rozlišeny podle toho, zda je daná oblast nastavena správně (zelená
+barva) či nikoli (barva červená). Zkontrolujeme všechna nastavení a popřípadě opravíme problematické oblasti kliknutím na tlačítko ”Fix”. To provede opravu nastavení
+dané oblasti buď automaticky, nebo uvede návod, jak vyřešit problém manuálně, popřípadě se spustí průvodce nastavením.
+
+4.1.1
+
+GIT
+
+V minulosti se v Národní technické knihovně používal verzovací systém SVN. Nyní
+se na správu verzí používá systém GIT. Nainstaluje se příkazem:
+yum install git
+Správa verzí je systém, který zaznamenává změny souboru nebo sady souborů v
+průběhu času, a uživatel tak může kdykoli obnovit jeho/jejich konkrétní verzi (tzv.
+verzování).
+[5]
+10
+
+Chapter 4
+
+Author Name
+
+Thesis Title
+
+4.2
+
+Implementace
+
+Zde jest popsáno další nastavení našeho serveru (nikoli nejnutnější základní popsané
+v předchozí verzi).
+Instalace Shibboleth, Cron,. .
+
+4.2.1
+
+Kustomizace
+
+Provedené změny v našem prostředí. Vzhled. Historie výpůjček. Nastavení importu,
+schéma indexu. Úvodní strana - řazení faset frekvenčně. Obálky knih - skenované
+a ukládané na Aleph server + Obálkyknih.cz. Autentikace přes Shibboleth. Zabezpečení SSL:443.
+
+4.2.2
+
+WorkFlow
+
+Redmine - issue tracker. Zadávání úkolů. Řešení. Repozitář. Nejprve se změny provedou na testovací verzi. Několik dní se testuje. Potom přenos na produkční verzi.
+
+4.3
+
+Provoz
+
+Popis běžného provozu. Statistiky návštěvnosti. Vyhledávací výrazy. Každodenní
+harvestování - Cron. Google Analytics.
+
+Chapter 4
+
+Author Name
+
+11
+
+Kapitola 5
+Použití VuFindu v ostatních
+knihovnách (ČR, zahraničí)
+CPK, MZK, Koha komunity ma VuFind - několik knihoven ČR - Polička, Turnov,
+Neratovice, Jablonec, Frenštát. Akademie věd. . .
+Villanova University, Finna,. .
+Yale University Library nějaký čas testovala VuFind pod pracovním názvem YuFind. Ale k použití v provozu nedošlo. http://campuspress.yale.edu/libraryitnews/tag/yufind/
+
+12
+
+Kapitola 6
+Budoucí vývoj systému
+VuFind má budoucnost. Jako hlavní rozhraní pro Discovery systémy. Ebsco vyvíjí
+open source platformu, kde interfacem může být VuFind. VuFind pravděpodobně
+nemá konkurenci ani jinou alternativu.
+
+13
+
+Kapitola 7
+Závěr (zhodnocení)
+Úžasný, super, má budoucnost, mohlo by být dobrým byznysem nasazovat VuFind
+do dalších knihoven - po celém světě. 4-letá práce s velkým přínosem zkušeností z
+praxe v oboru. Účast na zajímavých konferencích - Inforum, Elag, KRE,.
+
+14
+
+Literatura
+[1] O NTK: Váš partner ve světě technických informací. Národní technická knihovna
+[online]. Praha [cit. 2016-06-09]. Dostupné z: https://www.techlib.cz/cs/82794o-ntk
+[2] Státní technická knihovna [online]. Praha [cit. 2016-06-09]. Dostupné z:
+http://old.stk.cz/index.html
+[3] https://sourceforge.net/p/vufind/news/2010/07/vufind-out-of-beta-with-10release/
+[4] Installation:fedora
+[VuFind
+Documentation].
+VuFind
+Search.
+Discover.
+Share.
+[online].
+[cit.
+2016-06-10].
+Dostupné
+z:
+https://vufind.org/wiki/installation:fedora
+[5] Git - Správa verzí. Git [online]. [cit. 2016-06-13]. Dostupné z: https://gitscm.com/book/cs/v1/Úvod-Správa-verzí
+[6] CERNIŇÁKOVÁ, Eva. Knihovní systém s otevřeným zdrojovým kódem v Knihovně Jabok. ČTENÁŘ – MĚSÍČNÍK PRO KNIHOVNY
+[online]. 2012, 64(2) [cit. 2016-06-15]. ISSN 1805-4064. Dostupné z:
+http://ctenar.svkkl.cz/clanky/2012-roc-64/2-2012/knihovni-system-sotevrenym-zdrojovym-kodem-v-knihovne-jabok-94-1138.htm
+
+15
+
+Příloha A
+Příloha
+
+16
+
+

@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.6)  21 JUN 2016 18:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.11)  21 JUN 2016 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 4 languages loaded.
+Babel <3.9h> and hyphenation patterns for 6 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -103,8 +103,8 @@ Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
@@ -335,12 +335,27 @@ LaTeX Font Info:    ... okay on input line 27.
 \MPnumerator=\count108
 \makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks19
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \AtBeginShipoutBox=\box27
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/etc/texmf/tex/latex/config/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
@@ -469,30 +484,41 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (./chapters/chapter04.tex [15
 
 ]
-Overfull \hbox (180.25487pt too wide) in paragraph at lines 21--30
+Overfull \hbox (180.25487pt too wide) in paragraph at lines 26--35
 []\IL2/cmr/m/n/12 Finna - tam se sta-tusy na-èí-tají po-stupnì podle fo-kusu ob
 -ra-zovky https://www.finna.fi/Search/Results?lookfor=Javanarod
  []
 
 
-Overfull \hbox (113.83333pt too wide) in paragraph at lines 21--30
+Overfull \hbox (113.83333pt too wide) in paragraph at lines 26--35
 \IL2/cmr/m/n/12 knihovna fin-sko pouza take finna https://kansalliskirjasto.fin
 na.fi/Search/Results?lookfor=java&type=AllFields
  []
 
 
-Overfull \hbox (10.86078pt too wide) in paragraph at lines 21--30
+Overfull \hbox (10.86078pt too wide) in paragraph at lines 26--35
 \IL2/cmr/m/n/12 na-stou-pila svuj vy-voj Vu-Findu: http://www.kdk.fi/index.php/
 en/public-interface/software-
  []
 
 
-Overfull \hbox (237.01953pt too wide) in paragraph at lines 21--30
+Overfull \hbox (237.01953pt too wide) in paragraph at lines 26--35
 \IL2/cmr/m/n/12 development po-vi-dani o vu-findu: http://slq.nu/?article=volum
 e-46-no-3-2013-6 https://www.kansalliskirjasto.fi/extra/bulletin/hi3.html 
  []
 
-) [16] [17]
+[16])
+Overfull \hbox (21.40927pt too wide) in paragraph at lines 53--69
+[]\IL2/cmr/m/n/12 o cen-t-ral-nich in-de-xech a dis-co-very http://oldknihovna.
+nkp.cz/knihovnaplus121/coufal.htm
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--69
+
+ []
+
+[17]
 Kapitola 6.
 (./chapters/chapter05.tex) [18
 
@@ -537,27 +563,24 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 41E2B021FCA19647EF74AB9489F0EAD8;1253.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 6678 strings out of 494998
- 95660 string characters out of 6180422
- 187481 words of memory out of 5000000
- 9698 multiletter control sequences out of 15000+600000
+ 6791 strings out of 494953
+ 97879 string characters out of 6179185
+ 189981 words of memory out of 5000000
+ 9809 multiletter control sequences out of 15000+600000
  11849 words of font info for 33 fonts, out of 8000000 for 9000
- 24 hyphenation exceptions out of 8191
+ 46 hyphenation exceptions out of 8191
  29i,11n,43p,1027b,506s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/cs/csbx12.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/cs/csr12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/cs/csti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/cs/cstt12.pfb>
-Output written on main.pdf (22 pages, 113576 bytes).
+Output written on main.pdf (22 pages, 85873 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
+ 302 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
  72 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

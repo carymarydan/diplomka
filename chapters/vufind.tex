@@ -3,7 +3,7 @@ V reakci na nedostatky tradièních knihovnických OAPCù byl na pùdì americké unive
 
 VuFind je plnì modulární, což znamená, že je možné implementovat samostatnì pouze základní jádro systému s bìžnou funkcionalitou, i zároveò nadstavbové komponenty, které funkcionalitu celkového systému znaènì rozšiøují. Díky tomu, že tento portál patøí mezi svobodné softwary, je možné upravovat i pøidávat jednotlivé moduly dle požadavkù konkrétní knihovny a docílit tak maximálního komfortu. Kromì toho, díky široké škále konfiguraèních možností je možné systém rozsáhle customizovat bez nutnosti mìnit zdrojový kód.
 
-Vyhledávacím jádrem VuFindu je Solr. Tato platforma, Apache Solr, je produktem neziskové organizace Apache Software Foundation, která produkuje, podporuje a vyvíjí více než 350 projektù svobodného software\cite{http://www.apache.org/}. Solr je open source software napsaný v programovacím jazyce Java a nabízí úžasný výkon a škálovatelnost, díky èemuž se odezvy na vyhledávací dotazy pohybují v øádech milisekund. Je-li potøeba rozložit zatížení katalogu na více serverù, uplatní se jeho schopnost distribuovanosti.
+Vyhledávacím jádrem VuFindu je Solr. Tato platforma, Apache Solr, je produktem neziskové organizace Apache Software Foundation, která produkuje, podporuje a vyvíjí více než 350 projektù svobodného software\cite{apache.org}. Solr je open source software napsaný v programovacím jazyce Java a nabízí úžasný výkon a škálovatelnost, díky èemuž se odezvy na vyhledávací dotazy pohybují v øádech milisekund. Je-li potøeba rozložit zatížení katalogu na více serverù, uplatní se jeho schopnost distribuovanosti.
 
 VuFind je poskytován zcela zdarma pod licencí pro svobodný software GNU General Public License. To znamená jeho volné užívání, upravování a sdílení v rámci jakkoliv rùznorodých knihovnických komunit, což posiluje a rozšiøuje možnosti tohoto systému. Celkovì tento projekt povzbuzuje myslitele, hackery a profesionální programátory, aby navrhovali, upravovali, zlepšovali a pøispívali do VuFindu a dalších open source softwarù s cílem vytvoøit životaschopné øešení pro knihovny všech velikostí.
 !about!
@@ -38,13 +38,21 @@ Webové rozhraní VuFindu je možné pøepínat do pøekladù svìtových jazykù jako jsou
 \subparagraph{Pøístup k datùm}\begin{verbatim}
 \end{verbatim}
 VuFind má mnoho rozhraní pro programování aplikací (API). Pøenášení dat mezi institucemi lze pomocí OAI protokolu. Vyhledávací algoritmus VuFindu je možné využít také OpenSearch zpùsobem. A pro pøístup k indexovaným datùm slouží rozhraní vyhledávacího a indexaèního nástroje Solr.
+!features!
 
-
+\paragraph{Požadavky na hardware a software}
+Požadavky se odlišují s ohledem na verze VuFindu. Zde jsou popsány náležitosti pro verzi 2.3.1.
+\subparagraph{Software}\begin{verbatim}
+\end{verbatim}
+Jako webový server je doporuèen Apache HTTP Server verze 2.2.12 a novìjší. Vzhledem k tomu že systém je vyvinut ve frameworku ZendFramework, je nutné mít nainstalováno PHP, v tomto pøípadì ve verzi 5.3.3 a novìjší. Dále je potøeba mít databázový server, kterým je ve vìtšinì pøípadù velmi rozšíøený MySQL, nutný ve verzi 5.1.10 a vyšší. Možnou alternativou mùže být napøíklad PostgreSQL. V poslední øadì je vyžadováno Java prostøedí. To kvùli vyhledávacímu jádru systému VuFind, kterým je Solr, naprogramovaný v Jave. Tzv. Java JDK je nutné ve verzi 1.7 a novìjší. A jako operaèní systém je možné použít jak svobodný Linux, tak komerèní Windows.
+\subparagraph{Hardware}\begin{verbatim}
+\end{verbatim}
+Požadavky na hardware se liší podle velikosti a množství dat, které se mají indexovat a také podle uživatelské zátìže, která se dá oèekávat. Proto není možné specifikovat pøesnou hardwarovou vybavenost. Lze ale nastínit hranièní situace pro malý a velký index a k nim orientaènì uvést odpovídající potøeby. Pro malý index bude staèit velmi základní hardware. Absolutní minimum je pravdìpodobnì kolem 2 GB pamìti RAM a nìkolik málo GB úložného diskového prostoru. Pro velké indexy je žádoucí více pamìti RAM i úložného diskového prostoru a v nìkterých pøípadech je i vhodné rozložit zátìž na nìkolik serverù. Dobrá zpráva je, že VuFind je extrémnì škálovatelný, je možné tedy zaèít v malém mìøítku a rozšiøovat hardwarové vybavení dle potøeby.!requirements!
 \cite{vufind.org}
 
 zajimava firma nabizi implementaci open source library sw - koha, evergreen, vufind,..
 https://www.ptfs-europe.com/customers/
-
+solrmarc
 Specifikace, requirements,..
 Solr, hardware, linux, windows, Apache, Tom Cat,..
 Výèet software

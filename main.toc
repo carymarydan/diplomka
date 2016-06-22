@@ -1,36 +1,37 @@
 \select@language {czech}
-\contentsline {chapter}{\numberline {1}\'Uvod}{2}{chapter.1}
-\contentsline {section}{\numberline {1.1}Historie NTK}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}O VuFindu (p\v redstaven\IeC {\'\i } syst\'emu)}{3}{section.1.2}
-\contentsline {paragraph}{Kl\IeC {\'\i }\v cov\'e vlastnosti vlastnosti}{4}{section*.2}
-\contentsline {subparagraph}{Fasetov\'e vyhled\'av\'an\IeC {\'\i }}{4}{section*.3}
-\contentsline {subparagraph}{Status dostupnosti}{4}{section*.4}
-\contentsline {subparagraph}{Podobn\'e jednotky}{4}{section*.5}
-\contentsline {subparagraph}{U\v zivatelsk\'e seznamy}{5}{section*.6}
-\contentsline {subparagraph}{Proch\'azen\IeC {\'\i } zdroj\r u}{5}{section*.7}
-\contentsline {subparagraph}{Biografie autor\r u}{5}{section*.8}
-\contentsline {subparagraph}{Trval\'a URL}{5}{section*.9}
-\contentsline {subparagraph}{Cita\v cn\IeC {\'\i } mana\v zery}{5}{section*.10}
-\contentsline {subparagraph}{Internacionalizace}{5}{section*.11}
-\contentsline {subparagraph}{P\v r\IeC {\'\i }stup k dat\r um}{6}{section*.12}
-\contentsline {paragraph}{Po\v zadavky na hardware a software}{6}{section*.13}
-\contentsline {subparagraph}{Software}{6}{section*.14}
-\contentsline {subparagraph}{Hardware}{6}{section*.15}
-\contentsline {chapter}{\numberline {2}(Virtu\'aln\IeC {\'\i }) prost\v red\IeC {\'\i } NTK}{8}{chapter.2}
-\contentsline {section}{\numberline {2.1}Hardware}{8}{section.2.1}
-\contentsline {section}{\numberline {2.2}Software}{8}{section.2.2}
-\contentsline {chapter}{\numberline {3}Svobod\'y software}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Evergreen}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}Koha}{10}{section.3.2}
-\contentsline {chapter}{\numberline {4}VuFind v NTK}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Instalace}{11}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}GIT}{13}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Implementace}{13}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Kustomizace}{13}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}WorkFlow}{13}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Provoz}{14}{section.4.3}
-\contentsline {chapter}{\numberline {5}Pou\v zit\IeC {\'\i } VuFindu v ostatn\IeC {\'\i }ch knihovn\'ach (\v CR, zahrani\v c\IeC {\'\i })}{15}{chapter.5}
-\contentsline {chapter}{\numberline {6}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{18}{chapter.6}
-\contentsline {chapter}{\numberline {7}Z\'av\v er (zhodnocen\IeC {\'\i })}{19}{chapter.7}
-\contentsline {chapter}{Literatura}{20}{chapter*.16}
-\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{22}{appendix.A}
+\contentsline {chapter}{\numberline {1}\'Uvod}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Historie NTK}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}O VuFindu (p\v redstaven\IeC {\'\i } syst\'emu)}{4}{section.1.2}
+\contentsline {paragraph}{Kl\IeC {\'\i }\v cov\'e vlastnosti vlastnosti}{5}{section*.2}
+\contentsline {subparagraph}{Fasetov\'e vyhled\'av\'an\IeC {\'\i }}{5}{section*.3}
+\contentsline {subparagraph}{Status dostupnosti}{5}{section*.4}
+\contentsline {subparagraph}{Podobn\'e jednotky}{5}{section*.5}
+\contentsline {subparagraph}{U\v zivatelsk\'e seznamy}{6}{section*.6}
+\contentsline {subparagraph}{Proch\'azen\IeC {\'\i } zdroj\r u}{6}{section*.7}
+\contentsline {subparagraph}{Biografie autor\r u}{6}{section*.8}
+\contentsline {subparagraph}{Trval\'a URL}{6}{section*.9}
+\contentsline {subparagraph}{Cita\v cn\IeC {\'\i } mana\v zery}{6}{section*.10}
+\contentsline {subparagraph}{Internacionalizace}{6}{section*.11}
+\contentsline {subparagraph}{P\v r\IeC {\'\i }stup k dat\r um}{7}{section*.12}
+\contentsline {paragraph}{Po\v zadavky na hardware a software}{7}{section*.13}
+\contentsline {subparagraph}{Software}{7}{section*.14}
+\contentsline {subparagraph}{Hardware}{7}{section*.15}
+\contentsline {chapter}{\numberline {2}(Virtu\'aln\IeC {\'\i }) prost\v red\IeC {\'\i } NTK}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Hardware}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Software}{9}{section.2.2}
+\contentsline {chapter}{\numberline {3}Svobod\'y software}{10}{chapter.3}
+\contentsline {section}{\numberline {3.1}Blacklight}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Evergreen}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Koha}{11}{section.3.3}
+\contentsline {chapter}{\numberline {4}VuFind v NTK}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Instalace}{12}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}GIT}{14}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Implementace}{14}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Kustomizace}{14}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}WorkFlow}{14}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Provoz}{15}{section.4.3}
+\contentsline {chapter}{\numberline {5}Pou\v zit\IeC {\'\i } VuFindu v ostatn\IeC {\'\i }ch knihovn\'ach (\v CR, zahrani\v c\IeC {\'\i })}{16}{chapter.5}
+\contentsline {chapter}{\numberline {6}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{20}{chapter.6}
+\contentsline {chapter}{\numberline {7}Z\'av\v er (zhodnocen\IeC {\'\i })}{21}{chapter.7}
+\contentsline {chapter}{Literatura}{22}{chapter*.16}
+\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{24}{appendix.A}

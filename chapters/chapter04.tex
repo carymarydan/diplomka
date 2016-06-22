@@ -16,39 +16,34 @@ Další zajímavou instalaci portálu VuFind má sí švıcarskıch univerzitních knihov
 
 Za pozornost stojí i turecká univerzitní knihovna Suleyman Demirel University Library s VuFindem 2.3.1. Operaèním systémem je zde linuxová distribuce CentOS, discovery systémem je Summon a integrovanım knihovnickım systémem je svobodnı software Koha. Takováto kombinace mùe bıt pro Národní technickou knihovnu inspirací.
 
-Discovery systém Primo od firmy ExLibris je do VuFindu napojen ve spoleèném katalogu pro státní a univerzitní knihovny v Hamburgu zvaném Beluga. Toto pojmenování nese analogii s kytovcem Bìluhou severní, kterı má údajnì sociální a pøátelské chování a díky tomu je práce s tímto katalogem uiteèná a radostná. Operaèním systémem tohoto vyhledávaèe je linuxová distribuce Suse a integrovanım knihovnickım systémem OCLC.
+Discovery systém Primo od firmy ExLibris je do VuFindu napojen ve spoleèném katalogu pro státní a univerzitní knihovny v Hamburgu zvaném Beluga. Toto pojmenování nese analogii s kytovcem Bìluhou severní, která má údajnì sociální a pøátelské chování a díky tomu je práce s tímto katalogem uiteèná a radostná. Operaèním systémem tohoto vyhledávaèe je linuxová distribuce Suse a integrovanım knihovnickım systémem OCLC.
 
-Napojení discovery systému EBSCO je moné vidìt v katalogu španìlské univerzitní knihovny 
-Biblioteca de la Universidad de Oviedo, je bìí v linuxové distribuci operaèního systému CentOS s napojením na integrovanı knihovnickı systém Amicus. 
-
-Ojedinìlım pøípadem je katalog Finna 
-
-Finna - tam se statusy naèítají postupnì podle fokusu obrazovky
-https://www.finna.fi/Search/Results?lookfor=Java%21&type=AllFields&lng=en-gb
-narod knihovna finsko pouza take finna
-https://kansalliskirjasto.finna.fi/Search/Results?lookfor=java\&type=AllFields
-nastoupila svuj vyvoj VuFindu: 
-http://www.kdk.fi/index.php/en/public-interface/software-development
-povidani o vufindu:
-http://slq.nu/?article=volume-46-no-3-2013-6
-https://www.kansalliskirjasto.fi/extra/bulletin/hi3.html
-
+Napojení discovery systému EBSCO je moné vidìt v katalogu španìlské univerzitní knihovny Biblioteca de la Universidad de Oviedo, je bìí v linuxové distribuci operaèního systému CentOS s napojením na integrovanı knihovnickı systém Amicus. 
 
 !installations!
 \cite{vufind.org}
 
-èeské
-Moravská zemská knihovna - více instalací - Èíst Brno,..
-Mìstská knihovna Èeská Tøebová - 2.3, Bootstrap3, Debian, Koha
-Mìstská knihovna Ústí nad Orlicí - 2.4.1, Bootstrap3, Debian, Koha
+Vıraznım pøípadem vyuití svobodného softwaru VuFind je katalog Finna, veøejné webové rozhraní Národní knihovny Finska. Tato platforma uivatelùm nabízí vyhledávání napøíè finskımi archivy, knihovnami a muzei. Na konci roku 2013 byla uvolnìna první verze Finna 1.0. V té dobì obsahoval katalog kolem 9 milionù záznamù a od té doby poèet stoupá, protoe stále více a více knihoven, archivù a muzeí se pøipojuje k tomuto spoleèenství. Pøispívají jak svımi sbírkami, tak také spolupracují na vıvoji aplikace, její garantem zùstává Národní knihovna Finska.
+Záznamy v katalogu Finna lze napøíklad sdílet na sociálních sítích Facebook, Twitter a Pinterest. Dalším postøehem je fakt, e v tomto katalogu se pøi vısledcích vyhledávání statusy dostupnosti naèítají u záznamù, které jsou aktuálnì vidìt ve vıseku obrazovky a ne automaticky u všech záznamù, které jsou na celé stránce i v èástech mimo obrazovku. Pro ty je nutné obrazovku skrolovat.
+Stále rostoucí komunita VuFindu je celosvìtovì propojena a spolupracující. Tento finskı projekt je velkım pøispìvatelem do hlavní vìtve vıvoje VuFindu. Nicménì disponuje samozøejmì i vlastní oddìlenou vıvojovou vìtví. Nìkterá rozšíøení VuFindu se tìmito vìtvemi prolínají. Jedním ze spoleènıch rozšíøení pro VuFind je integrace statistického nástroje Piwik, která pochází právì od finskıch vıvojáøù. Zatímco moduly Record Manager a Admin Interface jsou rozšíøení typická pro katalog Finna. Modul Admin Interface umoòuje pøipojujícím se institucím do katalogu Finna spravovat nastavení svého dílèího rozhraní; nastavovat vlastní verzi katalogu Finna vèetnì grafického vzhledu a vıbìru pouitıch vyhledávacích nástrojù. Modul Record Manager slouí ke správì záznamù; jejich exportu, sklízení, importu, normalizaci atd\cite{record.manager}. Také øeší zajímavou problematiku duplicit záznamù a jejich následnou deduplikaci, k èemu dochází právì v takovém prostøedí, kde se integruje více institucionálních sbírek dohromady. 
+\cite{head.of.devel}
 
-Soubornı katalog Akademie vìd ÈR - pouzivaji opensearch, libi se mi, jak jsou reseny ty ustavy, pro kazdej je jinej index.
+obrázek
+\cite{ndl.vufind}
+tøeba ještì nìco napsat odtud
+\cite{finna}
 
-CPK 
+Podobnı problém duplicit záznamù stojí pøed právì probíhajícím projektem CPK (Centrální portál knihoven) v Èeské republice. Vıvojovı tım tohoto projektu vede a zastøešuje Moravská zemská knihovna, která má s VuFindem letité zkušenosti a kromì tohoto projektu stojí za vznikem portálu ÈístBrno, jeho katalogem je také VuFind. Právì kvùli CPK vyvíjí alternativní modul Record Manager 2, kterı na rozdíl od finské varianty je programován v programovacím jazyce Java a má ambice bít robustnìjší \cite{record.manager.2}. Projekt CPK má za cíl sdruit vyhledávání pro 40 knihoven a stát se tak nejvìtším a nejrobustnìjším discovery prostøedím v Èeské republice.
+\cite{cpk}
+Uivatelské rozhraní VuFind má v tomto pøípadì velkı potenciál pro tuzemskı vıvoj. Jednou z ambicí tohoto vıvoje je implementace doruèovacích slueb; elektronické dodávání dokumentù a meziknihovní vıpùjèní sluba. Návrh databáze pro tyto úèely pøedstavuje následující obrázek (autor Daniel Mareèek).
+
+Mezi další tuzemské instituce s vyhledávaèem VuFind patøí Mìstská knihovna Èeská Tøebová, její instalace verze VuFind 2.3 v prostøedí linuxové distribuce operaèního systému Debian je propojena s integrovanım knihovnickım systémem Koha.
+Mìstská knihovna Ústí nad Orlicí provozuje VuFind 2.4.1 také v linuxové distribuci operaèního systému Debian s napojením na integrovanı knihovnickı systém Koha. Grafickı vzhled katalogù obou knihoven vychází ze standardu Bootstrap3.
+
+Soubornı katalog Akademie vìd ÈR pro webové rozhraní také pouívá VuFind a to verzi z øady 1.x. Zde je mono prohledávat ve všech ústavech najednou, nebo také v kadém ústavu samostatnì, co znamená, e pro kadı ústav existuje oddìlenı index. V této instalaci je nastaveno pouití technologie OpenSearch.
+\url{https://vufind.lib.cas.cz/}
 
 Koha komunity ma VuFind - nìkolik knihoven ÈR - Polièka, Turnov, Neratovice, Jablonec, Frenštát. 
 
-Yale University Library nìjakı èas testovala VuFind pod pracovním názvem YuFind. Ale k pouití v provozu nedošlo. http://campuspress.yale.edu/libraryitnews/tag/yufind/
+Zajímavı pøípad, kdy se po testování portálu VuFind rozhodlo pro vıbìr jiného øešení, se odehrál v americké univerzitní knihovnì Yale University Library. Nìjakı èas testování probíhalo pod pracovním názvem YuFind, ale k pouití v ostrém provozu nedošlo.\cite{yale}
 
-o centralnich indexech a discovery
-http://oldknihovna.nkp.cz/knihovnaplus121/coufal.htm

@@ -17,13 +17,17 @@
 
 \renewcommand{\baselinestretch}{1.5}
 \pagestyle{empty} % vypne èíslování stránek
-
+\pagestyle{empty} % vypne èíslování stránek
 \begin{document}
-
+\pagestyle{empty} % vypne èíslování stránek
 \tableofcontents
+\pagestyle{empty} % vypne èíslování stránek
 
 \chapter{Úvod}
 \input{chapters/introduction}
+\pagestyle{plain}     % zapne obyèejné èíslování
+\setcounter{page}{5}  % nastaví èítaè stránek znovu od jedné
+\pagenumbering{arabic} % èíslování øímskými èíslicemi
 \section{Historie NTK}
 \input{chapters/historieNTK}
 \section{O VuFindu (pøedstavení systému)}
@@ -72,7 +76,7 @@
 \section{PSH}
 \input{chapters/psh}
 
-\chapter{Svobodý software}
+\chapter{Svobodý software pro knihovny}
 \input{chapters/opensource}
 \section{Blacklight}
 \input{chapters/blacklight}
@@ -150,6 +154,17 @@ FOGEL, Karl. Tvorba open source softwaru: jak øídit úspìšný projekt svobodného s
 
 \bibitem{git}
 Git - Správa verzí. Git [online]. [cit. 2016-06-13]. Dostupné z: https://git-scm.com/book/cs/v1/Úvod-Správa-verzí
+
+
+\bibitem{vufind.org.install} 
+Installation:fedora [VuFind Documentation]. VuFind - Search. Discover. Share. [online]. [cit. 2016-06-10]. Dostupné z: https://vufind.org/wiki/installation:fedora
+
+\bibitem{vufind.org.installations} 
+Community:installations [VuFind Documentation]. VuFind - Search. Discover. Share. [online]. [cit. 2016-06-10]. Dostupné z: 
+https://vufind.org/wiki/community:installations
+
+\bibitem{finna.vufind}
+https://finna.fi/
 
 \bibitem{ndl.vufind}
 http://www.kdk.fi/index.php/en/public-interface/software-development

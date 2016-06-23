@@ -13,16 +13,10 @@
     urlcolor=black
 }
 \graphicspath{ {images/} }
-\usepackage[nottoc,notlot,notlof]{tocbibind}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhead{}
-\fancyhead[RO,LE]{Thesis Title}
-\fancyfoot{}
-\fancyfoot[LE,RO]{\thepage}
-\fancyfoot[LO,CE]{Chapter \thechapter}
-\fancyfoot[CO,RE]{Author Name}
+\usepackage[nottoc,notlot]{tocbibind}
+
 \renewcommand{\baselinestretch}{1.5}
+\pagestyle{empty} % vypne èíslování stránek
 
 \begin{document}
 
@@ -93,9 +87,15 @@
 \input{chapters/instalace}
 \section{Implementace}
 \input{chapters/implementace}
-\subsection{Kustomizace}
+\subsection{Import dat - SolrMarc}
+\input{chapters/import}
+\subsection{Indexace dat - Solr}
+\input{chapters/solr}
+\subsection{Sklízení dat - OAI-PMH}
+\input{chapters/harvest}
+\subsection{Kustomizace - šablony}
 \input{chapters/kustomizace}
-\subsection{WorkFlow}
+\subsection{WorkFlow vývoje}
 \input{chapters/workflow}
 \section{Provoz}
 \input{chapters/provoz}
@@ -110,6 +110,8 @@
 \input{chapters/conclusion}
 
 \medskip
+
+\listoffigures
 
 \begin{thebibliography}{9}
 \bibitem{techlib} 
@@ -174,6 +176,8 @@ http://slq.nu/?article=volume-46-no-3-2013-6
 \bibitem{evergreen.ctenar}
 CERNIÒÁKOVÁ, Eva. Knihovní systém s otevøeným zdrojovým kódem v Knihovnì Jabok. ÈTENÁØ – MÌSÍÈNÍK PRO KNIHOVNY [online]. 2012, 64(2) [cit. 2016-06-15]. ISSN 1805-4064. Dostupné z: http://ctenar.svkkl.cz/clanky/2012-roc-64/2-2012/knihovni-system-s-otevrenym-zdrojovym-kodem-v-knihovne-jabok-94-1138.htm
 \end{thebibliography}
+
+
 
 \appendix
 \chapter{Pøíloha}

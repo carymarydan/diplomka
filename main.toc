@@ -44,11 +44,15 @@
 \contentsline {chapter}{\numberline {4}VuFind v NTK}{14}{chapter.4}
 \contentsline {section}{\numberline {4.1}Instalace}{14}{section.4.1}
 \contentsline {section}{\numberline {4.2}Implementace}{16}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Kustomizace}{16}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}WorkFlow}{16}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Provoz}{16}{section.4.3}
-\contentsline {chapter}{\numberline {5}Pou\v zit\IeC {\'\i } VuFindu v ostatn\IeC {\'\i }ch knihovn\'ach (\v CR, zahrani\v c\IeC {\'\i })}{17}{chapter.5}
-\contentsline {chapter}{\numberline {6}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{21}{chapter.6}
-\contentsline {chapter}{\numberline {7}Z\'av\v er (zhodnocen\IeC {\'\i })}{22}{chapter.7}
-\contentsline {chapter}{Literatura}{23}{chapter*.16}
-\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{25}{appendix.A}
+\contentsline {subsection}{\numberline {4.2.1}Import dat - SolrMarc}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Indexace dat - Solr}{16}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Skl\IeC {\'\i }zen\IeC {\'\i } dat - OAI-PMH}{16}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Kustomizace - \v sablony}{16}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}WorkFlow v\'yvoje}{17}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Provoz}{17}{section.4.3}
+\contentsline {chapter}{\numberline {5}Pou\v zit\IeC {\'\i } VuFindu v ostatn\IeC {\'\i }ch knihovn\'ach (\v CR, zahrani\v c\IeC {\'\i })}{18}{chapter.5}
+\contentsline {chapter}{\numberline {6}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{24}{chapter.6}
+\contentsline {chapter}{\numberline {7}Z\'av\v er (zhodnocen\IeC {\'\i })}{25}{chapter.7}
+\contentsline {chapter}{Seznam obr\'azk\r {u}}{26}{chapter*.16}
+\contentsline {chapter}{Literatura}{27}{chapter*.17}
+\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{29}{appendix.A}

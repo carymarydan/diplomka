@@ -29,11 +29,15 @@
 \BOOKMARK [0][-]{chapter.4}{VuFind v NTK}{}% 29
 \BOOKMARK [1][-]{section.4.1}{Instalace}{chapter.4}% 30
 \BOOKMARK [1][-]{section.4.2}{Implementace}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.2.1}{Kustomizace}{section.4.2}% 32
-\BOOKMARK [2][-]{subsection.4.2.2}{WorkFlow}{section.4.2}% 33
-\BOOKMARK [1][-]{section.4.3}{Provoz}{chapter.4}% 34
-\BOOKMARK [0][-]{chapter.5}{Pou\236it\355 VuFindu v ostatn\355ch knihovn\341ch \(CR, zahranic\355\)}{}% 35
-\BOOKMARK [0][-]{chapter.6}{Budouc\355 v\375voj syst\351mu}{}% 36
-\BOOKMARK [0][-]{chapter.7}{Z\341ver \(zhodnocen\355\)}{}% 37
-\BOOKMARK [0][-]{chapter*.16}{Literatura}{}% 38
-\BOOKMARK [0][-]{appendix.A}{Pr\355loha}{}% 39
+\BOOKMARK [2][-]{subsection.4.2.1}{Import dat - SolrMarc}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.2}{Indexace dat - Solr}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.3}{Skl\355zen\355 dat - OAI-PMH}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.4}{Kustomizace - \235ablony}{section.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.2.5}{WorkFlow v\375voje}{section.4.2}% 36
+\BOOKMARK [1][-]{section.4.3}{Provoz}{chapter.4}% 37
+\BOOKMARK [0][-]{chapter.5}{Pou\236it\355 VuFindu v ostatn\355ch knihovn\341ch \(CR, zahranic\355\)}{}% 38
+\BOOKMARK [0][-]{chapter.6}{Budouc\355 v\375voj syst\351mu}{}% 39
+\BOOKMARK [0][-]{chapter.7}{Z\341ver \(zhodnocen\355\)}{}% 40
+\BOOKMARK [0][-]{chapter*.16}{Seznam obr\341zku}{}% 41
+\BOOKMARK [0][-]{chapter*.17}{Literatura}{}% 42
+\BOOKMARK [0][-]{appendix.A}{Pr\355loha}{}% 43

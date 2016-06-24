@@ -26,7 +26,7 @@
 \contentsline {subsection}{\numberline {2.1.6}Testovac\IeC {\'\i } server VuFind + Summon}{8}{subsection.2.1.6}
 \contentsline {section}{\numberline {2.2}Software}{8}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}RedHat}{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Firewall}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Firewall}{9}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Zabbix}{9}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}SSH}{9}{subsection.2.2.4}
 \contentsline {subsection}{\numberline {2.2.5}Cron}{9}{subsection.2.2.5}
@@ -35,24 +35,24 @@
 \contentsline {subsection}{\numberline {2.2.8}Java}{9}{subsection.2.2.8}
 \contentsline {subsection}{\numberline {2.2.9}MySQL}{9}{subsection.2.2.9}
 \contentsline {subsection}{\numberline {2.2.10}ZendFramework}{9}{subsection.2.2.10}
-\contentsline {subsection}{\numberline {2.2.11}GIT}{9}{subsection.2.2.11}
+\contentsline {subsection}{\numberline {2.2.11}GIT}{10}{subsection.2.2.11}
 \contentsline {section}{\numberline {2.3}PSH}{10}{section.2.3}
 \contentsline {chapter}{\numberline {3}Svobod\'y software pro knihovny}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Blacklight}{12}{section.3.1}
 \contentsline {section}{\numberline {3.2}Evergreen}{12}{section.3.2}
 \contentsline {section}{\numberline {3.3}Koha}{12}{section.3.3}
 \contentsline {chapter}{\numberline {4}VuFind v NTK}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Instalace}{13}{section.4.1}
+\contentsline {section}{\numberline {4.1}Instalace}{14}{section.4.1}
 \contentsline {section}{\numberline {4.2}Implementace}{15}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Import dat - SolrMarc}{15}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Indexace dat - Solr}{15}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Skl\IeC {\'\i }zen\IeC {\'\i } dat - OAI-PMH}{15}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Kustomizace - \v sablony}{15}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}WorkFlow v\'yvoje}{16}{subsection.4.2.5}
-\contentsline {section}{\numberline {4.3}Provoz}{16}{section.4.3}
-\contentsline {chapter}{\numberline {5}Pou\v zit\IeC {\'\i } VuFindu v ostatn\IeC {\'\i }ch knihovn\'ach (\v CR, zahrani\v c\IeC {\'\i })}{17}{chapter.5}
-\contentsline {chapter}{\numberline {6}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{26}{chapter.6}
-\contentsline {chapter}{\numberline {7}Z\'av\v er (zhodnocen\IeC {\'\i })}{27}{chapter.7}
-\contentsline {chapter}{Seznam obr\'azk\r {u}}{28}{chapter*.16}
-\contentsline {chapter}{Literatura}{29}{chapter*.17}
-\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{31}{appendix.A}
+\contentsline {subsection}{\numberline {4.2.1}Import dat - SolrMarc}{16}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Indexace dat - Solr}{16}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Skl\IeC {\'\i }zen\IeC {\'\i } dat - OAI-PMH}{16}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Kustomizace - \v sablony}{17}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}WorkFlow v\'yvoje}{17}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Provoz}{17}{section.4.3}
+\contentsline {chapter}{\numberline {5}Pou\v zit\IeC {\'\i } VuFindu v ostatn\IeC {\'\i }ch knihovn\'ach (\v CR, zahrani\v c\IeC {\'\i })}{18}{chapter.5}
+\contentsline {chapter}{\numberline {6}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{27}{chapter.6}
+\contentsline {chapter}{\numberline {7}Z\'av\v er (zhodnocen\IeC {\'\i })}{28}{chapter.7}
+\contentsline {chapter}{Seznam obr\'azk\r {u}}{29}{chapter*.16}
+\contentsline {chapter}{Literatura}{30}{chapter*.17}
+\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{32}{appendix.A}

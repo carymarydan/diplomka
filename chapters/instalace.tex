@@ -10,7 +10,7 @@ yum install java-*-openjdk-devel
 \end{verbatim}
 Nyní pøichází na øadu stažení samotného systému VuFind. To je možné provést z úložištì \url{https://sourceforge.net/projects/vufind/files/VuFind/}, kde jsou k dispozici všechny verze VuFindu od jeho vzniku až po souèasnost. V našem pøípadì stahujeme poslední verzi, tedy verzi 2.3.1, pøíkazem:
 \begin{verbatim}
-wget http://downloads.sourceforge.net/vufind/vufind-2.3.1.tar.gz?use_mirror=osdn -O vufind-3.0.1.tar.gz
+wget http://downloads.sourceforge.net/vufind/vufind-2.3.1.tar.gz?use_mirror=osdn -O vufind-2.3.1.tar.gz
 \end{verbatim}
 Po rozbalení staženého archivu, spustíme instalaci VuFindu pøíkazem:
 \begin{verbatim}
@@ -31,7 +31,7 @@ setenforce 0
 \end{verbatim}
 Když je VuFind úspìšnì nainstalován a okolní prostøedí správnì nastaveno, zapíná se v koøenovém adresáøi spouštìcím skriptem s parametrem start takto:
 \begin{verbatim}
-./solr.sh start
+./vufind.sh start
 \end{verbatim}
 V tuto chvíli se v otevøeném prohlížeèi po zadání pøíslušné URL zobrazí úvodní stránka novì nainstalovaného portálu VuFind.
 \cite{vufind.org}
@@ -45,4 +45,5 @@ Nyní nastává fáze tzv. automatické konfigurace, která probíhá na URL adresa-vufi
 \label{fig:auto-conf}
 \end{figure}
 
+V tuto chvíli je VuFind pøipraven k implementaci konkrétních potøeb knihovny a pøizpùsobení danému prostøedí.
 

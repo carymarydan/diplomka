@@ -28,85 +28,91 @@
 \pagestyle{plain}     % zapne obyèejné èíslování
 \setcounter{page}{5}  % nastaví èítaè stránek znovu od jedné
 \pagenumbering{arabic} % èíslování øímskými èíslicemi
-\section{Historie NTK}
-\input{chapters/historieNTK}
-\section{O VuFindu (pøedstavení systému)}
-\input{chapters/vufind}
+	\section{Historie NTK}
+	\input{chapters/historieNTK}
+	\section{Pøedstavení portálu VuFind}
+	\input{chapters/vufind}
+		\subsection{Klíèové vlastnosti}
+		\input{chapters/vlastnosti}
+		\subsection{Požadavky na hw a sw}
+		\input{chapters/requirements}
 
 \chapter{(Virtuální) prostøedí NTK}
 \input{chapters/chapter02}
- \section{Servery}
- \input{chapters/hwntk}
-  \subsection{Server Aleph}
-  \input{chapters/aleph}
-  \subsection{Server SFX}
-  \input{chapters/sfx}
-  \subsection{Server VuFind 1.x}
-  \input{chapters/vufind1}
-  \subsection{Server VuFind 2.x}
-  \input{chapters/vufind2}
-  \subsection{Testovací server VuFind}
-  \input{chapters/vufind-test}
-  \subsection{Testovací server VuFind + Summon}
-  \input{chapters/vufind-eiz}
- \section{Software}
- \input{chapters/swntk}
-  \subsection{Operaèní systém}
-  \input{chapters/redhat}
-  \subsection{Zabezpeèení}
-  \input{chapters/firewall}
-  \subsection{Web server}
-  \input{chapters/apache}  
-  \subsection{Java server}
-  \input{chapters/java}  
-  \subsection{Databázový server}
-  \input{chapters/mysql}
-  \subsection{ZendFramework}
-  \input{chapters/zendframework}  
-  \subsection{Zabbix}
-  \input{chapters/zabbix}
-  \subsection{SSH}
-  \input{chapters/ssh}
-  \subsection{Cron}
-  \input{chapters/cron}
-  \subsection{Shibboleth}
-  \input{chapters/shibboleth}
-  \subsection{GIT}
-  \input{chapters/git}
- \section{PSH}
- \input{chapters/psh}
+	\section{Servery}
+ 	\input{chapters/hwntk}
+  		\subsection{Server Aleph}
+  		\input{chapters/aleph}
+  		\subsection{Server SFX}
+  		\input{chapters/sfx}
+  		\subsection{Server VuFind 1.x}
+  		\input{chapters/vufind1}
+  		\subsection{Server VuFind 2.x}
+  		\input{chapters/vufind2}
+  		\subsection{Testovací server VuFind}
+  		\input{chapters/vufind-test}
+  		\subsection{Testovací server VuFind + Summon}
+		\input{chapters/vufind-eiz}
+	\section{Software}
+	\input{chapters/swntk}
+  		\subsection{Operaèní systém}
+  		\input{chapters/redhat}
+  		\subsection{Zabezpeèení}
+  		\input{chapters/firewall}
+  		\subsection{Web server}
+  		\input{chapters/apache}  
+  		\subsection{Java server}
+  		\input{chapters/java}  
+  		\subsection{Databázový server}
+  		\input{chapters/mysql}
+  		\subsection{ZendFramework}
+  		\input{chapters/zendframework}  
+  		\subsection{Zabbix}
+  		\input{chapters/zabbix}
+  		\subsection{SSH}
+  		\input{chapters/ssh}
+  		\subsection{Cron}
+  		\input{chapters/cron}
+  		\subsection{Shibboleth}
+  		\input{chapters/shibboleth}
+  		\subsection{GIT}
+  		\input{chapters/git}
+	\section{PSH}
+	\input{chapters/psh}
 
 \chapter{Svobodý software pro knihovny}
 \input{chapters/opensource}
-\section{Blacklight}
-\input{chapters/blacklight}
-\section{Evergreen}
-\input{chapters/evergreen}
-\section{Koha}
-\input{chapters/koha}
+	\section{Blacklight}
+	\input{chapters/blacklight}
+	\section{Evergreen}
+	\input{chapters/evergreen}
+	\section{Koha}
+	\input{chapters/koha}
 
 \chapter{VuFind v NTK}
 \input{chapters/chapter03}
- \section{Instalace}
- \input{chapters/instalace}
- \section{Implementace}
- \input{chapters/implementace}
-  \subsection{Autentikace}
-  \input{chapters/import}
-  \subsection{Import dat - SolrMarc}
-  \input{chapters/import}
-  \subsection{Indexace dat - Solr}
-  \input{chapters/solr}
-  \subsection{Sklízení dat - OAI-PMH}
-  \input{chapters/harvest}
-  \subsection{Grafický design}
-  \input{chapters/kustomizace}
-  \subsection{Ètenáøské konto}
-  \input{chapters/kustomizace}
- \section{Provoz}
- \input{chapters/provoz}
-  \subsection{WorkFlow vývoje}
-  \input{chapters/workflow}
+	\section{Instalace}
+ 	\input{chapters/instalace}
+ 	\section{Implementace}
+ 	\input{chapters/implementace}
+ 	  	\subsection{Konfiguraèní soubory}
+  		\input{chapters/config}
+  		\subsection{Autentikace}
+  		\input{chapters/shibboleth}
+  		\subsection{Import dat - SolrMarc}
+  		\input{chapters/import}
+  		\subsection{Indexace dat - Solr}
+  		\input{chapters/solr}
+  		\subsection{Sklízení dat - OAI-PMH}
+  		\input{chapters/harvest}
+  		\subsection{Grafický design}
+  		\input{chapters/kustomizace}
+  		\subsection{Ètenáøské konto}
+  		\input{chapters/kustomizace}
+	\section{Provoz}
+	\input{chapters/provoz}
+ 	\section{WorkFlow}
+ 	\input{chapters/workflow}
 
 \chapter{Použití VuFindu v ostatních knihovnách (ÈR, zahranièí)}
 \input{chapters/chapter04}
@@ -194,6 +200,11 @@ http://slq.nu/?article=volume-46-no-3-2013-6
 
 \bibitem{evergreen.ctenar}
 CERNIÒÁKOVÁ, Eva. Knihovní systém s otevøeným zdrojovým kódem v Knihovnì Jabok. ÈTENÁØ – MÌSÍÈNÍK PRO KNIHOVNY [online]. 2012, 64(2) [cit. 2016-06-15]. ISSN 1805-4064. Dostupné z: http://ctenar.svkkl.cz/clanky/2012-roc-64/2-2012/knihovni-system-s-otevrenym-zdrojovym-kodem-v-knihovne-jabok-94-1138.htm
+
+\bibitem{local.conf}
+https://vufind.org/wiki/configuration:local\_settings\_directory
+\bibitem{conf.files}
+https://vufind.org/wiki/configuration:files
 \end{thebibliography}
 
 

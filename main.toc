@@ -49,17 +49,17 @@
 \contentsline {subsection}{\numberline {4.2.1}Konfigura\v cn\IeC {\'\i } soubory}{17}{subsection.4.2.1}
 \contentsline {paragraph}{config.ini}{18}{section*.16}
 \contentsline {paragraph}{Aleph.ini}{19}{section*.17}
-\contentsline {paragraph}{facets.ini}{19}{section*.18}
-\contentsline {paragraph}{searchbox.ini}{19}{section*.19}
-\contentsline {paragraph}{searches.ini}{19}{section*.20}
+\contentsline {paragraph}{facets.ini}{20}{section*.18}
+\contentsline {paragraph}{searchbox.ini}{20}{section*.19}
+\contentsline {paragraph}{searches.ini}{20}{section*.20}
 \contentsline {paragraph}{searchspecs.yaml}{20}{section*.21}
 \contentsline {subsection}{\numberline {4.2.2}Autentikace}{20}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Import dat - SolrMarc}{20}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Indexace dat - Solr}{20}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Skl\IeC {\'\i }zen\IeC {\'\i } dat - OAI-PMH}{20}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Grafick\'y design}{20}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}\v Cten\'a\v rsk\'e konto}{20}{subsection.4.2.7}
-\contentsline {section}{\numberline {4.3}Provoz}{20}{section.4.3}
+\contentsline {subsection}{\numberline {4.2.3}Import dat - SolrMarc}{21}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Indexace dat - Solr}{21}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Skl\IeC {\'\i }zen\IeC {\'\i } dat - OAI-PMH}{21}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Grafick\'y design}{21}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}\v Cten\'a\v rsk\'e konto}{21}{subsection.4.2.7}
+\contentsline {section}{\numberline {4.3}Provoz}{21}{section.4.3}
 \contentsline {section}{\numberline {4.4}WorkFlow}{21}{section.4.4}
 \contentsline {chapter}{\numberline {5}Pou\v zit\IeC {\'\i } VuFindu v ostatn\IeC {\'\i }ch knihovn\'ach (\v CR, zahrani\v c\IeC {\'\i })}{22}{chapter.5}
 \contentsline {chapter}{\numberline {6}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{31}{chapter.6}

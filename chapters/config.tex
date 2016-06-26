@@ -22,15 +22,21 @@ Tento primární konfiguraèní soubor obsahuje mnoho globálních nastavení systému. 
 Jelikož naším integrovaným knihovnickým systémem je Aleph, konfiguraèní soubor, který upøesòuje informace o tomto systému se jmenuje Aleph.ini. V pøípadì používání jiného ILS, napøíklad Koha, se konfiguraèní soubor pro nastavení upøesòujících informací o systému jmenuje Koha.ini. Je zde zadáno adresa, na které ILS Aleph bìží, tedy aleph.techlib.cz. Dále jméno báze, které je STK01. To je použito pøi vytváøení dotazu na X-server Alephu, pro získání informací o konkrétní knihovní jednotce. Jsou zde také uvedeny dvì zkratky PUJC a BHF, které znamenají Pùjèovna a Badatelna historického fondu a oznaèují tak místa vyzvednutí, kde lze po rezervaci knihovní jednotky oèekávat její výdej. V uživatelském rozhraní se však Pùjèovna zobrazuje jako Centrální pult, protože tak je ve druhém nadzemním podlaží reálnì oznaèena. Dále je zde obvykle uvedena cesta k umístìní souboru, který obsahuje pøevodní tabulky kódù umístìní jednotek, dílèích knihoven, statusù jednotek, atd., jež vrací na dotaz Aleph ve formátu XML spoleènì s dalšími informacemi, které nejsou v indexu VuFindu a musí se tak naèítat v reálném èase pøi prohlížení konkrétních záznamù v katalogu. V našem prostøedí je však naèítání tohoto souboru s názvem AlephTables.php a umístìním ve složce aleph\_tab v koøenovém adresáøi øešeno jiným zpùsobem. A to tak, že se soubor naèítá pøímo z ovladaèe Alephu, kterým je:
 /module/ntk\_module/src/ntk\_module/ILS/Driver/Aleph.php
 
+
+Vychází se z výchozích souborù a popsány jsou jen zmìny, které v nich jsou provedeny dle potøeb prostøedí Národní technické knihovny.
+
 \paragraph{facets.ini}
-
-Jak název napovídá, v tomto konfiguraèním souboru se nastavuje vše, co se týká faset. Fasety se zobrazují na dvou místech v katalogu; v pravé èásti obrazovky pøi výsledcích vyhledávání a na stránce pokroèilého vyhledávání.
-
-z gitu:
-V pokroèilém vyhledávání je skryta faseta Ilustrováno, která specifikuje, zda budou výsledky vyhledávání obsahovat ilustraci, èi nikoli. Provádí se parametrem special_facets. Informace o ilustraci se pøebírá z MARC záznamu z pole XXX.  
+Jak název napovídá, v tomto konfiguraèním souboru se nastavuje vše, co se týká faset. Fasety se v katalogu zobrazují na dvou místech; v pravé èásti obrazovky pøi výsledcích vyhledávání a na stránce pokroèilého vyhledávání. Do seznamu faset, které se mají zobrazit je pøidána faseta Sbírka, faseta PSH a faseta Digitalizace. Naopak vyøazena je faseta Období. Nastavena je tu také ta vlastnost faset, že jednotlivé položky faset se mohou z výsledkù vyhledávání vylouèit. V pokroèilém vyhledávání je skryta faseta Ilustrováno, která specifikuje, zda budou výsledky vyhledávání obsahovat ilustraci, èi nikoli. Provádí se parametrem special\_facets. Informace o ilustraci se pøebírá z MARC záznamu z pole XXX. Dále je nastaveno, že hodnoty faset mají podléhat jazykovým mutacím, tedy pøekládat se do jazykù podle nastavení uživatele.
 
 \paragraph{searchbox.ini}
+Tento konfiguraèní soubor ovlivòuje nastavení vyhledávacího pole. Tzv. kombinované vyhledávání, neboli vyhledávání v lokálním indexu katalogu a zároveò v elektronických informaèních zdrojích poskytované službou Summon, se zde aktivuje parametrem combinedHandlers a je využito na testovacím serveru VuFindu (vufind-eiz.test) pro tyto úèely zøízeném. Toto vyhledávání lze použít také v kombinaci napøíklad s vyhledáváním Google.
+
+\paragraph{combined.ini}
+Tento konfiguraèní soubor je využit v pøípadì použití kombinovaného vyhledávání pro nastavení štítkù a popiskù jednotlivým indexùm. Ty specifikují uživateli o jaké báze se jedná, jestli jde napøíklad o lokální fyzický fond knihovny nebo o vzdálené elektronické informaèní zdroje.
+
 \paragraph{searches.ini}
+Globální nastavení chování vyhledávání obsahuje právì tento konfiguraèní soubor.
+
 \paragraph{searchspecs.yaml}
 
 

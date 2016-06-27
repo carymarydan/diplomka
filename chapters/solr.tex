@@ -1,2 +1,13 @@
 \label{sec:solr}
-Solr žšèø
+Jak již bylo zmínìno, indexaèním nástrojem VuFindu je Solr umístìný ve složce \texttt{solr} koøenového adresáøe. Tato komponenta portálu VuFind komunikuje s uživatelským rozhraním na portu, který se definuje v konfiguraèním souboru \texttt{config.ini}. Obvykle je to èíslo portu 8080, v prostøedí Národní technické knihovny tomu není jinak, až na výjimku testovacích serverù, kde bìží nìkolik instancí Solru na jednom serveru spoleènì a tedy nìkterá tato komunikace probíhá na portu 8181, konkrétnì v pøípadì serveru VuFind.test. Druhým místem, kde je nutné toto èíslo shodnì uvést, je v samotné konfiguraci Java serveru Jetty. Soubor se nachází zde:
+\begin{verbatim}
+/var/www/vufind/solr/jetty/etc/jetty.xml
+\end{verbatim}
+V souboru \texttt{solr.xml} se definují jádra Solru, potažmo indexy. Mùže jich zde být zapsáno hned nìkolik, v prostøedí NTK jsou to jádra \textit{biblio}, které je výchozím jádrem a jádro \textit{authority}, které je použito na index Polytematického strukturovaného hesláøe. Zápis pro hlavní index vypadá takto:
+\begin{verbatim}
+<core schema="schema.xml" loadOnStartup="true" instanceDir="biblio/" transient="false" name="biblio" config="solrconfig.xml"/>
+\end{verbatim}
+Jak je vidìt ze zápisu výše, pro každý index existuje samostatný adresáø, pro hlavní jádro VuFindu je tedy vytvoøen adresáø \texttt{biblio}. Zde se nachází nìkolik podadresáøù, z nichž \texttt{conf} obsahuje nezbytné nastavení Solru. 
+
+
+Samotný index se nachází

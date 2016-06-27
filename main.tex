@@ -16,12 +16,18 @@
 \usepackage[nottoc,notlot]{tocbibind}
 
 \renewcommand{\baselinestretch}{1.5}
+\usepackage{indentfirst}
+\setlength{\parindent}{4em}
+
+
 \pagestyle{empty} % vypne èíslování stránek
 \pagestyle{empty} % vypne èíslování stránek
 \begin{document}
 \pagestyle{empty} % vypne èíslování stránek
 \tableofcontents
 \pagestyle{empty} % vypne èíslování stránek
+
+
 
 \chapter{Úvod}
 \input{chapters/introduction}
@@ -105,10 +111,12 @@
   		\input{chapters/solr}
   		\subsection{Sklízení dat - OAI-PMH}
   		\input{chapters/harvest}
+  		\subsection{Vyhledávání}
+  		\input{chapters/searching}
   		\subsection{Grafický design}
   		\input{chapters/kustomizace}
   		\subsection{Ètenáøské konto}
-  		\input{chapters/kustomizace}
+  		\input{chapters/acount}
 	\section{Provoz}
 	\input{chapters/provoz}
  	\section{WorkFlow}
@@ -208,8 +216,14 @@ https://vufind.org/wiki/configuration:files
 
 \bibitem{shib.zdroj}
 https://www.eduid.cz/wiki/eduid/admins/faq/index
-\end{thebibliography}
 
+\bibitem{solrmarc}
+https://github.com/solrmarc/solrmarc/wiki/SolrMarc
+
+\bibitem{vufind.import}
+https://vufind.org/wiki/indexing:marc
+
+\end{thebibliography}
 
 
 \appendix

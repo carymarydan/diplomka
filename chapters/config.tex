@@ -35,15 +35,8 @@ Tento konfiguraèní soubor ovlivòuje nastavení vyhledávacího pole. Tzv. kombinova
 Tento konfiguraèní soubor je využit v pøípadì použití kombinovaného vyhledávání pro nastavení štítkù a popiskù jednotlivým indexùm. Ty specifikují uživateli o jaké báze se jedná, jestli jde napøíklad o lokální fyzický fond knihovny nebo o vzdálené elektronické informaèní zdroje.
 
 \paragraph{searches.ini}
-Globální nastavení chování vyhledávání obsahuje právì tento konfiguraèní soubor.
+Globální nastavení vyhledávání je obsaženo právì v tomto konfiguraèním souboru. Základní vyhledávání je rozšíøeno o možnost vyhledávání v poli Pøedmìtové heslo, Systémové èíslo a Stará Signatura. Tato svazková signatura je dnes využívána už spíše jen knihovníky NTK pro vyhledávání starších knih ve skladu knihovny, které ještì nemají novì pøidìlenou LCC signaturu. Ty samé možnosti vyhledávání v polích jsou pøidány i do pokroèilého vyhledávání. Dále se zde specifikuje modul doporuèených témat, který se zobrazuje nad výsledky vyhledávání a rozšiøuje tak uživateli obzor v daném vyhledávacím tématu. Konkrétnì je nastaveno, že pøi vyhledávání podle Pøedmìtového hesla se nad výsledky vyhledávání zobrazuje tento modul obsahující index pøedmìtových hesel Polytematického strukturovaného hesláøe, který díky hierarchickému uspoøádání umožòuje uživateli specifikovat èi zobecòovat téma vyhledávání. Je zde také možnost nastavení výchozího vyhledávacího filtru, což v podstatì znamená automatickou aktivaci fasety, která je aplikována pøi každém vyhledávání. Toho je využito v testovací verzi VuFindu pro elektronické informaèní zdroje, kde z indexu Summon jsou tímto zpùsobem vylouèeny záznamy fyzického fondu NTK. V neposlední øadì se zde nastavuje nabídka øazení výsledkù. Výchozí øazení je nastaveno podle Relevance, dalšími možnostmi jsou dle data vzestupnì i sestupnì, dle autor, signatury a názvu. Protože je požadováno, aby výskyt vyhledávacího výrazu byl zvýraznìn ve výsledcích vyhledávání, parametr highlighting je nastaven na hodnotu true.
 
 \paragraph{searchspecs.yaml}
-
-
-
-
-
-
-
-
+Právì relevance vyhledaných výsledkù se ovlivòuje tímto konfiguraèním souborem. V závislosti na pøedchozím nastavení je zde pøidáno vyhledávání v nových polích Stará signatura a Pøedmìtové heslo. 
 

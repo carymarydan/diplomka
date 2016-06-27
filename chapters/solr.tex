@@ -7,7 +7,20 @@ V souboru \texttt{solr.xml} se definují jádra Solru, potažmo indexy. Mùže jich z
 \begin{verbatim}
 <core schema="schema.xml" loadOnStartup="true" instanceDir="biblio/" transient="false" name="biblio" config="solrconfig.xml"/>
 \end{verbatim}
-Jak je vidìt ze zápisu výše, pro každý index existuje samostatný adresáø, pro hlavní jádro VuFindu je tedy vytvoøen adresáø \texttt{biblio}. Zde se nachází nìkolik podadresáøù, z nichž \texttt{conf} obsahuje nezbytné nastavení Solru. 
+Jak je vidìt ze zápisu výše, pro každý index existuje samostatný adresáø, pro hlavní jádro VuFindu je tedy vytvoøen adresáø \texttt{biblio}. Zde se nachází nìkolik podadresáøù, z nichž \texttt{conf} obsahuje nezbytné nastavení Solru. V tomto adresáøi se nachází souboru \texttt{schema.xml}, kde se definuje, jak bude vypadat schéma celého indexu \cite{solr.schema}. Pro prostøedí NTK je pøidána definice šesti polí, kterými jsou:
+\begin{itemize}
+\item article\_resource\_title
+\item article\_issn
+\item article\_resource\_related
+\item signature\_old
+\item psh\_facet
+\item digitized\_facet
+\end{itemize}
+První tøi pole se týkají èlánkù v katalogu, uchovávají se v nich informace o názvu èasopisu, ze kterého daný èlánek pochází, issn èasopisu pro linkování na výsledky vyhledávání s tímto issn, a doplòující informace jakými jsou napøíklad roèník èasopisu, popøípadì rozmezí stránek, na kterých se èlánek v èasopise nachází. Další pøidané pole v indexu je pro již zmiòovanou starou svazkovou signaturu. Pro indexování hesel z Polytechnického strukturovaného hesláøe je použito další pole v poøadí a v posledním poli se uchovává pøíznak digitalizace, zda jde o záznam zdigitalizovaný, obohacený nebo jde o záznam mapy.
+V souboru \texttt{stopwords.txt} je výèet slov, která se pøi indexaci ignorují. Jde vìtšinou o èasto se vyskytující slova, spojky a pøedložky, které nenesou žádnou informaci, mají zpravidla pouze syntaktický význam. Dalším souborem je \texttt{synonyms.txt}, kde je vždy na jednom øádku výèet synonym, které se indexují jako jedno slovo. Dùvodem je zvýšení efektivity vyhledávání, kdy pøi použití synonymních vyhledávacích výrazù dostáváme stejné výsledky \cite{solr.synonyms}. Obdobným souborem je \texttt{protwords.txt}, kde je možné uvést výrazy, které nebudou pøi indexování ani následném vyhledávání stematizována, èili nebudou se indexovat podobná slova rùzných tvarù pod jeden spoleèný kmen slova. Tento soubor je ve výchozím nastavení prázdný. Protože algoritmus stematizace je závislý na jazyku a èeský jazyk pøináší mnohá úskalí v tomto, soubor zùstává prázdný.
 
 
-Samotný index se nachází
+Alphabetical\_browse - zmìna solrconfig.xml + dalsich souboru
+https://vufind.org/wiki/indexing:alphabetical\_heading\_browse
+
+Samotný index se vedle adresáøe s konfigurací nachází v adresáøi \texttt{index}. Tento adresáø obsahuje soubory v binární podobì a nelze  je tedy editovat bìžným zpùsobem. K prohlížení indexu a dalších nastavení Solru, jako je schéma atd., slouží webové rozhraní.

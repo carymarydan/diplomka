@@ -1,2 +1,9 @@
 \label{sec:harest}
-Harvest OAI-PMH øèš
+Moná zde vysvìtlit OAI-PMH
+Pøed samotnım sklízením dat z externích zdrojù do VuFindu, potamo Solr indexu je tøeba provést patøièná nastavení. Pro tyto úèely se v koøenovém adresáøi systému nachází sloka \texttt{harvest}, která obsahuje potøebné skripty. Stejnì jako v pøípadì importu dat nebo nastavení konfiguraèních souborù i zde se pro lokální poadavky knihovny vytváøí alternativní sloka \texttt{harvest} v lokálním adresáøi \texttt{local} odkud se naèítají informace jako první. Pokud zde nìjaké nastavení chybí, aplikuje se konfigurace z nadøazeného adresáøe vıchozího. V pøípadì Národní technické knihovny se v umístìní
+\begin{verbatim}
+/var/www/vufind/local/harvest
+\end{verbatim}
+nachází upravená kopie souboru \texttt{oai.ini}, kde je nastaveno jméno adresáøe, do kterého se data sklízí. Tím je podadresáø \texttt{katalog\_ntk-update}. Dále je zde uvedena URL adresa zdroje, ze kterého se data sklízí, co je \texttt{http://aleph.techlib.cz/OAI}. Dalším parametrem k nastavení je \textit{set}, co je identifikátor sady urèené ke sklízení, kterou je NTK.
+
+\cite{vufind.oai}

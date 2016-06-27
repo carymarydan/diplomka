@@ -1,15 +1,13 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.6)  27 JUN 2016 19:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.26)  28 JUN 2016 00:08
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**main.tex
-(./main.tex
-LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 4 languages loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
-Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+**./main.tex
+(main.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -24,22 +22,21 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count88
@@ -55,26 +52,34 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg")
 
 Package geometry Warning: Over-specification in `h'-direction.
     `width' (426.79134pt) is ignored.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/cp1250.def
-File: cp1250.def 2008/03/30 v1.1d Input encoding file
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\cp1250.def"
+File: cp1250.def 2015/03/17 v1.2c Input encoding file
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2013/12/03 3.9h The Babel package
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2016/04/23 3.9r The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-czech/czech.ldf
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-czech\czech.ldf"
 Language: czech 2008/07/06 v3.1a Czech support from the babel system
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2013/12/03 3.9h Babel common definitions
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count91
 \U@D=\dimen111
 )
@@ -82,137 +87,137 @@ Package babel Info: Making " an active character on input line 172.
 \cs@wordlen=\count92
 Package babel Info: Making - an active character on input line 226.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/share/texlive/texmf-dist/tex/cslatex/base/il2enc.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\cslatex\base\il2enc.def"
 File: il2enc.def 1997/08/20 CSLaTeX
 )
-LaTeX Font Info:    Try loading font information for IL2+cmr on input line 100.
+LaTeX Font Info:    Try loading font information for IL2+cmr on input line 105.
 
 
-(/usr/share/texlive/texmf-dist/tex/cslatex/base/il2cmr.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\cslatex\base\il2cmr.fd"
 File: il2cmr.fd 1997/02/06 CSLaTeX font definitions
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
-File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 96.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count93
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2016/05/21 v6.83p Hypertext links for LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
-Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
-Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen114
 \Hy@linkcounter=\count94
 \Hy@pagecounter=\count95
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2016/05/21 v6.83p Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count96
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4443.
-Package hyperref Info: Link nesting OFF on input line 4448.
-Package hyperref Info: Hyper index ON on input line 4451.
-Package hyperref Info: Plain pages OFF on input line 4458.
-Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Hyper figures OFF on input line 4486.
+Package hyperref Info: Link nesting OFF on input line 4491.
+Package hyperref Info: Hyper index ON on input line 4494.
+Package hyperref Info: Plain pages OFF on input line 4501.
+Package hyperref Info: Backreferencing OFF on input line 4506.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4688.
+Package hyperref Info: Bookmarks ON on input line 4735.
 \c@Hy@tempcnt=\count97
 
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5041.
+LaTeX Info: Redefining \url on input line 5088.
 \XeTeXLinkMargin=\dimen115
 \Fld@menulength=\count98
 \Field@Width=\dimen116
 \Fld@charsize=\dimen117
-Package hyperref Info: Hyper figures OFF on input line 6295.
-Package hyperref Info: Link nesting OFF on input line 6300.
-Package hyperref Info: Hyper index ON on input line 6303.
-Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring OFF on input line 6315.
-Package hyperref Info: Link coloring with OCG OFF on input line 6320.
-Package hyperref Info: PDF/A mode OFF on input line 6325.
-LaTeX Info: Redefining \ref on input line 6365.
-LaTeX Info: Redefining \pageref on input line 6369.
+Package hyperref Info: Hyper figures OFF on input line 6342.
+Package hyperref Info: Link nesting OFF on input line 6347.
+Package hyperref Info: Hyper index ON on input line 6350.
+Package hyperref Info: backreferencing OFF on input line 6357.
+Package hyperref Info: Link coloring OFF on input line 6362.
+Package hyperref Info: Link coloring with OCG OFF on input line 6367.
+Package hyperref Info: PDF/A mode OFF on input line 6372.
+LaTeX Info: Redefining \ref on input line 6412.
+LaTeX Info: Redefining \pageref on input line 6416.
 \Hy@abspage=\count99
 \c@Item=\count100
 \c@Hfootnote=\count101
@@ -220,13 +225,13 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2016/05/21 v6.83p Hyperref driver for pdfTeX
 \Fld@listcount=\count102
 \c@bookmark@seq@number=\count103
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
@@ -234,16 +239,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 14.
 
-(/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-) (./main.aux
+)
+(main.aux
 
 LaTeX Warning: Label `sec:shibboleth' multiply defined.
 
@@ -301,7 +307,7 @@ LaTeX Font Info:    ... okay on input line 25.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count104
 \scratchdimen=\dimen118
@@ -314,23 +320,34 @@ LaTeX Font Info:    ... okay on input line 25.
 \MPnumerator=\count108
 \makeMPintoPDFobject=\count109
 \everyMPtoPDFconversion=\toks19
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
 )
 \AtBeginShipoutBox=\box27
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/etc/texmf/tex/latex/config/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/05/09 v1.1c Standard LaTeX Color (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 144.
 )
 Package hyperref Info: Link coloring ON on input line 25.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count110
 )
@@ -338,11 +355,11 @@ LaTeX Info: Redefining \ref on input line 25.
 LaTeX Info: Redefining \pageref on input line 25.
 LaTeX Info: Redefining \nameref on input line 25.
 
-(./main.out) (./main.out)
+(main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
- (./main.toc
+ (main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -352,15 +369,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
  [2]
 Kapitola 1.
-(./chapters/introduction.tex) (./chapters/historieNTK.tex)pdfTeX warning (ext4)
-: destination with the same identifier (name{page.1}) has been already used, du
-plicate ignored
+(chapters/introduction.tex) (chapters/historieNTK.tex)pdfTeX warning (ext4): de
+stination with the same identifier (name{page.1}) has been already used, duplic
+ate ignored
 <to be read again> 
                    \relax 
 l.39 	\section
@@ -372,8 +389,8 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 39.
 
-(./chapters/vufind.texpdfTeX warning (ext4): destination with the same identifi
-er (name{page.2}) has been already used, duplicate ignored
+(chapters/vufind.texpdfTeX warning (ext4): destination with the same identifier
+ (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.7 
@@ -383,38 +400,39 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 41.
 
-(./chapters/vlastnosti.tex
+(chapters/vlastnosti.tex
 LaTeX Font Info:    Try loading font information for IL2+cmtt on input line 3.
 
-(/usr/share/texlive/texmf-dist/tex/cslatex/base/il2cmtt.fd
+("C:\Program Files (x86)\MiKTeX 2.9\tex\cslatex\base\il2cmtt.fd"
 File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
 ) [3] [4])
-(./chapters/requirements.tex [5]) [6]
+(chapters/requirements.tex [5]) [6]
 Kapitola 2.
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 46.
 
-(./chapters/chapter02.tex) (./chapters/hwntk.tex
+(chapters/chapter02.tex) (chapters/hwntk.tex
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2.
-) (./chapters/aleph.tex [7
+)
+(chapters/aleph.tex [7
 
-]) (./chapters/sfx.tex) (./chapters/vufind1.tex [8]) (./chapters/vufind2.tex) (
-./chapters/vufind-test.tex) (./chapters/vufind-eiz.tex)
-(./chapters/swntk.tex)
+]) (chapters/sfx.tex) (chapters/vufind1.tex [8])
+(chapters/vufind2.tex) (chapters/vufind-test.tex) (chapters/vufind-eiz.tex)
+(chapters/swntk.tex)
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 64.
 
-(./chapters/redhat.tex)
+(chapters/redhat.tex)
 Overfull \hbox (139.43027pt too wide) in paragraph at lines 5--66
 []\IL2/cmr/m/n/12 https://www.redhat.com/en/technologies/linux-platforms https:
 //www.redhat.com/en/technologies/linux-
@@ -425,15 +443,15 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 66.
 
-(./chapters/firewall.tex [9]) (./chapters/apache.tex) (./chapters/java.tex)
-(./chapters/mysql.tex) (./chapters/zendframework.tex) (./chapters/zabbix.tex)
-(./chapters/ssh.tex) (./chapters/cron.tex) (./chapters/shibboleth.tex [10])
-(./chapters/git.tex) (./chapters/psh.tex) [11]
+(chapters/firewall.tex [9]) (chapters/apache.tex) (chapters/java.tex)
+(chapters/mysql.tex) (chapters/zendframework.tex) (chapters/zabbix.tex)
+(chapters/ssh.tex) (chapters/cron.tex) (chapters/shibboleth.tex [10])
+(chapters/git.tex) (chapters/psh.tex) [11]
 Kapitola 3.
-(./chapters/opensource.tex [12
+(chapters/opensource.tex [12
 
-]) (./chapters/blacklight.tex)
-(./chapters/evergreen.tex) (./chapters/koha.tex
+]) (chapters/blacklight.tex)
+(chapters/evergreen.tex) (chapters/koha.tex
 Overfull \hbox (43.67891pt too wide) in paragraph at lines 2--4
 []\IL2/cmr/m/n/12 Koha [][]$\IL2/cmtt/m/n/12 https : / / github . com / open-[]
 source-[]knihovna / KohaCZ / wiki / Seznam-[]knihoven ,[]
@@ -447,9 +465,9 @@ aj % C3 % AD-[]syst % C3 % A9m-[]Koha-[]v-[]b % C4 % 9B %
 
 ) [13]
 Kapitola 4.
-(./chapters/chapter03.tex [14
+(chapters/chapter03.tex [14
 
-]) (./chapters/instalace.tex
+]) (chapters/instalace.tex
 Overfull \hbox (112.85617pt too wide) in paragraph at lines 10--10
 []\IL2/cmtt/m/n/12 yum install php php-devel php-intl php-ldap php-mysql php-xs
 l php-gd php-mbstring php-mcrypt[] 
@@ -483,40 +501,46 @@ Overfull \hbox (2.8053pt too wide) in paragraph at lines 48--49
 pro-mìn-ných, buï ve skriptu
  []
 
-) [16] (./chapters/implementace.tex)
+) [16] (chapters/implementace.tex) [17 <./images/auto-conf.png>]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 104.
 
-(./chapters/config.tex [17 <./images/auto-conf.png>] [18] [19] [20])
-(./chapters/shibboleth.tex [21]) (./chapters/import.tex
+(chapters/config.tex [18] [19] [20]) (chapters/shibboleth.tex [21])
+(chapters/import.tex
 Overfull \hbox (3.5048pt too wide) in paragraph at lines 14--15
 \IL2/cmtt/m/n/12 format[]map.properties\IL2/cmr/m/n/12 , \IL2/cmtt/m/n/12 langu
 age[]map.properties\IL2/cmr/m/n/12 , \IL2/cmtt/m/n/12 instrument[]map.propertie
 s\IL2/cmr/m/n/12 , atd.
  []
 
-[22]
+[22] [23]
 Overfull \hbox (131.38118pt too wide) in paragraph at lines 51--51
 []                        \IL2/cmtt/m/n/12 title = title.concat(titleField.getS
 ubfield('b').getData().toString());[] 
  []
 
-[23]
+
 Overfull \hbox (44.93114pt too wide) in paragraph at lines 51--51
 []                        \IL2/cmtt/m/n/12 title = title.trim(); // odstrani me
 zeru na konci retezce[] 
  []
 
-) (./chapters/solr.tex [24]
+) (chapters/solr.tex [24]
 Overfull \hbox (322.80627pt too wide) in paragraph at lines 9--9
 []\IL2/cmtt/m/n/12 <core schema="schema.xml" loadOnStartup="true" instanceDir="
 biblio/" transient="false" name="biblio" config="solrconfig.xml"/>[] 
  []
 
-) (./chapters/harvest.tex) (./chapters/searching.tex)
-(./chapters/kustomizace.tex)
+[25]
+Overfull \hbox (225.61797pt too wide) in paragraph at lines 23--25
+[]\IL2/cmr/m/n/12 Alphabetical[]browse - zmìna so-lr-con-fig.xml + dal-sich sou
+-boru https://vufind.org/wiki/indexing:alphabetical[]heading[]browse 
+ []
+
+) (chapters/harvest.tex) (chapters/searching.tex [26])
+(chapters/kustomizace.tex)
 
 Package hyperref Warning: Composite letter `\textasciicaron+C'
 (hyperref)                not defined in PD1 encoding,
@@ -527,8 +551,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 118.
 
-(./chapters/acount.tex) (./chapters/provoz.tex) (./chapters/workflow.tex)
-[25] [26]
+(chapters/acount.tex) (chapters/provoz.tex) (chapters/workflow.tex) [27]
 Kapitola 5.
 
 Package hyperref Warning: Composite letter `\textasciicaron+C'
@@ -540,24 +563,24 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 125.
 
-(./chapters/chapter04.tex
-<images/vufind-1.png, id=458, 1190.4475pt x 1072.005pt>
+(chapters/chapter04.tex
+<images/vufind-1.png, id=468, 1190.4475pt x 1072.005pt>
 File: images/vufind-1.png Graphic file (type png)
 
 <use images/vufind-1.png>
 Package pdftex.def Info: images/vufind-1.png used on input line 8.
 (pdftex.def)             Requested size: 273.14923pt x 245.9671pt.
- [27
+ [28
 
  <./images/vufind-1.png>]
-<images/vufind-2.png, id=466, 1736.4875pt x 1082.0425pt>
+<images/vufind-2.png, id=476, 1736.4875pt x 1082.0425pt>
 File: images/vufind-2.png Graphic file (type png)
 
 <use images/vufind-2.png>
 Package pdftex.def Info: images/vufind-2.png used on input line 17.
 (pdftex.def)             Requested size: 295.90588pt x 184.37407pt.
 
-<images/vufind-3.png, id=468, 1161.33875pt x 1072.005pt>
+<images/vufind-3.png, id=478, 1161.33875pt x 1072.005pt>
 File: images/vufind-3.png Graphic file (type png)
 
 <use images/vufind-3.png>
@@ -567,7 +590,7 @@ Package pdftex.def Info: images/vufind-3.png used on input line 26.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vufind-4.png, id=470, 948.54375pt x 784.9325pt>
+<images/vufind-4.png, id=480, 948.54375pt x 784.9325pt>
 File: images/vufind-4.png Graphic file (type png)
 
 <use images/vufind-4.png>
@@ -577,7 +600,7 @@ Package pdftex.def Info: images/vufind-4.png used on input line 35.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vufind-5.png, id=472, 1199.48125pt x 1065.9825pt>
+<images/vufind-5.png, id=482, 1199.48125pt x 1065.9825pt>
 File: images/vufind-5.png Graphic file (type png)
 
 <use images/vufind-5.png>
@@ -587,8 +610,8 @@ Package pdftex.def Info: images/vufind-5.png used on input line 44.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28 <./images/vufind-2.png>]
-<images/vufind-6a.png, id=481, 1161.33875pt x 1050.92625pt>
+[29 <./images/vufind-2.png>]
+<images/vufind-6a.png, id=492, 1161.33875pt x 1050.92625pt>
 File: images/vufind-6a.png Graphic file (type png)
 
 <use images/vufind-6a.png>
@@ -598,7 +621,7 @@ Package pdftex.def Info: images/vufind-6a.png used on input line 53.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vufind-6b.png, id=483, 1162.3425pt x 1051.93pt>
+<images/vufind-6b.png, id=494, 1162.3425pt x 1051.93pt>
 File: images/vufind-6b.png Graphic file (type png)
 
 <use images/vufind-6b.png>
@@ -608,7 +631,7 @@ Package pdftex.def Info: images/vufind-6b.png used on input line 60.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vufind-7.png, id=485, 1209.51875pt x 1054.94125pt>
+<images/vufind-7.png, id=496, 1209.51875pt x 1054.94125pt>
 File: images/vufind-7.png Graphic file (type png)
 
 <use images/vufind-7.png>
@@ -618,7 +641,7 @@ Package pdftex.def Info: images/vufind-7.png used on input line 69.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vufind-8.png, id=487, 1210.5225pt x 1015.795pt>
+<images/vufind-8.png, id=498, 1210.5225pt x 1015.795pt>
 File: images/vufind-8.png Graphic file (type png)
 
 <use images/vufind-8.png>
@@ -628,17 +651,17 @@ Package pdftex.def Info: images/vufind-8.png used on input line 79.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vufind-9.png, id=489, 957.5775pt x 1016.79875pt>
+<images/vufind-9.png, id=500, 957.5775pt x 1016.79875pt>
 File: images/vufind-9.png Graphic file (type png)
 
 <use images/vufind-9.png>
 Package pdftex.def Info: images/vufind-9.png used on input line 88.
 (pdftex.def)             Requested size: 295.90588pt x 314.19588pt.
- [29 <./images/vufind-3.png>]
+ [30 <./images/vufind-3.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/finna.png, id=499, 1174.3875pt x 990.70125pt>
+<images/finna.png, id=509, 1174.3875pt x 990.70125pt>
 File: images/finna.png Graphic file (type png)
  <use images/finna.png>
 Package pdftex.def Info: images/finna.png used on input line 98.
@@ -647,8 +670,8 @@ Package pdftex.def Info: images/finna.png used on input line 98.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30 <./images/vufind-4.png>]
-<images/finna_architecture.png, id=510, 1605.8394pt x 1304.7144pt>
+[31 <./images/vufind-4.png>]
+<images/finna_architecture.png, id=520, 1605.8394pt x 1304.7144pt>
 File: images/finna_architecture.png Graphic file (type png)
 
 <use images/finna_architecture.png>
@@ -658,17 +681,17 @@ Package pdftex.def Info: images/finna_architecture.png used on input line 109.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[31 <./images/vufind-5.png>]) [32 <./images/vufind-6a.png>] [33 <./images/vufin
-d-6b.png> <./images/vufind-7.png>] [34 <./images/vufind-8.png> <./images/vufind
--9.png>] [35 <./images/finna.png> <./images/finna_architecture.png (PNG copy)>]
+[32 <./images/vufind-5.png>]) [33 <./images/vufind-6a.png>] [34 <./images/vufin
+d-6b.png> <./images/vufind-7.png>] [35 <./images/vufind-8.png> <./images/vufind
+-9.png>] [36 <./images/finna.png> <./images/finna_architecture.png (PNG copy)>]
 Kapitola 6.
-(./chapters/chapter05.tex
+(chapters/chapter05.tex
 Overfull \hbox (50.78397pt too wide) in paragraph at lines 9--11
 []\IL2/cmr/m/n/12 o cen-t-ral-nich in-de-xech a dis-co-very http://oldknihovna.
 nkp.cz/knihovnaplus121/coufal.htm 
  []
 
-) [36
+) [37
 
 ]
 Kapitola 7.
@@ -677,7 +700,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 131.
 
-(./chapters/conclusion.tex) [37
+(chapters/conclusion.tex) [38
 
 ]
 
@@ -685,11 +708,11 @@ Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textring' on input line 136.
 
-(./main.lof)
+(main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [38
+ [39
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
@@ -715,49 +738,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--183
 pné z:
  []
 
-[39
+[40
 
-] [40]
+] [41]
 P\v {r}\'{\i }loha A.
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 230.
+(hyperref)                removing `\textasciicaron' on input line 241.
 
-(./chapters/appendix.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 233.
- [41
+(chapters/appendix.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
+ [42
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 233.
- (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 233.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 233.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
+ (main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 09AA8778B53F10F9F717E997FDFFD583;3194.
+(rerunfilecheck)             Checksum: 28E34D5611CF3E7329950E4936281433;3243.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 233.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 244.
  ) 
 Here is how much of TeX's memory you used:
- 6907 strings out of 494998
- 100053 string characters out of 6180422
- 193308 words of memory out of 5000000
- 9744 multiletter control sequences out of 15000+600000
- 12417 words of font info for 34 fonts, out of 8000000 for 9000
- 24 hyphenation exceptions out of 8191
- 29i,6n,32p,3440b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/cs/csbx12.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/cs/csr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/cs/csr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cs/csti12
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cs/cstt12.pfb>
-Output written on main.pdf (43 pages, 3099091 bytes).
+ 7067 strings out of 493335
+ 103232 string characters out of 3136680
+ 203412 words of memory out of 3000000
+ 10203 multiletter control sequences out of 15000+200000
+ 12417 words of font info for 34 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 29i,6n,32p,3442b,487s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cs/csbx12.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/cs/csr12.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/cs/csr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/cs/csti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/cs/cstt12.pfb>
+Output written on main.pdf (44 pages, 3101108 bytes).
 PDF statistics:
- 674 PDF objects out of 1000 (max. 8388607)
- 154 named destinations out of 1000 (max. 500000)
+ 685 PDF objects out of 1000 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
  458 words of extra memory for PDF output out of 10000 (max. 10000000)
 

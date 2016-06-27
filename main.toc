@@ -48,24 +48,24 @@
 \contentsline {section}{\numberline {4.2}Implementace}{17}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Konfigura\v cn\IeC {\'\i } soubory}{18}{subsection.4.2.1}
 \contentsline {paragraph}{config.ini}{18}{section*.16}
-\contentsline {paragraph}{Aleph.ini}{19}{section*.17}
+\contentsline {paragraph}{Aleph.ini}{20}{section*.17}
 \contentsline {paragraph}{facets.ini}{20}{section*.18}
 \contentsline {paragraph}{searchbox.ini}{20}{section*.19}
 \contentsline {paragraph}{combined.ini}{21}{section*.20}
 \contentsline {paragraph}{searches.ini}{21}{section*.21}
 \contentsline {paragraph}{searchspecs.yaml}{21}{section*.22}
-\contentsline {subsection}{\numberline {4.2.2}Autentikace}{21}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Autentikace}{22}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Import dat - SolrMarc}{22}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Indexace dat - Solr}{24}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Skl\IeC {\'\i }zen\IeC {\'\i } dat - OAI-PMH}{25}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Vyhled\'av\'an\IeC {\'\i }}{25}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}Grafick\'y design}{25}{subsection.4.2.7}
-\contentsline {subsection}{\numberline {4.2.8}\v Cten\'a\v rsk\'e konto}{25}{subsection.4.2.8}
-\contentsline {section}{\numberline {4.3}Provoz}{25}{section.4.3}
-\contentsline {section}{\numberline {4.4}WorkFlow}{26}{section.4.4}
-\contentsline {chapter}{\numberline {5}Pou\v zit\IeC {\'\i } VuFindu v ostatn\IeC {\'\i }ch knihovn\'ach (\v CR, zahrani\v c\IeC {\'\i })}{27}{chapter.5}
-\contentsline {chapter}{\numberline {6}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{36}{chapter.6}
-\contentsline {chapter}{\numberline {7}Z\'av\v er (zhodnocen\IeC {\'\i })}{37}{chapter.7}
-\contentsline {chapter}{Seznam obr\'azk\r {u}}{38}{chapter*.23}
-\contentsline {chapter}{Literatura}{39}{chapter*.24}
-\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{41}{appendix.A}
+\contentsline {subsection}{\numberline {4.2.5}Skl\IeC {\'\i }zen\IeC {\'\i } dat - OAI-PMH}{26}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Vyhled\'av\'an\IeC {\'\i }}{26}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Grafick\'y design}{27}{subsection.4.2.7}
+\contentsline {subsection}{\numberline {4.2.8}\v Cten\'a\v rsk\'e konto}{27}{subsection.4.2.8}
+\contentsline {section}{\numberline {4.3}Provoz}{27}{section.4.3}
+\contentsline {section}{\numberline {4.4}WorkFlow}{27}{section.4.4}
+\contentsline {chapter}{\numberline {5}Pou\v zit\IeC {\'\i } VuFindu v ostatn\IeC {\'\i }ch knihovn\'ach (\v CR, zahrani\v c\IeC {\'\i })}{28}{chapter.5}
+\contentsline {chapter}{\numberline {6}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{37}{chapter.6}
+\contentsline {chapter}{\numberline {7}Z\'av\v er (zhodnocen\IeC {\'\i })}{38}{chapter.7}
+\contentsline {chapter}{Seznam obr\'azk\r {u}}{39}{chapter*.23}
+\contentsline {chapter}{Literatura}{40}{chapter*.24}
+\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{42}{appendix.A}

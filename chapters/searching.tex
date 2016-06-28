@@ -1,6 +1,159 @@
 \label{sec:searching}
-Vyhledávání dle systémového èísla. Doplnìní na 9-ciferné èíslo. Ukázka kódu.
+V Národní technické knihovnì je vyhledávání rozšíøeno o vyhledávání podle systémového èísla. Systémové èíslo je unikátním identifikátorem záznamù v tomto knihovním systému. Skládá se z devíti-ciferného èísla. Rozsah devíti-ciferných èísel pøesahuje poèet záznamù v katalogu, proto toto èíslo zpravidla obsahuje zleva nuly. Aby nebylo nutné manuálnì do vyhledávacího pole tyto doplòující nuly zadávat, je vytvoøena èást zdrojového kódu, která toto upravuje. Doplòování vyhledávacího øetìzce zleva nulami na devíti-ciferné èíslo pøi vyhledávání podle systémového èísla tak probíhá automaticky. Není tedy nutné zadávat celý identifikátor, nýbrž staèí pouze jeho nenulová èást. Pøíklad je uveden zde:
+\begin{verbatim}
+000020060 -> 20060
+\end{verbatim}
+Rozšíøení zdrojového kódu v souboru:
+\begin{verbatim}
+/var/www/vufind/module/VuFindSearch/src/VuFindSearch/Query/Query.php
+\end{verbatim}
+o funkci \texttt{checkSysno}:
+\begin{verbatim}
+public function checkSysno($string)
+    {
+        $length_of_query = strlen($string);
+        $nules = 9 - $length_of_query;
+        for ($i=0;$i<$nules;$i++){
+            $string = '0' . $string;
+        }
+        return $string;
+    }
+\end{verbatim}
 
-V pokroèilém vyhledávání jsou nastaveny rùzná vyhledávací pole - Název, Autor, Všechna pole.
+
+
+Další úpravou zdrojového kódu je v pokroèilém vyhledávání nastaven výchozí stav tøí vyhledávacích polí na prohledávání v poli \textit{název}, \textit{autor} a ve \textit{všech polích}. To probíhá v souboru:
+\begin{verbatim}
+/var/www/vufind/themes/ntk/templates/search/advanced/build_page.phtml
+\end{verbatim}
+Zmìna byla provedena nahrazením dvou øádkù kódu:
+\begin{verbatim}
+var group = addGroup(); -> var group = addGroup(null, 'Title', null);
+addSearch(group);       -> addSearch(group, null, 'Author');
+\end{verbatim}
+
+
+Ve výsledcích vyhledávání kromì zobrazení dat z indexu jako jsou název, autor, rok vydání, atd. je tøeba zobrazovat umístìní jednotek a statusy dostupnosti. K tomu se využívá technologie Ajax. Po zobrazení stránky s maximálnì dvaceti výsledky se pomocí javascriptu zavolá soubor:
+\begin{verbatim}
+module/ntk_module/src/ntk_module/Controller/AjaxController.php
+\end{verbatim}
+a pøedají se mu jako parametry identifikátory zobrazených záznamù. S tìmito id záznamù se potom vytvoøí jednotlivé HTTP požadavky na informace o dostupnosti a umístìní tìchto záznamù do Alephu, který vrátí XML odpovìdi, ve kterých požadované informace jsou zakódovány. Výše zmínìný soubor kódy dešifruje a pøiøadí jim èitelné øetìzce, které se následnì zobrazí mezi výsledky. Ukázka èásti zdrojového kódu spravující tuto problematiku typickou pro lokální prostøedí:
+\begingroup
+\makeatletter
+\@totalleftmargin=-1.5cm
+\begin{verbatim}
+        if (preg_match("/(\d)([A-Z])(\d+)/", $collection_code, $matches)) {
+            /* Regal. */
+            $location = $this->translate("Shelf")." ".$collection_code;
+        }
+        elseif($collection_code == 200){
+            /* Destnik, Kindle */
+            $location = $this->translate("Central Desk, 2nd floor");
+                }
+                elseif($collection_code == 201){
+                        $location = $this->translate("Knowledge Navigation Corner, 2nd floor");
+                }
+        elseif(($collection_code > 100 && $collection_code < 1000) || ($collection_code == "UCT departments")){
+            /* Pripad pro VSCHT ustavy, Aleph posila v location cisla v rozmezi 100 az 1000. */
+            $location = $this->translate("UCT departments");
+        }elseif($collection_code == "Multiple Locations"){
+            $location = $this->translate("Multiple Locations");
+        }
+        elseif($collection_code === '01'){
+            $location = $this->translate("Reading room of historical fund"); // badatelna HF
+        }
+        elseif($collection_code === '001'){
+            $location = $this->translate('Volný výbìr, nezaøazeno');
+        }
+        elseif($collection_code === '011'){
+            if($info['sub_lib_desc'] === "Fond UOCHB"){
+                $location = $this->translate("UOCHB department"); //
+            }else{
+                $location = $this->translate("Depository"); // depozitar
+            }
+        }
+        elseif($collection_code === '02'){
+            $location = $this->translate("Safe of historical fund"); // trezor HF
+        }
+        elseif($collection_code === '002'){
+            $location = $this->translate("Stack room"); // sklad
+        }
+        elseif($collection_code === '03'){
+            $location = $this->translate("Stack room of historical fund"); // skald HF
+        }
+        elseif($collection_code === '004'){
+            $location = $this->translate("Book news, 4th floor"); // novinky 4. NP
+        }
+        else{
+                $location = $this->translate("Unknown");
+        }
+\end{verbatim}
+\endgroup
+
+Pomocí javascriptu je dále øešeno pøidìlování odkazù tìmto informacím o umístìní jednotek. Je-li napøíklad umístìní jednotky na regále ve volném výbìru, je pøidìlen odkaz na mapu pøíslušného patra se zvýraznìným regálem, kde se jednotka nachází. Dalším specifickým typem umístìní jsou VŠCHT Ústavy, jež linkují na stránky se seznamem ústavních knihoven VŠCHT. Ještì stojí za zmínku umístìní èasopisù ve Studovnì èasopisù, pro které vede link na pøíslušnou mapu tøetího patra. Protože se obrázky map zobrazují pomocí javascriptového nástroje pro zobrazování galerie obrázkù \textit{Lightbox}, je v èásti zdrojového kódu typického pro toto prostøedí ještì nastaveno záhlaví tìchto náhledù podle umístìní v regálu:
+\begingroup
+\makeatletter
+\@totalleftmargin=-2.5cm
+\begin{verbatim}
+            if (result.location == "V&Scaron;CHT &uacute;stavy"){
+                item.find('.location').empty().append("<a href='https://www.chemtk.cz/cs/82950-seznam-ustavnich-knihoven'>"+result.location+"</a>");
+            } else if (result.location == "UCT departments"){
+                 item.find('.location').empty().append("<a href='https://www.chemtk.cz/en/82974-departmental-libraries'>"+result.location+"</a>");
+            } else if (result.location.indexOf("3D") > 0){ // studovna casopisu
+                item.find('.location').empty().append("<a href=''>"+result.location+"</a>");
+                item.find('.location').click(function() {
+                    return Lightbox.getByUrl('../periodicals.php');
+                });
+            } else if (
+                    (result.location == "Unknown") || (result.location == "Nezn&aacute;mo") ||
+                    (result.location == "Sklad historick&eacute;ho fondu") || (result.location == "Stack room of historical collection") ||
+                    (result.location == "Trezor historick&eacute;ho fondu") || (result.location == "Reading room of historical collection") ||
+                    (result.location == "Badatelna historick&eacute;ho fondu") || (result.location == "Safe of historical collection") ||
+                    (result.location == "Depozit&aacute;\u0159") || (result.location == "Depository") ||
+                    (result.location == "Konzulta\u010dn&iacute; koutek, 2. NP") || (result.location == "Knowledge Navigation Corner, 2nd floor") ||
+                    (result.location == "V&iacute;ce um&iacute;st\u011bn&iacute;") || (result.location == "Multiple Locations") ||
+                    (result.location == "Sklad") || (result.location == "Stack room") ||
+                    (result.location == "Voln&yacute; v&yacute;b\u011br, neza\u0159azeno") || (result.location == "Open stacks, uncategorized") ||
+                    (result.location == "&Uacute;OCHB &uacute;stav") || (result.location == "IOCB department") ||
+                    (result.location == "Book news, 4th floor") || (result.location == "Novinky, 4. NP")
+                    ){
+                    item.find('.location').empty().append(result.location);
+            } else {
+                item.find('.location').empty().append("<a href=''>"+result.location+"</a>");
+                item.find('.location').click(function() {
+                    var title = result.location; 
+                    if(typeof title === "undefined") {
+                        title = $(this).html();
+                    }
+                    var p,s,r,vysledek,title_desc;
+                    if (title.indexOf('Shelf') >= 0){
+                        p = 'floor';
+                        s = 'section';
+                        r = 'shelf';
+                        var patro = title.charAt(6);
+                        title_desc = p+': '+patro;
+                        var sekce = title.charAt(7);
+                        title_desc += ', '+s+': '+sekce;
+                        var regal = title.substr(8,3);
+                        title_desc += ', '+r+': '+regal;
+                    }else{
+                        p = 'patro';
+                        s = 'sekce';
+                        r = 'regál';
+                        var patro = title.charAt(13);
+                        title_desc = p+': '+patro;
+                        var sekce = title.charAt(14);
+                        title_desc += ', '+s+': '+sekce;
+                        var regal = title.substr(15,3);
+                        title_desc += ', '+r+': '+regal;
+                    }
+                    vysledek = title+' ('+title_desc+')';
+                    $('#modal .modal-title').html(vysledek);
+                    Lightbox.titleSet = true;
+                                return Lightbox.get('map','lcc',result.callnumber);
+                        });
+            }
+\end{verbatim}
+\endgroup
 
 Tipy pro vyhledávání - zástupné znaky - výhoda proti minulému OPAC Aleph

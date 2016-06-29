@@ -1,2 +1,58 @@
 \label{sec:kustomizace}
-Provedené zmìny v našem prostøedí. Vzhled. Historie výpùjèek. Nastavení importu, schéma indexu. Úvodní strana - øazení faset frekvenènì. Obálky knih - skenované a ukládané na Aleph server + Obálkyknih.cz. Autentikace pøes Shibboleth. Zabezpeèení SSL:443. 
+Vzhled uživatelského rozhraní je první vìc, která zákazníka prohlížejícího katalog zaujme. Proto je tøeba klást na toto téma dùraz. Kromì grafického designu je velmi dùležité rozložení jednotlivých prvkù na stránce. Odvìtví, které se tímto zabývá se nazývá User Experience. Dbá na to, aby se uživatel webové stránky cítil pohodlnì pøi jejím prohlížení a zároveò intuitivnì nacházel, co potøebuje. \cite{ux}
+
+Vizuální vzhled katalogu VuFind Národní technické knihovny koresponduje s grafickým designem webových stránek knihovny. Snahou knihovny je mít jednotný vzhled celé své webové prezentace, takže i ostatní knihovní systémy dostupné v síti internet, jako je napøíklad národní úložištì šedé literatury, mají tendenci vypadat graficky stejnì, pokud to jenom jde. Grafický vzhled Národní technické knihovny využívá souboru vizuálních nástrojù s názvem Bootstrap3. Tento grafický framework využívá technologie HTML, CSS a JS a používá se k vytváøení responzivních webových projektù. \cite{bootstrap}
+
+
+Portál VuFind ve složce koøenového adresáøe
+\begin{verbatim}
+/var/www/vufind/themes
+\end{verbatim}
+nabízí hned nìkolik vizuálních variant, jak mùže ve výchozím nastavení katalog vypadat. Jednotlivé možnosti rozdìleny do podadresáøù pøedstavují další grafické frameworky:
+\begin{itemize}
+\item blueprint
+\item bootprint
+\item bootprint3
+\item bootstrap
+\item bootstrap3
+\item jquerymobile
+\end{itemize}
+
+
+Jak již bylo zmínìno výše, prvním krokem k vytvoøení vlastního grafického tématu je zkopírování celého adresáøe \texttt{bootstrap3} do nového adresáøe \texttt{ntk}. V tomto novém adresáøi je tøeba editovat a upravit dle potøeby soubor \texttt{theme.config.php}, který nese informace o tom, jaké pomocné skripty a soubory se naèítají pro správné vykreslení webových stránek. Vzhledem k tomu, že pro prostøedí NTK byly vytvoøeny vlastní CSS soubory, jsou to právì ony, k nimž se zde zapisuje cesta. Dalšími soubory pro zápis jsou javascripty. Nìkteré pùvodní jsou upraveny, jiné jsou zcela novì pøidány kvùli lokálním potøebám. Pøíkladem pøidaného javascriptu je \texttt{NTK.js}, který obsluhuje komunikaci se službou Obalkyknih.cz. Tato služba poskytuje databázi naskenovaných obálek a obsahù knih, kterou využívají i do které pøispívají knihovny a knižní nakladatelství po celé Èeské republice.
+
+V podadresáøi \texttt{templates} jsou dle významu jednotlivých sekcí uloženy ve složkách šablony, které právì definují jak bude daná webová stránka vypadat. Tyto šablony jsou ve formátu \textit{phtml}, který do nich umožòuje zapisovat obsah jednak v jazyce HTML, tak také v jazyce PHP. Soubor \texttt{header.phtml} definuje vzhled záhlaví stránek a soubor \texttt{footer.phtml} naopak definuje, jak bude vypadat zápatí stránek. Hlavní rozvržení stránek je definováno v souboru \texttt{layout/layout.phtml}. Další složkou, která prošla znaènou úpravou je \texttt{record}, která obsahuje šablony nastavující vzhled zobrazení detailního náhledu záznamu v katalogu, vèetnì šablon pro odeslání záznamu e-mailem, uložení ho do uživatelského konta, citování záznamu, atd. Pro citování záznamù je zde napojena služba CitacePro.com, díky jejímuž api rozhraní lze zobrazovat citace záznamù pøímo v katalogu Vufind. Zajímavá složka se šablonami, která také souvisí s detailním náhledem záznamu, je \texttt{RecordTab}. V ní se definují záložky, které se u záznamu zobrazí. Kromì bìžných záložek Jednotky, Popis, Komentáøe, MARC je zde pøidána záložka popsána v šablonì \texttt{preview.phtml}. Ta se zobrazuje pouze u záznamù obohacených o naskenované nìkteré èásti díla. V záložce je tedy k dispozici náhled tìchto skenù uložených na serveru Aleph, který uživateli pøedstavuje ukázku pøibližující obsah daného exempláøe. Zdrojový kód této šablony:
+\begin{verbatim}
+<?
+// Set page title.
+$this->headTitle($this->translate('Preview') . ': ' . $this->driver->getBreadcrumb());
+$id = $this->driver->getUniqueID();
+// Links with pictures on this site
+$addr = 'http://aleph.techlib.cz/cgi-bin/obrazek.pl?sn='.$id;
+$links = file_get_contents( $addr );
+// Pattern starts with "http" and ends with ".jpg" or ".JPG"
+$pattern = '/http.{0,100}\.(JPG|jpg)/';
+// Each link in 2D-array named url
+$count = preg_match_all( $pattern, $links, $url);
+// One array for small and one for big pics
+$pics= array();
+$thumbs= array();
+for ($i=0; $i<$count; $i++){
+    	// is this thumbnail ?
+    	if (strpos($url[0][$i], 'thumb')){
+            	$thumbs[$i]=$url[0][$i];
+    	}else{
+            	$pics[$i]=$url[0][$i];
+    	}
+}
+// Alphabetical sorting
+sort($pics);
+sort($thumbs);
+?>
+<? foreach ($thumbs as $key => $value): ?>
+	<a href=<?=$pics[$key]?>><img src=<?=$thumbs[$key]?>></a>
+<? endforeach; ?>
+\end{verbatim}
+Pro rozvržení výsledkù vyhledávání slouží šablona \texttt{RecordDriver/SolrDefault/result-list.phtml}. Ve stejném umístìní se nachází šablona \texttt{core.phtml}, která se zobrazuje v detailu záznamu a naèítá informace o daném záznamu z MARCových polí, popøípadì z indexu nebo z lokální databáze katalogu. Tìmito údaji jsou autor, formát, jazyk, vydavatelství, edice, témata, on-line pøístup a uživatelské tagy. Za zmínku jistì stojí složka \texttt{search}, která obsahuje šablony týkající se vyhledávání v širším slova smyslu. Jsou to napøíklad šablona na zobrazení historie vyhledávaní \texttt{history.phtml}, dále šablona zobrazující formuláø pro odeslání vyhledávání e-mailem \texttt{email.phtml}, šablona na zobrazení vyhledávacího pole \texttt{searchbox.phtml} a také jsou zde šablony pokroèilého vyhledávání. Složka \texttt{myresearch} obsahuje šablony týkající se uživatelského konta, které jsou samozøejmì také upraveny tak, aby zapadaly do jednotného grafického konceptu. Nejèastìjšími úpravami veškerých zobrazujících se šablon je zmìna rozvržení stránky ve smyslu úpravy velikosti šíøek a výšek jednotlivých sloupcù, øádkù, zarovnání, tlaèítek, nadpisù, tabulek, seznamù, ohranièení, atd. pomocí souborù s kaskádovými styly.
+
+\cite{ui}

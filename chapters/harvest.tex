@@ -1,9 +1,17 @@
-\label{sec:harest}
-Možná zde vysvìtlit OAI-PMH
-Pøed samotným sklízením dat z externích zdrojù do VuFindu, potažmo Solr indexu je tøeba provést patøièná nastavení. Pro tyto úèely se v koøenovém adresáøi systému nachází složka \texttt{harvest}, která obsahuje potøebné skripty. Stejnì jako v pøípadì importu dat nebo nastavení konfiguraèních souborù i zde se pro lokální požadavky knihovny vytváøí alternativní složka \texttt{harvest} v lokálním adresáøi \texttt{local} odkud se naèítají informace jako první. Pokud zde nìjaké nastavení chybí, aplikuje se konfigurace z nadøazeného adresáøe výchozího. V pøípadì Národní technické knihovny se v umístìní
+\label{sec:harvest}
+
+OAI-PMH, zkratka pro Open Archives Initiative Protocol for Metadata Harvesting, je nízko-bariérový mechanizmus interoperability pro repositáøe. Repositáø vybavený OAI-PMH skrz tento protokol vystavuje strukturovaná metadata a stává se z nìj tak poskytovatel dat. Poskytovatel služeb potom pøes OAI-PMH posílá požadavky na sklízení tìchto metadat. OAI-PMH se skládá ze sady šesti služeb, které jsou spouštìny v rámci protokolu HTTP. \cite{oai.pmh}
+
+VuFind je tímto mechanismem vybaven a v Národní technické knihovnì je využit pro každodenní aktualizaci katalogu sklízením zmìn v záznamech integrovaného knihovnického systému Aleph.
+
+
+Pøed samotným sklízením dat z externích zdrojù do VuFindu, potažmo Solr indexu, je tøeba provést patøièná nastavení. Pro tyto úèely se v koøenovém adresáøi systému nachází složka \texttt{harvest}, která obsahuje potøebné skripty. Stejnì jako v pøípadì importu dat nebo nastavení konfiguraèních souborù i zde se pro lokální požadavky knihovny vytváøí alternativní složka \texttt{harvest} v lokálním adresáøi \texttt{local} odkud se naèítají informace jako první. Pokud zde nìjaké nastavení chybí, aplikuje se konfigurace z nadøazeného adresáøe výchozího. V pøípadì Národní technické knihovny se v umístìní
 \begin{verbatim}
 /var/www/vufind/local/harvest
 \end{verbatim}
-nachází upravená kopie souboru \texttt{oai.ini}, kde je nastaveno jméno adresáøe, do kterého se data sklízí. Tím je podadresáø \texttt{katalog\_ntk-update}. Dále je zde uvedena URL adresa zdroje, ze kterého se data sklízí, což je \texttt{http://aleph.techlib.cz/OAI}. Dalším parametrem k nastavení je \textit{set}, což je identifikátor sady urèené ke sklízení, kterou je NTK.
+nachází upravená kopie souboru \texttt{oai.ini}, kde je nastaveno jméno adresáøe, do kterého se data sklízí. Tím je podadresáø \texttt{katalog\_ntk-update}. Dále je zde uvedena URL adresa zdroje, ze kterého se data sklízí, což je \texttt{http://aleph.techlib.cz/OAI}. Dalším parametrem k nastavení je \textit{set}, což je identifikátor sady urèené ke sklízení, kterou je NTK. Parametr \textit{metadataPrefix} je nastaven na MARC21, protože je požadováno pøijímat data v tomto formátu. K dispozici je i další metadatový formát DublinCore. Dále je nastavena granularita data na formát "YYYY-MM-DDThh:mm:ssZ", podle které se pøi sklízení dat porovnává èasová znaèka záznamu a rozhoduje se tak, jestli záznam podléhá sklízení nebo jeho datum zmìny je starší a pravdìpodobnì už byl sklizen. Nastavení souboru pro zapisování identifikátorù sklizených záznamù \texttt{harvest.log} je aktivní, i když volitelné.
 
+V adresáøi \texttt{katalog\_ntk-update} pro sklízení dat se nachází jeden dùležitý soubor, kterým je \texttt{last\_harvest.txt}. Do nìho se zapisuje, potažmo pøepisuje èasové razítko posledního procesu sklízení. Pøi následném sklízení je dle tohoto data jasné, které záznamy byly už sklizeny a které se tedy mají sklidit. Sklízené záznamy se ukládají jednotlivì do XML souborù a potom, co jsou dále zpracovány, tedy importovány do indexu nebo z indexu vymazány, pøesouvají se do podadresáøe \texttt{processed}.
 \cite{vufind.oai}
+
+

@@ -31,13 +31,13 @@
 \contentsline {subsection}{\numberline {2.2.2}Zabezpe\v cen\IeC {\'\i }}{10}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Web server}{10}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Java server}{10}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Datab\'azov\'y server}{11}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}ZendFramework}{11}{subsection.2.2.6}
-\contentsline {subsection}{\numberline {2.2.7}Zabbix}{11}{subsection.2.2.7}
+\contentsline {subsection}{\numberline {2.2.5}Datab\'azov\'y server}{10}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}ZendFramework}{10}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}Zabbix}{10}{subsection.2.2.7}
 \contentsline {subsection}{\numberline {2.2.8}SSH}{11}{subsection.2.2.8}
 \contentsline {subsection}{\numberline {2.2.9}Cron}{11}{subsection.2.2.9}
 \contentsline {subsection}{\numberline {2.2.10}Shibboleth}{11}{subsection.2.2.10}
-\contentsline {subsection}{\numberline {2.2.11}GIT}{12}{subsection.2.2.11}
+\contentsline {subsection}{\numberline {2.2.11}GIT}{11}{subsection.2.2.11}
 \contentsline {section}{\numberline {2.3}PSH}{12}{section.2.3}
 \contentsline {chapter}{\numberline {3}Svobod\'y software pro knihovny}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Blacklight}{14}{section.3.1}

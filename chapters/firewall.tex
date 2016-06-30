@@ -1,6 +1,12 @@
 \label{sec:firewall}
-Firewall - ssl
+V dnešní dobì je na zabezpeèení ve stále se rozvíjejícím virtuálním svìtì kladen èím dál vìtší dùraz. To proto, že se v tomto prostoru odehrávají èinnosti èím dál dùležitìjší pro bìžný život. Zaopatøení proti kybernetickým útokùm je pro jakoukoli firmu nezbytné. Nejinak tomu je i v Národní technické knihovnì, kde jedním z tìchto nástrojù je brána firewall. Brána firewall je ve vybavení operaèních systémù serverù a její ovládání je v zásadì jednoduché.
 
-povolení portù, 80, 8080, 8181...
+Pro systém VuFind je potøeba provést v nastavení firewall urèité zmìny. Konkrétnì se jedná o povolení komunikace na portech, které VuFind používá. Pro dostupnost katalogu ve veøejné síti internet se používá bìžný port pro pøenos HTTP protokolu, který má èíslo 80. Další používané porty jsou 8080 a 8181, na kterých probíhá komunikace VuFindu s vyhledávacím strojem Solr. Pøíkaz na povolení portu 80 vypadá takto:
+\begin{verbatim}
+firewall-cmd --zone=public --add-port=80/tcp --permanent
+\end{verbatim}
+\cite{firewall.cmd}
 
-Zabezpeèení SSL:443
+Dalším zabezpeèením VuFindu je šifrování komunikace pøes zabezpeèený protokol HTTPS, která probíhá na portu 443. V nastavení webového serveru Apache je nakonfigurováno automatické pøesmìrování z protokolu HTTP na HTTPS. Aby server mohl používat takové zabezpeèení musí být nejprve ovìøen autoritou a získat certifikát. Pro Národní technickou knihovnu je touto autoritou spoleènost Cesnet, která ovìøuje její služby v síti internet a vydává certifikáty.
+\cite{cesnet}
+

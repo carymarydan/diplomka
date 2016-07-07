@@ -23,6 +23,14 @@
 \pagestyle{empty} % vypne èíslování stránek
 \begin{document}
 \pagestyle{empty} % vypne èíslování stránek
+
+\chapter*{Pøedmluva}
+\input{chapters/predmluva}
+\chapter*{Klíèová slova}
+\input{chapters/keywords}
+\chapter*{Abstrakt}
+\input{chapters/abstract}
+
 \tableofcontents
 \pagestyle{empty} % vypne èíslování stránek
 \pagestyle{plain}     % zapne obyèejné èíslování
@@ -33,23 +41,38 @@
 \chapter{Úvod}
 \input{chapters/introduction}
 
-\chapter{Svobodý software pro knihovny}
-\input{chapters/opensource}
-	\section{Blacklight}
-	\input{chapters/blacklight}
-	\section{Evergreen}
-	\input{chapters/evergreen}
-	\section{Koha}
-	\input{chapters/koha}
+\chapter{Open Source}
+	\section{Filosofie otevøené komunity}
+	\input{chapters/opensource}
+	\section{Svobodý software pro knihovny}
+	\input{chapters/opensourcesw}
+		\subsection{Blacklight}
+		\input{chapters/blacklight}
+		\subsection{Evergreen}
+		\input{chapters/evergreen}
+		\subsection{Koha}
+		\input{chapters/koha}
 
 \chapter{Portál VuFind}
-\input{chapters/vufind}
+\input{chapters/vufind-intro}
 	\section{Vznik}
 	\input{chapters/vufind}
 	\section{Klíèové vlastnosti}
 	\input{chapters/vlastnosti}
-	\section{Požadavky na hw a sw}
-	\input{chapters/requirements}	
+	\section{Požadavky na software}
+	\input{chapters/requirementssw}
+		\subsection{Operaèní systém}
+  		\input{chapters/redhat}
+  		\subsection{Webový server}
+  		\input{chapters/apache}  
+  		\subsection{Javový server}
+  		\input{chapters/java}  
+  		\subsection{Databázový server}
+  		\input{chapters/mysql}
+  		\subsection{ZendFramework}
+  		\input{chapters/zendframework}
+  	\section{Požadavky na hardware}
+	\input{chapters/requirementshw}
 	\section{Implementace v ÈR i zahranièí}
 	\input{chapters/chapter04}
 
@@ -100,18 +123,8 @@
 		\input{chapters/vufind-eiz}		
 	\section{Software}
 	\input{chapters/swntk}
-  		\subsection{Operaèní systém}
-  		\input{chapters/redhat}
   		\subsection{Zabezpeèení}
-  		\input{chapters/firewall}
-  		\subsection{Web server}
-  		\input{chapters/apache}  
-  		\subsection{Java server}
-  		\input{chapters/java}  
-  		\subsection{Databázový server}
-  		\input{chapters/mysql}
-  		\subsection{ZendFramework}
-  		\input{chapters/zendframework}  
+  		\input{chapters/firewall} 
   		\subsection{Zabbix}
   		\input{chapters/zabbix}
   		\subsection{Cron}
@@ -138,6 +151,39 @@
 \listoffigures
 
 \begin{thebibliography}{9}
+\bibitem{what.open.source}
+What is open source software? Open source is changing the world: join the movement | Opensource.com [online]. Red Hat, Inc., 2016 [cit. 2016-06-30]. Dostupné z: https://opensource.com/resources/what-open-source
+
+\bibitem{free.soft}
+Open Source - GNU projekt - Nadace pro svobodný software (FSF). Philosophisches GNU - GNU-Projekt - Free Software Foundation [online]. Free Software Foundation, Inc., 2014 [cit. 2016-07-01]. Dostupné z: http://www.gnu.org/philosophy/free-software-for-freedom.cs.html
+
+\bibitem{copyleft}
+What is Copyleft? - GNU Project - Free Software Foundation. The GNU Operating System and the Free Software Movement [online]. Free Software Foundation, Inc., 2016 [cit. 2016-07-01]. Dostupné z: https://www.gnu.org/licenses/copyleft.en.html
+
+\bibitem{licence}
+What is Open Source Software? Webopedia: Online Tech Dictionary for IT Professionals [online]. QuinStreet Inc., 2016 [cit. 2016-07-01]. Dostupné z: http://www.webopedia.com/DidYouKnow/Computer\_Science/open\_source.asp
+
+\bibitem{OSI}
+Open Source Initiative [online]. [cit. 2016-07-01]. Dostupné z: https://opensource.org/
+
+\bibitem{tvorba.os}
+FOGEL, Karl. Tvorba open source softwaru: jak øídit úspìšný projekt svobodného softwaru [online]. Praha: CZ.NIC, 2012 [cit. 2016-06-20]. CZ.NIC. ISBN 978-80-904248-5-2.
+
+\bibitem{vufind.prispevatele}
+Contributors to vufind-org/vufind. GitHub [online]. GitHub, Inc., 2016 [cit. 2016-07-01]. Dostupné z: https://github.com/vufind-org/vufind/graphs/contributors
+
+\bibitem{blacklight}
+Blacklight [online]. [cit. 2016-07-01]. Dostupné z: http://projectblacklight.org/
+
+\bibitem{evergreen.ctenar}
+CERNIÒÁKOVÁ, Eva. Knihovní systém s otevøeným zdrojovým kódem v Knihovnì Jabok. ÈTENÁØ – MÌSÍÈNÍK PRO KNIHOVNY [online]. 2012, 64(2) [cit. 2016-06-15]. ISSN 1805-4064. Dostupné z: http://ctenar.svkkl.cz/clanky/2012-roc-64/2-2012/knihovni-system-s-otevrenym-zdrojovym-kodem-v-knihovne-jabok-94-1138.htm
+
+\bibitem{koha.moravec}
+MORAVEC, Josef. Koha – knihovní systém s otevøeným zdrojovým kódem. Duha [online]. 2013, roè. 27, è. 4 [cit. 2016-06-15]. ISSN 1804-4255. Dostupné z: http://duha.mzk.cz/clanky/koha-knihovni-system-s-otevrenym-zdrojovym-kodem
+
+\bibitem{koha.knihovny}
+Seznam knihoven, které v ÈR používají systém Koha v bìžném provozu. GitHub [online]. GitHub, Inc., 2016 [cit. 2016-07-01]. Dostupné z: https://github.com/open-source-knihovna/KohaCZ/wiki/Seznam-knihoven,-kter%C3%A9-v-%C4%8CR-pou%C5%BE%C3%ADvaj%C3%AD-syst%C3%A9m-Koha-v-b%C4%9B%C5%BEn%C3%A9m-provozu
+
 \bibitem{techlib} 
 O NTK: Váš partner ve svìtì technických informací. \textit{Národní technická knihovna} [online]. Praha [cit. 2016-06-09]. Dostupné z: https://www.techlib.cz/cs/82794-o-ntk
 
@@ -209,39 +255,6 @@ Git - Správa verzí. Git [online]. [cit. 2016-06-13]. Dostupné z: https://git-scm
 
 \bibitem{psh}
 Polytematický strukturovaný hesláø. Národní technická knihovna [online]. Národní technická knihovna, 2016 [cit. 2016-06-30]. Dostupné z: https://www.techlib.cz/cs/82897-polytematicky-strukturovany-heslar
-
-\bibitem{what.open.source}
-What is open source software? Open source is changing the world: join the movement | Opensource.com [online]. Red Hat, Inc., 2016 [cit. 2016-06-30]. Dostupné z: https://opensource.com/resources/what-open-source
-
-\bibitem{free.soft}
-Open Source - GNU projekt - Nadace pro svobodný software (FSF). Philosophisches GNU - GNU-Projekt - Free Software Foundation [online]. Free Software Foundation, Inc., 2014 [cit. 2016-07-01]. Dostupné z: http://www.gnu.org/philosophy/free-software-for-freedom.cs.html
-
-\bibitem{copyleft}
-What is Copyleft? - GNU Project - Free Software Foundation. The GNU Operating System and the Free Software Movement [online]. Free Software Foundation, Inc., 2016 [cit. 2016-07-01]. Dostupné z: https://www.gnu.org/licenses/copyleft.en.html
-
-\bibitem{licence}
-What is Open Source Software? Webopedia: Online Tech Dictionary for IT Professionals [online]. QuinStreet Inc., 2016 [cit. 2016-07-01]. Dostupné z: http://www.webopedia.com/DidYouKnow/Computer\_Science/open\_source.asp
-
-\bibitem{OSI}
-Open Source Initiative [online]. [cit. 2016-07-01]. Dostupné z: https://opensource.org/
-
-\bibitem{tvorba.os}
-FOGEL, Karl. Tvorba open source softwaru: jak øídit úspìšný projekt svobodného softwaru [online]. Praha: CZ.NIC, 2012 [cit. 2016-06-20]. CZ.NIC. ISBN 978-80-904248-5-2.
-
-\bibitem{vufind.prispevatele}
-Contributors to vufind-org/vufind. GitHub [online]. GitHub, Inc., 2016 [cit. 2016-07-01]. Dostupné z: https://github.com/vufind-org/vufind/graphs/contributors
-
-\bibitem{blacklight}
-Blacklight [online]. [cit. 2016-07-01]. Dostupné z: http://projectblacklight.org/
-
-\bibitem{evergreen.ctenar}
-CERNIÒÁKOVÁ, Eva. Knihovní systém s otevøeným zdrojovým kódem v Knihovnì Jabok. ÈTENÁØ – MÌSÍÈNÍK PRO KNIHOVNY [online]. 2012, 64(2) [cit. 2016-06-15]. ISSN 1805-4064. Dostupné z: http://ctenar.svkkl.cz/clanky/2012-roc-64/2-2012/knihovni-system-s-otevrenym-zdrojovym-kodem-v-knihovne-jabok-94-1138.htm
-
-\bibitem{koha.moravec}
-MORAVEC, Josef. Koha – knihovní systém s otevøeným zdrojovým kódem. Duha [online]. 2013, roè. 27, è. 4 [cit. 2016-06-15]. ISSN 1804-4255. Dostupné z: http://duha.mzk.cz/clanky/koha-knihovni-system-s-otevrenym-zdrojovym-kodem
-
-\bibitem{koha.knihovny}
-Seznam knihoven, které v ÈR používají systém Koha v bìžném provozu. GitHub [online]. GitHub, Inc., 2016 [cit. 2016-07-01]. Dostupné z: https://github.com/open-source-knihovna/KohaCZ/wiki/Seznam-knihoven,-kter%C3%A9-v-%C4%8CR-pou%C5%BE%C3%ADvaj%C3%AD-syst%C3%A9m-Koha-v-b%C4%9B%C5%BEn%C3%A9m-provozu
 
 \bibitem{vyrocni.zprava}
 SVOBODA, Martin, Saša SKENDERIJA, Jan POKORNÝ, Eva DIBUSZOVÁ a Jitka ŠTURMOVÁ. Výroèní zpráva Národní technické knihovny 2014 [online]. Praha: vlastním nákladem, 2015 [cit. 2016-06-28]. ISBN 978-80-86504-33-9. ISSN 1804-5464. Dostupné z: https://www.techlib.cz/files/download/id/85930/vyrocni-zprava-2014.pdf

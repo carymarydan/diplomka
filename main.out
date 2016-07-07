@@ -1,49 +1,50 @@
 \BOOKMARK [0][-]{chapter.1}{\332vod}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Historie NTK}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Predstaven\355 port\341lu VuFind}{chapter.1}% 3
-\BOOKMARK [2][-]{subsection.1.2.1}{Kl\355cov\351 vlastnosti}{section.1.2}% 4
-\BOOKMARK [2][-]{subsection.1.2.2}{Po\236adavky na hw a sw}{section.1.2}% 5
-\BOOKMARK [0][-]{chapter.2}{\(Virtu\341ln\355\) prostred\355 NTK}{}% 6
-\BOOKMARK [1][-]{section.2.1}{Servery}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.1.1}{Server Aleph}{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.2}{Server SFX}{section.2.1}% 9
-\BOOKMARK [2][-]{subsection.2.1.3}{Server VuFind 1.x}{section.2.1}% 10
-\BOOKMARK [2][-]{subsection.2.1.4}{Server VuFind 2.x}{section.2.1}% 11
-\BOOKMARK [2][-]{subsection.2.1.5}{Testovac\355 server VuFind}{section.2.1}% 12
-\BOOKMARK [2][-]{subsection.2.1.6}{Testovac\355 server VuFind + Summon}{section.2.1}% 13
-\BOOKMARK [1][-]{section.2.2}{Software}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.1}{Operacn\355 syst\351m}{section.2.2}% 15
-\BOOKMARK [2][-]{subsection.2.2.2}{Zabezpecen\355}{section.2.2}% 16
-\BOOKMARK [2][-]{subsection.2.2.3}{Web server}{section.2.2}% 17
-\BOOKMARK [2][-]{subsection.2.2.4}{Java server}{section.2.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.5}{Datab\341zov\375 server}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.6}{ZendFramework}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.7}{Zabbix}{section.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.8}{Cron}{section.2.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.9}{GIT}{section.2.2}% 23
-\BOOKMARK [1][-]{section.2.3}{PSH}{chapter.2}% 24
-\BOOKMARK [0][-]{chapter.3}{Svobod\375 software pro knihovny}{}% 25
-\BOOKMARK [1][-]{section.3.1}{Blacklight}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.2}{Evergreen}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.3}{Koha}{chapter.3}% 28
-\BOOKMARK [0][-]{chapter.4}{VuFind v NTK}{}% 29
-\BOOKMARK [1][-]{section.4.1}{Instalace}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.2}{Implementace}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.2.1}{Konfiguracn\355 soubory}{section.4.2}% 32
-\BOOKMARK [2][-]{subsection.4.2.2}{Modul NTK}{section.4.2}% 33
-\BOOKMARK [2][-]{subsection.4.2.3}{Autentikace}{section.4.2}% 34
-\BOOKMARK [2][-]{subsection.4.2.4}{Import dat - SolrMarc}{section.4.2}% 35
-\BOOKMARK [2][-]{subsection.4.2.5}{Indexace dat - Solr}{section.4.2}% 36
-\BOOKMARK [2][-]{subsection.4.2.6}{Skl\355zen\355 dat - OAI-PMH}{section.4.2}% 37
-\BOOKMARK [2][-]{subsection.4.2.7}{Vyhled\341v\341n\355}{section.4.2}% 38
-\BOOKMARK [2][-]{subsection.4.2.8}{Grafick\375 design}{section.4.2}% 39
-\BOOKMARK [2][-]{subsection.4.2.9}{Cten\341rsk\351 konto}{section.4.2}% 40
-\BOOKMARK [1][-]{section.4.3}{Provoz}{chapter.4}% 41
-\BOOKMARK [2][-]{subsection.4.3.1}{WorkFlow}{section.4.3}% 42
-\BOOKMARK [2][-]{subsection.4.3.2}{Statistiky n\341v\235tevnosti}{section.4.3}% 43
-\BOOKMARK [0][-]{chapter.5}{Pou\236it\355 VuFindu v ostatn\355ch knihovn\341ch \(CR, zahranic\355\)}{}% 44
-\BOOKMARK [0][-]{chapter.6}{Budouc\355 v\375voj syst\351mu}{}% 45
-\BOOKMARK [0][-]{chapter.7}{Z\341ver \(zhodnocen\355\)}{}% 46
-\BOOKMARK [0][-]{chapter*.22}{Seznam obr\341zku}{}% 47
-\BOOKMARK [0][-]{chapter*.23}{Literatura}{}% 48
-\BOOKMARK [0][-]{appendix.A}{Pr\355loha}{}% 49
+\BOOKMARK [0][-]{chapter.2}{Svobod\375 software pro knihovny}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Blacklight}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Evergreen}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Koha}{chapter.2}% 5
+\BOOKMARK [0][-]{chapter.3}{Port\341l VuFind}{}% 6
+\BOOKMARK [1][-]{section.3.1}{Vznik}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.2}{Kl\355cov\351 vlastnosti}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.3}{Po\236adavky na hw a sw}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.4}{Implementace v CR i zahranic\355}{chapter.3}% 10
+\BOOKMARK [0][-]{chapter.4}{Technick\351 aspekty implementace}{}% 11
+\BOOKMARK [1][-]{section.4.1}{Konfiguracn\355 soubory}{chapter.4}% 12
+\BOOKMARK [1][-]{section.4.2}{Autentikace}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.3}{Import dat - SolrMarc}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.4}{Indexace dat - Solr}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.5}{Vyhled\341v\341n\355}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.6}{Grafick\375 design}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.7}{Cten\341rsk\351 konto}{chapter.4}% 18
+\BOOKMARK [0][-]{chapter.5}{Napojen\355 na Aleph}{}% 19
+\BOOKMARK [1][-]{section.5.1}{Server Aleph}{chapter.5}% 20
+\BOOKMARK [0][-]{chapter.6}{Automatick\375 sber dat - OAI-PMH}{}% 21
+\BOOKMARK [1][-]{section.6.1}{Server SFX}{chapter.6}% 22
+\BOOKMARK [0][-]{chapter.7}{Nasazen\355 VuFind v N\341rodn\355 technick\351 knihovne}{}% 23
+\BOOKMARK [1][-]{section.7.1}{Modul NTK}{chapter.7}% 24
+\BOOKMARK [1][-]{section.7.2}{Instalace}{chapter.7}% 25
+\BOOKMARK [1][-]{section.7.3}{Historie NTK}{chapter.7}% 26
+\BOOKMARK [1][-]{section.7.4}{Servery}{chapter.7}% 27
+\BOOKMARK [2][-]{subsection.7.4.1}{Server VuFind 1.x}{section.7.4}% 28
+\BOOKMARK [2][-]{subsection.7.4.2}{Server VuFind 2.x}{section.7.4}% 29
+\BOOKMARK [2][-]{subsection.7.4.3}{Testovac\355 server VuFind}{section.7.4}% 30
+\BOOKMARK [2][-]{subsection.7.4.4}{Testovac\355 server VuFind + Summon}{section.7.4}% 31
+\BOOKMARK [1][-]{section.7.5}{Software}{chapter.7}% 32
+\BOOKMARK [2][-]{subsection.7.5.1}{Operacn\355 syst\351m}{section.7.5}% 33
+\BOOKMARK [2][-]{subsection.7.5.2}{Zabezpecen\355}{section.7.5}% 34
+\BOOKMARK [2][-]{subsection.7.5.3}{Web server}{section.7.5}% 35
+\BOOKMARK [2][-]{subsection.7.5.4}{Java server}{section.7.5}% 36
+\BOOKMARK [2][-]{subsection.7.5.5}{Datab\341zov\375 server}{section.7.5}% 37
+\BOOKMARK [2][-]{subsection.7.5.6}{ZendFramework}{section.7.5}% 38
+\BOOKMARK [2][-]{subsection.7.5.7}{Zabbix}{section.7.5}% 39
+\BOOKMARK [2][-]{subsection.7.5.8}{Cron}{section.7.5}% 40
+\BOOKMARK [2][-]{subsection.7.5.9}{GIT}{section.7.5}% 41
+\BOOKMARK [1][-]{section.7.6}{PSH}{chapter.7}% 42
+\BOOKMARK [0][-]{chapter.8}{Budouc\355 v\375voj syst\351mu}{}% 43
+\BOOKMARK [1][-]{section.8.1}{Provoz}{chapter.8}% 44
+\BOOKMARK [2][-]{subsection.8.1.1}{WorkFlow}{section.8.1}% 45
+\BOOKMARK [2][-]{subsection.8.1.2}{Statistiky n\341v\235tevnosti}{section.8.1}% 46
+\BOOKMARK [0][-]{chapter.9}{Z\341ver \(zhodnocen\355\)}{}% 47
+\BOOKMARK [0][-]{chapter*.22}{Seznam obr\341zku}{}% 48
+\BOOKMARK [0][-]{chapter*.23}{Literatura}{}% 49
+\BOOKMARK [0][-]{appendix.A}{Pr\355loha}{}% 50

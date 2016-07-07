@@ -25,28 +25,71 @@
 \pagestyle{empty} % vypne èíslování stránek
 \tableofcontents
 \pagestyle{empty} % vypne èíslování stránek
-
-\chapter{Úvod}
-\input{chapters/introduction}
 \pagestyle{plain}     % zapne obyèejné èíslování
 \setcounter{page}{5}  % nastaví èítaè stránek znovu od jedné
 \pagenumbering{arabic} % èíslování øímskými èíslicemi
+
+
+\chapter{Úvod}
+\input{chapters/introduction}
+
+\chapter{Svobodý software pro knihovny}
+\input{chapters/opensource}
+	\section{Blacklight}
+	\input{chapters/blacklight}
+	\section{Evergreen}
+	\input{chapters/evergreen}
+	\section{Koha}
+	\input{chapters/koha}
+
+\chapter{Portál VuFind}
+\input{chapters/vufind}
+	\section{Vznik}
+	\input{chapters/vufind}
+	\section{Klíèové vlastnosti}
+	\input{chapters/vlastnosti}
+	\section{Požadavky na hw a sw}
+	\input{chapters/requirements}	
+	\section{Implementace v ÈR i zahranièí}
+	\input{chapters/chapter04}
+
+\chapter{Technické aspekty implementace}
+\input{chapters/implementace}
+	\section{Konfiguraèní soubory}
+  	\input{chapters/config}
+  	\section{Autentikace}
+	\input{chapters/shibboleth}
+	\section{Import dat - SolrMarc}
+  	\input{chapters/import}
+  	\section{Indexace dat - Solr}
+  	\input{chapters/solr}
+  	\section{Vyhledávání}
+  	\input{chapters/searching}
+  	\section{Grafický design}
+  	\input{chapters/kustomizace}
+  	\section{Ètenáøské konto}
+  	\input{chapters/acount}
+
+\chapter{Napojení na Aleph}
+\input{chapters/chapter03}
+  	\section{Server Aleph}
+  	\input{chapters/aleph}
+
+\chapter{Automatický sbìr dat - OAI-PMH}
+\input{chapters/harvest}
+  		\section{Server SFX}
+  		\input{chapters/sfx}
+
+\chapter{Nasazení VuFind v Národní technické knihovnì}
+\input{chapters/chapter02}
+  	\section{Modul NTK}
+  	\input{chapters/ntkmodule}
+	\section{Instalace}
+ 	\input{chapters/instalace}
 	\section{Historie NTK}
 	\input{chapters/historieNTK}
-	\section{Pøedstavení portálu VuFind}
-	\input{chapters/vufind}
-		\subsection{Klíèové vlastnosti}
-		\input{chapters/vlastnosti}
-		\subsection{Požadavky na hw a sw}
-		\input{chapters/requirements}		
-\chapter{(Virtuální) prostøedí NTK}
-\input{chapters/chapter02}
 	\section{Servery}
  	\input{chapters/servery}
-  		\subsection{Server Aleph}
-  		\input{chapters/aleph}
-  		\subsection{Server SFX}
-  		\input{chapters/sfx}
   		\subsection{Server VuFind 1.x}
   		\input{chapters/vufindold}
   		\subsection{Server VuFind 2.x}
@@ -77,48 +120,16 @@
   		\input{chapters/git}
 	\section{PSH}
 	\input{chapters/psh}
-\chapter{Svobodý software pro knihovny}
-\input{chapters/opensource}
-	\section{Blacklight}
-	\input{chapters/blacklight}
-	\section{Evergreen}
-	\input{chapters/evergreen}
-	\section{Koha}
-	\input{chapters/koha}
-\chapter{VuFind v NTK}
-\input{chapters/chapter03}
-	\section{Instalace}
- 	\input{chapters/instalace}
- 	\section{Implementace}
- 	\input{chapters/implementace}
- 	  	\subsection{Konfiguraèní soubory}
-  		\input{chapters/config}
- 	  	\subsection{Modul NTK}
-  		\input{chapters/ntkmodule}
-  		\subsection{Autentikace}
-  		\input{chapters/shibboleth}
-  		\subsection{Import dat - SolrMarc}
-  		\input{chapters/import}
-  		\subsection{Indexace dat - Solr}
-  		\input{chapters/solr}
-  		\subsection{Sklízení dat - OAI-PMH}
-  		\input{chapters/harvest}
-  		\subsection{Vyhledávání}
-  		\input{chapters/searching}
-  		\subsection{Grafický design}
-  		\input{chapters/kustomizace}
-  		\subsection{Ètenáøské konto}
-  		\input{chapters/acount}
+
+\chapter{Budoucí vývoj systému}
+\input{chapters/chapter05}
 	\section{Provoz}
 	\input{chapters/provoz}
  		\subsection{WorkFlow}
  		\input{chapters/workflow}
  		\subsection{Statistiky návštìvnosti}
  		\input{chapters/statistiky}
-\chapter{Použití VuFindu v ostatních knihovnách (ÈR, zahranièí)}
-\input{chapters/chapter04}
-\chapter{Budoucí vývoj systému}
-\input{chapters/chapter05}
+
 \chapter{Závìr (zhodnocení)}
 \input{chapters/conclusion}
 

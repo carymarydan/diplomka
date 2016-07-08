@@ -1,11 +1,2 @@
 \label{sec:implementace}
-Prùbìh implementace spoèívá v pøizpùsobení nastavení konkrétnímu prostøedí. V této kapitole je popsána konfigurace systému VuFind pro použití v Národní technické knihovnì, která spoèívá v úpravì nastavení vyhledávání, komunikace s ostatními systémy knihovny i externími službami (pozn. CitacePro, ObálkyKnih), systému výpùjèek, a dalších. Dále je zde popsáno programování lokálních funkcionalit systému vèetnì implementace služby EOD, a také grafického designu. V dalších podkapitolách je popsáno nastavení importu, indexace a sklízení dat.
-
-Zde je popsáno další nastavení serveru (nikoli nejnutnìjší základní popsané v pøedchozí kapitole Instalace).
-Instalace Shibboleth, Cron,..
-
-Zde je popsána samostatná implementace, úprava zdrojového kódu, nastavení konfiguraèních souboru, naprogramování unikátních funkcí a customizace grafického designu.
-
-Podkapitoly zabývající se importem,...
-
-Popis implementace se dotýká upravených èastí systému, nejvýznamnìjších souborù a dùležitých nastavení. Nìkteré nezmìnìné parametry zùstávají v pùvodní podobì a nejsou zde zmiòovány z dùvodu velkého rozsahu.
+Tato kapitola je zamìøená na technické aspekty implementace portálu VuFind. Uvedena a popsána jsou obecná nastavení s nìkterými konkrétními pøíklady z prostøedí Národní technické knihovny (dále jen NTK), protože prùbìh implementace spoèívá právì v pøizpùsobování konkrétnímu prostøedí. V následujících podkapitolách je vysvìtlena funkce konfiguraèních souborù, které jsou hlavním nástrojem pro nastavení systému. Dále je pøedstavena metoda ovìøování uživatelù. Popis procesu importu dat je doplnìn o èást zdrojového kódu, který upravuje fungování systému dle podmínek NTK. Také je popsán prùbìh indexace dat s patøiènými úpravami pro konkrétní prostøedí. V podkapitole o vyhledávání je mimo jiné uveden zdrojový kód, který obsluhuje zobrazování umístìní jednotek. Poslední dvì podkapitoly se vìnují grafickému vzhledu celého portálu VuFind a ètenáøskému kontu, které mùže registrovaný uživatel spravovat.

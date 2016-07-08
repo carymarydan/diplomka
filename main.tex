@@ -19,6 +19,9 @@
 \usepackage{indentfirst}
 \setlength{\parindent}{4em}
 
+\usepackage{listings}
+\lstset{breaklines=true, basicstyle=\ttfamily}
+
 \pagestyle{empty} % vypne èíslování stránek
 \pagestyle{empty} % vypne èíslování stránek
 \begin{document}
@@ -42,6 +45,7 @@
 \input{chapters/introduction}
 
 \chapter{Open Source}
+\input{chapters/opensource-intro}
 	\section{Filosofie otevøené komunity}
 	\input{chapters/opensource}
 	\section{Svobodý software pro knihovny}
@@ -82,9 +86,9 @@
   	\input{chapters/config}
   	\section{Autentikace}
 	\input{chapters/shibboleth}
-	\section{Import dat - SolrMarc}
+	\section{Import dat}
   	\input{chapters/import}
-  	\section{Indexace dat - Solr}
+  	\section{Indexace dat}
   	\input{chapters/solr}
   	\section{Vyhledávání}
   	\input{chapters/searching}
@@ -184,12 +188,6 @@ MORAVEC, Josef. Koha – knihovní systém s otevøeným zdrojovým kódem. Duha [online
 \bibitem{koha.knihovny}
 Seznam knihoven, které v ÈR používají systém Koha v bìžném provozu. GitHub [online]. GitHub, Inc., 2016 [cit. 2016-07-01]. Dostupné z: https://github.com/open-source-knihovna/KohaCZ/wiki/Seznam-knihoven,-kter%C3%A9-v-%C4%8CR-pou%C5%BE%C3%ADvaj%C3%AD-syst%C3%A9m-Koha-v-b%C4%9B%C5%BEn%C3%A9m-provozu
 
-\bibitem{techlib} 
-O NTK: Váš partner ve svìtì technických informací. \textit{Národní technická knihovna} [online]. Praha [cit. 2016-06-09]. Dostupné z: https://www.techlib.cz/cs/82794-o-ntk
-
-\bibitem{stk} 
-\textit{Státní technická knihovna} [online]. Praha [cit. 2016-06-09]. Dostupné z: http://old.stk.cz/index.html
-
 \bibitem{prvni.verze} 
 VuFind / News: VuFind out of beta with 1.0 release. SourceForge - Download, Develop and Publish Free Open Source Software [online]. Slashdot Media, 2016 [cit. 2016-06-30]. Dostupné z: https://sourceforge.net/p/vufind/news/2010/07/vufind-out-of-beta-with-10-release/
 
@@ -205,23 +203,11 @@ Features. VuFind - Search. Discover. Share. [online]. Villanova University's Fal
 \bibitem{vufind.req}
 Requirements. VuFind - Search. Discover. Share. [online]. Villanova University's Falvey Memorial Library, 2016 [cit. 2016-06-30]. Dostupné z: https://vufind.org/wiki/installation:requirements
 
-\bibitem{aleph.smlouva}
-Nabídka na údržbu a podporu knihovnického systému Aleph 500 na období 2016 - 2017 pro Národní technickou knihovnu. Praha, 2016.
-
-\bibitem{aleph}
-Ex Libris the bridge to knowledge, Aleph. Ex Libris corporate website [online]. Ex Libris Ltd., 2016 [cit. 2016-06-30]. Dostupné z: http://www.exlibrisgroup.com/category/Aleph
-
 \bibitem{redhat.ofic}
 Red Hat Enterprise Linux Server. The world's open source leader [online]. Red Hat, Inc., 2016 [cit. 2016-06-30]. Dostupné z: https://www.redhat.com/en/resources/red-hat-enterprise-linux-server
 
 \bibitem{rhel.zive}
 ÈÍŽEK, Jakub. Linuxový Red Hat se pochlubil hospodaøením. Vydìlává i díky èeským vývojáøùm – Živì.cz. Živì.cz – O poèítaèích, IT a internetu [online]. CN Invest a.s., 2016 [cit. 2016-06-30]. ISSN 1213-8991. Dostupné z: http://www.zive.cz/bleskovky/linuxovy-red-hat-se-pochlubil-hospodarenim-vydelava-i-diky-ceskym-vyvojarum/sc-4-a-182945/default.aspx
-
-\bibitem{firewall.cmd}
-How to open http port 80 on Redhat 7 Linux using firewall-cmd. Linux Configuration Tutorials [online]. LinuxConfig.org, 2016 [cit. 2016-06-30]. Dostupné z: https://linuxconfig.org/how-to-open-http-port-80-on-redhat-7-linux-using-firewall-cmd
-
-\bibitem{cesnet}
-CESNET PKI. CESNET | CESNET, zájmové sdružení právnických osob [online]. CESNET, z. s. p. o., 2016 [cit. 2016-06-30]. Dostupné z: https://pki.cesnet.cz/cs/ch-intro.html
 
 \bibitem{apache}
 About the Apache HTTP Server Project - The Apache HTTP Server Project. The Apache HTTP Server Project [online]. The Apache Software Foundation, 2016 [cit. 2016-06-30]. Dostupné z: https://httpd.apache.org/ABOUT\_APACHE.html
@@ -243,6 +229,42 @@ MySQL [online]. Oracle Corporation, 2016 [cit. 2016-06-30]. Dostupné z: https://
 
 \bibitem{zend}
 Zend Framework [online]. Zend, a Rogue Wave Company, 2016 [cit. 2016-06-30]. Dostupné z: https://framework.zend.com/
+
+\bibitem{vufind.org.installations} 
+Community:installations [VuFind Documentation]. VuFind - Search. Discover. Share. [online]. [cit. 2016-06-10]. Dostupné z: 
+https://vufind.org/wiki/community:installations
+
+\bibitem{record.manager}
+RecordManager. GitHub [online]. GitHub, Inc., 2016 [cit. 2016-07-01]. Dostupné z: https://github.com/NatLibFi/RecordManager
+
+
+
+
+
+
+
+
+
+
+
+
+\bibitem{techlib} 
+O NTK: Váš partner ve svìtì technických informací. \textit{Národní technická knihovna} [online]. Praha [cit. 2016-06-09]. Dostupné z: https://www.techlib.cz/cs/82794-o-ntk
+
+\bibitem{stk} 
+\textit{Státní technická knihovna} [online]. Praha [cit. 2016-06-09]. Dostupné z: http://old.stk.cz/index.html
+
+\bibitem{aleph.smlouva}
+Nabídka na údržbu a podporu knihovnického systému Aleph 500 na období 2016 - 2017 pro Národní technickou knihovnu. Praha, 2016.
+
+\bibitem{aleph}
+Ex Libris the bridge to knowledge, Aleph. Ex Libris corporate website [online]. Ex Libris Ltd., 2016 [cit. 2016-06-30]. Dostupné z: http://www.exlibrisgroup.com/category/Aleph
+
+\bibitem{firewall.cmd}
+How to open http port 80 on Redhat 7 Linux using firewall-cmd. Linux Configuration Tutorials [online]. LinuxConfig.org, 2016 [cit. 2016-06-30]. Dostupné z: https://linuxconfig.org/how-to-open-http-port-80-on-redhat-7-linux-using-firewall-cmd
+
+\bibitem{cesnet}
+CESNET PKI. CESNET | CESNET, zájmové sdružení právnických osob [online]. CESNET, z. s. p. o., 2016 [cit. 2016-06-30]. Dostupné z: https://pki.cesnet.cz/cs/ch-intro.html
 
 \bibitem{zabbix}
 Zabbix :: The Enterprise-Class Open Source Network Monitoring Solution [online]. Zabbix LLC, 2016 [cit. 2016-06-30]. Dostupné z: http://www.zabbix.com/
@@ -304,9 +326,8 @@ Bootstrap - The world's most popular mobile-first and responsive front-end frame
 \bibitem{ui}
 Development:architecture:user\_interface [VuFind Documentation]. VuFind - Search. Discover. Share. [online]. Villanova University's Falvey Memorial Library, 2016 [cit. 2016-07-01]. Dostupné z: https://vufind.org/wiki/development:architecture:user\_interface
 
-\bibitem{vufind.org.installations} 
-Community:installations [VuFind Documentation]. VuFind - Search. Discover. Share. [online]. [cit. 2016-06-10]. Dostupné z: 
-https://vufind.org/wiki/community:installations
+
+
 
 
 
@@ -319,14 +340,14 @@ Kansallinen digitaalinen kirjasto - Software development. Kansallinen digitaalin
 \bibitem{finna}
 The National Library of Finland Bulletin 2014. National Library of Finland [online]. [cit. 2016-07-01]. Dostupné z: https://www.kansalliskirjasto.fi/extra/bulletin/hi3.html
 
-\bibitem{record.manager}
-RecordManager. GitHub [online]. GitHub, Inc., 2016 [cit. 2016-07-01]. Dostupné z: https://github.com/NatLibFi/RecordManager
-
 \bibitem{record.manager.2}
 RecordManager2. GitHub [online]. GitHub, Inc., 2016 [cit. 2016-07-01]. Dostupné z: https://github.com/moravianlibrary/RecordManager2
 
 \bibitem{cpk}
 Knihovny.cz [online]. Knihovna AV ÈR, v.v.i., 2016 [cit. 2016-07-01]. Dostupné z: http://www.knihovny.cz/
+
+\bibitem{avcr}
+Souborný katalog Akademie vìd ÈR [online]. [cit. 2016-07-08]. Dostupné z: https://vufind.lib.cas.cz/
 
 \bibitem{yale}
 http://campuspress.yale.edu/libraryitnews/tag/yufind/

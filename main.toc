@@ -4,8 +4,8 @@
 \contentsline {section}{\numberline {2.1}Filosofie otev\v ren\'e komunity}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Svobod\'y software pro knihovny}{4}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Blacklight}{4}{subsection.2.2.1}
-\contentsline {paragraph}{Kl\IeC {\'\i }\v cov\'e vlastnosti syst\'emu Blacklight}{4}{section*.5}
-\contentsline {subsection}{\numberline {2.2.2}Evergreen}{6}{subsection.2.2.2}
+\contentsline {paragraph}{Kl\IeC {\'\i }\v cov\'e vlastnosti syst\'emu Blacklight}{5}{section*.5}
+\contentsline {subsection}{\numberline {2.2.2}Evergreen}{5}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Koha}{7}{subsection.2.2.3}
 \contentsline {chapter}{\numberline {3}Port\'al VuFind}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Vznik}{9}{section.3.1}
@@ -14,7 +14,7 @@
 \contentsline {subparagraph}{Status dostupnosti}{10}{section*.7}
 \contentsline {subparagraph}{Podobn\'e jednotky}{10}{section*.8}
 \contentsline {subparagraph}{U\v zivatelsk\'e seznamy}{10}{section*.9}
-\contentsline {subparagraph}{Proch\'azen\IeC {\'\i } zdroj\r u}{10}{section*.10}
+\contentsline {subparagraph}{Proch\'azen\IeC {\'\i } zdroj\r u}{11}{section*.10}
 \contentsline {subparagraph}{Biografie autor\r u}{11}{section*.11}
 \contentsline {subparagraph}{Trval\'a URL}{11}{section*.12}
 \contentsline {subparagraph}{Cita\v cn\IeC {\'\i } mana\v zery}{11}{section*.13}
@@ -23,10 +23,10 @@
 \contentsline {section}{\numberline {3.3}Po\v zadavky na software}{11}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Opera\v cn\IeC {\'\i } syst\'em}{12}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Webov\'y server}{12}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Javov\'y server}{12}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.3}Javov\'y server}{13}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Datab\'azov\'y server}{13}{subsection.3.3.4}
 \contentsline {subsection}{\numberline {3.3.5}ZendFramework}{13}{subsection.3.3.5}
-\contentsline {section}{\numberline {3.4}Po\v zadavky na hardware}{13}{section.3.4}
+\contentsline {section}{\numberline {3.4}Po\v zadavky na hardware}{14}{section.3.4}
 \contentsline {section}{\numberline {3.5}Implementace v \v CR i zahrani\v c\IeC {\'\i }}{14}{section.3.5}
 \contentsline {chapter}{\numberline {4}Technick\'e aspekty implementace}{24}{chapter.4}
 \contentsline {section}{\numberline {4.1}Konfigura\v cn\IeC {\'\i } soubory}{24}{section.4.1}
@@ -35,38 +35,38 @@
 \contentsline {paragraph}{facets.ini}{27}{section*.18}
 \contentsline {paragraph}{searchbox.ini}{27}{section*.19}
 \contentsline {paragraph}{combined.ini}{27}{section*.20}
-\contentsline {paragraph}{searches.ini}{28}{section*.21}
+\contentsline {paragraph}{searches.ini}{27}{section*.21}
 \contentsline {paragraph}{searchspecs.yaml}{28}{section*.22}
 \contentsline {section}{\numberline {4.2}Autentikace}{28}{section.4.2}
-\contentsline {section}{\numberline {4.3}Import dat - SolrMarc}{29}{section.4.3}
-\contentsline {section}{\numberline {4.4}Indexace dat - Solr}{31}{section.4.4}
+\contentsline {section}{\numberline {4.3}Import dat}{29}{section.4.3}
+\contentsline {section}{\numberline {4.4}Indexace dat}{31}{section.4.4}
 \contentsline {section}{\numberline {4.5}Vyhled\'av\'an\IeC {\'\i }}{33}{section.4.5}
 \contentsline {section}{\numberline {4.6}Grafick\'y design}{38}{section.4.6}
 \contentsline {section}{\numberline {4.7}\v Cten\'a\v rsk\'e konto}{41}{section.4.7}
-\contentsline {chapter}{\numberline {5}Napojen\IeC {\'\i } na Aleph}{42}{chapter.5}
-\contentsline {section}{\numberline {5.1}Server Aleph}{43}{section.5.1}
-\contentsline {chapter}{\numberline {6}Automatick\'y sb\v er dat - OAI-PMH}{45}{chapter.6}
-\contentsline {section}{\numberline {6.1}Server SFX}{46}{section.6.1}
-\contentsline {chapter}{\numberline {7}Nasazen\IeC {\'\i } VuFind v N\'arodn\IeC {\'\i } technick\'e knihovn\v e}{47}{chapter.7}
-\contentsline {section}{\numberline {7.1}Modul NTK}{47}{section.7.1}
-\contentsline {section}{\numberline {7.2}Instalace}{50}{section.7.2}
-\contentsline {section}{\numberline {7.3}Historie NTK}{52}{section.7.3}
-\contentsline {section}{\numberline {7.4}Servery}{53}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Server VuFind 1.x}{53}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Server VuFind 2.x}{54}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Testovac\IeC {\'\i } server VuFind}{54}{subsection.7.4.3}
-\contentsline {subsection}{\numberline {7.4.4}Testovac\IeC {\'\i } server VuFind + Summon}{54}{subsection.7.4.4}
-\contentsline {section}{\numberline {7.5}Software}{55}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Zabezpe\v cen\IeC {\'\i }}{55}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}Zabbix}{56}{subsection.7.5.2}
-\contentsline {subsection}{\numberline {7.5.3}Cron}{56}{subsection.7.5.3}
-\contentsline {subsection}{\numberline {7.5.4}GIT}{56}{subsection.7.5.4}
-\contentsline {section}{\numberline {7.6}PSH}{57}{section.7.6}
-\contentsline {chapter}{\numberline {8}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{59}{chapter.8}
-\contentsline {section}{\numberline {8.1}Provoz}{59}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}WorkFlow}{59}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Statistiky n\'av\v st\v evnosti}{60}{subsection.8.1.2}
-\contentsline {chapter}{\numberline {9}Z\'av\v er (zhodnocen\IeC {\'\i })}{61}{chapter.9}
-\contentsline {chapter}{Seznam obr\'azk\r {u}}{62}{chapter*.23}
-\contentsline {chapter}{Literatura}{64}{chapter*.24}
-\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{71}{appendix.A}
+\contentsline {chapter}{\numberline {5}Napojen\IeC {\'\i } na Aleph}{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}Server Aleph}{44}{section.5.1}
+\contentsline {chapter}{\numberline {6}Automatick\'y sb\v er dat - OAI-PMH}{46}{chapter.6}
+\contentsline {section}{\numberline {6.1}Server SFX}{47}{section.6.1}
+\contentsline {chapter}{\numberline {7}Nasazen\IeC {\'\i } VuFind v N\'arodn\IeC {\'\i } technick\'e knihovn\v e}{48}{chapter.7}
+\contentsline {section}{\numberline {7.1}Modul NTK}{48}{section.7.1}
+\contentsline {section}{\numberline {7.2}Instalace}{51}{section.7.2}
+\contentsline {section}{\numberline {7.3}Historie NTK}{53}{section.7.3}
+\contentsline {section}{\numberline {7.4}Servery}{54}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Server VuFind 1.x}{54}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Server VuFind 2.x}{55}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Testovac\IeC {\'\i } server VuFind}{55}{subsection.7.4.3}
+\contentsline {subsection}{\numberline {7.4.4}Testovac\IeC {\'\i } server VuFind + Summon}{55}{subsection.7.4.4}
+\contentsline {section}{\numberline {7.5}Software}{56}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Zabezpe\v cen\IeC {\'\i }}{56}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Zabbix}{57}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Cron}{57}{subsection.7.5.3}
+\contentsline {subsection}{\numberline {7.5.4}GIT}{57}{subsection.7.5.4}
+\contentsline {section}{\numberline {7.6}PSH}{58}{section.7.6}
+\contentsline {chapter}{\numberline {8}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{60}{chapter.8}
+\contentsline {section}{\numberline {8.1}Provoz}{60}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}WorkFlow}{60}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Statistiky n\'av\v st\v evnosti}{61}{subsection.8.1.2}
+\contentsline {chapter}{\numberline {9}Z\'av\v er (zhodnocen\IeC {\'\i })}{62}{chapter.9}
+\contentsline {chapter}{Seznam obr\'azk\r {u}}{63}{chapter*.23}
+\contentsline {chapter}{Literatura}{65}{chapter*.24}
+\contentsline {chapter}{\numberline {A}P\v r\IeC {\'\i }loha}{72}{appendix.A}

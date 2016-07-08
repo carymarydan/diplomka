@@ -112,16 +112,23 @@ Stále rostoucí komunita VuFindu je celosvìtovì propojena a spolupracující. Tento
 
 Podobný problém duplicit záznamù stojí pøed právì probíhajícím projektem CPK (Centrální portál knihoven) v Èeské republice. Vývojový tým tohoto projektu vede a zastøešuje Moravská zemská knihovna, která má s VuFindem letité zkušenosti a kromì tohoto projektu stojí za vznikem portálu ÈístBrno, jehož katalogem je také VuFind. Právì kvùli CPK vyvíjí alternativní modul Record Manager 2, který na rozdíl od finské varianty je programován v programovacím jazyce Java a má ambice bít robustnìjší \cite{record.manager.2}. Projekt CPK má za cíl sdružit vyhledávání pro 40 knihoven a stát se tak nejvìtším a nejrobustnìjším discovery prostøedím v Èeské republice.
 \cite{cpk}
-Uživatelské rozhraní VuFind má v tomto pøípadì velký potenciál pro tuzemský vývoj. Jednou z ambicí tohoto vývoje je implementace doruèovacích služeb; elektronické dodávání dokumentù a meziknihovní výpùjèní služba. Návrh databáze pro tyto úèely pøedstavuje následující obrázek (autor Daniel Mareèek).
+Uživatelské rozhraní VuFind má v tomto pøípadì velký potenciál pro tuzemský vývoj. Jednou z ambicí tohoto vývoje je implementace doruèovacích služeb; elektronické dodávání dokumentù a meziknihovní výpùjèní služba. Návrh databáze pro tyto úèely pøedstavuje následující obrázek \ref{fig:tlacitko}.
+
+\begin{figure}[h]
+\includegraphics[width=0.65\textwidth]{tlacitko}
+\centering
+\caption{Návrh relaèní databáze pro správu objednávek dokumentù. Autorem je Daniel Mareèek.}
+\label{fig:tlacitko}
+\end{figure}
 
 Mezi další tuzemské instituce s vyhledávaèem VuFind patøí Mìstská knihovna Èeská Tøebová, jejíž instalace verze VuFind 2.3 v prostøedí linuxové distribuce operaèního systému Debian je propojena s integrovaným knihovnickým systémem Koha.
 Mìstská knihovna Ústí nad Orlicí provozuje VuFind 2.4.1 také v linuxové distribuci operaèního systému Debian s napojením na integrovaný knihovnický systém Koha. Grafický vzhled katalogù obou knihoven vychází ze standardu Bootstrap3.
 
 Souborný katalog Akademie vìd ÈR pro webové rozhraní také používá VuFind a to verzi z øady 1.x. Zde je možno prohledávat ve všech ústavech najednou, nebo také v každém ústavu samostatnì, což znamená, že pro každý ústav existuje oddìlený index. V této instalaci je nastaveno použití technologie OpenSearch.
-\url{https://vufind.lib.cas.cz/}
+\cite{avcr}
 
 V Èeské republice lze nalézt uživatelské rozhraní VuFind i v komerèním projektu, který nabízí integrovaný knihovnický systém Koha jako službu (SystemAsAService). Tímto zpùsobem používá portál VuFind knihovna v Polièce, Turnovì, Neratovicích, Jablonci nad Nisou a Frenštátì. \cite{koha.vufind}
 
 
-Zajímavý pøípad, kdy se po testování portálu VuFind rozhodlo pro výbìr jiného øešení, se odehrál v americké univerzitní knihovnì Yale University Library. Nìjaký èas testování probíhalo pod pracovním názvem YuFind, ale k použití v ostrém provozu nedošlo.\cite{yale}
+Zajímavý pøípad, kdy se po testování portálu VuFind rozhodlo pro výbìr jiného øešení, se odehrál v americké univerzitní knihovnì Yale University Library. Nìjaký èas testování probíhalo pod pracovním názvem YuFind, ale k použití v ostrém provozu nedošlo. \cite{yale}
 

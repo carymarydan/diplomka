@@ -9,15 +9,15 @@ yum install php php-devel php-intl php-ldap
 yum install php-mysql php-xsl php-gd php-mbstring php-mcrypt
 yum install java-*-openjdk-devel
 \end{verbatim}
-Nyní pøichází na øadu stažení samotného systému VuFind. To je možné provést z úložištì \url{https://sourceforge.net/projects/vufind/files/VuFind/}, kde jsou k dispozici všechny verze VuFindu od jeho vzniku až po souèasnost. V našem pøípadì stahujeme poslední verzi, tedy verzi 2.3.1, pøíkazem:
-\begin{verbatim}
+Nyní pøichází na øadu stažení samotného systému VuFind. To je možné provést z úložištì \url{https://sourceforge.net/projects/vufind/files/VuFind/}, kde jsou k dispozici všechny verze VuFindu od jeho vzniku až po souèasnost. V tomto pøípadì se jedná o  stažení verze 2.3.1, pøíkazem:
+\begin{lstlisting}
 wget http://downloads.sourceforge.net/vufind/vufind-2.3.1.tar.gz?use_mirror=osdn -O vufind-2.3.1.tar.gz
-\end{verbatim}
+\end{lstlisting}
 Po rozbalení staženého archivu, spustíme instalaci VuFindu pøíkazem:
 \begin{verbatim}
 php install.php
 \end{verbatim}
-Systém je nainstalován. Nyní je ještì potøeba provést nìkterá nezbytná nastavení pro správný chod systému. Musíme dát vìdìt webovému serveru Apache o našem novì nainstalovaném VuFindu. K tomu slouží konfiguraèní soubor httpd-vufind.conf, který se nachází v adresáøi /local. Apache standardnì naèítá konfiguraèní soubory ze svého umístìní, kterým je:
+Systém je nainstalován. Nyní je ještì potøeba provést nìkterá nezbytná nastavení pro správný chod systému. Musí se dát vìdìt webovému serveru Apache o našem novì nainstalovaném VuFindu. K tomu slouží konfiguraèní soubor \texttt{httpd-vufind.conf}, který se nachází v adresáøi \texttt{local}. Apache standardnì naèítá konfiguraèní soubory ze svého umístìní, kterým je:
 \begin{verbatim}
 /etc/httpd/conf.d
 \end{verbatim}
@@ -30,14 +30,14 @@ V posledním kroku se pøepne zabezpeèení rozšíøeného jádra operaèního systému, tz
 \begin{verbatim}
 setenforce 0
 \end{verbatim}
-Když je VuFind úspìšnì nainstalován a okolní prostøedí správnì nastaveno, zapíná se v koøenovém adresáøi spouštìcím skriptem s parametrem start takto:
+Když je VuFind úspìšnì nainstalován a okolní prostøedí správnì nastaveno, zapíná se v koøenovém adresáøi spouštìcím skriptem s parametrem \texttt{start} takto:
 \begin{verbatim}
 ./vufind.sh start
 \end{verbatim}
 V tuto chvíli se v otevøeném prohlížeèi po zadání pøíslušné URL zobrazí úvodní stránka novì nainstalovaného portálu VuFind.
 
 
-Nyní nastává fáze tzv. automatické konfigurace, která probíhá na URL adresa-vufindu/Install/Home, kde vidíme seznam s celkem 7 položkami, viz. obrázek. Položky jsou barevnì rozlišeny podle toho, zda je daná oblast nastavena správnì (zelená barva) èi nikoli (barva èervená). Zkontrolujeme všechna nastavení a popøípadì opravíme problematické oblasti kliknutím na tlaèítko "Fix". To provede opravu nastavení dané oblasti buï automaticky, nebo uvede návod, jak vyøešit problém manuálnì, popøípadì se spustí prùvodce nastavením.
+Nyní nastává fáze tzv. automatické konfigurace, která probíhá na URL adrese VuFindu následované øetezcem \texttt{/Install/Home}, kde vidíme seznam 7 položek, viz. obrázek \ref{fig:auto-conf}. Položky jsou barevnì rozlišeny podle toho, zda je daná oblast nastavena správnì (zelená barva) èi nikoli (barva èervená). Toto je tøeba zkontrolovat a popøípadì opravit problematické oblasti kliknutím na tlaèítko \uv{Fix}. Toková akce provede opravu nastavení dané oblasti buï automaticky, nebo uvede na obrazovku návod, jak vyøešit problém manuálnì, popøípadì se spustí prùvodce nastavením.
 
 \begin{figure}[h]
 \includegraphics[width=0.6\textwidth]{auto-conf}
@@ -45,9 +45,6 @@ Nyní nastává fáze tzv. automatické konfigurace, která probíhá na URL adresa-vufi
 \caption{Ukázka automatické konfigurace VuFindu v Národní technické knihovnì.}
 \label{fig:auto-conf}
 \end{figure}
-
-..nastavení spouštìcího skriptu - respektive nastavení promìnných, buï ve skriptu nebo v prostøedí Bash. Nebo snad v Apachi? Tam se aktivuje i development mode.
-
 
 V tuto chvíli je VuFind pøipraven k implementaci konkrétních potøeb knihovny a pøizpùsobení danému prostøedí. \cite{vufind.org}
 

@@ -22,34 +22,28 @@
 \BOOKMARK [1][-]{section.4.3}{Import dat}{chapter.4}% 22
 \BOOKMARK [1][-]{section.4.4}{Indexace dat}{chapter.4}% 23
 \BOOKMARK [1][-]{section.4.5}{Vyhled\341v\341n\355}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.6}{Grafick\375 design}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.7}{Cten\341rsk\351 konto}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.8}{Modul NTK}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.6}{Moduly}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.7}{Grafick\375 design}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.8}{Cten\341rsk\351 konto}{chapter.4}% 27
 \BOOKMARK [0][-]{chapter.5}{Napojen\355 port\341lu VuFind na syst\351m Aleph}{}% 28
 \BOOKMARK [1][-]{section.5.1}{Integrovan\375 knihovnick\375 syst\351m Aleph}{chapter.5}% 29
 \BOOKMARK [1][-]{section.5.2}{Prenos dat}{chapter.5}% 30
 \BOOKMARK [2][-]{subsection.5.2.1}{Aleph RESTful API}{section.5.2}% 31
 \BOOKMARK [2][-]{subsection.5.2.2}{Aleph X-Server}{section.5.2}% 32
 \BOOKMARK [1][-]{section.5.3}{Automatick\375 sber dat}{chapter.5}% 33
-\BOOKMARK [0][-]{chapter.6}{Nasazen\355 port\341lu VuFind v N\341rodn\355 technick\351 knihovne}{}% 34
-\BOOKMARK [1][-]{section.6.1}{Instalace}{chapter.6}% 35
-\BOOKMARK [1][-]{section.6.2}{Historie NTK}{chapter.6}% 36
-\BOOKMARK [1][-]{section.6.3}{Servery}{chapter.6}% 37
-\BOOKMARK [2][-]{subsection.6.3.1}{Server VuFind 1.x}{section.6.3}% 38
-\BOOKMARK [2][-]{subsection.6.3.2}{Server VuFind 2.x}{section.6.3}% 39
-\BOOKMARK [2][-]{subsection.6.3.3}{Testovac\355 server VuFind}{section.6.3}% 40
-\BOOKMARK [2][-]{subsection.6.3.4}{Testovac\355 server VuFind + Summon}{section.6.3}% 41
-\BOOKMARK [1][-]{section.6.4}{Software}{chapter.6}% 42
-\BOOKMARK [2][-]{subsection.6.4.1}{Zabezpecen\355}{section.6.4}% 43
-\BOOKMARK [2][-]{subsection.6.4.2}{Zabbix}{section.6.4}% 44
-\BOOKMARK [2][-]{subsection.6.4.3}{Cron}{section.6.4}% 45
-\BOOKMARK [2][-]{subsection.6.4.4}{GIT}{section.6.4}% 46
-\BOOKMARK [1][-]{section.6.5}{PSH}{chapter.6}% 47
-\BOOKMARK [0][-]{chapter.7}{Budouc\355 v\375voj syst\351mu}{}% 48
-\BOOKMARK [1][-]{section.7.1}{Provoz}{chapter.7}% 49
-\BOOKMARK [2][-]{subsection.7.1.1}{WorkFlow}{section.7.1}% 50
-\BOOKMARK [2][-]{subsection.7.1.2}{Statistiky n\341v\235tevnosti}{section.7.1}% 51
-\BOOKMARK [0][-]{chapter.8}{Z\341ver \(zhodnocen\355\)}{}% 52
-\BOOKMARK [0][-]{chapter*.23}{Seznam obr\341zku}{}% 53
-\BOOKMARK [0][-]{chapter*.24}{Literatura}{}% 54
-\BOOKMARK [0][-]{appendix.A}{Pr\355loha}{}% 55
+\BOOKMARK [2][-]{subsection.5.3.1}{Cron}{section.5.3}% 34
+\BOOKMARK [0][-]{chapter.6}{Nasazen\355 port\341lu VuFind v N\341rodn\355 technick\351 knihovne}{}% 35
+\BOOKMARK [1][-]{section.6.1}{Instalace}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.2}{Servery port\341lu VuFind}{chapter.6}% 37
+\BOOKMARK [2][-]{subsection.6.2.1}{Server VuFind 1.x}{section.6.2}% 38
+\BOOKMARK [2][-]{subsection.6.2.2}{Server VuFind 2.x}{section.6.2}% 39
+\BOOKMARK [2][-]{subsection.6.2.3}{Testovac\355 server VuFind}{section.6.2}% 40
+\BOOKMARK [2][-]{subsection.6.2.4}{Testovac\355 server VuFind + Summon}{section.6.2}% 41
+\BOOKMARK [1][-]{section.6.3}{Spr\341va provozu}{chapter.6}% 42
+\BOOKMARK [2][-]{subsection.6.3.1}{Zabezpecen\355}{section.6.3}% 43
+\BOOKMARK [2][-]{subsection.6.3.2}{Monitorov\341n\355}{section.6.3}% 44
+\BOOKMARK [2][-]{subsection.6.3.3}{Verzov\341n\355}{section.6.3}% 45
+\BOOKMARK [0][-]{chapter.7}{Budouc\355 v\375voj syst\351mu}{}% 46
+\BOOKMARK [0][-]{chapter.8}{Z\341ver \(zhodnocen\355\)}{}% 47
+\BOOKMARK [0][-]{chapter*.23}{Seznam obr\341zku}{}% 48
+\BOOKMARK [0][-]{chapter*.24}{Literatura}{}% 49

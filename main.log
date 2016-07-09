@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.11)  9 JUL 2016 17:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.11)  9 JUL 2016 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -401,7 +401,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 4.
  [4
 
-] [5])
+])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -412,8 +412,25 @@ been already used, duplicate ignored
 l.44 \chapter
              {Úvod} [1]
 Kapitola 1.
-(./chapters/introduction.tex)pdfTeX warning (ext4): destination with the same i
-dentifier (name{page.2}) has been already used, duplicate ignored
+(./chapters/introduction.tex
+
+LaTeX Warning: Hyper reference `sec:chapter02' on page 2 undefined on input lin
+e 1.
+
+
+LaTeX Warning: Hyper reference `sec:chapter03' on page 2 undefined on input lin
+e 1.
+
+
+LaTeX Warning: Hyper reference `sec:workflow' on page 2 undefined on input line
+ 2.
+
+
+LaTeX Warning: Hyper reference `sec:provoz' on page 2 undefined on input line 2
+.
+
+)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.47 \chapter
@@ -449,7 +466,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
 
-<images/blacklight.png, id=353, 876.27374pt x 453.19313pt>
+<images/blacklight.png, id=313, 876.27374pt x 453.19313pt>
 File: images/blacklight.png Graphic file (type png)
 
 <use images/blacklight.png>
@@ -464,13 +481,8 @@ File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./chapters/evergreen.texpdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3 
-     [5] [6 <./images/blacklight.png>]
-<images/evergreen.png, id=370, 929.72343pt x 535.2497pt>
+) (./chapters/evergreen.tex [5] [6 <./images/blacklight.png>]
+<images/evergreen.png, id=332, 929.72343pt x 535.2497pt>
 File: images/evergreen.png Graphic file (type png)
 
 <use images/evergreen.png>
@@ -507,28 +519,17 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                removing `\textasciicaron' on input line 80.
 
 (./chapters/chapter04.tex
-<images/vufind-1.png, id=449, 1190.4475pt x 1072.005pt>
+<images/vufind-1.png, id=411, 1190.4475pt x 1072.005pt>
 File: images/vufind-1.png Graphic file (type png)
 
 <use images/vufind-1.png>
 Package pdftex.def Info: images/vufind-1.png used on input line 8.
 (pdftex.def)             Requested size: 318.66948pt x 286.9589pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]\IL2/cmr/m/n/12 Obrázek 3.1: []Ukázka on-line ka-ta-logu nì-mecké knihovny Bi
-b-li-o-gra-phies at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\IL2/cmr/m/n/12 arthis-to-ricum.net do-stup-ného na [][]$\IL2/cmtt/m/n/12 http 
-: / / www . arthistoricum . net / subjects /
- []
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vufind-2.png, id=453, 1736.4875pt x 1082.0425pt>
+<images/vufind-2.png, id=415, 1736.4875pt x 1082.0425pt>
 File: images/vufind-2.png Graphic file (type png)
 
 <use images/vufind-2.png>
@@ -538,21 +539,21 @@ Package pdftex.def Info: images/vufind-2.png used on input line 17.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vufind-3.png, id=456, 1161.33875pt x 1072.005pt>
+<images/vufind-3.png, id=418, 1161.33875pt x 1072.005pt>
 File: images/vufind-3.png Graphic file (type png)
 
 <use images/vufind-3.png>
 Package pdftex.def Info: images/vufind-3.png used on input line 26.
 (pdftex.def)             Requested size: 318.66948pt x 294.15617pt.
 
-<images/vufind-4.png, id=459, 948.54375pt x 784.9325pt>
+<images/vufind-4.png, id=421, 948.54375pt x 784.9325pt>
 File: images/vufind-4.png Graphic file (type png)
 
 <use images/vufind-4.png>
 Package pdftex.def Info: images/vufind-4.png used on input line 33.
 (pdftex.def)             Requested size: 318.66948pt x 263.69958pt.
  [14]
-<images/vufind-5.png, id=469, 1199.48125pt x 1065.9825pt>
+<images/vufind-5.png, id=429, 1199.48125pt x 1065.9825pt>
 File: images/vufind-5.png Graphic file (type png)
 
 <use images/vufind-5.png>
@@ -562,35 +563,35 @@ Package pdftex.def Info: images/vufind-5.png used on input line 44.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vufind-6a.png, id=473, 1161.33875pt x 1050.92625pt>
+<images/vufind-6a.png, id=433, 1161.33875pt x 1050.92625pt>
 File: images/vufind-6a.png Graphic file (type png)
 
 <use images/vufind-6a.png>
 Package pdftex.def Info: images/vufind-6a.png used on input line 53.
 (pdftex.def)             Requested size: 305.01271pt x 276.00858pt.
- [15 <./images/vufind-1.png>]
-<images/vufind-6b.png, id=483, 1162.3425pt x 1051.93pt>
+
+<images/vufind-6b.png, id=436, 1162.3425pt x 1051.93pt>
 File: images/vufind-6b.png Graphic file (type png)
 
 <use images/vufind-6b.png>
 Package pdftex.def Info: images/vufind-6b.png used on input line 60.
 (pdftex.def)             Requested size: 305.01271pt x 276.03142pt.
-
-<images/vufind-7.png, id=486, 1209.51875pt x 1054.94125pt>
+ [15 <./images/vufind-1.png>]
+<images/vufind-7.png, id=446, 1209.51875pt x 1054.94125pt>
 File: images/vufind-7.png Graphic file (type png)
 
 <use images/vufind-7.png>
 Package pdftex.def Info: images/vufind-7.png used on input line 69.
 (pdftex.def)             Requested size: 318.66948pt x 277.9323pt.
  [16 <./images/vufind-2.png> <./images/vufind-3.png>]
-<images/vufind-8.png, id=497, 1210.5225pt x 1015.795pt>
+<images/vufind-8.png, id=457, 1210.5225pt x 1015.795pt>
 File: images/vufind-8.png Graphic file (type png)
 
 <use images/vufind-8.png>
 Package pdftex.def Info: images/vufind-8.png used on input line 79.
 (pdftex.def)             Requested size: 318.66948pt x 267.40192pt.
 
-<images/vufind-9.png, id=500, 957.5775pt x 1016.79875pt>
+<images/vufind-9.png, id=460, 957.5775pt x 1016.79875pt>
 File: images/vufind-9.png Graphic file (type png)
 
 <use images/vufind-9.png>
@@ -600,13 +601,13 @@ Package pdftex.def Info: images/vufind-9.png used on input line 88.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/finna.png, id=503, 1174.3875pt x 990.70125pt>
+<images/finna.png, id=463, 1174.3875pt x 990.70125pt>
 File: images/finna.png Graphic file (type png)
  <use images/finna.png>
 Package pdftex.def Info: images/finna.png used on input line 95.
 (pdftex.def)             Requested size: 318.66948pt x 268.8232pt.
 
-<images/finna_architecture.png, id=506, 1605.8394pt x 1304.7144pt>
+<images/finna_architecture.png, id=466, 1605.8394pt x 1304.7144pt>
 File: images/finna_architecture.png Graphic file (type png)
 
 <use images/finna_architecture.png>
@@ -621,7 +622,7 @@ LaTeX Warning: Text page 18 contains only floats.
 LaTeX Warning: Text page 19 contains only floats.
 
 [19 <./images/vufind-6b.png> <./images/vufind-7.png>] [20 <./images/vufind-8.pn
-g>] <images/tlacitko.png, id=546, 731.73375pt x 545.03625pt>
+g>] <images/tlacitko.png, id=506, 731.73375pt x 545.03625pt>
 File: images/tlacitko.png Graphic file (type png)
 
 <use images/tlacitko.png>
@@ -657,58 +658,26 @@ Overfull \hbox (3.68446pt too wide) in paragraph at lines 90--91
 o in-for-ma-cím o umístìní
  []
 
-[36] [37] [38]) (./chapters/kustomizace.tex [39] [40] [41])
-
-Package hyperref Warning: Composite letter `\textasciicaron+C'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 97.
-
-
-Package hyperref Warning: Composite letter `\textasciicaron+r'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 97.
-
-(./chapters/acount.tex [42]) (./chapters/ntkmodule.tex
-Overfull \hbox (736.53148pt too wide) in paragraph at lines 20--20
-[]             \IL2/cmtt/m/n/12 $renew_link = '<a style="color:#b94a48" target=
-"_blank" href="https://www.techlib.cz/cs/2691-registrace-a-volny-vstup#prodlouz
-eni">'.$this->translate('expirace_registrace').'</a>';[] 
- []
-
-[43]
-Overfull \hbox (674.78145pt too wide) in paragraph at lines 20--20
-[]             \IL2/cmtt/m/n/12 $renew_link = '<a style="color:#b94a48" target=
-"_blank" href="https://www.techlib.cz/en/2712-registration-free-day-pass">'.$th
-is->translate('expirace_registrace').'</a>';[] 
- []
-
-
+[36] [37] [38]) (./chapters/ntkmodule.tex [39]
 Overfull \hbox (10.49434pt too wide) in paragraph at lines 22--23
 []\IL2/cmr/m/n/12 Pro zís-kání his-to-rie vý-pùjèek u¾i-va-tele je v kon-t-ro-l
 eru \IL2/cmtt/m/n/12 MyResearchController.php
  []
 
+[40] [41]) (./chapters/kustomizace.tex [42] [43] [44])
 
-Overfull \hbox (32.58113pt too wide) in paragraph at lines 51--51
-[]     \IL2/cmtt/m/n/12 // Stop now if the user does not have valid catalog cre
-dentials available:[] 
- []
+Package hyperref Warning: Composite letter `\textasciicaron+C'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 99.
 
 
-Overfull \hbox (51.10614pt too wide) in paragraph at lines 51--51
-[]                     \IL2/cmtt/m/n/12 $catalog, $current, isset($renewStatus)
- ? $renewStatus : null[] 
- []
+Package hyperref Warning: Composite letter `\textasciicaron+r'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 99.
 
-[44]
-Overfull \hbox (44.93114pt too wide) in paragraph at lines 70--70
-[]     \IL2/cmtt/m/n/12 $url = 'http://aleph.techlib.cz/cgi-bin/image.pl?size=b
-ig&sn='. $ids['uid'];[] 
- []
-
-) [45]
+(./chapters/acount.tex [45]) [46]
 Kapitola 5.
-(./chapters/aleph.tex) (./chapters/oaleph.tex [46
+(./chapters/aleph.tex) (./chapters/oaleph.tex [47
 
 ])
 
@@ -716,58 +685,45 @@ Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 106.
 
-(./chapters/data.tex) (./chapters/restful.tex [47] [48])
+(./chapters/data.tex) (./chapters/restful.tex [48] [49])
 (./chapters/xserver.tex)
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textasciicaron' on input line 112.
 
-(./chapters/harvest.tex [49] [50]) [51]
+(./chapters/harvest.tex [50] [51]) (./chapters/cron.tex) [52] [53]
 Kapitola 6.
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 116.
+(hyperref)                removing `\textasciicaron' on input line 118.
 
-(./chapters/chapter02.tex) (./chapters/chapter03.tex [52
+(./chapters/historieNTK.tex [54
 
-])
-(./chapters/instalace.tex [53]
+]) (./chapters/instalace.tex [55]
 Overfull \hbox (17.14204pt too wide) in paragraph at lines 12--13
 [][]$\IL2/cmtt/m/n/12 https : / / sourceforge . net / projects / vufind / files
  / VuFind/$[][]\IL2/cmr/m/n/12 , kde jsou k dis-po-zici v¹echny
  []
 
-
-Overfull \hbox (180.7812pt too wide) in paragraph at lines 15--15
-[]\IL2/cmtt/m/n/12 wget http://downloads.sourceforge.net/vufind/vufind-2.3.1.ta
-r.gz?use_mirror=osdn -O vufind-2.3.1.tar.gz[] 
- []
-
-[54] <images/auto-conf.png, id=941, 426.59375pt x 426.59375pt>
+[56] <images/auto-conf.png, id=975, 426.59375pt x 426.59375pt>
 File: images/auto-conf.png Graphic file (type png)
 
 <use images/auto-conf.png>
 Package pdftex.def Info: images/auto-conf.png used on input line 43.
 (pdftex.def)             Requested size: 273.14923pt x 273.16226pt.
-
-Overfull \hbox (2.8053pt too wide) in paragraph at lines 49--50
-[]\IL2/cmr/m/n/12 ..nastavení spou-¹tì-cího skriptu - re-spek-tive na-sta-vení 
-pro-mìn-ných, buï ve skriptu
- []
-
-[55 <./images/auto-conf.png>]) (./chapters/historieNTK.tex)
-(./chapters/servery.tex) (./chapters/vufindold.tex [56])
-(./chapters/vufind2.tex) (./chapters/vufind-test.tex [57])
-(./chapters/vufind-eiz.tex) (./chapters/swntk.tex [58])
+) (./chapters/servery.tex) [57 <./images/auto-conf.png>] (./chapters/vufindold.
+tex) (./chapters/vufind2.tex)
+(./chapters/vufind-test.tex [58]) (./chapters/vufind-eiz.tex)
+(./chapters/swntk.tex) [59]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 135.
+(hyperref)                removing `\textasciicaron' on input line 134.
 
-(./chapters/firewall.tex) (./chapters/zabbix.tex) [59] (./chapters/cron.tex)
-(./chapters/git.tex) (./chapters/psh.tex [60]) [61]
+(./chapters/firewall.tex) (./chapters/zabbix.tex) [60] (./chapters/git.tex)
+[61]
 Kapitola 7.
 (./chapters/chapter05.tex
 Overfull \hbox (50.78397pt too wide) in paragraph at lines 9--11
@@ -775,28 +731,22 @@ Overfull \hbox (50.78397pt too wide) in paragraph at lines 9--11
 nkp.cz/knihovnaplus121/coufal.htm 
  []
 
-) (./chapters/provoz.tex) (./chapters/workflow.tex)
+) [62
 
-Package hyperref Warning: Composite letter `\textasciicaron+e'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 152.
-
-(./chapters/statistiky.tex) [62
-
-] [63]
+]
 Kapitola 8.
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 155.
+(hyperref)                removing `\textasciicaron' on input line 144.
 
-(./chapters/conclusion.tex) [64
+(./chapters/conclusion.tex) [63
 
 ]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 160.
+(hyperref)                removing `\textring' on input line 149.
 
 (./main.lof
 Overfull \hbox (2.5012pt too wide) in paragraph at lines 5--5
@@ -805,337 +755,317 @@ veøejný ka-ta-log Knihovny
  []
 
 
-Overfull \hbox (15.2344pt too wide) in paragraph at lines 7--7
- [][] [][][]\IL2/cmr/m/n/12 Ukázka on-line ka-ta-logu nì-mecké knihovny Bib-li-
-o-gra-phies at arthis-to-ricum.net 
+Overfull \hbox (2.19365pt too wide) in paragraph at lines 7--7
+ \IL2/cmr/m/n/12 stup-ného na [][]$\IL2/cmtt/m/n/12 http : / / www . arthistori
+cum . net / subjects / bibliographies/$[][]\IL2/cmr/m/n/12 .[][] [][]  
  []
 
-
-Overfull \hbox (14.5963pt too wide) in paragraph at lines 7--7
- \IL2/cmr/m/n/12 do-stup-ného na [][]$\IL2/cmtt/m/n/12 http : / / www . arthist
-oricum . net / subjects / bibliographies/$[][]\IL2/cmr/m/n/12 .[][] [][]  
- []
-
-
-Overfull \hbox (5.45021pt too wide) in paragraph at lines 9--9
- \IL2/cmr/m/n/12 search Po-ly-tech-nic Uni-ver-sity do-stup-ného na [][]$\IL2/c
-mtt/m/n/12 http : / / elib . pstu . ru / vufind/$[][]\IL2/cmr/m/n/12 .[][] [][]
-  
- []
-
-
-Overfull \hbox (49.12364pt too wide) in paragraph at lines 15--15
- [][] [][][]\IL2/cmr/m/n/12 Ukázka on-line ka-ta-logu Be-luga do-stup-ného na [
-][]$\IL2/cmtt/m/n/12 https : / / beluga . sub . uni-[]hamburg . 
- []
-
-[65
+[64
 
 ])
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [66]
-Underfull \hbox (badness 1694) in paragraph at lines 173--174
+ [65]
+Underfull \hbox (badness 1694) in paragraph at lines 162--163
 []\IL2/cmr/m/n/12 What is Open Source Soft-ware? Webo-pe-dia: On-line Tech Dict
 i-o-nary for IT
  []
 
 
-Underfull \hbox (badness 5260) in paragraph at lines 173--174
+Underfull \hbox (badness 5260) in paragraph at lines 162--163
 \IL2/cmr/m/n/12 Pro-fes-si-o-nals [on-line]. Quin-Street Inc., 2016 [cit. 2016-
 07-01]. Do-stupné z:
  []
 
-[67
+[66
 
 ]
-Underfull \hbox (badness 1226) in paragraph at lines 191--192
+Underfull \hbox (badness 1226) in paragraph at lines 180--181
 []\IL2/cmr/m/n/12 MORAVEC, Jo-sef. Koha { kni-hovní sys-tém s ote-vøe-ným zdro-
 jo-vým kó-dem.
  []
 
 
-Underfull \hbox (badness 2556) in paragraph at lines 206--207
+Underfull \hbox (badness 2556) in paragraph at lines 195--196
 []\IL2/cmr/m/n/12 Features. Vu-Find - Search. Dis-co-ver. Share. [on-line]. Vil
 la-nova Uni-ver-sity's
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 206--207
+Underfull \hbox (badness 2932) in paragraph at lines 195--196
 \IL2/cmr/m/n/12 Fal-vey Me-mo-rial Lib-rary, 2016 [cit. 2016-06-30]. Do-stupné 
 z: http://vufind-
  []
 
 
-Underfull \hbox (badness 4913) in paragraph at lines 209--210
+Underfull \hbox (badness 4913) in paragraph at lines 198--199
 []\IL2/cmr/m/n/12 Requirements. Vu-Find - Search. Dis-co-ver. Share. [on-line].
  Villa-nova Uni-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 \IL2/cmr/m/n/12 ver-sity's Fal-vey Me-mo-rial Lib-rary, 2016 [cit. 2016-06-30].
  Do-stupné z:
  []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 215--216
+Underfull \hbox (badness 2426) in paragraph at lines 204--205
 []\IL2/cmr/m/n/12 ÈÍ®EK, Ja-kub. Li-nu-xový Red Hat se pochlu-bil hos-po-da-øe-
 ním. Vy-dìlává i
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 215--216
+Underfull \hbox (badness 2635) in paragraph at lines 204--205
 \IL2/cmr/m/n/12 díky èeským vý-vo-jáøùm { ®ivì.cz. ®ivì.cz { O poèí-ta-èích, IT
  a in-ter-netu
  []
 
 
-Underfull \hbox (badness 3803) in paragraph at lines 215--216
+Underfull \hbox (badness 3803) in paragraph at lines 204--205
 \IL2/cmr/m/n/12 [on-line]. CN In-vest a.s., 2016 [cit. 2016-06-30]. ISSN 1213-8
 991. Do-stupné
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 \IL2/cmr/m/n/12 z: http://www.zive.cz/bleskovky/linuxovy-red-hat-se-pochlubil-h
 ospodarenim-
  []
 
-[68]
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+[67]
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 []\IL2/cmr/m/n/12 Web ser-ver. In: Wi-ki-pe-dia: the free en-cyclo-pe-dia [on-l
 ine]. San Fran-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 \IL2/cmr/m/n/12 cisco (CA): Wi-ki-me-dia Foun-dation, 2001- [cit. 2016-06-30]. 
 Do-stupné z:
  []
 
 
-Underfull \hbox (badness 3815) in paragraph at lines 230--231
+Underfull \hbox (badness 3815) in paragraph at lines 219--220
 []\IL2/cmr/m/n/12 VuFind Do-cu-men-tation. Vu-Find - Search. Dis-co-ver. Share.
  [on-line]. Villa-
  []
 
 
-Underfull \hbox (badness 5231) in paragraph at lines 233--234
+Underfull \hbox (badness 5231) in paragraph at lines 222--223
 []\IL2/cmr/m/n/12 MySQL [on-line]. Oracle Cor-po-ration, 2016 [cit. 2016-06-30]
 . Do-stupné z:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 []\IL2/cmr/m/n/12 Community:installations [Vu-Find Do-cu-men-tation]. Vu-Find -
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 \IL2/cmr/m/n/12 Search. Dis-co-ver. Share. [on-line]. [cit. 2016-06-10]. Do-stu
 pné z:
  []
 
 
-Underfull \hbox (badness 7722) in paragraph at lines 260--261
+Underfull \hbox (badness 7722) in paragraph at lines 249--250
 []\IL2/cmr/m/it/12 Státní tech-nická knihovna \IL2/cmr/m/n/12 [on-line]. Praha 
 [cit. 2016-06-09]. Do-stupné z:
  []
 
-[69]
-Underfull \hbox (badness 7704) in paragraph at lines 266--267
+[68]
+Underfull \hbox (badness 7704) in paragraph at lines 255--256
 []\IL2/cmr/m/n/12 Ex Lib-ris the bridge to knowledge, Aleph. Ex Lib-ris cor-po-
 rate web-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
 \IL2/cmr/m/n/12 site [on-line]. Ex Lib-ris Ltd., 2016 [cit. 2016-06-30]. Do-stu
 pné z:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
 []\IL2/cmr/m/n/12 Introduction to Aleph RE-ST-ful APIs. Ex Lib-ris De-ve-lo-per
  Ne-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
 \IL2/cmr/m/n/12 twork [on-line]. Ex Lib-ris Ltd., 2016 [cit. 2016-07-09]. Do-st
 upné z:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
 \IL2/cmr/m/n/12 https://developers.exlibrisgroup.com/aleph/apis/Aleph-RESTful-A
 PIs/Introduction-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 []\IL2/cmr/m/n/12 Introduction to Aleph X-Services. Ex Lib-ris De-ve-lo-per Ne-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 \IL2/cmr/m/n/12 twork [on-line]. Ex Lib-ris Ltd., 2016 [cit. 2016-07-09]. Do-st
 upné z:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 \IL2/cmr/m/n/12 https://developers.exlibrisgroup.com/aleph/apis/Aleph-X-Service
 s/introduction-
  []
 
 
-Underfull \hbox (badness 1577) in paragraph at lines 275--276
+Underfull \hbox (badness 1577) in paragraph at lines 264--265
 \IL2/cmr/m/n/12 fi-gu-ration Tu-to-ri-als [on-line]. Li-nu-x-Con-fig.org, 2016 
 [cit. 2016-06-30]. Do-stupné
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 287--288
+Underfull \hbox (badness 2050) in paragraph at lines 276--277
 []\IL2/cmr/m/n/12 Git - Správa verzí. Git [on-line]. [cit. 2016-06-13]. Do-stup
 né z: https://git-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 []\IL2/cmr/m/n/12 Polytematický struk-tu-ro-vaný hesláø. Ná-rodní tech-nická kn
 ihovna [on-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 \IL2/cmr/m/n/12 line]. Ná-rodní tech-nická knihovna, 2016 [cit. 2016-06-30]. Do
 -stupné z:
  []
 
-[70]
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 []\IL2/cmr/m/n/12 Configuration:local[]settings[]directory [Vu-Find Do-cu-men-t
 ation]. Vu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 \IL2/cmr/m/n/12 Find - Search. Dis-co-ver. Share. [on-line]. Villa-nova Uni-ver
 -sity's
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 \IL2/cmr/m/n/12 Fal-vey Me-mo-rial Lib-rary, 2016 [cit. 2016-07-01]. Do-stupné 
 z:
  []
 
 
-Underfull \hbox (badness 2809) in paragraph at lines 305--306
+Underfull \hbox (badness 2809) in paragraph at lines 294--295
 []\IL2/cmr/m/n/12 Customizing Vu-Find. Vu-Find - Search. Dis-co-ver. Share. [on
 -line]. Villa-nova
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 305--306
+Underfull \hbox (badness 5878) in paragraph at lines 294--295
 \IL2/cmr/m/n/12 Uni-ver-sity's Fal-vey Me-mo-rial Lib-rary, 2016 [cit. 2016-07-
 01]. Do-stupné z:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 []\IL2/cmr/m/n/12 FAQ [eduID.cz]. Èeská aka-de-mická fe-de-race iden-tit eduID.
 cz [eduID.cz]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 \IL2/cmr/m/n/12 [on-line]. CESNET, z. s. p. o., 2016 [cit. 2016-06-30]. Do-stup
 né z:
  []
 
 
-Underfull \hbox (badness 1168) in paragraph at lines 314--315
+Underfull \hbox (badness 1168) in paragraph at lines 303--304
 []\IL2/cmr/m/n/12 SolrMarc. Gi-tHub [on-line]. Gi-tHub, Inc., 2016 [cit. 2016-0
 7-01]. Do-stupné z:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 []\IL2/cmr/m/n/12 Development:architecture:solr[]index[]schema [Vu-Find Do-cu-m
 en-tation].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 \IL2/cmr/m/n/12 Vu-Find - Search. Dis-co-ver. Share. [on-line]. Villa-nova Uni-
 ver-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
 \IL2/cmr/m/n/12 sity's Fal-vey Me-mo-rial Lib-rary, 2016 [cit. 2016-07-01]. Do-
 stupné z:
  []
 
-[71]
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
+[70]
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 []\IL2/cmr/m/n/12 Development:architecture:user[]interface [Vu-Find Do-cu-men-t
 ation]. Vu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 \IL2/cmr/m/n/12 Find - Search. Dis-co-ver. Share. [on-line]. Villa-nova Uni-ver
 -sity's
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--339
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 \IL2/cmr/m/n/12 Fal-vey Me-mo-rial Lib-rary, 2016 [cit. 2016-07-01]. Do-stupné 
 z:
  []
 
-[72]
-Underfull \hbox (badness 1762) in paragraph at lines 361--362
+[71]
+Underfull \hbox (badness 1762) in paragraph at lines 350--351
 []\IL2/cmr/m/n/12 Souborný ka-ta-log Aka-de-mie vìd ÈR [on-line]. [cit. 2016-07
 -08]. Do-stupné z:
  []
 
-[73]
-P\v {r}\'{\i }loha A.
-
-Package hyperref Warning: Composite letter `\textasciicaron+r'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 375.
-
-(./chapters/appendix.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 378.
- [74
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 378.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 363.
+[72]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 363.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 378.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 378.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9E245B3BD1C0E6FBE4308766616B1015;3613.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 363.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 363.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 9B2E92C0E313C712B2D398736E6529FE;3307
+(rerunfilecheck)             After:  4ECF8E1F989BD7C6400B9B5DC82B98D3;3307.
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 378.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 363.
  ) 
 Here is how much of TeX's memory you used:
- 8951 strings out of 494953
- 127920 string characters out of 6179185
- 344207 words of memory out of 5000000
- 11486 multiletter control sequences out of 15000+600000
+ 8965 strings out of 494953
+ 128132 string characters out of 6179185
+ 343920 words of memory out of 5000000
+ 11469 multiletter control sequences out of 15000+600000
  11849 words of font info for 33 fonts, out of 8000000 for 9000
  46 hyphenation exceptions out of 8191
  29i,6n,32p,3934b,1812s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1144,10 +1074,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/cs/csbx12.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/cs/csr12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/cs/csti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 cs/cstt12.pfb>
-Output written on main.pdf (79 pages, 3292390 bytes).
+Output written on main.pdf (76 pages, 3290131 bytes).
 PDF statistics:
- 1204 PDF objects out of 1440 (max. 8388607)
- 1065 compressed objects within 11 object streams
- 412 named destinations out of 1000 (max. 500000)
- 521 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1224 PDF objects out of 1440 (max. 8388607)
+ 1088 compressed objects within 11 object streams
+ 463 named destinations out of 1000 (max. 500000)
+ 473 words of extra memory for PDF output out of 10000 (max. 10000000)
 

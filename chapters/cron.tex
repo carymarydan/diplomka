@@ -1,2 +1,2 @@
 \label{sec:cron}
-Cron je linuxový nástroj používaný na automatické spouštìní úloh. Na serverech VuFindu Národní technické knihovny se používá k automatickému spouštìní skriptù na sklízení dat. \cite{cron}
+Aby bylo možné automatizovat sklízení dat, je k tomu využit nástroj Cron. Tento linuxový nástroj v pravidelných intervalech spouští skript, který celý proces automatického sklízení dat pøes OAI-PMH obsluhuje. V Národní technické knihovnì je tímto souborem \texttt{oai-import-cron.sh}, který dále spouští skripty na restartování systému VuFind, sklizení dat, import dat, pøípadnì vymazání dat a optimalizaci indexu Solr. \cite{cron}

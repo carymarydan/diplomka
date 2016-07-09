@@ -1,26 +1,26 @@
 \label{sec:ntkmodule}
 Jádrem portálu VuFind je složka \texttt{module} v koøenovém adresáøi systému. Protože pøední vlastností tohoto systému je modularita, je zde zdrojový kód rozøazen do modulù, dle jejich významu. Díky této vlastnosti lze do systému pøidávat vlastní moduly. Modulem pro prostøedí Národní technické knihovny je \texttt{ntk\_module}.
 
-V tomto lokálním modulu se nacházejí soubory se zdrojovými kódy rozšiøující hlavní modul \texttt{VuFind}. Aby systém vìdìl, že má nejprve použít zdrojový kód z lokálního modulu, je tøeba provést patøièné nastavení v konfiguraèním souboru \texttt{module.config.php} podadresáøe \texttt{config}. Zdrojové kódy v lokálním modulu \texttt{ntk\_module} dìdí vlastnosti a funkcionalitu z nadøazeného modulu \texttt{VuFind} a rozšiøují je o pøidanou funkcionalitu. Proto lokální modul není kopií nadøazeného modulu, nýbrž obsahuje pouze ty soubory, které je tøeba upravovat pro lokální prostøedí. S ohledem na provedené úpravy v této knihovnì jsou tìmi soubory ty, které se týkají komunikace s integrovaným knihovnickým systémem, tedy driver \texttt{Aleph.php}, dále jsou to tzv. kontrolery, které obsluhují uživatelské interakce ve ètenáøském kontu \texttt{MyResearchController.php}, v zobrazení detailu záznamu \texttt{RecordController.php}, pøi zobrazování obálek knih \texttt{CoverController.php} a pøi dynamickém získávání informací \texttt{AjaxController.php}. \cite{vufind.module}
+V tomto lokálním modulu se nacházejí soubory se zdrojovými kódy rozšiøující hlavní modul \texttt{VuFind}. Aby systém vìdìl, že má nejprve použít zdrojový kód z lokálního modulu, je tøeba provést patøièné nastavení v konfiguraèním souboru \texttt{module.config.php} podadresáøe \texttt{config}. Zdrojové kódy v lokálním modulu \texttt{ntk\_module} dìdí vlastnosti z nadøazeného modulu \texttt{VuFind} a rozšiøují je o pøidanou funkcionalitu. Proto lokální modul není kopií nadøazeného modulu, nýbrž obsahuje pouze ty soubory, které je tøeba upravovat pro lokální prostøedí. S ohledem na provedené úpravy v této knihovnì jsou tìmi soubory ty, které se týkají komunikace s integrovaným knihovnickým systémem, tedy driver \texttt{Aleph.php}, dále jsou to tzv. kontrolery, které obsluhují uživatelské interakce ve ètenáøském kontu \texttt{MyResearchController.php}, v zobrazení detailu záznamu \texttt{RecordController.php}, pøi zobrazování obálek knih \texttt{CoverController.php} a pøi dynamickém získávání informací \texttt{AjaxController.php}. \cite{vufind.module}
 
 Napøíklad v kontroleru \texttt{RecordController.php} je doplnìn zdrojový kód pro zobrazení informaèní zprávy pro uživatele v pøípadì, že má prošlou platnost registrace a chce provést rezervaci jednotky. Toto knihovní øád NTK takovému uživateli neumožòuje a proto je mu doporuèeno prodloužit si registraci. Zdrojový kód tohoto chování systému je:
-\begin{verbatim}
+\begin{lstlisting}
 // check expiration of registration
 $today = strtotime(date("d.m.o"));
 $expire_date = strtotime($patron['expire']);
 if ($today > $expire_date) {
-        	if ($this->layout()->userLang == 'cs') {
-            	$renew_link = '<a style="color:#b94a48" target="_blank" href="https://www.techlib.cz/cs/2691-registrace-a-volny-vstup#prodlouzeni">'.$this->translate('expirace_registrace').'</a>';
-        	}else{
-            	$renew_link = '<a style="color:#b94a48" target="_blank" href="https://www.techlib.cz/en/2712-registration-free-day-pass">'.$this->translate('expirace_registrace').'</a>';
-        	}
-        	return $this->createViewModel(
-            	array('renew_link' => $renew_link));
+	if ($this->layout()->userLang == 'cs') {
+    		$renew_link = '<a style="color:#b94a48" target="_blank" href="https://www.techlib.cz/cs/2691-registrace-a-volny-vstup#prodlouzeni">'.$this->translate('expirace_registrace').'</a>';
+	}else{
+    		$renew_link = '<a style="color:#b94a48" target="_blank" href="https://www.techlib.cz/en/2712-registration-free-day-pass">'.$this->translate('expirace_registrace').'</a>';
+	}
+    return $this->createViewModel(
+    		array('renew_link' => $renew_link));
 }
-\end{verbatim}
+\end{lstlisting}
 
 Pro získání historie výpùjèek uživatele je v kontroleru \texttt{MyResearchController.php} tato èást zdrojového kódu:
-\begin{verbatim}
+\begin{lstlisting}
 public function checkedOutHistoryAction()
 {
     	// Stop now if the user does not have valid catalog credentials available:
@@ -48,10 +48,10 @@ public function checkedOutHistoryAction()
             	array('transactions' => $transactions)
     	);
 }
-\end{verbatim}
+\end{lstlisting}
 
-Obálky knih, které se v katalogu NTK zobrazují, se získávají buï pøímo v knihovnì pøi skenování, nebo samozøejmì v dnešní dobì vznikají již elektronicky, a nebo se získávají ze portálu ObalkyKnih.cz. Aby tato logika fungovala v tomto poøadí, tedy zjistit, zda je obálka na lokálním serveru knihovny, popøípadì ji potom hledat na serveru Obalkyknih.cz je v objektovì orientovaném PHP naprogramována nová tøída \texttt{AlephImageCovers}, která vypadá takto:
-\begin{verbatim}
+Obálky knih, které se v katalogu NTK zobrazují, se získávají buï pøímo v knihovnì pøi skenování, nebo samozøejmì v dnešní dobì vznikají již elektronicky, a nebo se získávají z portálu ObalkyKnih.cz. Aby tato logika fungovala v tomto poøadí, tedy zjistit, zda je obálka na lokálním serveru knihovny, popøípadì ji potom hledat na serveru Obalkyknih.cz je v objektovì orientovaném PHP naprogramována nová tøída \texttt{AlephImageCovers}, která vypadá takto:
+\begin{lstlisting}
 class AlephImageCovers extends \ntk_module\Content\AbstractCover
 {
 		public function __construct()
@@ -67,5 +67,5 @@ class AlephImageCovers extends \ntk_module\Content\AbstractCover
     		return $url;
 		}
 }
-\end{verbatim}
+\end{lstlisting}
 

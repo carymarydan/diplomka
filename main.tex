@@ -92,12 +92,12 @@
   	\input{chapters/solr}
   	\section{Vyhledávání}
   	\input{chapters/searching}
+  	\section{Moduly}
+  	\input{chapters/ntkmodule}
   	\section{Grafický design}
   	\input{chapters/kustomizace}
   	\section{Ètenáøské konto}
   	\input{chapters/acount}
-  	\section{Modul NTK}
-  	\input{chapters/ntkmodule}
 
 \chapter{Napojení portálu VuFind na systém Aleph}
 \input{chapters/aleph}
@@ -111,16 +111,15 @@
 		\input{chapters/xserver}
 	\section{Automatický sbìr dat}
 	\input{chapters/harvest}
+  		\subsection{Cron}
+  		\input{chapters/cron}
 
 
 \chapter{Nasazení portálu VuFind v Národní technické knihovnì}
-\input{chapters/chapter02}
-\input{chapters/chapter03}
+\input{chapters/historieNTK}
 	\section{Instalace}
  	\input{chapters/instalace}
-	\section{Historie NTK}
-	\input{chapters/historieNTK}
-	\section{Servery}
+	\section{Servery portálu VuFind}
  	\input{chapters/servery}
   		\subsection{Server VuFind 1.x}
   		\input{chapters/vufindold}
@@ -130,27 +129,17 @@
   		\input{chapters/vufind-test}
   		\subsection{Testovací server VuFind + Summon}
 		\input{chapters/vufind-eiz}		
-	\section{Software}
+	\section{Správa provozu}
 	\input{chapters/swntk}
   		\subsection{Zabezpeèení}
   		\input{chapters/firewall} 
-  		\subsection{Zabbix}
+  		\subsection{Monitorování}
   		\input{chapters/zabbix}
-  		\subsection{Cron}
-  		\input{chapters/cron}
-  		\subsection{GIT}
+  		\subsection{Verzování}
   		\input{chapters/git}
-	\section{PSH}
-	\input{chapters/psh}
 
 \chapter{Budoucí vývoj systému}
 \input{chapters/chapter05}
-	\section{Provoz}
-	\input{chapters/provoz}
- 		\subsection{WorkFlow}
- 		\input{chapters/workflow}
- 		\subsection{Statistiky návštìvnosti}
- 		\input{chapters/statistiky}
 
 \chapter{Závìr (zhodnocení)}
 \input{chapters/conclusion}
@@ -370,9 +359,5 @@ Reaching out to users everywhere. Scandinavian Library Quarterly [online]. [cit.
 Koha: èeská komunita [online]. [cit. 2016-07-01]. Dostupné z: http://www.knihovni-system-koha.cz/index.php
 
 \end{thebibliography}
-
-\appendix
-\chapter{Pøíloha}
-\input{chapters/appendix}
 
 \end{document}

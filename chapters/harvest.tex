@@ -9,9 +9,34 @@ Pøed samotným sklízením dat z externích zdrojù do VuFindu, potažmo Solr indexu, 
 \begin{verbatim}
 /var/www/vufind/local/harvest
 \end{verbatim}
-nachází upravená kopie souboru \texttt{oai.ini}, kde je nastaveno jméno adresáøe, do kterého se data sklízí. Tím je podadresáø \texttt{katalog\_ntk-update}. Dále je zde uvedena URL adresa zdroje, ze kterého se data sklízí, což je \texttt{http://aleph.techlib.cz/OAI}. Dalším parametrem k nastavení je \textit{set}, což je identifikátor sady urèené ke sklízení, kterou je NTK. Parametr \textit{metadataPrefix} je nastaven na MARC21, protože je požadováno pøijímat data v tomto formátu. K dispozici je i další metadatový formát DublinCore. Dále je nastavena granularita data na formát "YYYY-MM-DDThh:mm:ssZ", podle které se pøi sklízení dat porovnává èasová znaèka záznamu a rozhoduje se tak, jestli záznam podléhá sklízení nebo jeho datum zmìny je starší a pravdìpodobnì už byl sklizen. Nastavení souboru pro zapisování identifikátorù sklizených záznamù \texttt{harvest.log} je aktivní, i když volitelné.
+nachází upravená kopie souboru \texttt{oai.ini}, kde je nastaveno jméno adresáøe, do kterého se data sklízí. Tím je podadresáø \texttt{katalog\_ntk-update}. Dále je zde uvedena URL adresa zdroje, ze kterého se data sklízí, což je \texttt{http://aleph.techlib.cz/OAI}. Dalším parametrem k nastavení je \texttt{set}, což je identifikátor sady urèené ke sklízení, kterou je NTK. Parametr \texttt{metadataPrefix} je nastaven na MARC21, protože je požadováno pøijímat data v tomto formátu. K dispozici je i další metadatový formát DublinCore. Dále je nastavena granularita data na formát \uv{YYYY-MM-DDThh:mm:ssZ}, podle které se pøi sklízení dat porovnává èasová znaèka záznamu a rozhoduje se tak, jestli záznam podléhá sklízení nebo jeho datum zmìny je starší a pravdìpodobnì už byl sklizen. Nastavení souboru pro zapisování identifikátorù sklizených záznamù \texttt{harvest.log} je aktivní, i když volitelné.
 
 V adresáøi \texttt{katalog\_ntk-update} pro sklízení dat se nachází jeden dùležitý soubor, kterým je \texttt{last\_harvest.txt}. Do nìho se zapisuje, potažmo pøepisuje èasové razítko posledního procesu sklízení. Pøi následném sklízení je dle tohoto data jasné, které záznamy byly už sklizeny a které se tedy mají sklidit. Sklízené záznamy se ukládají jednotlivì do XML souborù a potom, co jsou dále zpracovány, tedy importovány do indexu nebo z indexu vymazány, pøesouvají se do podadresáøe \texttt{processed}.
 \cite{vufind.oai}
 
+V Národní technické knihovnì konkrétní požadavkem na sklízení dat pøes protokol OAI-PMH vypadá takto:
+\begin{lstlisting}
+http://aleph.techlib.cz/OAI?verb=ListIdentifiers&from=2016-07-06&metadataPrefix=marc21&set=NTK
+\end{lstlisting}
+Odpovìd ve formátu XML obsahuje 30 záznamù. Na konci tohoto souboru je obvykle tag \texttt{<resumptionToken>}, ve kterém je udán øetìzec, podle kterého se dalším dotazem na OAI-PMH získá pokraèování seznamu identifikátorù se zmìnìnými údaji. Tento dotaz vypadá takto:
+\begin{lstlisting}
+http://aleph.techlib.cz/OAI?verb=ListIdentifiers&resumptionToken=201607070737134999999999999999NTK:NTK_21
+\end{lstlisting}
+Èást odpovìdi na OAI-PMH požadavek mùže vypadat takto:
+\begin{lstlisting}
+<OAI-PMH xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+ <responseDate>2016-07-09T15:02:56Z</responseDate>
+ <request verb="ListIdentifiers" from="2016-07-06" metadataPrefix="marc21" set="NTK">http://aleph.techlib.cz/OAI</request>
+ <ListIdentifiers>
+   <header>
+     <identifier>oai:aleph.techlib.cz:STK01-000969194</identifier>
+     <datestamp>2016-07-07T06:09:05Z</datestamp>
+     <setSpec>NTK</setSpec>				
+   </header>
+   <header>
+     <identifier>oai:aleph.techlib.cz:STK01-000618216</identifier>
+	 <datestamp>2016-07-07T06:25:40Z</datestamp>
+	 <setSpec>NTK</setSpec>
+   </header>
+\end{lstlisting}
 

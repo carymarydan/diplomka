@@ -1,0 +1,25 @@
+\label{sec:restful}
+Princip komunikace pøes toto API rozhraní funguje následovnì. VuFind vytvoøí HTTP požadavek, který je odeslán pøíslušnému koncovému bodu na stranì Alephu. Systém Aleph požadavek zpracuje, na jeho základì vytvoøí odpovìï a ta je zpìt do VuFindu odeslána ve formátu XML. Pro názornost je zde uveden HTTP požadavek na záznam se systémovým èíslem 000685920, který v NTK reálnì existuje:
+\begin{verbatim}
+http://aleph.ntkcz.cz:1891/rest-dlf/record/STK01000685920/
+\end{verbatim}
+Odpovìï obvykle obsahuje další URI, ze kterých lze vytvoøit HTTP požadavek a získat tak podrobnìjší informace. Tato konkrétní odpovìï vypadá takto:
+\begin{lstlisting}
+<get-record>
+	<reply-text>ok</reply-text>
+	<reply-code>0000</reply-code>
+	<record>
+		<info type="Items" href="http://aleph.ntkcz.cz:1891/rest-dlf/record/STK01000685920/items"/>
+		<info type="Holdings" href="http://aleph.ntkcz.cz:1891/rest-dlf/record/STK01000685920/holdings"/>
+		<info type="Filters" href="http://aleph.ntkcz.cz:1891/rest-dlf/record/STK01000685920/filters"/>
+	</record>
+</get-record>
+\end{lstlisting}
+
+Tento pøenos dat probíhá v reálném èase na základì interakce uživatele s katalogem. VuFind díky naprogramovanému zdrojovému kódu mùže vytváøet velké množství podobných požadavkù na získání rùzných informací o jednotkách a uživatelích, které se v katalogu zobrazí. Tímto zpùsobem se tedy do katalogu dostávají tyto informace:
+\begin{itemize}
+\item informace o uživatelích - jméno, adresa, zùstatek na finanèním kontu, datum expirace registrace, výpùjèky, rezervace
+\item informace o záznamech - dostupné jednotky
+\item informace o jednotkách - status dostupnosti, umístìní
+\end{itemize}
+\cite{restful}

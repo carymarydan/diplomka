@@ -80,7 +80,7 @@
 	\section{Implementace v ÈR i zahranièí}
 	\input{chapters/chapter04}
 
-\chapter{Technické aspekty implementace}
+\chapter{Technické aspekty implementace portálu VuFind}
 \input{chapters/implementace}
 	\section{Konfiguraèní soubory}
   	\input{chapters/config}
@@ -96,21 +96,26 @@
   	\input{chapters/kustomizace}
   	\section{Ètenáøské konto}
   	\input{chapters/acount}
-
-\chapter{Napojení na Aleph}
-\input{chapters/chapter03}
-  	\section{Server Aleph}
-  	\input{chapters/aleph}
-
-\chapter{Automatický sbìr dat - OAI-PMH}
-\input{chapters/harvest}
-  		\section{Server SFX}
-  		\input{chapters/sfx}
-
-\chapter{Nasazení VuFind v Národní technické knihovnì}
-\input{chapters/chapter02}
   	\section{Modul NTK}
   	\input{chapters/ntkmodule}
+
+\chapter{Napojení portálu VuFind na systém Aleph}
+\input{chapters/aleph}
+  	\section{Integrovaný knihovnický systém Aleph}
+	\input{chapters/oaleph}  	
+  	\section{Pøenos dat}
+	\input{chapters/data} 	 	
+	  	\subsection{Aleph RESTful API}
+		\input{chapters/restful} 
+	  	\subsection{Aleph X-Server}
+		\input{chapters/xserver}
+	\section{Automatický sbìr dat}
+	\input{chapters/harvest}
+
+
+\chapter{Nasazení portálu VuFind v Národní technické knihovnì}
+\input{chapters/chapter02}
+\input{chapters/chapter03}
 	\section{Instalace}
  	\input{chapters/instalace}
 	\section{Historie NTK}
@@ -259,6 +264,12 @@ Nabídka na údržbu a podporu knihovnického systému Aleph 500 na období 2016 - 201
 
 \bibitem{aleph}
 Ex Libris the bridge to knowledge, Aleph. Ex Libris corporate website [online]. Ex Libris Ltd., 2016 [cit. 2016-06-30]. Dostupné z: http://www.exlibrisgroup.com/category/Aleph
+
+\bibitem{restful}
+Introduction to Aleph RESTful APIs. Ex Libris Developer Network [online]. Ex Libris Ltd., 2016 [cit. 2016-07-09]. Dostupné z: https://developers.exlibrisgroup.com/aleph/apis/Aleph-RESTful-APIs/Introduction-to-Aleph-RESTful-APIs
+
+\bibitem{xserver}
+Introduction to Aleph X-Services. Ex Libris Developer Network [online]. Ex Libris Ltd., 2016 [cit. 2016-07-09]. Dostupné z: https://developers.exlibrisgroup.com/aleph/apis/Aleph-X-Services/introduction-to-aleph-x-services
 
 \bibitem{firewall.cmd}
 How to open http port 80 on Redhat 7 Linux using firewall-cmd. Linux Configuration Tutorials [online]. LinuxConfig.org, 2016 [cit. 2016-06-30]. Dostupné z: https://linuxconfig.org/how-to-open-http-port-80-on-redhat-7-linux-using-firewall-cmd

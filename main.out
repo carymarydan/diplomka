@@ -16,7 +16,7 @@
 \BOOKMARK [2][-]{subsection.3.3.5}{ZendFramework}{section.3.3}% 16
 \BOOKMARK [1][-]{section.3.4}{Po\236adavky na hardware}{chapter.3}% 17
 \BOOKMARK [1][-]{section.3.5}{Implementace v CR i zahranic\355}{chapter.3}% 18
-\BOOKMARK [0][-]{chapter.4}{Technick\351 aspekty implementace}{}% 19
+\BOOKMARK [0][-]{chapter.4}{Technick\351 aspekty implementace port\341lu VuFind}{}% 19
 \BOOKMARK [1][-]{section.4.1}{Konfiguracn\355 soubory}{chapter.4}% 20
 \BOOKMARK [1][-]{section.4.2}{Autentikace}{chapter.4}% 21
 \BOOKMARK [1][-]{section.4.3}{Import dat}{chapter.4}% 22
@@ -24,30 +24,32 @@
 \BOOKMARK [1][-]{section.4.5}{Vyhled\341v\341n\355}{chapter.4}% 24
 \BOOKMARK [1][-]{section.4.6}{Grafick\375 design}{chapter.4}% 25
 \BOOKMARK [1][-]{section.4.7}{Cten\341rsk\351 konto}{chapter.4}% 26
-\BOOKMARK [0][-]{chapter.5}{Napojen\355 na Aleph}{}% 27
-\BOOKMARK [1][-]{section.5.1}{Server Aleph}{chapter.5}% 28
-\BOOKMARK [0][-]{chapter.6}{Automatick\375 sber dat - OAI-PMH}{}% 29
-\BOOKMARK [1][-]{section.6.1}{Server SFX}{chapter.6}% 30
-\BOOKMARK [0][-]{chapter.7}{Nasazen\355 VuFind v N\341rodn\355 technick\351 knihovne}{}% 31
-\BOOKMARK [1][-]{section.7.1}{Modul NTK}{chapter.7}% 32
-\BOOKMARK [1][-]{section.7.2}{Instalace}{chapter.7}% 33
-\BOOKMARK [1][-]{section.7.3}{Historie NTK}{chapter.7}% 34
-\BOOKMARK [1][-]{section.7.4}{Servery}{chapter.7}% 35
-\BOOKMARK [2][-]{subsection.7.4.1}{Server VuFind 1.x}{section.7.4}% 36
-\BOOKMARK [2][-]{subsection.7.4.2}{Server VuFind 2.x}{section.7.4}% 37
-\BOOKMARK [2][-]{subsection.7.4.3}{Testovac\355 server VuFind}{section.7.4}% 38
-\BOOKMARK [2][-]{subsection.7.4.4}{Testovac\355 server VuFind + Summon}{section.7.4}% 39
-\BOOKMARK [1][-]{section.7.5}{Software}{chapter.7}% 40
-\BOOKMARK [2][-]{subsection.7.5.1}{Zabezpecen\355}{section.7.5}% 41
-\BOOKMARK [2][-]{subsection.7.5.2}{Zabbix}{section.7.5}% 42
-\BOOKMARK [2][-]{subsection.7.5.3}{Cron}{section.7.5}% 43
-\BOOKMARK [2][-]{subsection.7.5.4}{GIT}{section.7.5}% 44
-\BOOKMARK [1][-]{section.7.6}{PSH}{chapter.7}% 45
-\BOOKMARK [0][-]{chapter.8}{Budouc\355 v\375voj syst\351mu}{}% 46
-\BOOKMARK [1][-]{section.8.1}{Provoz}{chapter.8}% 47
-\BOOKMARK [2][-]{subsection.8.1.1}{WorkFlow}{section.8.1}% 48
-\BOOKMARK [2][-]{subsection.8.1.2}{Statistiky n\341v\235tevnosti}{section.8.1}% 49
-\BOOKMARK [0][-]{chapter.9}{Z\341ver \(zhodnocen\355\)}{}% 50
-\BOOKMARK [0][-]{chapter*.23}{Seznam obr\341zku}{}% 51
-\BOOKMARK [0][-]{chapter*.24}{Literatura}{}% 52
-\BOOKMARK [0][-]{appendix.A}{Pr\355loha}{}% 53
+\BOOKMARK [1][-]{section.4.8}{Modul NTK}{chapter.4}% 27
+\BOOKMARK [0][-]{chapter.5}{Napojen\355 port\341lu VuFind na syst\351m Aleph}{}% 28
+\BOOKMARK [1][-]{section.5.1}{Integrovan\375 knihovnick\375 syst\351m Aleph}{chapter.5}% 29
+\BOOKMARK [1][-]{section.5.2}{Prenos dat}{chapter.5}% 30
+\BOOKMARK [2][-]{subsection.5.2.1}{Aleph RESTful API}{section.5.2}% 31
+\BOOKMARK [2][-]{subsection.5.2.2}{Aleph X-Server}{section.5.2}% 32
+\BOOKMARK [1][-]{section.5.3}{Automatick\375 sber dat}{chapter.5}% 33
+\BOOKMARK [0][-]{chapter.6}{Nasazen\355 port\341lu VuFind v N\341rodn\355 technick\351 knihovne}{}% 34
+\BOOKMARK [1][-]{section.6.1}{Instalace}{chapter.6}% 35
+\BOOKMARK [1][-]{section.6.2}{Historie NTK}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.3}{Servery}{chapter.6}% 37
+\BOOKMARK [2][-]{subsection.6.3.1}{Server VuFind 1.x}{section.6.3}% 38
+\BOOKMARK [2][-]{subsection.6.3.2}{Server VuFind 2.x}{section.6.3}% 39
+\BOOKMARK [2][-]{subsection.6.3.3}{Testovac\355 server VuFind}{section.6.3}% 40
+\BOOKMARK [2][-]{subsection.6.3.4}{Testovac\355 server VuFind + Summon}{section.6.3}% 41
+\BOOKMARK [1][-]{section.6.4}{Software}{chapter.6}% 42
+\BOOKMARK [2][-]{subsection.6.4.1}{Zabezpecen\355}{section.6.4}% 43
+\BOOKMARK [2][-]{subsection.6.4.2}{Zabbix}{section.6.4}% 44
+\BOOKMARK [2][-]{subsection.6.4.3}{Cron}{section.6.4}% 45
+\BOOKMARK [2][-]{subsection.6.4.4}{GIT}{section.6.4}% 46
+\BOOKMARK [1][-]{section.6.5}{PSH}{chapter.6}% 47
+\BOOKMARK [0][-]{chapter.7}{Budouc\355 v\375voj syst\351mu}{}% 48
+\BOOKMARK [1][-]{section.7.1}{Provoz}{chapter.7}% 49
+\BOOKMARK [2][-]{subsection.7.1.1}{WorkFlow}{section.7.1}% 50
+\BOOKMARK [2][-]{subsection.7.1.2}{Statistiky n\341v\235tevnosti}{section.7.1}% 51
+\BOOKMARK [0][-]{chapter.8}{Z\341ver \(zhodnocen\355\)}{}% 52
+\BOOKMARK [0][-]{chapter*.23}{Seznam obr\341zku}{}% 53
+\BOOKMARK [0][-]{chapter*.24}{Literatura}{}% 54
+\BOOKMARK [0][-]{appendix.A}{Pr\355loha}{}% 55

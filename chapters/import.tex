@@ -23,7 +23,7 @@ Pro složitìjší zpracování MARCových polí slouží indexaèní skripty, které jsou ul
 \begin{verbatim}
 publishDate = script(getdate.bsh), getDates
 \end{verbatim}
-Dále je vytvoøen zcela nový indexaèní skript \texttt{stripSlashEnd.bsh} speciálnì pro potøeby NTK. Ten zpracovává MARCová pole 245a a 245b obsahující název a podnázev daného záznamu. Konkrétnì jde o oøíznutí posledního znaku tìchto øetìzcù, je-li jím znak lomítka '\texttt{/}'. Zdrojový kód skriptu vypadá takto:
+Dále je vytvoøen zcela nový indexaèní skript \texttt{stripSlashEnd.bsh} speciálnì pro potøeby NTK. Ten zpracovává MARCová pole 245a a 245b obsahující název a podnázev daného záznamu. Konkrétnì jde o oøíznutí posledního znaku tìchto øetìzcù, je-li jím znak lomítka \uv{/}. Zdrojový kód skriptu vypadá takto:
 \begin{lstlisting}
 public String stripSlashEnd(Record record)
 {

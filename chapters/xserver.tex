@@ -1,0 +1,18 @@
+\label{sec:xserver}
+Alternativním rozhraním k RESTful API je Aleph X-Server. Tento mechanizmus funguje velmi podobnì jako pøedchozí popsané API, tedy na HTTP požadavek vrací XML odpovìï. Rozdíl je v tom, že v systému Aleph v tomto pøípadì probíhá složitìjší operace na vytvoøení odpovìdi, protože toto rozhraní umožòuje provádìt v systému Aleph operace jako je napøíklad prodlužování výpùjèek, aktualizace záznamu, atd. Mnoho získávaných informací tímto zpùsobem je obdobných jako v pøedchozím pøípadì. Nìkteré operace jsou uvedeny dále:
+
+\begin{itemize}
+\item renew - prodlužování výpùjèek
+\item update\_doc - aktualizace, vložení nebo smazání záznamu
+\item find\_doc - získání dokumentu
+\item get\_holding - získání seznamu jednotek
+\item sort\_set - seøazení sady záznamù
+\end{itemize}
+
+
+Dotaz na informace o záznamu mùže vypadat napø. takto:
+\begin{verbatim}
+http://aleph.techlib.cz/X?op=find-doc&base=STK01&doc_num=000660087
+\end{verbatim}
+
+\cite{xserver}

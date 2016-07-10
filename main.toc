@@ -62,7 +62,7 @@
 \contentsline {subsection}{\numberline {6.3.1}Zabezpe\v cen\IeC {\'\i }}{60}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Monitorov\'an\IeC {\'\i }}{60}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Verzov\'an\IeC {\'\i }}{61}{subsection.6.3.3}
-\contentsline {chapter}{\numberline {7}Budouc\IeC {\'\i } v\'yvoj syst\'emu}{62}{chapter.7}
-\contentsline {chapter}{\numberline {8}Z\'av\v er (zhodnocen\IeC {\'\i })}{63}{chapter.8}
+\contentsline {chapter}{\numberline {7}Budouc\IeC {\'\i } v\'yvoj port\'alu VuFind}{62}{chapter.7}
+\contentsline {chapter}{\numberline {8}Z\'av\v er}{63}{chapter.8}
 \contentsline {chapter}{Seznam obr\'azk\r {u}}{64}{chapter*.23}
 \contentsline {chapter}{Literatura}{66}{chapter*.24}

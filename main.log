@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.11)  9 JUL 2016 22:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.11)  10 JUL 2016 14:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -412,25 +412,8 @@ been already used, duplicate ignored
 l.44 \chapter
              {Úvod} [1]
 Kapitola 1.
-(./chapters/introduction.tex
-
-LaTeX Warning: Hyper reference `sec:chapter02' on page 2 undefined on input lin
-e 1.
-
-
-LaTeX Warning: Hyper reference `sec:chapter03' on page 2 undefined on input lin
-e 1.
-
-
-LaTeX Warning: Hyper reference `sec:workflow' on page 2 undefined on input line
- 2.
-
-
-LaTeX Warning: Hyper reference `sec:provoz' on page 2 undefined on input line 2
-.
-
-)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
- been already used, duplicate ignored
+(./chapters/introduction.tex)pdfTeX warning (ext4): destination with the same i
+dentifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.47 \chapter
@@ -466,7 +449,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
 
-<images/blacklight.png, id=313, 876.27374pt x 453.19313pt>
+<images/blacklight.png, id=301, 876.27374pt x 453.19313pt>
 File: images/blacklight.png Graphic file (type png)
 
 <use images/blacklight.png>
@@ -482,7 +465,7 @@ File: il2cmtt.fd 1997/08/20 CSLaTeX font definitions
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./chapters/evergreen.tex [5] [6 <./images/blacklight.png>]
-<images/evergreen.png, id=332, 929.72343pt x 535.2497pt>
+<images/evergreen.png, id=319, 929.72343pt x 535.2497pt>
 File: images/evergreen.png Graphic file (type png)
 
 <use images/evergreen.png>
@@ -519,7 +502,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                removing `\textasciicaron' on input line 80.
 
 (./chapters/chapter04.tex
-<images/vufind-1.png, id=411, 1190.4475pt x 1072.005pt>
+<images/vufind-1.png, id=399, 1190.4475pt x 1072.005pt>
 File: images/vufind-1.png Graphic file (type png)
 
 <use images/vufind-1.png>
@@ -529,7 +512,7 @@ Package pdftex.def Info: images/vufind-1.png used on input line 8.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vufind-2.png, id=415, 1736.4875pt x 1082.0425pt>
+<images/vufind-2.png, id=403, 1736.4875pt x 1082.0425pt>
 File: images/vufind-2.png Graphic file (type png)
 
 <use images/vufind-2.png>
@@ -539,21 +522,21 @@ Package pdftex.def Info: images/vufind-2.png used on input line 17.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vufind-3.png, id=418, 1161.33875pt x 1072.005pt>
+<images/vufind-3.png, id=406, 1161.33875pt x 1072.005pt>
 File: images/vufind-3.png Graphic file (type png)
 
 <use images/vufind-3.png>
 Package pdftex.def Info: images/vufind-3.png used on input line 26.
 (pdftex.def)             Requested size: 318.66948pt x 294.15617pt.
 
-<images/vufind-4.png, id=421, 948.54375pt x 784.9325pt>
+<images/vufind-4.png, id=409, 948.54375pt x 784.9325pt>
 File: images/vufind-4.png Graphic file (type png)
 
 <use images/vufind-4.png>
 Package pdftex.def Info: images/vufind-4.png used on input line 33.
 (pdftex.def)             Requested size: 318.66948pt x 263.69958pt.
  [14]
-<images/vufind-5.png, id=429, 1199.48125pt x 1065.9825pt>
+<images/vufind-5.png, id=417, 1199.48125pt x 1065.9825pt>
 File: images/vufind-5.png Graphic file (type png)
 
 <use images/vufind-5.png>
@@ -563,35 +546,35 @@ Package pdftex.def Info: images/vufind-5.png used on input line 44.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vufind-6a.png, id=433, 1161.33875pt x 1050.92625pt>
+<images/vufind-6a.png, id=421, 1161.33875pt x 1050.92625pt>
 File: images/vufind-6a.png Graphic file (type png)
 
 <use images/vufind-6a.png>
 Package pdftex.def Info: images/vufind-6a.png used on input line 53.
 (pdftex.def)             Requested size: 305.01271pt x 276.00858pt.
 
-<images/vufind-6b.png, id=436, 1162.3425pt x 1051.93pt>
+<images/vufind-6b.png, id=424, 1162.3425pt x 1051.93pt>
 File: images/vufind-6b.png Graphic file (type png)
 
 <use images/vufind-6b.png>
 Package pdftex.def Info: images/vufind-6b.png used on input line 60.
 (pdftex.def)             Requested size: 305.01271pt x 276.03142pt.
  [15 <./images/vufind-1.png>]
-<images/vufind-7.png, id=446, 1209.51875pt x 1054.94125pt>
+<images/vufind-7.png, id=434, 1209.51875pt x 1054.94125pt>
 File: images/vufind-7.png Graphic file (type png)
 
 <use images/vufind-7.png>
 Package pdftex.def Info: images/vufind-7.png used on input line 69.
 (pdftex.def)             Requested size: 318.66948pt x 277.9323pt.
  [16 <./images/vufind-2.png> <./images/vufind-3.png>]
-<images/vufind-8.png, id=457, 1210.5225pt x 1015.795pt>
+<images/vufind-8.png, id=445, 1210.5225pt x 1015.795pt>
 File: images/vufind-8.png Graphic file (type png)
 
 <use images/vufind-8.png>
 Package pdftex.def Info: images/vufind-8.png used on input line 79.
 (pdftex.def)             Requested size: 318.66948pt x 267.40192pt.
 
-<images/vufind-9.png, id=460, 957.5775pt x 1016.79875pt>
+<images/vufind-9.png, id=448, 957.5775pt x 1016.79875pt>
 File: images/vufind-9.png Graphic file (type png)
 
 <use images/vufind-9.png>
@@ -601,13 +584,13 @@ Package pdftex.def Info: images/vufind-9.png used on input line 88.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/finna.png, id=463, 1174.3875pt x 990.70125pt>
+<images/finna.png, id=451, 1174.3875pt x 990.70125pt>
 File: images/finna.png Graphic file (type png)
  <use images/finna.png>
 Package pdftex.def Info: images/finna.png used on input line 95.
 (pdftex.def)             Requested size: 318.66948pt x 268.8232pt.
 
-<images/finna_architecture.png, id=466, 1605.8394pt x 1304.7144pt>
+<images/finna_architecture.png, id=454, 1605.8394pt x 1304.7144pt>
 File: images/finna_architecture.png Graphic file (type png)
 
 <use images/finna_architecture.png>
@@ -622,7 +605,7 @@ LaTeX Warning: Text page 18 contains only floats.
 LaTeX Warning: Text page 19 contains only floats.
 
 [19 <./images/vufind-6b.png> <./images/vufind-7.png>] [20 <./images/vufind-8.pn
-g>] <images/tlacitko.png, id=506, 731.73375pt x 545.03625pt>
+g>] <images/tlacitko.png, id=494, 731.73375pt x 545.03625pt>
 File: images/tlacitko.png Graphic file (type png)
 
 <use images/tlacitko.png>
@@ -707,7 +690,7 @@ Overfull \hbox (17.14204pt too wide) in paragraph at lines 12--13
  / VuFind/$[][]\IL2/cmr/m/n/12 , kde jsou k dis-po-zici v¹echny
  []
 
-[56] <images/auto-conf.png, id=975, 426.59375pt x 426.59375pt>
+[56] <images/auto-conf.png, id=963, 426.59375pt x 426.59375pt>
 File: images/auto-conf.png Graphic file (type png)
 
 <use images/auto-conf.png>
@@ -725,13 +708,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+c'
 (./chapters/firewall.tex) (./chapters/zabbix.tex) [60] (./chapters/git.tex)
 [61]
 Kapitola 7.
-(./chapters/chapter05.tex
-Overfull \hbox (50.78397pt too wide) in paragraph at lines 9--11
-[]\IL2/cmr/m/n/12 o cen-t-ral-nich in-de-xech a dis-co-very http://oldknihovna.
-nkp.cz/knihovnaplus121/coufal.htm 
- []
-
-) [62
+(./chapters/chapter05.tex) [62
 
 ]
 Kapitola 8.
@@ -1038,34 +1015,25 @@ Underfull \hbox (badness 1762) in paragraph at lines 350--351
 -08]. Do-stupné z:
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 363.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 366.
 [72]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 363.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 366.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 363.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 363.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 9B2E92C0E313C712B2D398736E6529FE;3307
-(rerunfilecheck)             After:  4ECF8E1F989BD7C6400B9B5DC82B98D3;3307.
-
-LaTeX Warning: There were undefined references.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 366.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 366.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 3BC6BD97DE2D83FA64B0967012BA12CD;3296.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 363.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 366.
  ) 
 Here is how much of TeX's memory you used:
- 8965 strings out of 494953
- 128132 string characters out of 6179185
- 343920 words of memory out of 5000000
- 11469 multiletter control sequences out of 15000+600000
+ 8963 strings out of 494953
+ 128101 string characters out of 6179185
+ 343946 words of memory out of 5000000
+ 11466 multiletter control sequences out of 15000+600000
  11849 words of font info for 33 fonts, out of 8000000 for 9000
  46 hyphenation exceptions out of 8191
  29i,6n,32p,3934b,1812s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1074,10 +1042,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/cs/csbx12.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/cs/csr12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/cs/csti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 cs/cstt12.pfb>
-Output written on main.pdf (76 pages, 3290131 bytes).
+Output written on main.pdf (76 pages, 3290074 bytes).
 PDF statistics:
- 1224 PDF objects out of 1440 (max. 8388607)
- 1088 compressed objects within 11 object streams
- 463 named destinations out of 1000 (max. 500000)
+ 1214 PDF objects out of 1440 (max. 8388607)
+ 1078 compressed objects within 11 object streams
+ 464 named destinations out of 1000 (max. 500000)
  473 words of extra memory for PDF output out of 10000 (max. 10000000)
 

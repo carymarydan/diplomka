@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.11)  10 JUL 2016 14:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.6.11)  10 JUL 2016 20:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1030,10 +1030,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 366.
  ) 
 Here is how much of TeX's memory you used:
- 8963 strings out of 494953
- 128101 string characters out of 6179185
+ 8959 strings out of 494953
+ 128053 string characters out of 6179185
  343946 words of memory out of 5000000
- 11466 multiletter control sequences out of 15000+600000
+ 11462 multiletter control sequences out of 15000+600000
  11849 words of font info for 33 fonts, out of 8000000 for 9000
  46 hyphenation exceptions out of 8191
  29i,6n,32p,3934b,1812s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1042,7 +1042,7 @@ r/share/texlive/texmf-dist/fonts/type1/public/cs/csbx12.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/cs/csr12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/cs/csti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 cs/cstt12.pfb>
-Output written on main.pdf (76 pages, 3290074 bytes).
+Output written on main.pdf (76 pages, 3291268 bytes).
 PDF statistics:
  1214 PDF objects out of 1440 (max. 8388607)
  1078 compressed objects within 11 object streams

@@ -26,16 +26,12 @@
 \titleformat{\chapter}[hang] 
 {\normalfont\huge\bfseries}{\ \thechapter}{0.75em}{} 
 
-
-\pagestyle{empty} % vypne èíslování stránek
-\pagestyle{empty} % vypne èíslování stránek
 \begin{document}
-\pagestyle{empty} % vypne èíslování stránek
-
-
-
 
 \include{chapters/firstpage}
+\pagenumbering{gobble}
+\chapter*{Podìkování}
+\input{chapters/podekovani}
 \chapter*{Prohlášení}
 \input{chapters/predmluva2}
 \chapter*{Pøedmluva}
@@ -45,18 +41,14 @@
 \chapter*{Abstract}
 \input{chapters/keywords}
 
-
 \tableofcontents
-
-\pagestyle{empty} % vypne èíslování stránek
-\pagestyle{plain}     % zapne obyèejné èíslování
-\setcounter{page}{5}  % nastaví èítaè stránek znovu od jedné
-\pagenumbering{arabic} % èíslování øímskımi èíslicemi
 
 
 \chapter{Úvod}
 \input{chapters/introduction}
 
+\pagenumbering{arabic}
+\setcounter{page}{9}
 \chapter{Open Source}
 \input{chapters/opensource-intro}
 	\section{Filosofie otevøené komunity}

@@ -4,65 +4,65 @@
 \contentsline {section}{\numberline {2.1}Filosofie otev\v ren\'e komunity}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Svobod\'y software pro knihovny}{4}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Blacklight}{4}{subsection.2.2.1}
-\contentsline {paragraph}{Kl\IeC {\'\i }\v cov\'e vlastnosti syst\'emu Blacklight}{5}{section*.5}
-\contentsline {subsection}{\numberline {2.2.2}Evergreen}{5}{subsection.2.2.2}
+\contentsline {paragraph}{Kl\IeC {\'\i }\v cov\'e vlastnosti syst\'emu Blacklight}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Evergreen}{6}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Koha}{7}{subsection.2.2.3}
 \contentsline {chapter}{\numberline {3}Port\'al VuFind}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Vznik}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Kl\IeC {\'\i }\v cov\'e vlastnosti}{10}{section.3.2}
-\contentsline {subparagraph}{Fasetov\'e vyhled\'av\'an\IeC {\'\i }}{10}{section*.6}
-\contentsline {subparagraph}{Status dostupnosti}{10}{section*.7}
-\contentsline {subparagraph}{Podobn\'e jednotky}{10}{section*.8}
-\contentsline {subparagraph}{U\v zivatelsk\'e seznamy}{10}{section*.9}
-\contentsline {subparagraph}{Proch\'azen\IeC {\'\i } zdroj\r u}{11}{section*.10}
-\contentsline {subparagraph}{Biografie autor\r u}{11}{section*.11}
-\contentsline {subparagraph}{Trval\'a URL}{11}{section*.12}
-\contentsline {subparagraph}{Cita\v cn\IeC {\'\i } mana\v zery}{11}{section*.13}
-\contentsline {subparagraph}{Internacionalizace}{11}{section*.14}
-\contentsline {subparagraph}{P\v r\IeC {\'\i }stup k dat\r um}{11}{section*.15}
+\contentsline {subparagraph}{Fasetov\'e vyhled\'av\'an\IeC {\'\i }}{10}{section.3.2}
+\contentsline {subparagraph}{Status dostupnosti}{10}{section.3.2}
+\contentsline {subparagraph}{Podobn\'e jednotky}{10}{section.3.2}
+\contentsline {subparagraph}{U\v zivatelsk\'e seznamy}{10}{section.3.2}
+\contentsline {subparagraph}{Proch\'azen\IeC {\'\i } zdroj\r u}{11}{section.3.2}
+\contentsline {subparagraph}{Biografie autor\r u}{11}{section.3.2}
+\contentsline {subparagraph}{Trval\'a URL}{11}{section.3.2}
+\contentsline {subparagraph}{Cita\v cn\IeC {\'\i } mana\v zery}{11}{section.3.2}
+\contentsline {subparagraph}{Internacionalizace}{11}{section.3.2}
+\contentsline {subparagraph}{P\v r\IeC {\'\i }stup k dat\r um}{11}{section.3.2}
 \contentsline {section}{\numberline {3.3}Po\v zadavky na software}{11}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Opera\v cn\IeC {\'\i } syst\'em}{12}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Webov\'y server}{12}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Javov\'y server}{13}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.3}Javov\'y server}{12}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Datab\'azov\'y server}{13}{subsection.3.3.4}
 \contentsline {subsection}{\numberline {3.3.5}ZendFramework}{13}{subsection.3.3.5}
-\contentsline {section}{\numberline {3.4}Po\v zadavky na hardware}{14}{section.3.4}
+\contentsline {section}{\numberline {3.4}Po\v zadavky na hardware}{13}{section.3.4}
 \contentsline {section}{\numberline {3.5}Implementace v \v CR i zahrani\v c\IeC {\'\i }}{14}{section.3.5}
-\contentsline {chapter}{\numberline {4}Technick\'e aspekty implementace port\'alu VuFind}{24}{chapter.4}
-\contentsline {section}{\numberline {4.1}Konfigura\v cn\IeC {\'\i } soubory}{24}{section.4.1}
-\contentsline {paragraph}{config.ini}{25}{section*.16}
-\contentsline {paragraph}{Aleph.ini}{26}{section*.17}
-\contentsline {paragraph}{facets.ini}{27}{section*.18}
-\contentsline {paragraph}{searchbox.ini}{27}{section*.19}
-\contentsline {paragraph}{combined.ini}{27}{section*.20}
-\contentsline {paragraph}{searches.ini}{28}{section*.21}
-\contentsline {paragraph}{searchspecs.yaml}{28}{section*.22}
-\contentsline {section}{\numberline {4.2}Autentikace}{28}{section.4.2}
-\contentsline {section}{\numberline {4.3}Import dat}{29}{section.4.3}
-\contentsline {section}{\numberline {4.4}Indexace dat}{32}{section.4.4}
-\contentsline {section}{\numberline {4.5}Vyhled\'av\'an\IeC {\'\i }}{33}{section.4.5}
-\contentsline {section}{\numberline {4.6}Moduly}{39}{section.4.6}
-\contentsline {section}{\numberline {4.7}Grafick\'y design}{42}{section.4.7}
-\contentsline {section}{\numberline {4.8}\v Cten\'a\v rsk\'e konto}{45}{section.4.8}
-\contentsline {chapter}{\numberline {5}Napojen\IeC {\'\i } port\'alu VuFind na syst\'em Aleph}{47}{chapter.5}
-\contentsline {section}{\numberline {5.1}Integrovan\'y knihovnick\'y syst\'em Aleph}{47}{section.5.1}
-\contentsline {section}{\numberline {5.2}P\v renos dat}{48}{section.5.2}
+\contentsline {chapter}{\numberline {4}Technick\'e aspekty implementace port\'alu VuFind}{25}{chapter.4}
+\contentsline {section}{\numberline {4.1}Konfigura\v cn\IeC {\'\i } soubory}{25}{section.4.1}
+\contentsline {paragraph}{config.ini}{26}{section.4.1}
+\contentsline {paragraph}{Aleph.ini}{27}{section.4.1}
+\contentsline {paragraph}{facets.ini}{28}{section.4.1}
+\contentsline {paragraph}{searchbox.ini}{28}{section.4.1}
+\contentsline {paragraph}{combined.ini}{28}{section.4.1}
+\contentsline {paragraph}{searches.ini}{29}{section.4.1}
+\contentsline {paragraph}{searchspecs.yaml}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Autentikace}{29}{section.4.2}
+\contentsline {section}{\numberline {4.3}Import dat}{30}{section.4.3}
+\contentsline {section}{\numberline {4.4}Indexace dat}{33}{section.4.4}
+\contentsline {section}{\numberline {4.5}Vyhled\'av\'an\IeC {\'\i }}{34}{section.4.5}
+\contentsline {section}{\numberline {4.6}Moduly}{40}{section.4.6}
+\contentsline {section}{\numberline {4.7}Grafick\'y design}{43}{section.4.7}
+\contentsline {section}{\numberline {4.8}\v Cten\'a\v rsk\'e konto}{46}{section.4.8}
+\contentsline {chapter}{\numberline {5}Napojen\IeC {\'\i } port\'alu VuFind na syst\'em Aleph}{48}{chapter.5}
+\contentsline {section}{\numberline {5.1}Integrovan\'y knihovnick\'y syst\'em Aleph}{48}{section.5.1}
+\contentsline {section}{\numberline {5.2}P\v renos dat}{49}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Aleph RESTful API}{49}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Aleph X-Server}{50}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Automatick\'y sb\v er dat}{50}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Cron}{52}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.3}Automatick\'y sb\v er dat}{51}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Cron}{53}{subsection.5.3.1}
 \contentsline {chapter}{\numberline {6}Nasazen\IeC {\'\i } port\'alu VuFind v N\'arodn\IeC {\'\i } technick\'e knihovn\v e}{54}{chapter.6}
 \contentsline {section}{\numberline {6.1}Instalace}{55}{section.6.1}
-\contentsline {section}{\numberline {6.2}Servery port\'alu VuFind}{58}{section.6.2}
+\contentsline {section}{\numberline {6.2}Servery port\'alu VuFind}{57}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Server VuFind 1.x}{58}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Server VuFind 2.x}{58}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Testovac\IeC {\'\i } server VuFind}{59}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.3}Testovac\IeC {\'\i } server VuFind}{58}{subsection.6.2.3}
 \contentsline {subsection}{\numberline {6.2.4}Testovac\IeC {\'\i } server VuFind + Summon}{59}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Spr\'ava provozu}{60}{section.6.3}
+\contentsline {section}{\numberline {6.3}Spr\'ava provozu}{59}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Zabezpe\v cen\IeC {\'\i }}{60}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Monitorov\'an\IeC {\'\i }}{60}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Verzov\'an\IeC {\'\i }}{61}{subsection.6.3.3}
 \contentsline {chapter}{\numberline {7}Budouc\IeC {\'\i } v\'yvoj port\'alu VuFind}{62}{chapter.7}
 \contentsline {chapter}{\numberline {8}Z\'av\v er}{63}{chapter.8}
-\contentsline {chapter}{Seznam obr\'azk\r {u}}{64}{chapter*.23}
-\contentsline {chapter}{Literatura}{66}{chapter*.24}
+\contentsline {chapter}{Seznam obr\'azk\r {u}}{64}{chapter*.8}
+\contentsline {chapter}{Literatura}{66}{chapter*.9}

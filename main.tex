@@ -22,17 +22,29 @@
 \usepackage{listings}
 \lstset{breaklines=true, basicstyle=\ttfamily}
 
+\usepackage{titlesec}
+\titleformat{\chapter}[hang] 
+{\normalfont\huge\bfseries}{\ \thechapter}{0.75em}{} 
+
+
 \pagestyle{empty} % vypne èíslování stránek
 \pagestyle{empty} % vypne èíslování stránek
 \begin{document}
 \pagestyle{empty} % vypne èíslování stránek
 
+
+
+
+\include{chapters/firstpage}
+\chapter*{Prohlášení}
+\input{chapters/predmluva2}
 \chapter*{Pøedmluva}
 \input{chapters/predmluva}
-\chapter*{Klíèová slova}
-\input{chapters/keywords}
 \chapter*{Abstrakt}
 \input{chapters/abstract}
+\chapter*{Abstract}
+\input{chapters/keywords}
+
 
 \tableofcontents
 \pagestyle{empty} % vypne èíslování stránek

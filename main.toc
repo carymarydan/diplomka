@@ -6,7 +6,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Blacklight}{11}{subsection.2.2.1}
 \contentsline {paragraph}{Kl\IeC {\'\i }\v cov\'e vlastnosti syst\'emu Blacklight}{12}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Evergreen}{13}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Koha}{14}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Koha}{15}{subsection.2.2.3}
 \contentsline {chapter}{\numberline {3}Port\'al VuFind}{16}{chapter.3}
 \contentsline {section}{\numberline {3.1}Vznik}{16}{section.3.1}
 \contentsline {section}{\numberline {3.2}Kl\IeC {\'\i }\v cov\'e vlastnosti}{17}{section.3.2}

@@ -1,7 +1,9 @@
 \label{sec:blacklight}
-Jednou z možných alternativ portálu VuFind je systém Blacklight, vyvinutý multi-institucionální spoluprací jako lepší platforma pro discovery vyhledávání. Blacklight je stejnì jako VuFind svobodným softwarem, na rozdíl od VuFindu je však naprogramovaný v jazyce Ruby on Rails. Pøedstavuje malou aplikaci bìžící uvnitø existujícího projektu Ruby on Rails poskytující základní rozhraní pro vyhledávání v indexu Solr. Kromì vyhledávacího pole umožòuje fasetové zužování výsledkù, permanentní linky dokumentù, atd. Vše je možné upravovat dle lokálních potøeb pomocí šablonovacího mechanismu Rails. Blacklight je schopný pojmout heterogenní data i zobrazovat odlišné informace pro odlišné typy objektù.
+Svobodný software Blacklight je veøejnì pøístupným on-line katalogem, jehož vývoj zapoèal v univerzitní knihovnì University of Virginia Library v roce 2009 a pokraèuje multi-institucionální spoluprací. Snahou tohoto projektu je vytvoøení lepší platformy pro discovery vyhledávání. Hlavním jeho úèelem je zobrazovat knihovnické zdroje s využitím fasetového vyhledávání a možností pøidávat uživatelské tagy jednotlivým záznamùm. \cite{new.blacklight}
 \\
-\paragraph{Klíèové vlastnosti systému Blacklight}
+Blacklight je na rozdíl od VuFindu naprogramovaný v jazyce Ruby on Rails\footnote{Ruby on Rails je framework pro vývoj webových aplikací napojených na databázi, používající architekturu model-view-controller. Vytvoøil jej dánský programátor David Heinemeier Hansson pøi práci na projektu Basecamp. \cite{wiki.ruby}}. Pøedstavuje malou aplikaci bìžící uvnitø existujícího projektu Ruby on Rails poskytující základní rozhraní pro vyhledávání v indexu Solr\footnote{Solr je platforma pro vyhledávání v textu, vèetnì fasetového vyhledávání, distribuovaného vyhledávání a vyhledávání v dokumentech typu PDF nebo ODT. Jedná se o svobodný software dostupný pod licencí Apache License, který je napsaný v Javì a vyvíjený v rámci projektu Lucene nadace Apache Software Foundation. \cite{wiki.solr}}. Kromì vyhledávacího pole umožòuje fasetové zužování výsledkù, permanentní linky dokumentù, atd. Vše je možné upravovat dle lokálních potøeb pomocí šablonovacího mechanismu Rails. \cite{blacklight}
+\\
+\paragraph{Klíèové vlastnosti systému Blacklight} \cite{blacklight}
 
 \begin{itemize}
 \item Permanentní linky s vyhledáváním a záznamy umožòují uživateli obsah sdílet a ukládat pro pozdìjší použití.
@@ -14,7 +16,7 @@ Jednou z možných alternativ portálu VuFind je systém Blacklight, vyvinutý multi-
 \end{itemize}
 
 
-Stejnì jako VuFind i Blacklight používá responzivní design Bootstrap3. Narozdíl od VuFindu, který je naprogramovaný ve velmi rozšíøeném a populárním jazyce PHP, prostøedí Ruby on Rails, které využívá systém Blacklight, nemá vybudovanou takovou programátorskou základnu. Toto je pravdìpodobnì dùvod, proè je VuFind s vývojem dále než Blacklight. \cite{blacklight}
+Stejnì jako VuFind i Blacklight používá responzivní design Bootstrap\footnote{Bootstrap je volnì stažitelná sada nástrojù pro tvorbu webu a webových aplikací. Obsahuje návrháøské šablony založené na HTML a CSS, sloužící pro úpravu typografie, formuláøù, tlaèítek, navigace a dalších komponent rozhraní, stejnì jako další volitelná rozšíøení JavaScriptu. \cite{wiki.bootstrap}}. Prostøedí Ruby on Rails, které využívá systém Blacklight, nemá vybudovanou takovou programátorskou komunitu jako velmi rozšíøené a populární PHP, ve kterém je programován systém VuFind. Toto je pravdìpodobnì dùvod, proè je VuFind s vývojem dále než Blacklight. \cite{blacklight}
 
 \begin{figure}[h]
 \includegraphics[width=0.7\textwidth]{blacklight}

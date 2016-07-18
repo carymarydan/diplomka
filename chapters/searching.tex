@@ -1,5 +1,5 @@
 \label{sec:searching}
-V Národní technické knihovnì je vyhledávání rozšíøeno o vyhledávání podle systémového èísla. Systémové èíslo je unikátním identifikátorem záznamù v tomto knihovním systému. Skládá se z devíti-ciferného èísla. Rozsah devíti-ciferných èísel pøesahuje poèet záznamù v katalogu, proto toto èíslo zpravidla obsahuje zleva nuly. Aby nebylo nutné manuálnì do vyhledávacího pole tyto doplòující nuly zadávat, je vytvoøena èást zdrojového kódu, která toto upravuje. Doplòování vyhledávacího øetìzce zleva nulami na devíti-ciferné èíslo pøi vyhledávání podle systémového èísla tak probíhá automaticky. Není tedy nutné zadávat celý identifikátor, nýbrž staèí pouze jeho nenulovou èást. Pøíklad je uveden zde:
+V NTK je vyhledávání rozšíøeno o vyhledávání podle systémového èísla. Systémové èíslo je unikátním identifikátorem záznamù v knihovním systému Aleph. Skládá se z devíti-ciferného èísla. Rozsah devíti-ciferných èísel pøesahuje poèet záznamù v katalogu, proto toto èíslo zpravidla obsahuje zleva nuly. Aby nebylo nutné manuálnì do vyhledávacího pole tyto doplòující nuly zadávat, je vytvoøena èást zdrojového kódu, která toto upravuje. Doplòování vyhledávacího øetìzce zleva nulami na devíti-ciferné èíslo pøi vyhledávání podle systémového èísla tak probíhá automaticky. Není tedy nutné zadávat celý identifikátor, nýbrž staèí pouze jeho nenulovou èást. Pøíklad je uveden zde:
 \begin{verbatim}
 000020060 -> 20060
 \end{verbatim}
@@ -33,7 +33,7 @@ addSearch(group);       -> addSearch(group, null, 'Author');
 \end{verbatim}
 
 
-Ve výsledcích vyhledávání kromì zobrazení dat z indexu jako jsou název, autor, rok vydání, atd. je tøeba zobrazovat umístìní jednotek a statusy dostupnosti. K tomu se využívá technologie Ajax. Po zobrazení stránky s maximálnì dvaceti výsledky se pomocí javascriptu zavolá soubor:
+Ve výsledcích vyhledávání kromì zobrazení dat z indexu jako jsou název, autor, rok vydání, atd. je tøeba zobrazovat umístìní jednotek a statusy dostupnosti. K tomu se využívá technologie AJAX. Po zobrazení stránky s maximálnì dvaceti výsledky se pomocí javascriptu zavolá soubor:
 \begin{verbatim}
 module/ntk_module/src/ntk_module/Controller/AjaxController.php
 \end{verbatim}
@@ -87,7 +87,16 @@ a pøedají se mu jako parametry identifikátory zobrazených záznamù. S tìmito id z
 \end{lstlisting}
 
 
-Pomocí javascriptu je dále øešeno pøidìlování odkazù tìmto informacím o umístìní jednotek. Je-li napøíklad umístìní jednotky na regále ve volném výbìru, je pøidìlen odkaz na mapu pøíslušného patra se zvýraznìným regálem, kde se jednotka nachází. Dalším specifickým typem umístìní jsou VŠCHT Ústavy, jež linkují na stránky se seznamem ústavních knihoven VŠCHT. Ještì stojí za zmínku umístìní èasopisù ve Studovnì èasopisù, pro které vede link na pøíslušnou mapu tøetího patra. Protože se obrázky map zobrazují pomocí javascriptového nástroje pro zobrazování galerie obrázkù \texttt{Lightbox}, je v èásti zdrojového kódu typického pro toto prostøedí ještì nastaveno záhlaví tìchto náhledù podle umístìní v regálu:
+Pomocí javascriptu je dále øešeno pøidìlování odkazù tìmto informacím o umístìní jednotek. Je-li napøíklad umístìní jednotky na regále ve volném výbìru, je pøidìlen odkaz na mapu pøíslušného patra se zvýraznìným regálem, kde se jednotka nachází, viz. obrázek \ref{fig:regal}.
+
+\begin{figure}[h]
+\includegraphics[width=0.7\textwidth]{regal}
+\centering
+\caption{Mapa umístìní knihovní jednotky se zvýraznìným regálem, kde se tato jednotka nachází.}
+\label{fig:regal}
+\end{figure}
+Dalším specifickým typem umístìní jsou VŠCHT Ústavy, jež linkují na stránky se seznamem ústavních knihoven VŠCHT. Ještì stojí za zmínku umístìní èasopisù ve Studovnì èasopisù, pro které vede link na pøíslušnou mapu tøetího patra. Protože se obrázky map zobrazují pomocí javascriptového nástroje pro zobrazování galerie obrázkù \texttt{Lightbox}, je v èásti zdrojového kódu typického pro toto prostøedí ještì nastaveno záhlaví tìchto náhledù podle umístìní v regálu:
+\pagebreak
 \begin{lstlisting}
 if (result.location == "VŠCHT ústavy"){
 	item.find('.location').empty().append("<a href='https://www.chemtk.cz/cs/82950-seznam-ustavnich-knihoven'>"+result.location+"</a>");

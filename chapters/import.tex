@@ -1,5 +1,5 @@
 \label{sec:import}
-Pøed samotným importem dat probíhá v Národní technické knihovnì nejprve export zdrojových dat z integrovaného knihovního systému Aleph a to zhruba jednou za 3 mìsíce. Výsledkem tohoto exportu je jeden soubor ve formátu MARC, který má v souèasné dobì velikost cca 390 MB a obsahuje cca 595 000 záznamù.
+Pøed samotným importem dat probíhá v NTK nejprve export zdrojových dat z integrovaného knihovního systému Aleph a to zhruba jednou za 3 mìsíce. Každodenní aktualizace knihovního fondu se v katalogu udržuje automatickým sbìrem dat pøes OAI-PMH, což je vysvìtleno v kapitole \ref{sec:harvest}. Výsledkem tohoto exportu je jeden soubor ve formátu MARC, který má v roce 2016 velikost cca 390 MB a obsahuje cca 595 000 záznamù.
 
 Import dat do VuFindu se obecnì spouští skriptem \texttt{import-marc.sh}. s povinným parametrem, který udává cestu k souboru se zdrojovými daty. Jako volitelný parametr \texttt{-p} následovaný cestou k souboru se udává konfiguraèní soubor, který definuje nastavení importu dat. Tento souboru s názvem \texttt{import.properties} se nachází v lokálním adresáøi VuFindu, pøesnìji zde:
 \begin{verbatim}
@@ -11,19 +11,19 @@ language = 008[35-37]:041a:041d:041j, language_map.properties
 \end{verbatim}
 Zde je vidìt, že do indexového pole s názvem \texttt{language} se dostanou pouze informace z MARCového pole 008 na pozici 35 až 37, dále informace z podpolí 041a, 041d a 041j.
 
-Za povšimnutí stojí parametr \texttt{language\_map.properties}. Je to název jednoho se souborù ve složce \texttt{translation\_maps}. Obsahem tìchto souborù jsou seznamy kódù s pøíslušnými pøeklady do pøirozeného jazyka. Dalšími soubory s tímto mapováním jsou \texttt{format\_map.properties}, \texttt{language\_map.properties}, \texttt{instrument\_map.properties}, atd. Pro lokální informaci o digitalizaci záznamu v MARCovém podpoli 997a je vytvoøen soubor \texttt{ntk\_digitized.properties} s tímto obsahem:
+Za povšimnutí stojí parametr \texttt{language\_map.properties}. Je to název jednoho se souborù ve složce \texttt{translation\_maps}. Obsahem tìchto souborù jsou seznamy kódù s pøíslušnými pøeklady do pøirozeného jazyka. Dalšími soubory s tímto mapováním jsou \texttt{format\_map.properties}, \texttt{language\_map.properties}, \texttt{instrument\_map.properties}, atd. Pro lokální informaci o digitalizaci záznamu z MARCového pole pro institucionální užití je vytvoøen soubor \texttt{ntk\_digitized.properties} s tímto obsahem:
 \begin{verbatim}
 di = digitized
 oz = enriched
 mp = maps
 \end{verbatim}
-Dvoupísmenné kódy se nacházejí v MARC záznamech Národní technické knihovny a díky tomuto pøevodu jsou v katalogu zobrazeny jako srozumitelné øetìzce.
+Dvoupísmenné kódy se nacházejí v MARC záznamech NTK a díky tomuto pøevodu jsou v katalogu zobrazeny jako srozumitelné øetìzce.
 
 Pro složitìjší zpracování MARCových polí slouží indexaèní skripty, které jsou uloženy v samostatné složce \texttt{index\_scripts}. V NTK je upraven import informací udávajících \texttt{rok vydání}. Skript \texttt{getdate.bsh} zpracovávající \texttt{rok vydání} je rozšíøen o pøípad, kdy v MARCovém podpoli 264c je uveden \texttt{rok vydání} a jako druhý indikátor tohoto pole je uvedena 0. Tento pøípad nebyl doposud platný dle výchozího nastavení. Zápis, který spouští tento skript potom vypadá takto:
 \begin{verbatim}
 publishDate = script(getdate.bsh), getDates
 \end{verbatim}
-Dále je vytvoøen zcela nový indexaèní skript \texttt{stripSlashEnd.bsh} speciálnì pro potøeby NTK. Ten zpracovává MARCová pole 245a a 245b obsahující název a podnázev daného záznamu. Konkrétnì jde o oøíznutí posledního znaku tìchto øetìzcù, je-li jím znak lomítka \uv{/}. Zdrojový kód skriptu vypadá takto:
+Dále je vytvoøen zcela nový indexaèní skript \texttt{stripSlashEnd.bsh} speciálnì pro potøeby NTK. Ten zpracovává MARCová pole 245a a 245b obsahující název a podnázev daného záznamu. Konkrétnì jde o oøíznutí posledního znaku tìchto øetìzcù, je-li jím znak lomítka \uv{/}. Dùvodem je snaha o poøádek v datech, jelikož znak lomítka v tomto pøípadì nemá žádný význam. Zdrojový kód skriptu vypadá takto:
 \begin{lstlisting}
 public String stripSlashEnd(Record record)
 {
@@ -49,7 +49,6 @@ public String stripSlashEnd(Record record)
         }
 }
 \end{lstlisting}
-Dalšími skripty spouštìjícími se pøi importu dat do VuFindu typickými pro prostøedí Národní technické knihovny jsou \texttt{collection910.bsh} nastavující sbírku, do které daný záznam patøí (NTK, VŠCHT) podle MARCového pole 910a. Dále skript \texttt{psh.bsh} zpracovává MARCová pole 650 obsahující hesla Polytematického strukturovaného hesláøe.
+Dalšími skripty spouštìjícími se pøi importu dat do VuFindu typickými pro prostøedí NTK jsou \texttt{collection910.bsh} nastavující sbírku, do které daný záznam patøí (NTK, VŠCHT, ÚOCHB), viz. podkapitola \ref{sec:config} podle MARCového pole 910a. Dále skript \texttt{psh.bsh} zpracovává MARCová pole 650 obsahující hesla Polytematického strukturovaného hesláøe.
 
-Užiteèným souborem pøi importu dat do VuFindu je bezpochyby \texttt{solrmarc.log}, kam se zapisují veškeré provedené akce s tímto spojené a je tedy nepostradatelný pøi ladìní chyb. V pøípadech, kdy se nìjaký záznam do indexu nedostane, zapíše se do tohoto souboru error.
-\cite{vufind.import}
+Užiteèným souborem pøi importu dat do VuFindu je \texttt{solrmarc.log}, kam se zapisují veškeré provedené akce s tímto spojené a je tedy nepostradatelný pøi ladìní chyb. V pøípadech, kdy se nìjaký záznam do indexu nedostane, zapíše se do tohoto souboru error. Správce systému potom mùže chybu identifikovat, odstranit její pøíèiny a import daného záznamu opakovat. \cite{vufind.import}

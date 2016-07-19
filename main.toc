@@ -66,5 +66,5 @@
 \contentsline {chapter}{\numberline {7}Budouc\IeC {\'\i } v\'yvoj port\'alu VuFind}{71}{chapter.7}
 \contentsline {chapter}{\numberline {8}Z\'av\v er}{72}{chapter.8}
 \contentsline {chapter}{Seznam obr\'azk\r {u}}{73}{chapter*.9}
-\contentsline {chapter}{Seznam zkratek}{75}{chapter*.10}
-\contentsline {chapter}{Literatura}{76}{chapter*.11}
+\contentsline {chapter}{Seznam zkratek}{76}{chapter*.10}
+\contentsline {chapter}{Literatura}{77}{chapter*.11}

@@ -23,7 +23,7 @@ Pro složitìjší zpracování MARCových polí slouží indexaèní skripty, které jsou ul
 \begin{verbatim}
 publishDate = script(getdate.bsh), getDates
 \end{verbatim}
-Dále je vytvoøen zcela nový indexaèní skript \texttt{stripSlashEnd.bsh} speciálnì pro potøeby NTK. Ten zpracovává MARCová pole 245a a 245b obsahující název a podnázev daného záznamu. Konkrétnì jde o oøíznutí posledního znaku tìchto øetìzcù, je-li jím znak lomítka \uv{/}. Dùvodem je snaha o poøádek v datech, jelikož znak lomítka v tomto pøípadì nemá žádný význam. Zdrojový kód skriptu vypadá takto:
+Dále je vytvoøen zcela nový indexaèní skript \texttt{stripSlashEnd.bsh} speciálnì pro potøeby NTK. Ten zpracovává MARCová pole 245a a 245b obsahující název a podnázev daného dokumentu. Konkrétnì jde o oøíznutí posledního znaku tìchto øetìzcù, je-li jím znak lomítka \uv{/}. Dùvodem je snaha o poøádek v datech, jelikož znak lomítka v tomto pøípadì nemá žádný význam. Zdrojový kód skriptu vypadá takto:
 \begin{lstlisting}
 public String stripSlashEnd(Record record)
 {
@@ -49,6 +49,6 @@ public String stripSlashEnd(Record record)
         }
 }
 \end{lstlisting}
-Dalšími skripty spouštìjícími se pøi importu dat do VuFindu typickými pro prostøedí NTK jsou \texttt{collection910.bsh} nastavující sbírku, do které daný záznam patøí (NTK, VŠCHT, ÚOCHB), viz. podkapitola \ref{sec:config} podle MARCového pole 910a. Dále skript \texttt{psh.bsh} zpracovává MARCová pole 650 obsahující hesla Polytematického strukturovaného hesláøe.
+Dalšími skripty spouštìjícími se pøi importu dat do VuFindu typickými pro prostøedí NTK jsou \texttt{collection910.bsh} nastavující podle MARCového pole 910a sbírku, do které daný záznam patøí (NTK, VŠCHT, ÚOCHB), viz. podkapitola \ref{sec:config}. Dále skript \texttt{psh.bsh} zpracovává MARCová pole 650 obsahující hesla Polytematického strukturovaného hesláøe.
 
 Užiteèným souborem pøi importu dat do VuFindu je \texttt{solrmarc.log}, kam se zapisují veškeré provedené akce s tímto spojené a je tedy nepostradatelný pøi ladìní chyb. V pøípadech, kdy se nìjaký záznam do indexu nedostane, zapíše se do tohoto souboru error. Správce systému potom mùže chybu identifikovat, odstranit její pøíèiny a import daného záznamu opakovat. \cite{vufind.import}

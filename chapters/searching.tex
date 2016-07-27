@@ -37,7 +37,7 @@ Ve výsledcích vyhledávání kromì zobrazení dat z indexu jako jsou název, autor, r
 \begin{verbatim}
 module/ntk_module/src/ntk_module/Controller/AjaxController.php
 \end{verbatim}
-a pøedají se mu jako parametry identifikátory zobrazených záznamù. S tìmito id záznamù se potom vytvoøí jednotlivé HTTP požadavky na informace o dostupnosti a umístìní tìchto záznamù do Alephu, který vrátí XML odpovìdi, ve kterých požadované informace jsou zakódovány. Výše zmínìný soubor kódy dešifruje a pøiøadí jim èitelné øetìzce, které se následnì zobrazí mezi výsledky. Ukázka èásti zdrojového kódu spravující tuto problematiku typickou pro lokální prostøedí je:
+a pøedají se mu jako parametry identifikátory zobrazených záznamù. S tìmito id záznamù se potom vytvoøí jednotlivé HTTP požadavky na informace o dostupnosti a umístìní tìchto záznamù do Alephu. Ten vrátí XML odpovìdi, v nichž požadované informace jsou zakódovány. Výše zmínìný soubor kódy dešifruje a pøiøadí jim èitelné øetìzce, které se následnì zobrazí mezi výsledky. Ukázka èásti zdrojového kódu spravující tuto problematiku typickou pro lokální prostøedí je:
 \begin{lstlisting}
         if (preg_match("/(\d)([A-Z])(\d+)/", $collection_code, $matches)) {
             /* Regal. */
@@ -95,7 +95,7 @@ Pomocí javascriptu je dále øešeno pøidìlování odkazù tìmto informacím o umístìní
 \caption{Mapa umístìní knihovní jednotky se zvýraznìným regálem, kde se tato jednotka nachází.}
 \label{fig:regal}
 \end{figure}
-Dalším specifickým typem umístìní jsou VŠCHT Ústavy, jež linkují na stránky se seznamem ústavních knihoven VŠCHT. Ještì stojí za zmínku umístìní èasopisù ve Studovnì èasopisù, pro které vede link na pøíslušnou mapu tøetího patra. Protože se obrázky map zobrazují pomocí javascriptového nástroje pro zobrazování galerie obrázkù \texttt{Lightbox}, je v èásti zdrojového kódu typického pro toto prostøedí ještì nastaveno záhlaví tìchto náhledù podle umístìní v regálu:
+Dalším specifickým typem umístìní jsou VŠCHT Ústavy, jež linkují na stránky se seznamem ústavních knihoven VŠCHT. Ještì stojí za zmínku umístìní èasopisù ve~Studovnì èasopisù, pro které vede link na pøíslušnou mapu tøetího patra. Protože se obrázky map zobrazují pomocí javascriptového nástroje pro zobrazování galerie obrázkù \texttt{Lightbox}, je v èásti zdrojového kódu typického pro toto prostøedí ještì nastaveno záhlaví tìchto náhledù podle umístìní v regálu:
 \pagebreak
 \begin{lstlisting}
 if (result.location == "VŠCHT ústavy"){

@@ -9,7 +9,7 @@ yum install php php-devel php-intl php-ldap
 yum install php-mysql php-xsl php-gd php-mbstring php-mcrypt
 yum install java-*-openjdk-devel
 \end{verbatim}
-Nyní pøichází na øadu staení samotného systému VuFind. To je moné provést z úloištì \url{https://sourceforge.net/projects/vufind/files/VuFind/}, kde jsou k dispozici všechny verze VuFindu od jeho vzniku a po souèasnost. V tomto pøípadì se jedná o  staení verze 2.3.1, pøíkazem:
+Nyní pøichází na øadu staení samotného systému VuFind. To je moné provést z úloištì \url{https://sourceforge.net/projects/vufind/files/VuFind/}, kde jsou k dispozici\\všechny verze VuFindu od jeho vzniku a po souèasnost. V tomto pøípadì se jedná o~staení verze 2.3.1, pøíkazem:
 \begin{lstlisting}
 wget http://downloads.sourceforge.net/vufind/vufind-2.3.1.tar.gz?use_mirror=osdn -O vufind-2.3.1.tar.gz
 \end{lstlisting}
@@ -22,7 +22,7 @@ Systém je nainstalován. Nyní je ještì potøeba provést nìkterá nezbytná nastavení
 /etc/httpd/conf.d
 \end{verbatim}
 kam konfiguraèní soubor pro VuFind zkopírujeme. Alternativním øešením je pouití symbolického linku z konfiguraèního prostøedí Apache na konfiguraèní soubor VuFindu v jeho pùvodním umístìní.
-Dále je nastaveno síové zabezpeèení, tzn. firewall. Ten zamezuje neádoucím pøístupùm na server. Aby však bylo moné k VuFindu pøistupovat, resp. byl dostupnı ze sítì internet, v nastavení firewall se povoluje port 80, kterı slouí právì k pøenosu http protokolu. Provede se pøíkazem:
+Dále je nastaveno síové zabezpeèení, tzn. firewall. Ten zamezuje neádoucím pøístupùm na server. Aby však bylo moné k VuFindu pøistupovat, resp. byl dostupnı ze sítì internet, v nastavení firewall se povoluje port 80, kterı slouí právì k~pøenosu http protokolu. Provede se pøíkazem:
 \begin{verbatim}
 firewall-cmd --zone=public --add-port=80/tcp --permanent
 \end{verbatim}
@@ -30,7 +30,7 @@ V posledním kroku se pøepne zabezpeèení rozšíøeného jádra operaèního systému, tz
 \begin{verbatim}
 setenforce 0
 \end{verbatim}
-Kdy je VuFind úspìšnì nainstalován a okolní prostøedí správnì nastaveno, zapíná se v koøenovém adresáøi spouštìcím skriptem s parametrem \texttt{start} takto:
+Kdy je VuFind úspìšnì nainstalován a okolní prostøedí správnì nastaveno, zapíná se v~koøenovém adresáøi spouštìcím skriptem s parametrem \texttt{start} takto:
 \begin{verbatim}
 ./vufind.sh start
 \end{verbatim}

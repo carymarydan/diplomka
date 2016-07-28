@@ -60,7 +60,7 @@
 \contentsline {subsection}{\numberline {6.2.3}Testovac\IeC {\'\i } server VuFind}{67}{subsection.6.2.3}
 \contentsline {subsection}{\numberline {6.2.4}Testovac\IeC {\'\i } server VuFind + Summon}{68}{subsection.6.2.4}
 \contentsline {section}{\numberline {6.3}Spr\'ava provozu}{68}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Zabezpe\v cen\IeC {\'\i }}{69}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.1}Zabezpe\v cen\IeC {\'\i }}{68}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Monitorov\'an\IeC {\'\i }}{69}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Verzov\'an\IeC {\'\i }}{70}{subsection.6.3.3}
 \contentsline {chapter}{\numberline {7}Budouc\IeC {\'\i } v\'yvoj port\'alu VuFind}{71}{chapter.7}

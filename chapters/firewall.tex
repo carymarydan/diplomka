@@ -1,7 +1,7 @@
 \label{sec:firewall}
 V dnešní dobì je na zabezpeèení ve stále se rozvíjejícím virtuálním svìtì kladen èím dál vìtší dùraz. To proto, e se v tomto prostoru odehrávají èinnosti èím dál dùleitìjší pro bìnı ivot. Zaopatøení proti kybernetickım útokùm je pro jakoukoli firmu nezbytné. Nejinak tomu je i v NTK, kde jedním z nástrojù pro zabezpeèení síového provozu je brána firewall. Tato standardní brána firewall je v základním vybavení operaèních systémù serverù a její ovládání je v zásadì jednoduché.
 
-Pro systém VuFind je potøeba provést v nastavení firewall urèité zmìny. Konkrétnì se jedná o povolení komunikace na portech, které VuFind pouívá. Pro dostupnost katalogu ve veøejné síti internet se pouívá bìnı port pro pøenos HTTP protokolu, kterı má èíslo 80. Další pouívané porty jsou 8080 a 8181, na kterıch probíhá komunikace VuFindu s vyhledávacím strojem Solr. Pøíkaz na povolení portu 80 vypadá takto:
+Pro systém VuFind je potøeba provést v nastavení firewall urèité zmìny. Konkrétnì se jedná o povolení komunikace na portech, které VuFind pouívá. Pro dostupnost katalogu ve veøejné síti internet se pouívá bìnı port pro pøenos HTTP protokolu, jen má èíslo 80. Další pouívané porty jsou 8080 a 8181, na kterıch probíhá komunikace VuFindu s vyhledávacím strojem Solr. Pøíkaz na povolení portu 80 vypadá takto:
 \begin{verbatim}
 firewall-cmd --zone=public --add-port=80/tcp --permanent
 \end{verbatim}

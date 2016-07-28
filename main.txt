@@ -25,8 +25,10 @@ Prohlašuji, že jsem diplomovou práci vypracoval samostatně, že jsem řádn�
 Předmluva
 VuFind je svobodný knihovnický software, který poskytuje moderní uživatelské
 rozhraní pro knihovní katalogy. Jedna z jeho prvních instalací v České republice byla
-provedena v Národní technické knihovně, kde aktuálně tento systém spravuji. Diplomovou práci jsem zaměřil na technické aspekty této konkrétní implementace. Veškeré části
-zdrojového kódu uvedené v této práci jsou mým dílem. Shromáždil jsem tak užitečné informace pro budoucí následovníky, kteří v tomto prostředí mohou pokračovat. Díky této
+provedena v Národní technické knihovně, kde tento systém v současné době spravuji.
+Diplomovou práci jsem zaměřil na technické aspekty této konkrétní implementace. Veškeré
+části zdrojového kódu uvedené v této práci jsou mým dílem. Shromáždil jsem tak užitečné
+informace pro budoucí následovníky, kteří v tomto prostředí mohou pokračovat. Díky této
 knihovně jsem navštívil zajímavé knihovnické konference tuzemské i zahraniční, kde jsem
 se setkal s některými vývojáři tohoto systému, zapojil se aktivně do komunity a rozšířil
 své zkušenosti v této oblasti.
@@ -222,7 +224,7 @@ Testovací server VuFind + Summon . . . . . . . . . . . . . . . . . . 68
 Správa provozu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
 6.3.1
 
-Zabezpečení . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
+Zabezpečení . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
 
 6.3.2
 
@@ -257,8 +259,8 @@ Tato práce se zabývá svobodným softwarem VuFind. Tento software poskytuje
 službu rozhraní OPAC. Původně byl vyvíjen pro kompatibilitu se softwarem Voyager,
 v současné době je provozován i nad dalšími softwary, které respektují formát MARC21.
 Diplomová práce zpracovává technické aspekty implementace a nasazení tohoto systému
-v konkrétním prostředí. Zdrojem informací pro tuto práci je převážně oficiální dokumentace tohoto projektu [1] a zkušenosti Národní technické knihovny (dále jen NTK),
-kde je tento systém implementován. V následující kapitole je představena filozofie svobodného softwaru včetně několika typických představitelů z oblasti knihovnických softwarů. Další kapitola pojednává o systému VuFind; o jeho vzniku, klíčových vlastnostech,
+v konkrétním prostředí. Zdrojem informací pro tuto práci je převážně oficiální dokumentace portálu VuFind [1] a zkušenosti Národní technické knihovny (dále jen NTK),
+kde je tento systém implementován. V následující kapitole je představena filosofie svobodného softwaru včetně několika typických představitelů z oblasti knihovnických softwarů. Další kapitola pojednává o systému VuFind; o jeho vzniku, klíčových vlastnostech,
 hardwarových a softwarových požadavcích. Zmíněna jsou specifika implementace NTK.
 Závěrem této kapitoly jsou uvedeny příklady používání VuFindu v tuzemských i zahraničních knihovnách. Ve čtvrté kapitole jsou popsány technické aspekty implementace portálu
 VuFind se zaměření na prostředí NTK; jsou vysvětleny některé konfigurační soubory, dále
@@ -412,35 +414,38 @@ Díky neustálému vývoji tento integrovaný knihovnický systém podporuje kom
 2.2.3
 
 Koha
-Stejně jako Evergreen i Koha není jenom OPAC, nýbrž je integrovaným knihov-
+Stejně jako Evergreen ani Koha není jenom OPAC, nýbrž je integrovaným kni-
 
-nickým systémem s moduly pro katalogizaci, výpůjčky, akvizici, atd. Podobně jako VuFind
-je svobodným softwarem a jeho původ sahá do roku 2000 na Nový Zéland, kde byla spuštěna jeho první verze. Vývoj tohoto systému započal v Národní knihovně Nového Zélandu
-Horowhenua Library Trust [21]. Systém Koha dnes používají knihovny různého typu po
-celém světě. V současné době stojí za vývojem přibližně 60 lidí z více než 30 firem a organizací. Jazykovou mutaci v českém jazyce zajišťuje komunita opensource.knihovna.cz.
-On-line katalog je možné označit za tzv. katalog nové generace. Podporuje fulltextové hledání, upřesnění výsledků pomocí faset, uživatelské tagy, hodnocení i komentáře.
-5 Zkratka
+hovnickým systémem s moduly pro katalogizaci, výpůjčky, akvizici, atd. Podobně jako
+VuFind i Koha je svobodným softwarem, jehož původ sahá do roku 2000 na Nový Zéland,
+kde byla spuštěna jeho první verze. Vývoj tohoto systému započal v Národní knihovně
+Nového Zélandu Horowhenua Library Trust [17]. Systém Koha dnes používají knihovny
+různého typu po celém světě. V současné době stojí za vývojem přibližně 60 lidí z více než
+30 firem a organizací. Jazykovou mutaci v českém jazyce zajišťuje komunita opensource.
+knihovna.cz.
+On-line katalog je možné označit za tzv. katalog nové generace. Podporuje full5 Zkratka
 
 FRBR pochází z názvu studie Functional Requirements for Bibliographic Records (Funkční požadavky na
 
 bibliografické záznamy), kterou publikovala IFLA (International Federation of Library Associations and Institutions) v roce
 1998. Studie se zabývá funkčností bibliografických záznamů s ohledem na různá média, potřeby uživatelů a různá použití.
-[17]
+[18]
 6 RSS
 
 (Rich Site Summary) je rodina XML formátů určených pro čtení novinek na webových stránkách a obecněji
 
-syndikaci obsahu. [18]
+syndikaci obsahu. [19]
 7 Standard Interchange Protocol je proprietární standard pro komunikaci mezi integrovanými knihovnickými systémy a
-samoobslužnými výpůjčními terminály. Verze 2.0 tohoto protokolu, známá jako SIP2, je specifikací pro knihovní samoobslužné aplikace. [19]
+samoobslužnými výpůjčními terminály. Verze 2.0 tohoto protokolu, známá jako SIP2, je specifikací pro knihovní samoobslužné aplikace. [20]
 8 National Information Standards Organization Circulation Interchange Protocol je protokol, který je omezen na výměnu
 zpráv mezi dvěma a více počítačovými aplikacemi, aby mohly vykonávat funkce nezbytné pro půjčování jednotek. Dále
-umožňuje kontrolovaný přístup k elektronickým zdrojům a usnadňuje kooperativní správu těchto funkcí. [20]
+umožňuje kontrolovaný přístup k elektronickým zdrojům a usnadňuje kooperativní správu těchto funkcí. [21]
 
 14
 
 Obrázek 2.2: Ukázka webového rozhraní systému Evergreen pro veřejný katalog Knihovny
 Jabok dostupná na http://www.jabok.cuni.cz/eg/opac/home.
+textové hledání, upřesnění výsledků pomocí faset, uživatelské tagy, hodnocení i komentáře.
 Umožňuje vyhledávat v bibliografických i autoritních záznamech. Podporuje RSS kanály.
 Umožňuje propojení na sociální sítě – Facebook, LinkedIn, Delicious, Google+ a Twitter.
 Má bohaté možnosti exportu záznamů – BIBTEX, MARC, MARCXML, Dublin Core,
@@ -474,12 +479,10 @@ VuFind v českých i zahraničních knihovnách.
 3.1
 
 Vznik
-V reakci na nedostatky tradičních knihovnických OPAC byl v americké uni-
+V reakci na nedostatky tradičních knihovnických OPAC byl v americké univer-
 
-verzitní knihovně Villanova University’s Falvey Memorial Library ve státě Pensylvánie
-spuštěn vývoj knihovnického portálu VuFind. Název tohoto systému se proto skládá z
-akronymu názvu univerzity „Vu (Villanova university) a anglického slova „Find (v českém překladu „hledat ). Tento portál je navržený a vyvíjený knihovnami pro knihovny za
-účelem umožnit jejich uživatelům vyhledávat a procházet všechny možné zdroje, kterými
+zitní knihovně Villanova University’s Falvey Memorial Library ve státě Pensylvánie spuštěn vývoj knihovnického portálu VuFind. Název tohoto systému se proto skládá z akronymu názvu univerzity „Vu (Villanova university) a anglického slova „Find (v českém
+překladu „hledat ). Tento portál je navržený a vyvíjený knihovnami pro knihovny za účelem umožnit jejich uživatelům vyhledávat a procházet všechny možné zdroje, kterými
 daná knihovna disponuje. Jeho první verze 1.0 spatřila světlo světa v červenci roku 2010
 [26].
 VuFind je plně modulární systém, což znamená, že je možné implementovat samostatně pouze základní jádro systému s běžnou funkcionalitou, nebo zároveň implementovat i nadstavbové komponenty, které funkcionalitu celkového systému značně rozšiřují.
@@ -499,17 +502,16 @@ po celém světě, aby navrhovali, upravovali, zlepšovali a přispívali do vý
 dalších Open Source softwarů s cílem vytvořit životaschopné řešení pro knihovny všech
 velikostí. [28]
 Díky licenci, pod kterou je systém VuFind vydáván, z něho není možné získat
-jakoukoli úpravou komerční produkt. Existuje ale několik komerčních a privátních společností, které nabízejí pro portál VuFind profesionální podporu. [29]
+žádnou úpravou komerční produkt. Existuje však několik komerčních a privátních společností, které nabízejí pro portál VuFind profesionální podporu. [29]
 
 3.2
 
 Klíčové vlastnosti
 Oficiální dokumentace portálu VuFind uvádí tyto vlastnosti: [30]
-Fasetové vyhledávání VuFind umožňuje uživateli vyhledávat skrz jednodu-
+Fasetové vyhledávání VuFind umožňuje uživateli vyhledávat přes jednodu-
 
 ché jednořádkové vyhledávací pole a dále upravovat množinu výsledků pouhým klikáním
-na položky řazené do faset. Fasety se tvoří dle příslušného nastavení z polí indexu, ve
-kterých se uchovávají hodnoty MARCových záznamů. Tato schopnost umožňuje množinu
+na položky řazené do faset. Fasety se tvoří dle příslušného nastavení z polí indexu, ve kterých se uchovávají hodnoty MARCových záznamů. Tato schopnost umožňuje množinu
 výsledků zmenšovat tím způsobem, že se výsledky buď omezí na zvolenou volbu, nebo
 naopak zvolená volba se z výsledků vyloučí. V rámci některých faset lze hesla kombinovat, jiné fasety umožňují vybrat pouze jednu hodnotu. To záleží na konkrétním nastavení,
 které lze samozřejmě měnit dle potřeby.
@@ -518,8 +520,8 @@ které lze samozřejmě měnit dle potřeby.
 
 Status dostupnosti U každého záznamu ve výsledcích vyhledávání se zobrazuje status dostupnosti daného titulu. Tento status nabývá dvou hodnot (Dostupné,
 Vypůjčeno) dle toho, zda daný titul má všechny jednotky vypůjčené, nebo zda lze získat
-alespoň jednu dostupnou jednotku. Díky technologii AJAX1 se tato informace získává z
-integrovaného knihovnického systému dotazováním v reálném čase a děje se tak nepozorovaně bez jakéhokoliv zpomalování načítání stránky.
+alespoň jednu dostupnou jednotku. Díky technologii AJAX1 se tato informace získává
+z integrovaného knihovnického systému dotazováním v reálném čase a děje se tak nepozorovaně bez jakéhokoliv zpomalování načítání stránky.
 Podobné jednotky V detailním náhledu záznamu se zobrazuje nabídka několika podobných titulů, což uživateli pomáhá při výběru a orientaci v daném oboru.
 Podobné jednotky se získávají pomocí indexačního nástroje Solr a jeho funkce „More
 Like This , která vrací výsledky na základě porovnávání záznamů. [31]
@@ -591,7 +593,7 @@ Operační systém
 Na virtuálních serverech NTK převážně běží linuxová distribuce operačního sys-
 
 tému od společnosti Red Hat, která je jednou z předních světových firem v oblasti Open
-Source a IT řešení. Je to právě komerční produkt Red Hat Enterprise Linux Server, který
+Source a IT řešení. Je to právě komerční produkt Red Hat Enterprise Linux Server, jež
 představuje stabilní systém se základními i rozšířenými vlastnostmi jako je například zabezpečení SELinux. [37]
 Firma Red Hat zároveň významně působí v České republice, v sousedství Vysokého učení technického v Brně totiž již roky rozšiřuje svoji vývojářskou centrálu, kde
 vzniká jak podniková distribuce Red Hat Enterprise Linux, tak Fedora a další populární
@@ -602,10 +604,10 @@ open-source software. [38]
 Webový server
 Webový server je soubor nástrojů, který zpracovává klientské požadavky na zís-
 
-kání obsahu přes HTTP protokol a odesílá zpět data v odpovědích. Je nutný pro běh
-každé webové aplikace či služby. Nejinak tomu je v případě portálu VuFind. V NTK se k
-těmto účelům používá webový server Apache, který je nejrozšířenějším webovým serverem
-na světě. Produkován je jako svobodný software společností Apache Software Foundation.
+kání obsahu přes HTTP protokol a odesílá zpět data v odpovědích. Je nutný pro běh každé
+webové aplikace či služby. Nejinak tomu je v případě portálu VuFind. V NTK se k těmto
+účelům používá webový server Apache, který je nejrozšířenějším webovým serverem na
+světě. Produkován je jako svobodný software společností Apache Software Foundation.
 Na serverech VuFindu je ve verzi 2.4.6. [39]
 Alternativami jsou Internet Information Services od společnosti Microsoft, Nginx
 od stejnojmenné společnosti nebo Google Web Server od společnosti Google. [40]
@@ -613,10 +615,10 @@ od stejnojmenné společnosti nebo Google Web Server od společnosti Google. [40
 
 Development Kit (JDK) je produktem Oracle Corporation, který obsahuje soubor základních nástrojů pro vývoj
 
-aplikací pro platformu Java. Někdy bývá označován jako Java SDK, od verze 1.2 do verze 1.4.x byl označován jako J2SE
-SDK nebo Java 2 SDK. 17. listopadu 2006 se firma Sun rozhodla uvolnit ho pod GNU General Public License (GPL) a
-8. května 2007 uvolnila pod GNU/GPL v2, což z něj vytvořilo freeware. Sun tak nově přesunul zdrojový kód Javy pod
-opensource projekt OpenJDK. [41]
+aplikací pro platformu Java. Někdy bývá označován jako Java SDK, od verze 1.2 do verze 1.4.x byl označován jako J2SE SDK
+nebo Java 2 SDK. 17. listopadu 2006 se firma Sun rozhodla uvolnit ho pod GNU General Public License (GPL) a 8. května
+2007 uvolnila pod GNU/GPL v2, což z něj vytvořilo freeware. Sun tak nově přesunul zdrojový kód Javy pod opensource
+projekt OpenJDK. [41]
 
 20
 
@@ -660,7 +662,7 @@ Současná verze implementovaného VuFindu v NTK je postavena na ZendFrameworku 
 3.4
 
 Požadavky na hardware
-Požadavky na hardware se liší podle velikosti a množství dat, které se mají inde-
+Požadavky na hardware se liší podle velikosti a množství dat, která se mají inde-
 
 xovat a také podle uživatelské zátěže, která se dá očekávat. Proto není možné specifikovat
 přesnou hardwarovou vybavenost. Lze ale nastínit hraniční situace pro malý6 a velký7
@@ -668,8 +670,8 @@ index a k nim orientačně uvést odpovídající potřeby. Pro malý index bude
 základní hardware. Absolutní minimum je pravděpodobně kolem 2 GB paměti RAM a
 několik málo GB úložného diskového prostoru. Pro velké indexy je žádoucí více paměti
 RAM i úložného diskového prostoru a v některých případech je i vhodné rozložit zátěž
-na několik serverů. VuFind je extrémně škálovatelný, je možné tedy začít implementaci v
-malém měřítku a rozšiřovat hardwarové vybavení dle potřeby. [36]
+na několik serverů. VuFind je extrémně škálovatelný, je možné tedy začít implementaci
+v malém měřítku a rozšiřovat hardwarové vybavení dle potřeby. [36]
 
 3.5
 
@@ -684,16 +686,15 @@ Villanova University’s Falvey Memorial Library, kde VuFind vznikl. Tato akadem
 zde slouží linuxová distribuce RedHat. V prostředí této knihovny je VuFind rozhraním
 pro integrovaný knihovnický systém Voyager a zároveň pro discovery systém Summon8 .
 Vizualní vzhled katalogu vychází ze standardizovaného tématu Bootstrap.
-Další akademickou institucí používající VuFind v nejnovější stabilní verzi 3.0.1
-je německá knihovna Bibliographies at arthistoricum.net. Provoz jejího katalogu běží na
-linuxové distribuci operačního systému Ubuntu a jeho vizuální prezentace vychází také z
+Další akademickou institucí používající VuFind v nejnovější stabilní verzi 3.0.1 je
+německá knihovna Bibliographies at arthistoricum.net. Provoz jejího katalogu běží na linuxové distribuci operačního systému Ubuntu a jeho vizuální prezentace vychází také
 6 Malý
 7 Velký
 
 index znamená minimální objem dat zaindexovaných do indexu knihovny s relativně malým knihovním fondem.
-index je opakem malého indexu. Tedy, jedná se o maximální objem dat zaindexovaných do indexu knihovny s
+index je opakem malého indexu. Tedy, jedná se o maximální objem dat zaindexovaných do indexu knihovny
 
-relativně velkým knihovním fondem.
+s relativně velkým knihovním fondem.
 8 Summon je nástroj nové generace pro discovery služby nad elektronickými informačními zdroji, jehož vývoj započal
 v roce 2008 společností Serials Solutions. První beta verzi Summon zveřejnila Dartmouth College Library v červnu 2009.
 Celosvětově nyní Summon využívá 400 institucí. Summon pracuje s jedním centralizovaným indexem, do něhož plyne obsah
@@ -705,7 +706,7 @@ metadata poskytovaná vydavateli a agregátory. [48]
 
 Obrázek 3.1: Ukázka on-line katalogu americké knihovny Villanova University dostupného
 na https://library.villanova.edu/Find/.
-tématu Bootstrap.
+z tématu Bootstrap.
 
 Obrázek 3.2: Ukázka on-line katalogu knihovny Bibliographies at arthistoricum.net dostupného na http://www.arthistoricum.net/subjects/bibliographies/.
 23
@@ -735,9 +736,11 @@ Obrázek 3.5: Ukázka on-line katalogu univerzitní knihovny Roma Tre University
 
 25
 
-Další zajímavou instalaci portálu VuFind má síť švýcarských univerzitních knihoven kolem měst Basilej a Bern zvaná Swissbib Basel Bern. Stejně jako v NTK i zde běží vyhledávání na linuxové distribuci operačního systému RedHat společně s integrovaným knihovnickým systémem Aleph a discovery systémem Summon. Vzhed je rovněž odvozen od
-tématu Bootstrap. Byla zde implementována nejnovější verze Vufindu 3.0.1. Zdrojový kód
-je dostupný přes webovou službu GitHub na https://github.com/swissbib/vufind.
+Další zajímavou instalaci portálu VuFind má síť švýcarských univerzitních knihoven kolem měst Basilej a Bern zvaná Swissbib Basel Bern. Stejně jako v NTK i zde běží
+vyhledávání na linuxové distribuci operačního systému RedHat společně s integrovaným
+knihovnickým systémem Aleph a discovery systémem Summon. Vzhed je rovněž odvozen
+od tématu Bootstrap. Byla zde implementována nejnovější verze Vufindu 3.0.1. Zdrojový kód je dostupný přes webovou službu GitHub na https://github.com/swissbib/
+vufind.
 
 Obrázek 3.6: Ukázka on-line katalogu Swissbib Basel Bern při vyhledávání v lokálním
 fondu knihovny dostupného na http://baselbern.swissbib.ch/.
@@ -775,16 +778,15 @@ operačního systému CentOS s napojením na integrovaný knihovnický systém A
 Výrazným případem využití svobodného softwaru VuFind je katalog Finna,
 veřejné webové rozhraní finské knihovny National Library of Finland. Tato platforma
 uživatelům nabízí vyhledávání napříč finskými archivy, knihovnami a muzei. Na konci
-roku 2013 byla uvolněna první verze Finna 1.0. V té době obsahoval katalog kolem 9
-milionů záznamů. Přispívají jak svými sbírkami, tak také spolupracují na vývoji aplikace,
-jejíž garantem zůstává knihovna National Library of Finland. Záznamy v katalogu Finna
-lze například sdílet na sociálních sítích Facebook, Twitter a Pinterest. Dalším postřehem
-je fakt, že v tomto katalogu se při výsledcích vyhledávání statusy dostupnosti načítají u
-záznamů, které jsou aktuálně vidět ve výseku obrazovky a ne automaticky u všech záznamů, které jsou na celé stránce i v částech mimo obrazovku. Výsledkem je zrychlení
-vyhledávání, které načítání statusů v reálném čase zpomaluje, viz. např. instalace NTK.
-Stále rostoucí komunita VuFindu je celosvětově propojena a spolupracující. Tento finský projekt je velkým přispěvatelem do hlavní větve vývoje VuFindu. Nicméně disponuje
-samozřejmě i vlastní oddělenou vývojovou větví. Některá rozšíření VuFindu se těmito
-větvemi prolínají.
+roku 2013 byla uvolněna první verze Finna 1.0. V té době obsahoval katalog kolem 9 milionů záznamů. Instituce zapojené do tohoto společenství přispívají jak svými sbírkami, tak
+také spolupracují na vývoji aplikace, jejímž garantem zůstává knihovna National Library
+of Finland. Záznamy v katalogu Finna lze například sdílet na sociálních sítích Facebook,
+Twitter a Pinterest. Dalším postřehem je fakt, že v tomto katalogu se při výsledcích vyhledávání statusy dostupnosti načítají u záznamů, které jsou aktuálně vidět ve výseku
+obrazovky a ne automaticky u všech záznamů, které jsou na celé stránce i v částech
+mimo obrazovku. Výsledkem je zrychlení vyhledávání, které načítání statusů v reálném
+čase zpomaluje, viz. např. instalace NTK. Stále rostoucí komunita VuFindu je celosvětově propojena a spolupracující. Tento finský projekt je velkým přispěvatelem do hlavní
+větve vývoje VuFindu. Nicméně disponuje i vlastní oddělenou vývojovou větví. Některá
+rozšíření VuFindu se těmito větvemi prolínají.
 
 Obrázek 3.11: Ukázka vyhledávacího rozhraní Finna dostupného na https://finna.fi/.
 
@@ -800,9 +802,9 @@ deduplikaci, k čemuž dochází právě v takovém prostředí, kde se integruj
 Obrázek 3.12: Grafické znázornění architektury celého systému Finna ukazuje propojení
 jednotlivých modulů, přičemž jedním z nich je VuFind [50].
 
-VuFind v ČR Podobný problém duplicit záznamů stojí před právě probíhajícím projektem CPK (Centrální portál knihoven) v České republice. Vývojový tým
-tohoto projektu vede Moravská zemská knihovna, která má s VuFindem letité zkušenosti
-a kromě tohoto projektu stojí za vznikem portálu ČístBrno10 , jehož katalogem je také VuFind. Právě kvůli CPK vyvíjí alternativní modul Record Manager 2, který na rozdíl od
+VuFind v ČR Podobný problém duplicit záznamů stojí před právě probíhajícím projektem CPK (Centrální portál knihoven) v České republice. Vývojový tým tohoto
+projektu vede Moravská zemská knihovna, která má s VuFindem letité zkušenosti a kromě
+tohoto projektu stojí za vznikem portálu ČístBrno10 , jehož katalogem je také VuFind.
 10 Projekt
 
 ČístBrno.cz je virtuální katalog brněnských knihoven, který umožňuje uživatelům najednou vyhledávat ve
@@ -812,9 +814,9 @@ Mendelovy univerzity v Brně a Knihovna Jiřího Mahena. [51]
 
 30
 
-finské varianty je programován v programovacím jazyce Java a má ambice být robustnější
-[54]. Projekt CPK má za cíl sdružit vyhledávání pro 40 knihoven a stát se tak největším a
-nejrobustnějším virtuálním katalogem v České republice. [55] Uživatelské rozhraní VuFind
+Právě kvůli CPK vyvíjí alternativní modul Record Manager 2, který na rozdíl od finské
+varianty je programován v programovacím jazyce Java a má ambice být robustnější [54].
+Projekt CPK má za cíl sdružit vyhledávání pro 40 knihoven a stát se tak největším a nejrobustnějším virtuálním katalogem v České republice. [55] Uživatelské rozhraní VuFind
 má v tomto případě velký potenciál pro tuzemský vývoj. Jednou z ambicí tohoto vývoje
 je implementace doručovacích služeb; elektronické dodávání dokumentů a meziknihovní
 výpůjční služba. Návrh databáze pro tyto účely představuje následující obrázek 3.13.
@@ -826,13 +828,13 @@ Mezi další tuzemské instituce s vyhledávačem VuFind patří Městská kniho
 systému Debian je propojena s integrovaným knihovnickým systémem Koha. Městská
 knihovna Ústí nad Orlicí provozuje VuFind 2.4.1 také v linuxové distribuci operačního
 systému Debian s napojením na integrovaný knihovnický systém Koha. Grafický vzhled
-katalogů obou knihoven vychází ze standardu Bootstrap.
 31
 
-Souborný katalog Akademie věd ČR pro webové rozhraní také používá VuFind
-a to verzi z řady 1.x. Zde je možno prohledávat ve všech ústavech najednou, nebo také v
-každém ústavu samostatně, což znamená, že pro každý ústav existuje oddělený index. V
-této instalaci je nastaveno použití technologie OpenSearch. [56]
+katalogů obou knihoven vychází ze standardu Bootstrap.
+Souborný katalog Akademie věd ČR pro webové rozhraní také používá VuFind
+a to verzi z řady 1.x. Zde je možno prohledávat ve všech ústavech najednou, nebo také
+v každém ústavu samostatně, což znamená, že pro každý ústav existuje oddělený index.
+V této instalaci je nastaveno použití technologie OpenSearch. [56]
 V České republice lze nalézt uživatelské rozhraní VuFind i v komerčním projektu.
 Česká komunita otevřeného integrovaného knihovního systému Koha nabízí tento systém
 v režimu SaaS11 . Tímto způsobem používá portál VuFind knihovna v Poličce, Turnově,
@@ -844,13 +846,12 @@ probíhalo pod pracovním názvem YuFind, ale k použití v ostrém provozu nedo
 
 11 SaaS
 
-(Software jako služba - Software as a Service) je model nasazení softwaru, kdy dochází k hostování aplikace
+(Software jako služba - Software as a Service) je model nasazení softwaru, kdy dochází k hostování aplikace pro-
 
-provozovatelem služby. Služba je dále nabízena zákazníkům přes Internet. Eliminováním potřeb instalace a provozu aplikace
-na vlastních zařízení se SaaS v poslední době stává oblíbeným způsobem provozu aplikace. SaaS vznikla jako reakce na
-potřebu snižování nákladů na software, rychlého nasazení a outsourcingu. Využíváním SaaS mohou firmy také redukovat
-přímé náklady na nákup softwaru, jelikož náklady na licenci on-demand bývají menší a zároveň není potřeba například
-licence na servery. [57]
+vozovatelem služby. Služba je dále nabízena zákazníkům přes Internet. Eliminováním potřeb instalace a provozu aplikace
+na vlastních zařízení se SaaS v poslední době stává oblíbeným způsobem provozu aplikace. SaaS vznikla jako reakce na potřebu snižování nákladů na software, rychlého nasazení a outsourcingu. Využíváním SaaS mohou firmy také redukovat přímé
+náklady na nákup softwaru, jelikož náklady na licenci on-demand bývají menší a zároveň není potřeba například licence
+na servery. [57]
 
 32
 
@@ -863,9 +864,9 @@ jsou hlavním nástrojem pro nastavení systému. Dále je představena metoda o
 uživatelů. Popis procesu importu dat je doplněn o část zdrojového kódu, který upravuje
 fungování systému dle podmínek NTK. Také je popsán průběh indexace dat s patřičnými
 úpravami pro konkrétní prostředí. V podkapitole o vyhledávání je mimo jiné uveden zdrojový kód, který obsluhuje zobrazování umístění jednotek. Další kapitola se zabývá moduly,
-do kterých je systém VuFind rozdělen, speciálně je zaměřeno na modul NTK. Poslední
-dvě podkapitoly se věnují grafickému vzhledu celého portálu VuFind a čtenářskému kontu,
-které může registrovaný uživatel spravovat.
+do nichž je systém VuFind rozdělen, speciálně je zaměřeno na modul NTK. Poslední dvě
+podkapitoly se věnují grafickému vzhledu celého portálu VuFind a čtenářskému kontu, jež
+může registrovaný uživatel spravovat.
 
 4.1
 
@@ -889,51 +890,44 @@ lokální konfigurační soubory editovat z umístění:
 Celý seznam konfiguračních souborů se stručným popisem, který čítá 54 položek,
 je dostupný v oficiální dokumentaci [61]. Zde je uvedeno několik nejběžněji upravovaných
 souborů a u nich nejzásadnější nastavení systému.
-config.ini Tento primární konfigurační soubor obsahuje mnoho globálních nastavení systému. Například se zde zapíná a vypíná automatická konfigurace uvedena v kapitole 6.1.
-Pro produkční provoz je tato funkce vypnuta. Stejně tak se tu zapíná a vypíná kontrolní
-výpis při ladění systému, tzv. debug, který je pro produkční provoz také vypnutý, avšak
-velmi vhodný je pro servery testovací. Základní proměnné jako url, email a title jsou zde
-nastaveny, aby mohly být použity ve zdrojovém kódu. Parametrem theme se udává jaké
-šablony se použijí pro grafický vzhled VuFindu. V případě knihovny NTK se vychází z
-kopie velmi rozšířeného standardizovaného tématu Bootstrap verze 3, který je vysvětlen
-v kapitole 4.7. Výchozí jazyková mutace systému je rovněž definována zde, stejně tak
-se zde aktivují dostupné jazyky, do kterých může uživatel systém přepnout během jeho
-používání. V knihovně NTK je výchozím jazykem pochopitelně čeština a také lze systém
-přepnout do anglické verze. Časová zóna je lokalizována dle umístění knihovny, v NTK
-je to tedy „Europe/Prague . Dále se zde nastavuje výchozí modul, který se načítá při
-vstupu na domovskou stránku systému VuFind. Možnosti tohoto nastavení jsou dvě. Buď
-je zvolen standardní modul Search, který zobrazuje stránku se základním vyhledáváním
-a je také nastavený v NTK, nebo modul Combined, který se nastavuje v případě, že je do
-VuFindu napojen další index, například Summon, a chce se uživateli nabídnout kombinované vyhledávání v obou těchto zdrojích, tedy jak v místním katalogu, tak ve vzdálených
-elektronických informačních zdrojích knihovny. Stejně tak je modul Search nastaven jako
-výchozí modul pro zobrazení uživateli, který se do systému přihlásí. Zapíná a vypíná se zde
-modul pro administrátora systému, který tak má přístup do sekce s informacemi o indexu,
-
+config.ini Tento primární konfigurační soubor obsahuje mnoho globálních nastavení
+systému. Například se zde zapíná a vypíná automatická konfigurace uvedena v kapitole
+6.1. Pro produkční provoz je tato funkce vypnuta. Stejně tak se tu zapíná a vypíná kontrolní výpis při ladění systému, tzv. debug, který je pro produkční provoz také vypnutý,
+avšak velmi vhodný je pro servery testovací. Základní proměnné jako url, email a title
+jsou zde nastaveny, aby mohly být použity ve zdrojovém kódu. Parametrem theme se
+udává jaké šablony se použijí pro grafický vzhled VuFindu. V případě knihovny NTK se
+vychází z kopie velmi rozšířeného standardizovaného tématu Bootstrap verze 3, jenž je vysvětlen v kapitole 4.7. Výchozí jazyková mutace systému je rovněž definována zde, stejně
+tak se zde aktivují dostupné jazyky, do nichž může uživatel systém přepnout během jeho
+používání. V knihovně NTK je výchozím jazykem pochopitelně čeština a také lze systém přepnout do anglické verze. Časová zóna je lokalizována dle umístění knihovny, v
+NTK je to tedy „Europe/Prague . Dále se zde nastavuje výchozí modul, který se načítá
+při vstupu na domovskou stránku systému VuFind. Možnosti tohoto nastavení jsou dvě.
+Buď je zvolen standardní modul Search, který zobrazuje stránku se základním vyhledáváním a je také nastavený v NTK, nebo modul Combined, který se nastavuje v případě,
+že je do VuFindu napojen další index, například Summon, a chce se uživateli nabídnout kombinované vyhledávání v obou těchto zdrojích, tedy jak v místním katalogu, tak
+ve vzdálených elektronických informačních zdrojích knihovny. Stejně tak je modul Search
+nastaven jako výchozí modul pro zobrazení uživateli, jenž se do systému přihlásí. Zapíná
+a vypíná se zde modul pro administrátora systému, který tak má přístup do sekce s informacemi o indexu, statistikách vyhledávacích dotazů, může zde spravovat uživatelské
 34
 
-statistikách vyhledávacích dotazů, může zde spravovat uživatelské tagy a provádět jednoduché změny nastavení, které manipulují právě s tímto konfiguračním souborem, tedy
-skrz webové rozhraní. Také se zde nastavuje na jaké straně se bude zobrazovat sloupec s
-fasetami, v NTK je toto zobrazení na pravé straně obrazovky. Velmi důležitým parametrem je driver, tedy ovladač, který se použije k ovládání a komunikaci s integrovaným
-knihovnickým systémem. Zpravidla je pojmenován stejně jako daný knihovnický systém,
-v případě NTK je to Aleph. V této části nastavení je několik dalších parametrů, kterými
-lze ovlivnit chování komunikace VuFindu s Alephem. Například možnost rušení rezervací
-jednotek a prodlužování vypůjčených jednotek je v NTK povoleno. V opačném případě lze
-toto zakázat právě zde. Dále se zde nastavuje metoda autentizace, v prostředí NTK jde o
-Shibboleth. Je zde umístěno také základní nastavení indexace, v běžném případě se jedná
-o indexační server Solr bežící na stejném serveru jako VuFind na portu 8080 a indexační
-jádro s názvem biblio. Stejně jako pro indexační server Solr, i pro databázový server se
-zde definuje o jaký typ databáze se jedná a kde je umístěna. V NTK je použita databáze
-MySQL běžící taktéž na stejném serveru jako VuFind. Dále jsou zde vyplněny citlivé údaje
-pro přihlášení do databáze jako je přihlašovací jméno a heslo. V sekci Content se definují zdroje pro obálky knih, které se v knihovně NTK načítají ze serveru Aleph a zdroje
-rozšiřující informace o autorech, které se načítají z české Wikipedie. Dále je zde uvedena
-adresa linkovacího serveru SFX1 . Pro přístup k elektronickým informačním zdrojům z
-vnějšího prostředí knihovny je nastavena EZProxy, dále jsou nastaveny adresy citačních
-nástrojů Refworks a EndNote. Logování, tedy záznamy o aktivitě serveru se ukládají v
-kořenovém adresáři do souboru vufind.log, jak je zde uvedeno. Uživatelské komentáře
-je zde také možné povolit či zakázat. V NTK jsou povoleny.
+tagy a provádět jednoduché změny nastavení, které manipulují právě s tímto konfiguračním souborem, tedy skrz webové rozhraní. Také se zde nastavuje na jaké straně se bude
+zobrazovat sloupec s fasetami, v NTK je toto zobrazení na pravé straně obrazovky. Velmi
+důležitým parametrem je driver, tedy ovladač, který se použije k ovládání a komunikaci
+s integrovaným knihovnickým systémem. Zpravidla je pojmenován stejně jako daný knihovnický systém, v případě NTK je to Aleph. V této části nastavení je několik dalších
+parametrů, jimiž lze ovlivnit chování komunikace VuFindu s Alephem. Například možnost rušení rezervací jednotek a prodlužování vypůjčených jednotek je v NTK povoleno.
+V opačném případě lze toto zakázat právě zde. Dále se zde nastavuje metoda autentizace,
+v prostředí NTK jde o Shibboleth. Je zde umístěno také základní nastavení indexace,
+v běžném případě se jedná o indexační server Solr bežící na stejném serveru jako VuFind
+na portu 8080 a indexační jádro s názvem biblio. Stejně jako pro indexační server Solr,
+i pro databázový server se zde definuje o jaký typ databáze se jedná a kde je umístěna.
+V NTK je použita databáze MySQL běžící taktéž na stejném serveru jako VuFind. Dále
+jsou zde vyplněny citlivé údaje pro přihlášení do databáze jako je přihlašovací jméno a
+heslo. V sekci Content se definují zdroje pro obálky knih, které se v knihovně NTK načítají ze serveru Aleph a zdroje rozšiřující informace o autorech, které se načítají z české
+Wikipedie. Dále je zde uvedena adresa linkovacího serveru SFX1 . Pro přístup k elektronickým informačním zdrojům z vnějšího prostředí knihovny je nastavena EZProxy, dále jsou
+nastaveny adresy citačních nástrojů Refworks a EndNote. Logování, tedy záznamy o aktivitě serveru se ukládají v kořenovém adresáři do souboru vufind.log, jak je zde uvedeno.
+Uživatelské komentáře je zde také možné povolit či zakázat. V NTK jsou povoleny.
 Aleph.ini Jelikož integrovaným knihovnickým systémem v NTK je Aleph, konfigurační
-soubor, který upřesňuje informace o tomto systému se jmenuje Aleph.ini. V případě používání jiného integrovaného knihovnického systému, například Koha, se konfigurační soubor pro nastavení upřesňujících informací o systému jmenuje Koha.ini. Je zde zadáno adresa, na které integrovaný knihovnický systém Aleph běží, konkrétně aleph.techlib.cz.
-Dále se nastavuje jméno báze, které je pro toto specifické prostředí STK01. Toho se pou1 SFX
+soubor, který upřesňuje informace o tomto systému se jmenuje Aleph.ini. V případě používání jiného integrovaného knihovnického systému, například Koha, se konfigurační soubor pro nastavení upřesňujících informací o systému jmenuje Koha.ini. Je zde zadána adresa, na které integrovaný knihovnický systém Aleph běží, konkrétně aleph.techlib.cz.
+Dále se nastavuje jméno báze, které je pro toto specifické prostředí STK01. Toho se používá při vytváření dotazu na X-server Alephu pro získání informací o konkrétní knihovní
+1 SFX
 
 (Special Effects) je link server firmy ExLibris založený na standardu OpenURL. Vynálezcem tohoto nástroje je
 
@@ -943,21 +937,19 @@ přibližně 1700 instalací ve 40 zemích světa. [62]
 
 35
 
-žívá při vytváření dotazu na X-server Alephu pro získání informací o konkrétní knihovní
-jednotce. Definují se zde také místa vyzvednutí, kde lze po rezervaci knihovní jednotky
+jednotce. Definují se zde také místa vyzvednutí, kde lze po rezervaci knihovní jednotky
 očekávat její výdej. V NTK to představují dvě zkratky PUJC a BHF, které znamenají
 Půjčovna a Badatelna historického fondu. V uživatelském rozhraní se díky překladovému slovníku Půjčovna zobrazuje jako Centrální pult, protože tak je to v NTK
-reálně označeno. Dále je zde obvykle uvedena cesta k umístění souboru, který obsahuje
-převodní tabulky kódů umístění jednotek, dílčích knihoven, statusů jednotek, atd., jež
-vrací na dotaz Aleph ve formátu XML společně s dalšími informacemi, které nejsou v
-indexu VuFindu a musí se tak načítat v reálném čase při prohlížení konkrétních záznamů
+reálně označeno. Dále je zde obvykle uvedena cesta k umístění souboru, jenž obsahuje
+převodní tabulky kódů umístění jednotek, dílčích knihoven, statusů jednotek, atd., které
+vrací na dotaz Aleph ve formátu XML společně s dalšími informacemi, jež nejsou v indexu VuFindu a musí se tak načítat v reálném čase při prohlížení konkrétních záznamů
 v katalogu. V prostředí NTK je však načítání tohoto souboru s názvem AlephTables.php
 a umístěním ve složce aleph tab v kořenovém adresáři řešeno jiným způsobem. A to tak,
 že se soubor načítá přímo z ovladače Alephu, kterým je:
 /module/ntk_module/src/ntk_module/ILS/Driver/Aleph.php
-facets.ini Jak název napovídá, v tomto konfiguračním souboru se nastavuje vše, co se
-týká faset. Fasety se v katalogu zobrazují na dvou místech; v pravé části obrazovky při
-výsledcích vyhledávání a na stránce pokročilého vyhledávání. Do seznamu faset, které
+facets.ini Jak název napovídá, v tomto konfiguračním souboru se nastavuje vše, co
+se týká faset. Fasety se v katalogu zobrazují na dvou místech; v pravé části obrazovky
+při výsledcích vyhledávání a na stránce pokročilého vyhledávání. Do seznamu faset, které
 se mají zobrazit je v NTK přidána faseta Sbírka2 , faseta PSH3 a faseta Digitalizace4 .
 Naopak vyřazena je faseta Období5 . Nastavena je tu také ta vlastnost faset, že jednotlivé
 položky faset se mohou z výsledků vyhledávání vyloučit. V pokročilém vyhledávání je
@@ -966,8 +958,7 @@ ilustraci, či nikoli. Provádí se parametrem special facets. Dále je nastaven
 faset mají podléhat jazykovým mutacím, tedy překládat se do jazyků podle nastavení
 uživatele.
 searchbox.ini Tento konfigurační soubor ovlivňuje nastavení vyhledávacího pole. Tzv.
-kombinované vyhledávání, neboli vyhledávání v lokálním indexu katalogu a zároveň v
-2 Faseta
+kombinované vyhledávání, neboli vyhledávání v lokálním indexu katalogu a zároveň v elektronických informačních zdrojích poskytované službou Summon, se zde aktivuje parame2 Faseta
 
 Sbírka rozlišuje záznamy v katalogu dle sigel uvedených v MARCových polích. V NTK jsou dostupné záznamy
 
@@ -982,9 +973,9 @@ díla daného záznamu.
 
 36
 
-elektronických informačních zdrojích poskytované službou Summon, se zde aktivuje parametrem combinedHandlers a v NTK je využito na testovacím serveru VuFind pro
-tyto účely zřízeném, viz. kapitola 6.2.4. Vyhledávání zde lze také nastavit pro použít v
-kombinaci například s vyhledáváním Google.
+trem combinedHandlers a v NTK je využito na testovacím serveru VuFind pro tyto
+účely zřízeném, viz. kapitola 6.2.4. Nastavit lze také vyhledávání v kombinaci například
+s vyhledáváním Google.
 combined.ini Tento konfigurační soubor je využit v případě použití kombinovaného
 vyhledávání pro nastavení štítků a popisků jednotlivým indexům. Ty specifikují uživateli
 o jaké báze se jedná, jestli jde například o lokální fyzický fond knihovny nebo o vzdálené
@@ -993,14 +984,15 @@ searches.ini Globální nastavení vyhledávání je obsaženo právě v tomto k
 Předmětové heslo, Systémové číslo a Stará Signatura. Tato svazková signatura je
 dnes využívána už spíše jen knihovníky NTK pro vyhledávání starších knih ve skladu
 knihovny, které ještě nemají nově přidělenou LCC signaturu6 . Ty samé možnosti vyhledávání v polích jsou přidány i do pokročilého vyhledávání. Dále se zde specifikuje modul
-doporučených témat, který se zobrazuje nad výsledky vyhledávání a rozšiřuje tak uživateli obzor v daném vyhledávacím tématu. Konkrétně je nastaveno, že při vyhledávání
+doporučených témat, jenž se zobrazuje nad výsledky vyhledávání a rozšiřuje tak uživateli obzor v daném vyhledávacím tématu. Konkrétně je nastaveno, že při vyhledávání
 podle Předmětového hesla se nad výsledky vyhledávání zobrazuje modul obsahující index předmětových hesel Polytematického strukturovaného hesláře, který díky hierarchickému uspořádání umožňuje uživateli specifikovat či zobecňovat téma vyhledávání. Je zde
-také možnost nastavení výchozího vyhledávacího filtru, což v podstatě znamená automatickou aktivaci fasety, která je aplikována při každém vyhledávání. Toho je využito v
-testovací verzi VuFindu pro elektronické informační zdroje, kde z indexu Summon jsou
+také možnost nastavení výchozího vyhledávacího filtru, což v podstatě znamená automatickou aktivaci fasety, která je aplikována při každém vyhledávání. Toho je využito
+v testovací verzi VuFindu pro elektronické informační zdroje, kde z indexu Summon jsou
 tímto způsobem vyloučeny záznamy fyzického fondu NTK. V neposlední řadě se zde nastavuje nabídka řazení výsledků. Výchozí řazení je nastaveno podle relevance, dalšími
-možnostmi jsou dle data vzestupně i sestupně, dle autor, signatury a názvu. Protože je v
-NTK požadováno, aby výskyt vyhledávacího výrazu byl zvýrazněn ve výsledcích vyhledávání, parametr highlighting je nastaven na hodnotu true.
+možnostmi jsou dle data vzestupně i sestupně, dle autor, signatury a názvu. Protože je
+v NTK požadováno, aby výskyt vyhledávacího výrazu byl zvýrazněn ve výsledcích vyhledávání, parametr highlighting je nastaven na hodnotu true.
 searchspecs.yaml Právě relevance vyhledaných výsledků se ovlivňuje tímto konfiguračním souborem. V závislosti na předchozím nastavení je zde přidáno vyhledávání v nových
+polích Stará signatura a Předmětové heslo.
 6 Library
 
 of Congress Classification (LCC) je klasifikační systém vytvořený na přelomu devatenáctého a dvacátého století
@@ -1010,9 +1002,7 @@ Ukázalo se, že velmi vhodný je zejména pro fond velkých, akademických knih
 
 37
 
-polích Stará signatura a Předmětové heslo.
-
-4.2
+4.2
 
 Autentikace
 V NTK je proces autentikace a autorizece uživatelů řešen pomocí technologie
@@ -1054,15 +1044,15 @@ Import dat
 Před samotným importem dat probíhá v NTK nejprve export zdrojových dat
 
 z integrovaného knihovního systému Aleph a to zhruba jednou za 3 měsíce. Každodenní
-aktualizace knihovního fondu se v katalogu udržuje automatickým sběrem dat přes OAIPMH, což je vysvětleno v kapitole 5.3. Výsledkem tohoto exportu je jeden soubor ve
-formátu MARC, který má v roce 2016 velikost cca 390 MB a obsahuje cca 595 000
-záznamů.
+aktualizace knihovního fondu se v katalogu udržuje automatickým sběrem dat přes OAIPMH, což je vysvětleno v kapitole 5.3. Výsledkem tohoto exportu je jeden soubor ve formátu MARC, který má v roce 2016 velikost cca 390 MB a obsahuje cca 595 000 záznamů.
 Import dat do VuFindu se obecně spouští skriptem import-marc.sh. s povinným
 parametrem, který udává cestu k souboru se zdrojovými daty. Jako volitelný parametr
 -p následovaný cestou k souboru se udává konfigurační soubor, který definuje nastavení
 importu dat. Tento souboru s názvem import.properties se nachází v lokálním adresáři
 VuFindu, přesněji zde:
-7 Shibboleth
+/var/www/vufind/local/import
+V tomto souboru jsou mimo jiné uvedeny názvy dalších dvou souborů; marc.properties
+a marc local.properties, podle kterých se převádí konkrétní MARCové pole z expor7 Shibboleth
 
 je volně dostupný open-source middleware pro federativní autentikaci a autorizaci (AAI). S využitím proto-
 
@@ -1071,15 +1061,13 @@ konzorcia Internet2. [66]
 
 38
 
-/var/www/vufind/local/import
-V tomto souboru jsou mimo jiné uvedeny názvy dalších dvou souborů; marc.properties
-a marc local.properties, podle kterých se převádí konkrétní MARCové pole z exportovaného MARC souboru do příslušného pole v indexu Solru. Nástrojem, který se o tento
-převod stará, je SolrMarc uložený ve složce import kořenového adresáře [67]. Jednou z
-úprav NTK je vyjmutí z indexu informace o kódu jazyka originálu daného díla, která je
+tovaného MARC souboru do příslušného pole v indexu Solru. Nástrojem, který se o tento
+převod stará, je SolrMarc uložený ve složce import kořenového adresáře [67]. Jednou
+z úprav NTK je vyjmutí z indexu informace o kódu jazyka originálu daného díla, která je
 obsažena v MARCovém podpoli 041h. Zápis potom vypadá takto:
 language = 008[35-37]:041a:041d:041j, language_map.properties
-Zde je vidět, že do indexového pole s názvem language se dostanou pouze informace z
-MARCového pole 008 na pozici 35 až 37, dále informace z podpolí 041a, 041d a 041j.
+Zde je vidět, že do indexového pole s názvem language se dostanou pouze informace
+z MARCového pole 008 na pozici 35 až 37, dále informace z podpolí 041a, 041d a 041j.
 Za povšimnutí stojí parametr language map.properties. Je to název jednoho
 se souborů ve složce translation maps. Obsahem těchto souborů jsou seznamy kódů
 s příslušnými překlady do přirozeného jazyka. Dalšími soubory s tímto mapováním jsou
@@ -1099,12 +1087,13 @@ spouští tento skript potom vypadá takto:
 publishDate = script(getdate.bsh), getDates
 Dále je vytvořen zcela nový indexační skript stripSlashEnd.bsh speciálně pro potřeby
 NTK. Ten zpracovává MARCová pole 245a a 245b obsahující název a podnázev daného
-39
-
-dokumentu. Konkrétně jde o oříznutí posledního znaku těchto řetězců, je-li jím znak
+dokumentu. Konkrétně jde o oříznutí posledního znaku těchto řetězců, je-li jím znak
 lomítka „/ . Důvodem je snaha o pořádek v datech, jelikož znak lomítka v tomto případě
 nemá žádný význam. Zdrojový kód skriptu vypadá takto:
-public String stripSlashEnd ( Record record )
+
+39
+
+public String stripSlashEnd ( Record record )
 {
 DataField titleField = ( DataField ) record .
 getVariableField ("245") ;
@@ -1134,12 +1123,12 @@ return title ;
 return "";
 }
 }
-40
-
-Dalšími skripty spouštějícími se při importu dat do VuFindu typickými pro prostředí
+Dalšími skripty spouštějícími se při importu dat do VuFindu typickými pro prostředí
 NTK jsou collection910.bsh nastavující podle MARCového pole 910a sbírku, do které
 daný záznam patří (NTK, VŠCHT, ÚOCHB), viz. podkapitola 4.1. Dále skript psh.bsh
-zpracovává MARCová pole 650 obsahující hesla Polytematického strukturovaného hesláře.
+40
+
+zpracovává MARCová pole 650 obsahující hesla Polytematického strukturovaného hesláře.
 Užitečným souborem při importu dat do VuFindu je solrmarc.log, kam se
 zapisují veškeré provedené akce s tímto spojené a je tedy nepostradatelný při ladění chyb.
 V případech, kdy se nějaký záznam do indexu nedostane, zapíše se do tohoto souboru
@@ -1156,48 +1145,50 @@ rozhraním na portu, který se definuje v konfiguračním souboru config.ini. Ob
 to číslo portu 8080. V prostředí NTK tomu není jinak, až na výjimku testovacích serverů,
 kde běží několik instancí Solru na jednom serveru společně a tedy některá tato komunikace
 probíhá na portu 8181. Konkrétně se jedná o testovací server popsaný v kapitole 6.2.3.
-Druhým místem, kde je nutné toto číslo portu shodně uvést, je v samotné konfiguraci
-Java serveru Jetty. Soubor se nachází zde:
+Druhým místem, kde je nutné toto číslo portu shodně uvést, je samotná konfigurace Java
+serveru Jetty. Soubor se nachází zde:
 /var/www/vufind/solr/jetty/etc/jetty.xml
 V souboru solr.xml se definují jádra Solr, potažmo indexy. Může jich zde být zapsáno
 hned několik, v prostředí NTK jsou to jádra biblio, které je výchozím jádrem a jádro
-authority, které je použito na index Polytematického strukturovaného hesláře. Zápis pro
-hlavní index vypadá takto:
+authority, které je použito na index Polytematického strukturovaného hesláře. Zápis
+pro hlavní index vypadá takto:
 < core schema =" schema . xml " loadOnStartup =" true " instanceDir ="
 biblio /" transient =" false " name =" biblio " config ="
 solrconfig . xml "/ >
 Jak je vidět ze zápisu výše, pro každý index existuje samostatný adresář. Pro hlavní
-jádro VuFindu je tedy vytvořen adresář biblio. Zde se nachází několik podadresářů, z
-nichž conf obsahuje nezbytné nastavení Solru. V tomto podadresáři se nachází soubor
+jádro VuFindu je tedy vytvořen adresář biblio. Zde se nachází několik podadresářů,
+z nichž conf obsahuje nezbytné nastavení Solru. V tomto podadresáři se nachází soubor
+schema.xml, kde se definuje, jak bude vypadat schéma celého indexu [69]. Pro prostředí
+NTK je přidána definice šesti polí, kterými jsou:
+• article resource title
 
 41
 
-schema.xml, kde se definuje, jak bude vypadat schéma celého indexu [69]. Pro prostředí
-NTK je přidána definice šesti polí, kterými jsou:
-• article resource title
-• article issn
+• article issn
 • article resource related
 • signature old
 • psh facet
 • digitized facet
-První tři pole se týkají článků v katalogu. Protože NTK má vlastní databázi článků z
-českých časopisů, uchovávají se v nich informace o názvu časopisu, ze kterého daný článek pochází, issn časopisu pro linkování na výsledky vyhledávání s tímto issn, a doplňující
+První tři pole se týkají článků v katalogu. Protože NTK má vlastní databázi článků
+z českých časopisů, uchovávají se v nich informace o názvu časopisu, ze kterého daný článek pochází, issn časopisu pro linkování na výsledky vyhledávání s tímto issn, a doplňující
 informace jakými jsou například ročník časopisu, popřípadě rozmezí stránek, na kterých
 se článek v časopise nachází. Další přidané pole v indexu je pro již zmiňovanou starou
 svazkovou signaturu. Pro indexování hesel z Polytechnického strukturovaného hesláře je
 použito další pole v pořadí a v posledním poli se uchovává příznak digitalizace, zda jde
 o záznam zdigitalizovaný, obohacený nebo jde o záznam digitalizované mapy. V souboru
-stopwords.txt je výčet slov, která se při indexaci ignorují. Jde většinou o často se vyskytující slova, spojky a předložky, které nenesou žádnou informaci. Mají zpravidla pouze
+stopwords.txt je výčet slov, jež se při indexaci ignorují. Jde většinou o často se vyskytující slova, spojky a předložky, které nenesou žádnou informaci. Mají zpravidla pouze
 syntaktický význam. Dalším souborem je synonyms.txt, kde je vždy na jednom řádku
-uveden výčet synonym, která se indexují jako jedno slovo. Důvodem je zvýšení efektivity
-vyhledávání, kdy při použití synonymních vyhledávacích výrazů dostáváme stejné výsledky. Výchozí nastavení tohoto souboru obsahuje pouze synonymní vyjádření číslovek
-číselným a slovním způsobem [70]. Obdobným souborem je protwords.txt, kde je možné
-uvést výrazy, které nebudou při indexování ani následném vyhledávání podléhat stematizaci, tedy nebudou se indexovat podobná slova různých tvarů pod jeden společný kmen
-slova. Tento soubor je ve výchozím nastavení prázdný. Protože algoritmus stematizace je
-závislý na jazyku a český jazyk přináší mnohá úskalí v tomto, soubor zůstává prázdný.
+uveden výčet synonym, jež se indexují jako jedno slovo. Důvodem je zvýšení efektivity vyhledávání, kdy při použití synonymních vyhledávacích výrazů dostáváme stejné výsledky.
+Výchozí nastavení tohoto souboru obsahuje pouze synonymní vyjádření číslovek číselným
+a slovním způsobem [70]. Obdobným souborem je protwords.txt, kde je možné uvést
+výrazy, které nebudou při indexování ani následném vyhledávání podléhat stematizaci,
+tedy nebudou se indexovat podobná slova různých tvarů pod jeden společný kmen slova.
+Tento soubor je ve výchozím nastavení prázdný. Protože algoritmus stematizace je závislý
+na jazyku a český jazyk přináší mnohá úskalí v tomto, soubor zůstává prázdný.
 Samotný index se vedle adresáře s konfigurací nachází v adresáři index. Tento
-adresář obsahuje soubory v binární podobě a nelze je tedy editovat běžným způsobem. K
-prohlížení indexu a dalších nastavení Solru, jako je schéma atd., slouží webové rozhraní.
+adresář obsahuje soubory v binární podobě a nelze je tedy editovat běžným způsobem.
+K prohlížení indexu a dalších nastavení Solru, jako je schéma atd., slouží webové rozhraní.
+
 42
 
 4.5
@@ -1241,9 +1232,9 @@ javascriptu zavolá soubor:
 module/ntk_module/src/ntk_module/Controller/AjaxController.php
 a předají se mu jako parametry identifikátory zobrazených záznamů. S těmito id záznamů
 se potom vytvoří jednotlivé HTTP požadavky na informace o dostupnosti a umístění
-těchto záznamů do Alephu, který vrátí XML odpovědi, ve kterých požadované informace
-jsou zakódovány. Výše zmíněný soubor kódy dešifruje a přiřadí jim čitelné řetězce, které
-se následně zobrazí mezi výsledky. Ukázka části zdrojového kódu spravující tuto problematiku typickou pro lokální prostředí je:
+těchto záznamů do Alephu. Ten vrátí XML odpovědi, v nichž požadované informace jsou
+zakódovány. Výše zmíněný soubor kódy dešifruje a přiřadí jim čitelné řetězce, které se následně zobrazí mezi výsledky. Ukázka části zdrojového kódu spravující tuto problematiku
+typickou pro lokální prostředí je:
 if ( preg_match ("/(\ d ) ([ A - Z ]) (\ d +) /" , $collection_code
 , $matches ) ) {
 /* Regal . */
@@ -1317,11 +1308,9 @@ na mapu příslušného patra se zvýrazněným regálem, kde se jednotka nachá
 Obrázek 4.1: Mapa umístění knihovní jednotky se zvýrazněným regálem, kde se tato
 jednotka nachází.
 Dalším specifickým typem umístění jsou VŠCHT Ústavy, jež linkují na stránky
-se seznamem ústavních knihoven VŠCHT. Ještě stojí za zmínku umístění časopisů ve
-Studovně časopisů, pro které vede link na příslušnou mapu třetího patra. Protože se
-obrázky map zobrazují pomocí javascriptového nástroje pro zobrazování galerie obrázků
-Lightbox, je v části zdrojového kódu typického pro toto prostředí ještě nastaveno záhlaví
-těchto náhledů podle umístění v regálu:
+se seznamem ústavních knihoven VŠCHT. Ještě stojí za zmínku umístění časopisů ve Studovně časopisů, pro které vede link na příslušnou mapu třetího patra. Protože se obrázky
+map zobrazují pomocí javascriptového nástroje pro zobrazování galerie obrázků Lightbox,
+je v části zdrojového kódu typického pro toto prostředí ještě nastaveno záhlaví těchto náhledů podle umístění v regálu:
 
 46
 
@@ -1406,25 +1395,25 @@ result . callnumber ) ;
 4.6
 
 Uživatelský modul
-Jádrem portálu VuFind je složka module v kořenovém adresáři systému. Protože
+Přední vlastností portálu VuFind je modularita, proto je zdrojový kód rozřa-
 
-přední vlastností tohoto systému je modularita, je zde zdrojový kód rozřazen do modulů,
-dle jejich významu. Díky této vlastnosti lze do systému přidávat vlastní moduly. Modulem
-pro prostředí NTK je ntk module.
+zen ve složce module dle významu do adresářů představujících jednotlivé moduly. Díky
+tomu lze do systému přidávat vlastní nezávislé moduly, které plní funkce nejrůznějších
+konkrétních lokálních požadavků knihoven. Uživatelským modulem pro prostředí NTK je
+ntk module.
 V tomto lokálním modulu se nacházejí soubory se zdrojovými kódy rozšiřující
 hlavní modul VuFind. Aby systém věděl, že má nejprve použít zdrojový kód z lokálního
 modulu, je třeba provést patřičné nastavení v konfiguračním souboru module.config.php
-podadresáře config. Zdrojové kódy v lokálním modulu ntk module dědí vlastnosti z
-nadřazeného modulu VuFind a rozšiřují je o přidanou funkcionalitu. Proto lokální modul není kopií nadřazeného modulu, nýbrž obsahuje pouze ty soubory, které je třeba
-upravovat pro lokální prostředí. S ohledem na provedené úpravy v této knihovně jsou
-těmi soubory ty, které se týkají komunikace s integrovaným knihovnickým systémem,
-tedy driver Aleph.php, dále jsou to tzv. kontrolery, které obsluhují uživatelské interakce ve čtenářském kontu MyResearchController.php, v zobrazení detailu záznamu
-RecordController.php, při zobrazování obálek knih CoverController.php a při dynamickém získávání informací AjaxController.php. [71]
-Například v kontroleru RecordController.php je doplněn zdrojový kód pro
-zobrazení informační zprávy pro uživatele v případě, že má prošlou platnost registrace a
-chce provést rezervaci jednotky. Toto knihovní řád NTK takovému uživateli neumožňuje
-a proto je mu doporučeno prodloužit si registraci. Zdrojový kód tohoto chování systému
-je:
+podadresáře config. Zdrojové kódy v lokálním modulu ntk module dědí vlastnosti z nadřazeného modulu VuFind a rozšiřují je o přidanou funkcionalitu. Proto lokální modul není
+kopií nadřazeného modulu, nýbrž obsahuje pouze ty soubory, jež je třeba upravovat pro lokální prostředí. S ohledem na provedené úpravy v této knihovně jsou těmi soubory ty, které
+se týkají komunikace s integrovaným knihovnickým systémem, tedy driver Aleph.php,
+dále jsou to tzv. kontrolery, jež obsluhují uživatelské interakce ve čtenářském kontu
+MyResearchController.php, v zobrazení detailu záznamu RecordController.php, při
+zobrazování obálek knih CoverController.php a při dynamickém získávání informací
+AjaxController.php. [71]
+Například v kontroleru RecordController.php je doplněn zdrojový kód pro zobrazení informační zprávy pro uživatele v případě, že má prošlou platnost registrace a chce
+provést rezervaci jednotky. Toto knihovní řád NTK takovému uživateli neumožňuje a
+proto je mu doporučeno prodloužit si registraci. Zdrojový kód tohoto chování systému je:
 // check expiration of registration
 49
 
@@ -1485,17 +1474,20 @@ return $this - > createViewModel (
 array ( ’ transactions ’ = > $transactions )
 );
 }
-Obálky knih, které se v katalogu NTK zobrazují, se získávají buď přímo v knihovně při skenování, a nebo se získávají z portálu ObalkyKnih.cz. Aby tato logika fungovala v tomto pořadí, tedy zjistit, zda je obálka na lokálním serveru knihovny, popřípadě
-ji potom hledat na serveru Obalkyknih.cz je v objektově orientovaném PHP naprogramována nová třída AlephImageCovers, která vypadá takto:
+Obálky knih, jež se v katalogu NTK zobrazují, se získávají buď přímo v knihovně
+při skenování, a nebo se získávají z portálu ObalkyKnih.cz. Získávání obálek v pořadí,
+kdy se nejprve zjistí, zda je obálka na lokálním serveru, popřípadě se dále hledá na serveru Obalkyknih.cz, zajišťuje logika, jejíž součástí je v objektově orientovaném PHP nově
+naprogramovaná třída AlephImageCovers, která hledá obálky na lokálním serveru Aleph
+a vypadá takto:
 class AlephImageCovers extends \ ntk_module \ Content \
 AbstractCover
 {
 public function __construct ()
-{
 
 51
 
-$this - > supportsIsbn = $this - > cacheAllowed =
+{
+$this - > supportsIsbn = $this - > cacheAllowed =
 true ;
 }
 public function getUrl ( $key , $size , $ids )
@@ -1519,15 +1511,15 @@ důležité rozložení jednotlivých prvků na stránce. Disciplína, která se
 nazývá User Experience. Dbá na to, aby se uživatel webové stránky cítil pohodlně při
 jejím prohlížení a zároveň intuitivně nacházel, co potřebuje. [72]
 Vizuální vzhled katalogu VuFind NTK koresponduje s grafickým designem webových stránek knihovny. Snahou knihovny je mít jednotný vzhled celé své webové prezentace, takže i ostatní knihovní systémy dostupné v síti internet, jako je například Národní
-úložiště šedé literatury, mají tendenci vypadat graficky stejně, pokud to jenom jde. Grafický vzhled webových stránek NTK využívá souboru vizuálních nástrojů s názvem Bootstrap. Tento grafický framework využívá technologie HTML, CSS a JS a používá se k
-vytváření responzivních webových projektů. [73]
+úložiště šedé literatury, mají tendenci vypadat graficky stejně, pokud to jenom jde. Grafický vzhled webových stránek NTK využívá souboru vizuálních nástrojů s názvem Bootstrap. Tento grafický framework využívá technologie HTML, CSS a JS a používá se
+k vytváření responzivních webových projektů. [73]
 Portál VuFind ve složce kořenového adresáře
 /var/www/vufind/themes
 nabízí hned několik vizuálních variant, jak může ve výchozím nastavení katalog vypadat.
-Jednotlivé možnosti rozděleny do podadresářů představují další grafické frameworky:
 52
 
-• blueprint
+Jednotlivé možnosti rozděleny do podadresářů představují další grafické frameworky:
+• blueprint
 • bootprint
 • bootprint3
 • bootstrap
@@ -1535,27 +1527,27 @@ Jednotlivé možnosti rozděleny do podadresářů představují další grafick
 • jquerymobile
 Prvním krokem k vytvoření vlastního grafického tématu NTK je zkopírování
 celého adresáře bootstrap3 do nového adresáře ntk. V tomto novém adresáři je třeba
-editovat a upravit dle potřeby soubor theme.config.php, který nese informace o tom,
+editovat a upravit dle potřeby soubor theme.config.php, jenž nese informace o tom,
 jaké pomocné skripty a soubory se načítají pro správné vykreslení webových stránek.
 Vzhledem k tomu, že pro prostředí NTK byly vytvořeny vlastní CSS soubory, jsou to
 právě ony, k nimž se zde zapisuje cesta. Dalšími soubory pro zápis jsou javascripty. Některé
 původní jsou upraveny, jiné jsou zcela nově přidány kvůli lokálním potřebám. Příkladem
 přidaného javascriptu je NTK.js, který obsluhuje komunikaci se službou Obalkyknih.cz.
 Tato služba poskytuje databázi naskenovaných obálek a obsahů knih, kterou využívají i
-do které přispívají knihovny a knižní nakladatelství po celé České republice.
+do níž přispívají knihovny a knižní nakladatelství po celé České republice.
 V podadresáři templates jsou dle významu jednotlivých sekcí uloženy ve složkách šablony, které definují jak bude daná webová stránka vypadat. Tyto šablony jsou
 ve formátu phtml, který do nich umožňuje zapisovat obsah jednak v jazyce HTML,
 tak také v jazyce PHP. Soubor header.phtml definuje vzhled záhlaví stránek a soubor footer.phtml naopak definuje, jak bude vypadat zápatí stránek. Hlavní rozvržení
 stránek je definováno v souboru layout/layout.phtml. Další složkou, která prochází
 značnou úpravou je record, která obsahuje šablony nastavující vzhled zobrazení detailního náhledu záznamu v katalogu, včetně šablon pro odeslání záznamu e-mailem, uložení
 ho do uživatelského konta, citování záznamu, atd. Pro citování záznamů je zde napojena
-služba CitacePro.com, díky jejímuž api rozhraní lze zobrazovat citace záznamů přímo v
-katalogu Vufind. Zajímavá složka se šablonami, která také souvisí s detailním náhledem
-záznamu, je RecordTab. V ní se definují záložky, které se u záznamu zobrazí. Kromě běžných záložek Jednotky, Popis, Komentáře, MARC je pro prostředí NTK přidána záložka
-popsána v šabloně preview.phtml. Ta se zobrazuje pouze u záznamů obohacených o naskenované některé části díla. V záložce je tedy k dispozici náhled těchto skenů uložených
+služba CitacePro.com, díky jejímuž API rozhraní lze zobrazovat citace záznamů přímo
+v katalogu Vufind. Zajímavá složka se šablonami, která také souvisí s detailním náhledem
+záznamu, je RecordTab. V ní se definují záložky, jež se u záznamu zobrazí. Kromě běžných záložek Jednotky, Popis, Komentáře, MARC je pro prostředí NTK přidána záložka
 53
 
-na serveru Aleph, který uživateli představuje ukázku přibližující obsah daného exempláře.
+popsána v šabloně preview.phtml. Ta se zobrazuje pouze u záznamů obohacených o naskenované některé části díla. V záložce je tedy k dispozici náhled těchto skenů uložených
+na serveru Aleph, který uživateli představuje ukázku přibližující obsah daného exempláře.
 Zdrojový kód této šablony je:
 <?
 // Set page title .
@@ -1586,18 +1578,15 @@ sort ( $thumbs ) ;
 ?>
 <? foreach ( $thumbs as $key = > $value ) : ? >
 <a href = <?= $pics [ $key ]? > > < img src = <?= $thumbs [ $key ]? > > </a >
-<? endforeach ; ? >
-Pro rozvržení výsledků vyhledávání slouží šablona:
 54
 
-RecordDriver / SolrDefault / result - list . phtml
+<? endforeach ; ? >
+Pro rozvržení výsledků vyhledávání slouží šablona:
+RecordDriver / SolrDefault / result - list . phtml
 Ve stejném umístění se nachází šablona core.phtml, která se zobrazuje v detailu záznamu
-a načítá informace o daném záznamu z MARCových polí, popřípadě z indexu nebo z
-lokální databáze katalogu. Těmito údaji jsou autor, formát, jazyk, vydavatelství, edice,
-témata, on-line přístup a uživatelské tagy. Za zmínku jistě stojí složka search, která
-obsahuje šablony týkající se vyhledávání v širším slova smyslu. Jsou to například šablona
-na zobrazení historie vyhledávaní history.phtml, dále šablona email.phtml zobrazující
-formulář pro odeslání vyhledávání e-mailem, šablona na zobrazení vyhledávacího pole
+a načítá informace o daném záznamu z MARCových polí, popřípadě z indexu nebo z lokální databáze katalogu. Těmito údaji jsou autor, formát, jazyk, vydavatelství, edice,
+témata, on-line přístup a uživatelské tagy. Za zmínku jistě stojí složka search, která obsahuje šablony týkající se vyhledávání v širším slova smyslu. Jsou to například šablona
+na zobrazení historie vyhledávaní history.phtml, dále šablona email.phtml zobrazující formulář pro odeslání vyhledávání e-mailem, šablona na zobrazení vyhledávacího pole
 searchbox.phtml a také jsou zde šablony pokročilého vyhledávání. Složka myresearch
 obsahuje šablony týkající se uživatelského konta, které jsou samozřejmě také upraveny
 tak, aby zapadaly do jednotného grafického konceptu. Nejčastějšími úpravami veškerých
@@ -1617,22 +1606,24 @@ kdy chce uživatel provést v katalogu nějakou akci vyžadující přihlášen�
 přesměrován zpět přímo na místo, které opouštěl kvůli přihlášení, například na provedení
 rezervace jednotky. Uchování uživatelského kontextu během přihlášení je velmi oblíbenou
 a ve spoustě systémech běžnou záležitostí.
-V pravé části uživatelského účtu je zobrazeno menu s záložkami. Jako výchozí
+V pravé části uživatelského účtu je zobrazeno menu se záložkami. Jako výchozí
 záložka k zobrazení po přihlášení je v NTK nastavena stránka s výpisem výpůjček. Mezi
-záložky je implementována jedna nová záložka Historie výpůjček, která díky API rozhraní systému Aleph, které toto umožňuje, zobrazuje již vrácené výpůjčky. Protože tyto
-výpůjčky z minulosti velmi zatěžují API rozhraní a doba čekání na vypsání celého, v případě dlouholetého a pravidelně půjčujícího si čtenáře dlouhého, seznamu je značně velká,
-zobrazí se seznam historie výpůjček pouze s maximálně dvaceti položkami. Pro možnost
+záložky je implementována jedna nová záložka Historie výpůjček, která díky API rozhraní
+systému Aleph, zobrazuje již vrácené výpůjčky. Protože tyto výpůjčky z minulosti velmi
+
 55
 
-úplného zobrazení celého seznamu je potom pod tímto seznamem k dispozici odkaz.
+zatěžují API rozhraní a doba čekání na vypsání celého, v případě dlouholetého a pravidelně půjčujícího si čtenáře dlouhého, seznamu je značně velká, zobrazí se seznam historie
+výpůjček pouze s maximálně dvaceti položkami. Pro možnost úplného zobrazení celého
+seznamu je potom pod tímto seznamem k dispozici odkaz.
 Po odhlášení uživatele ze systému je nastaveno přesměrování na úvodní stránku
 katalogu s informační zprávou o bezpečném odhlášení zavřením okna prohlížeče.
 
 56
 
 5 Napojení portálu VuFind na systém Aleph
-Protože portál VuFind je veřejně přístupným on-line katalogem, tzn. OPAC, pro
-funkce jako je správa akvizice, výpůjček, rezervací, registrace zákazníků atd., je třeba
+Protože portál VuFind je veřejně přístupným on-line katalogem, tzn. OPAC,
+pro funkce jako je správa akvizice, výpůjček, rezervací, registrace zákazníků atd., je třeba
 tento systém propojit s integrovaným knihovnickým systémem. Díky takovému spojení se
 do katalogu dostanou další potřebné informace jako jsou aktuální stavy jednotek, umístění
 jednotek, informace o uživatelích a jejich výpůjčkách a rezervacích, dále lze díky tomu
@@ -1664,7 +1655,7 @@ je oprávněna Univerzita Karlova v Praze, Ústav výpočetní techniky. Paramet
 • 1 administrativní báze - informace o všech uživatelích
 • 2 autoritní báze - báze lokálních autorit a kopie autorit Národní knihovny
 • 3 demonstrační plně licencované báze
-• 1 X-server pro administrativní bázi
+• 1 X-Server pro administrativní bázi
 • 8 licencí SIP2 protokolu
 • Modul OPAC
 • Modul Katalog
@@ -1712,8 +1703,8 @@ filters "/ >
 </ record >
 </ get - record >
 Tento přenos dat probíhá v reálném čase na základě interakce uživatele s katalogem. VuFind díky naprogramovanému zdrojovému kódu může vytvářet velké množství
-podobných požadavků na získání různých informací o jednotkách a uživatelích, které se v
-katalogu zobrazí. Tímto způsobem se tedy do katalogu dostávají tyto informace:
+podobných požadavků na získání různých informací o jednotkách a uživatelích, které se
+v katalogu zobrazí. Tímto způsobem se tedy do katalogu dostávají tyto informace:
 • informace o uživatelích - jméno, adresa, zůstatek na finančním kontu, datum expirace registrace, výpůjčky, rezervace
 • informace o záznamech - dostupné jednotky
 • informace o jednotkách - status dostupnosti viz. kapitola 3.2, umístění
@@ -1747,7 +1738,7 @@ Automatický sběr dat
 OAI-PMH1 , zkratka pro Open Archives Initiative Protocol for Metadata Harves-
 
 ting, je nízko-bariérový mechanizmus interoperability pro repositáře. Repositář vybavený
-OAI-PMH skrz tento protokol vystavuje strukturovaná metadata a stává se z něj tak poskytovatel dat. Poskytovatel služeb potom přes OAI-PMH posílá požadavky na sklízení
+OAI-PMH přes tento protokol vystavuje strukturovaná metadata a stává se z něj tak poskytovatel dat. Poskytovatel služeb potom přes OAI-PMH posílá požadavky na sklízení
 těchto metadat. OAI-PMH se skládá ze sady šesti služeb (Identify, ListMetadataFormats,
 ListSets, ListIdentifiers, ListRecords, GetRecord), které jsou spouštěny v rámci protokolu
 HTTP. [80]
@@ -1771,24 +1762,23 @@ výchozího. V případě NTK se v umístění
 /var/www/vufind/local/harvest
 nachází upravená kopie souboru oai.ini, kde je nastaveno jméno adresáře, do kterého
 se data sklízí. Tím je podadresář katalog ntk-update. Dále je zde uvedena URL adresa
-zdroje, ze kterého se data sklízí, což je http://aleph.techlib.cz/OAI. Dalším parametrem k nastavení je set, což je identifikátor sady určené ke sklízení, kterou je NTK.
-Parametr metadataPrefix je nastaven na MARC21, protože je požadováno přijímat data
-v tomto formátu. K dispozici je i další metadatový formát DublinCore, který se v NTK
-nepoužívá. Dále je nastavena granularita data na formát „YYYY-MM-DDThh:mm:ssZ ,
-podle které se při sklízení dat porovnává časová značka záznamu a rozhoduje se tak, jestli
-záznam podléhá sklízení nebo jeho datum změny je starší a pravděpodobně už byl sklizen. Nastavení souboru pro zapisování identifikátorů sklizených záznamů harvest.log je
-aktivní, i když volitelné.
-V adresáři katalog ntk-update pro sklízení dat se nachází jeden důležitý soubor, kterým je last harvest.txt. Do něho se zapisuje, potažmo přepisuje časové razítko
-posledního procesu sklízení. Při následném sklízení je dle tohoto data jasné, které záznamy
-byly už sklizeny a které se tedy mají sklidit. Sklízené záznamy se ukládají jednotlivě do
-XML souborů a potom, co jsou dále zpracovány, tedy importovány do indexu nebo z
-indexu vymazány, přesouvají se do podadresáře processed. [81]
+zdroje, z něhož se data sklízí. Tou je http://aleph.techlib.cz/OAI. Dalším parametrem
+k nastavení je set, což je identifikátor sady určené ke sklízení, kterou je NTK. Parametr
+metadataPrefix je nastaven na MARC21, protože je požadováno přijímat data v tomto
+formátu. K dispozici je i další metadatový formát DublinCore, který se v NTK nepoužívá.
+Dále je nastavena granularita data na formát „YYYY-MM-DDThh:mm:ssZ , podle níž
+se při sklízení dat porovnává časová značka záznamu a rozhoduje se tak, jestli záznam
+podléhá sklízení nebo jeho datum změny je starší a pravděpodobně už byl sklizen. Nastavení souboru pro zapisování identifikátorů sklizených záznamů harvest.log je aktivní, i
+když volitelné.
+V adresáři katalog ntk-update pro sklízení dat se nachází jeden důležitý soubor, kterým je last harvest.txt. Do něho se zapisuje, potažmo přepisuje časové razítko posledního procesu sklízení. Při následném sklízení je dle tohoto data jasné, které
+záznamy byly už sklizeny a které se tedy mají sklidit. Sklízené záznamy se ukládají jednotlivě do XML souborů a potom, co jsou dále zpracovány, tedy importovány do indexu
+nebo z indexu vymazány, přesouvají se do podadresáře processed. [81]
 V NTK konkrétní požadavkem na sklízení dat přes protokol OAI-PMH vypadá
 takto:
 http :// aleph . techlib . cz / OAI ? verb = ListIdentifiers & from
 =2016 -07 -06& metadataPrefix = marc21 & set = NTK
 Odpověd ve formátu XML obsahuje maximálně 30 záznamů. Na konci tohoto souboru
-je obvykle tag <resumptionToken>, ve kterém je udán řetězec, podle kterého se dalším
+je obvykle tag <resumptionToken>, ve kterém je udán řetězec, podle něhož se dalším
 dotazem na OAI-PMH získá pokračování seznamu identifikátorů se změněnými údaji.
 Tento dotaz vypadá takto:
 
@@ -1823,7 +1813,7 @@ Cron
 Aby bylo možné automatizovat sklízení dat, je k tomu využit nástroj Cron2 .
 
 Tento linuxový nástroj v pravidelných intervalech spouští skript, který celý proces automatického sklízení dat přes OAI-PMH obsluhuje. V NTK je tímto souborem
-oai-import-cron.sh, který dále spouští skripty na restartování systému VuFind, sklizení
+oai-import-cron.sh, jenž dále spouští skripty na restartování systému VuFind, sklizení
 dat, import dat, případně vymazání dat a optimalizaci indexu Solr. [82]
 2 Cron
 
@@ -1852,9 +1842,9 @@ konkrétně verzi 2.3.1 společně s jednotnou vizuální prezentací korespondu
 knihovny.
 Národní technická knihovna má zhruba 27 000 registrovaných zákazníků, kteří
 mají ve VuFindu automaticky vytvořené uživatelské konto. Knihovní fond obsahuje zhruba
-1 200 000 jednotek, jejichž záznamy jsou indexovány ve VuFindu. Počet výpůjček z knihovního fondu za jeden rok je zhruba 200 000. V takovýchto nárocích prostředí NTK
-VuFind obstál a proto mohl být vybrán jako hlavní vyhledávací portál knihovny pro
-fyzický fond. [85]
+1 200 000 jednotek, jejichž záznamy jsou indexovány ve VuFindu. Počet výpůjček z knihovního fondu za jeden rok je zhruba 200 000. V takovýchto nárocích prostředí NTK VuFind
+obstál a proto mohl být vybrán jako hlavní vyhledávací portál knihovny pro fyzický fond.
+[85]
 Jedním z důvodů pro nasazení svobodného softwaru VuFind v NTK byl fakt, že
 doposud používaný OPAC Aleph nelze uživatelsky příliš měnit. Nemožnost vyvíjet systém v kontextu dnešní doby, plné moderních rychle se vyvíjejících technologií, konkrétně
 63
@@ -1866,11 +1856,10 @@ CitacePro a další sociální sítě a také zásadní možnost napojení na di
 jsou například Summon, EBSCO, Primo, atd. VuFind má také pro uživatele přívětivější
 čtenářské konto, jehož grafický vzhled sleduje trendy moderní doby a orientace v něm je
 intuitivní.
-Portál VuFind lze nainstalovat na operační systém Windows i na linuxovou distribuci operačního systému, přičemž tento způsob instalace je ještě dále rozdělen pro
-linuxové distribuce typu Debian a distribuce typu Fedora. V následující podkapitole je
+Portál VuFind lze nainstalovat na operační systém Windows i na linuxovou distribuci operačního systému, přičemž tento způsob instalace je ještě dále rozdělen pro linuxové distribuce typu Debian a distribuce typu Fedora. V následující podkapitole je
 popsána instalace v linuxové distribuci operačního systému Redhat Enterprise Linux, což
 spadá do kategorie Fedora, a její konkrétní přizpůsobení pro prostředí NTK. [86]
-V dalších podkapitolách jsou potom popsány servery NTK, na které je systém
+V dalších podkapitolách jsou potom popsány servery NTK, na něž je systém
 VuFind nasazen, včetně hardwarového vybavení. Poslední podkapitola se zabývá podpůrnými nástroji provozu těchto serverů, které NTK používá.
 
 6.1
@@ -1892,9 +1881,8 @@ yum install java-*-openjdk-devel
 64
 
 Nyní přichází na řadu stažení samotného systému VuFind. To je možné provést z úložiště
-https://sourceforge.net/projects/vufind/files/VuFind/, kde jsou k dispozici všechny
-verze VuFindu od jeho vzniku až po současnost. V tomto případě se jedná o stažení verze
-2.3.1, příkazem:
+https://sourceforge.net/projects/vufind/files/VuFind/, kde jsou k dispozici
+všechny verze VuFindu od jeho vzniku až po současnost. V tomto případě se jedná o stažení verze 2.3.1, příkazem:
 wget http :// downloads . sourceforge . net / vufind / vufind -2.3.1. tar
 . gz ? use_mirror = osdn -O vufind -2.3.1. tar . gz
 Po rozbalení staženého archivu, spustíme instalaci VuFindu příkazem:
@@ -1906,15 +1894,15 @@ umístění, kterým je:
 /etc/httpd/conf.d
 kam konfigurační soubor pro VuFind zkopírujeme. Alternativním řešením je použití symbolického linku z konfiguračního prostředí Apache na konfigurační soubor VuFindu v jeho
 původním umístění. Dále je nastaveno síťové zabezpečení, tzn. firewall. Ten zamezuje
-nežádoucím přístupům na server. Aby však bylo možné k VuFindu přistupovat, resp. byl
-dostupný ze sítě internet, v nastavení firewall se povoluje port 80, který slouží právě k
-přenosu http protokolu. Provede se příkazem:
+nežádoucím přístupům na server. Aby však bylo možné k VuFindu přistupovat, resp.
+byl dostupný ze sítě internet, v nastavení firewall se povoluje port 80, který slouží právě
+k přenosu http protokolu. Provede se příkazem:
 firewall-cmd --zone=public --add-port=80/tcp --permanent
 V posledním kroku se přepne zabezpečení rozšířeného jádra operačního systému, tzv.
 Security-Enhanced, do permisivního módu, příkazem:
 setenforce 0
-Když je VuFind úspěšně nainstalován a okolní prostředí správně nastaveno, zapíná se v
-kořenovém adresáři spouštěcím skriptem s parametrem start takto:
+Když je VuFind úspěšně nainstalován a okolní prostředí správně nastaveno, zapíná se
+v kořenovém adresáři spouštěcím skriptem s parametrem start takto:
 ./vufind.sh start
 
 65
@@ -1945,10 +1933,10 @@ VuFind. Kromě jejich účelu je zaznamenáno také jejich hardwarové vybavení
 Server VuFind 1.x
 V minulosti na tomto serveru běžela produkční verze OPACu VuFind 1.3. Nyní
 
-už se tento server nepoužívá, avšak zůstává stále spuštěn kvůli případnému nahlédnutí do
-zdrojového kódu a zobrazení katalogu ve webovém prohlížeči. Důvodem je podívat se v
-případě potřeby na některé lokální úpravy a případně se inspirovat pro implementaci do
-nové produkční verze systému.
+už se tento server nepoužívá, avšak zůstává stále spuštěn kvůli případnému nahlédnutí
+do zdrojového kódu a zobrazení katalogu ve webovém prohlížeči. Důvodem je podívat se
+v případě potřeby na některé lokální úpravy a případně se inspirovat pro implementaci
+do nové produkční verze systému.
 Hardwarové vybavení tohoto stroje postačující na provoz v NTK bylo:
 pamět RAM : 16 GB
 úložný prostor pro databázi : 20 GB
@@ -1961,7 +1949,7 @@ Server release 6.5 (Santiago).
 6.2.2
 
 Server VuFind 2.x
-Toto je server produkční, na kterém právě běží aktuální verze 2.3.1 portálu Vu-
+Toto je server produkční, na němž právě běží aktuální verze 2.3.1 portálu Vu-
 
 Find NTK. Jeho URL je https://vufind.techlib.cz a je samozřejmě dostupný v síti
 internet. Jeho hardwarové vybavení je:
@@ -2011,24 +1999,24 @@ Operačním systémem tohoto stroje je Red Hat Enterprise Linux Server release
 6.3
 
 Správa provozu
-V následujících podkapitolách jsou popsány nástroje, které se v Národní tech-
+V následujících podkapitolách jsou popsány nástroje, které se v NTK používají
 
-nické knihovně používají k zabezpečení, monitorování a archivování zdrojového kódu VuFind serverů.
+k zabezpečení, monitorování a archivování zdrojového kódu VuFind serverů.
 
-68
-
-6.3.1
+6.3.1
 
 Zabezpečení
 V dnešní době je na zabezpečení ve stále se rozvíjejícím virtuálním světě kladen
 
 čím dál větší důraz. To proto, že se v tomto prostoru odehrávají činnosti čím dál důležitější
-pro běžný život. Zaopatření proti kybernetickým útokům je pro jakoukoli firmu nezbytné.
+68
+
+pro běžný život. Zaopatření proti kybernetickým útokům je pro jakoukoli firmu nezbytné.
 Nejinak tomu je i v NTK, kde jedním z nástrojů pro zabezpečení síťového provozu je
 brána firewall. Tato standardní brána firewall je v základním vybavení operačních systémů
 serverů a její ovládání je v zásadě jednoduché.
 Pro systém VuFind je potřeba provést v nastavení firewall určité změny. Konkrétně se jedná o povolení komunikace na portech, které VuFind používá. Pro dostupnost
-katalogu ve veřejné síti internet se používá běžný port pro přenos HTTP protokolu, který
+katalogu ve veřejné síti internet se používá běžný port pro přenos HTTP protokolu, jenž
 má číslo 80. Další používané porty jsou 8080 a 8181, na kterých probíhá komunikace
 VuFindu s vyhledávacím strojem Solr. Příkaz na povolení portu 80 vypadá takto:
 firewall-cmd --zone=public --add-port=80/tcp --permanent
@@ -2050,6 +2038,8 @@ tak, aby monitoroval změny v přidělování paměti procesorů procesům, změ
 prostoru, zatížení paměti RAM, atd. V případech, kdy se stav serverů blíží hodnotám,
 které mohou být označeny jako kritické, je nastaven tak, aby odesílal e-mailem zprávy
 s upozorněním o stavu serverů příslušným administrátorům. Ti potom zpravidla v co
+nejkratším čase zjistí příčiny hrozícího nebezpečí a manuálně provedou změny tak, aby se
+servery navrátili do normálního provozu. [90]
 1 Zabbix
 
 je dohledový systém, který slouží k monitorování aktivních síťových prvků jako jsou PC, servery, tiskárny,
@@ -2059,10 +2049,7 @@ tohoto systému jsou rychlost, otevřenost, přehledné prostředí, živý a ry
 
 69
 
-nejkratším čase zjistí příčiny hrozícího nebezpečí a manuálně provedou změny tak, aby se
-servery navrátili do normálního provozu. [90]
-
-6.3.3
+6.3.3
 
 Verzování
 V minulosti se v NTK používal verzovací systém SVN2 . Nyní se na správu verzí
@@ -2079,41 +2066,39 @@ Subversion (dříve Subversion – zkráceně SVN) je systém pro správu a verz
 patří do kategorie version control nástrojů a uspokojuje základní potřeby při správě verzí. Je vyvíjen firmou CollabNet, Inc.
 a je šířen pod licencí, která umožňuje jeho bezplatné komerční použití. [92]
 3 Git je distribuovaný systém správy verzí vytvořený Linusem Torvaldsem, původně pro vývoj jádra Linuxu. Vývoj Gitu
-je v současnosti spravován Junio Hamanem, je šířen pod GPL verze 2, jedná se o svobodný software a je široce využíván v
-mnoha projektech [93]
+je v současnosti spravován Junio Hamanem, je šířen pod GPL verze 2, jedná se o svobodný software a je široce využíván
+v mnoha projektech [93]
 
 70
 
 7 Budoucí vývoj portálu VuFind
 Rozdíl oproti integrovaným knihovnickým systémům, které poskytují veřejné online rozhraní katalogu, je v tom, že projekt VuFind se zaměřuje výhradně na uživatelské
 rozhraní a na integraci s ostatními knihovními službami. Proto má obrovský potenciál zastřešit více vyhledávacích služeb pod jeden sjednocený interface. Kromě toho, že VuFind
-má pojmout více integrovaných knihovnických systému a databází elektronických informačních zdrojů, musí se vypořádat se stále rostoucí potřebou rozlišovat licenční práva pro
-přístup do světových databázových zdrojů pro více skupin uživatelů. Toto je požadavek
-především knihoven, které integrují menší okolní knihovny. Příkladem je NTK, kde se tato
-problematika řeší. Díky stále rostoucí komunitě, ať už vývojářů nebo uživatelů VuFindu,
-se tento nedostatek může do budoucna vyřešit ve stále přívětivém vývojovém prostředí
-PHP.
+má pojmout více integrovaných knihovnických systému a databází elektronických informačních zdrojů, musí se vypořádat se stále rostoucí potřebou rozlišovat licenční práva
+pro přístup do světových databázových zdrojů pro více skupin uživatelů. Toto je požadavek především knihoven, které integrují menší okolní knihovny. Příkladem je NTK, kde
+se tato problematika řeší. Díky stále rostoucí komunitě, ať už vývojářů nebo uživatelů
+VuFindu, se tento nedostatek může do budoucna vyřešit ve stále přívětivém vývojovém
+prostředí PHP.
 V květnu roku 2016 vyšla nová verze portálu VuFind 3.0, která používá novou verzi indexačního nástroje Solr a přináší mnohá další vylepšení [94]. Veřejný on-line
 katalog NTK na tuto verzi přejde, potom co bude verze implementována a otestována
-v lokálních podmínkách. Další výzvou pro NTK je uvést do provozu systém VuFind s
-napojením discovery služby Summon, jež je v tuto chvíli v experimentální fázi.
+v lokálních podmínkách. Další výzvou pro NTK je uvést do provozu systém VuFind s napojením discovery služby Summon, jež je v tuto chvíli v experimentální fázi.
 Možné by snad mohlo být i uvažovat o nahrazení komerčního integrovaného
 knihovnického systému Aleph svobodnou alternativou systémem Koha v NTK.
 
 71
 
 8 Závěr
-Tato práce, která zpracovává technické aspekty implementace systému VuFind,
-mi pomohla utřídit a ujasnit si veškeré oblasti, které si dala za cíl. Získal jsem tak cenné
+Tato práce, jež zpracovává technické aspekty implementace systému VuFind, mi
+pomohla utřídit a ujasnit si veškeré oblasti, které si dala za cíl. Získal jsem tak cenné
 zkušenosti, které lze uplatnit při implementaci tohoto software v konkrétním prostředí a
 rozvinout dále mou dosavadní práci v NTK.
 Přístup otevřené komunity k vývoji software mě velmi nadchnul. Myslím si, že
 takový způsob práce má a do budoucna jistě mít bude velký smysl. Využití svobodného
 softwaru by mělo být nejen v knihovnictví, ale obecně v celé státní správě. Současný
-stav portálu VuFind je velmi nadějný, což podporuje stále rostoucí komunita vývojářů a
-dokazuje jeho četné nasazení v knihovnách po celém světe. Jako svobodný software má
-šance splnit jakékoli požadavky na rozvoj a dosavadní stav jeho možností posunout na
-vrcholnou úroveň, především díky stabilitě komunity.
+stav portálu VuFind je velmi nadějný, což podporuje stále rostoucí komunita vývojářů
+a dokazuje jeho četné nasazení v knihovnách po celém světe. Jako svobodný software
+má šance splnit jakékoli požadavky na rozvoj a dosavadní stav jeho možností posunout
+na vrcholnou úroveň, především díky stabilitě komunity.
 Samotná implementace portálu VuFind v NTK proběhla úspěšně během několika
 týdnů, kdy některé části byly časově náročnější, jiné naopak probíhaly bez problému.
 Ovšem proces přizpůsobování lokálním podmínkám trvá bez přestání dodnes a stále je co
@@ -2586,16 +2571,19 @@ https://cs.wikipedia.org/wiki/Bootstrap
 [15] CERNIŇÁKOVÁ, Eva. Knihovní systém s otevřeným zdrojovým kódem v Knihovně
 Jabok. ČTENÁŘ – MĚSÍČNÍK PRO KNIHOVNY [online]. 2012, 64(2) [cit. 201606-15]. ISSN 1805-4064. Dostupné z: http://ctenar.svkkl.cz/clanky/2012-roc-64/22012/knihovni-system-s-otevrenym-zdrojovym-kodem-v-knihovne-jabok-94-1138.htm
 [16] Git.evergreen-ils.org Git [online]. [cit. 2016-07-17]. Dostupné z: http://git.evergreenils.org/
-[17] KOVÁŘOVÁ, Dana. Model FRBR a jeho aplikace. Brno, 2009. Diplomová práce. Masarykova univerzita, Filozofická fakulta, Ústav české literatury a knihovnictví. Vedoucí
+[17] EYLER, Pat. Koha: a Gift to Libraries from New Zealand. In: Linux Journal —
+The Original Magazine of the Linux Community [online]. Linux Journal, 2003 [cit.
+2016-07-17]. Dostupné z: http://www.linuxjournal.com/article/6350
+[18] KOVÁŘOVÁ, Dana. Model FRBR a jeho aplikace. Brno, 2009. Diplomová práce. Masarykova univerzita, Filozofická fakulta, Ústav české literatury a knihovnictví. Vedoucí
 práce Ing. Zdeněk Kadlec, Dr.
-[18] RSS. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA): Wikimedia
+[19] RSS. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA): Wikimedia
 Foundation, 2001- [cit. 2016-07-17]. Dostupné z: https://cs.wikipedia.org/wiki/RSS
-[19] Standard Interchange Protocol. In: Wikipedia: the free encyclopedia [online].
-San Francisco (CA): Wikimedia Foundation, 2001- [cit. 2016-07-17]. Dostupné z:
-https://en.wikipedia.org/wiki/Standard Interchange Protocol
 78
 
-[20] National
+[20] Standard Interchange Protocol. In: Wikipedia: the free encyclopedia [online].
+San Francisco (CA): Wikimedia Foundation, 2001- [cit. 2016-07-17]. Dostupné z:
+https://en.wikipedia.org/wiki/Standard Interchange Protocol
+[21] National
 Protocol.
 cisco
 
@@ -2636,10 +2624,8 @@ Dostupné
 
 z:
 
-https://en.wikipedia.org/wiki/National Information Standards Organization Circulation Inte
-[21] EYLER, Pat. Koha: a Gift to Libraries from New Zealand. In: Linux Journal —
-The Original Magazine of the Linux Community [online]. Linux Journal, 2003 [cit.
-2016-07-17]. Dostupné z: http://www.linuxjournal.com/article/6350
+https://en.wikipedia.org/wiki/National Information Standards Organization Circula
+tion Interchange Protocol
 [22] MORAVEC, Josef. Koha – knihovní systém s otevřeným zdrojovým kódem.
 Duha [online]. 2013, roč. 27, č. 4 [cit. 2016-06-15]. ISSN 1804-4255. Dostupné z:
 http://duha.mzk.cz/clanky/koha-knihovni-system-s-otevrenym-zdrojovym-kodem
@@ -2684,10 +2670,11 @@ http://wiki.knihovna.cz/index.php/SelfCheck
 [27] The Apache Software Foundation [online]. The Apache Software Foundation, 2016
 [cit. 2016-06-30]. Dostupné z: http://www.apache.org/
 [28] About VuFind. VuFind - Search. Discover. Share. [online]. Villanova University’s Falvey Memorial Library, 2016 [cit. 2016-06-30]. Dostupné z: http://vufindorg.github.io/vufind/about.html
-[29] Professional Support. VuFind - Search. Discover. Share. [online]. Villanova University’s Falvey Memorial Library, 2016 [cit. 2016-07-18]. Dostupné z: https://vufindorg.github.io/vufind/support.html
+
 79
 
-[30] Features. VuFind - Search. Discover. Share. [online]. Villanova University’s
+[29] Professional Support. VuFind - Search. Discover. Share. [online]. Villanova University’s Falvey Memorial Library, 2016 [cit. 2016-07-18]. Dostupné z: https://vufindorg.github.io/vufind/support.html
+[30] Features. VuFind - Search. Discover. Share. [online]. Villanova University’s
 Falvey Memorial Library, 2016 [cit. 2016-06-30]. Dostupné z: http://vufindorg.github.io/vufind/features.html
 [31] MoreLikeThis - Solr Wiki. FrontPage - Solr Wiki [online]. [cit. 2016-07-18]. Dostupné
 z: http://wiki.apache.org/solr/MoreLikeThis
@@ -2778,12 +2765,12 @@ z:
 http://www.zive.cz/bleskovky/linuxovy-red-hat-se-pochlubil-hospodarenim-
 
 vydelava-i-diky-ceskym-vyvojarum/sc-4-a-182945/default.aspx
-[39] About the Apache HTTP Server Project - The Apache HTTP Server Project. The
-Apache HTTP Server Project [online]. The Apache Software Foundation, 2016 [cit.
-2016-06-30]. Dostupné z: https://httpd.apache.org/ABOUT APACHE.html
 80
 
-[40] Web
+[39] About the Apache HTTP Server Project - The Apache HTTP Server Project. The
+Apache HTTP Server Project [online]. The Apache Software Foundation, 2016 [cit.
+2016-06-30]. Dostupné z: https://httpd.apache.org/ABOUT APACHE.html
+[40] Web
 cisco
 
 server.
@@ -2836,10 +2823,9 @@ Search.
 
 Discover.
 
-[VuFind
-
 Share.
 
+[VuFind
 [online].
 
 Documentation].
@@ -2870,16 +2856,16 @@ Home
 
 2016-07-18].
 
+https://beluga.sub.uni-hamburg.de/vufind/Beluga/Beluga
+
+81
+
 Dostupné
 
 z:
 
-https://beluga.sub.uni-hamburg.de/vufind/Beluga/Beluga
-[50] Kansallinen digitaalinen kirjasto - Software development. Kansallinen digitaalinen kirjasto [online]. [cit. 2016-07-01]. Dostupné z: http://www.kdk.fi/index.php/en/publicinterface/software-development
-
-81
-
-[51] ČístBrno.cz [online]. [cit. 2016-07-18]. Dostupné z: http://projekt.cistbrno.cz/
+[50] Kansallinen digitaalinen kirjasto - Software development. Kansallinen digitaalinen kirjasto [online]. [cit. 2016-07-01]. Dostupné z: http://www.kdk.fi/index.php/en/publicinterface/software-development
+[51] ČístBrno.cz [online]. [cit. 2016-07-18]. Dostupné z: http://projekt.cistbrno.cz/
 [52] RecordManager. GitHub [online]. GitHub, Inc., 2016 [cit. 2016-07-01]. Dostupné z:
 https://github.com/NatLibFi/RecordManager
 [53] Reaching out to users everywhere. Scandinavian Library Quarterly [online]. [cit. 201607-01]. Dostupné z: http://slq.nu/?article=volume-46-no-3-2013-6
@@ -2930,12 +2916,11 @@ z:
 https://vufind.org/wiki/configuration:local settings directory
 [61] List of Configuration Files. VuFind - Search. Discover. Share. [online]. Villanova University’s Falvey Memorial Library, 2016 [cit. 2016-07-01]. Dostupné z:
 https://vufind.org/wiki/configuration:files
-[62] SFX. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA): Wikimedia
-Foundation, 2001- [cit. 2016-07-18]. Dostupné z: https://cs.wikipedia.org/wiki/SFX
-
 82
 
-[63] Polytematický strukturovaný heslář. Národní technická knihovna [online]. 2016
+[62] SFX. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA): Wikimedia
+Foundation, 2001- [cit. 2016-07-18]. Dostupné z: https://cs.wikipedia.org/wiki/SFX
+[63] Polytematický strukturovaný heslář. Národní technická knihovna [online]. 2016
 [cit.
 
 2016-07-18].
@@ -3025,12 +3010,12 @@ https://vufind.org/wiki/development:architecture:solr index schema
 [71] Customizing VuFind. VuFind - Search. Discover. Share. [online]. Villanova
 University’s Falvey Memorial Library, 2016 [cit. 2016-07-01]. Dostupné z:
 https://vufind.org/wiki/development:architecture:customizing vufind
-[72] User experience definitions. All About UX [online]. [cit. 2016-07-01]. Dostupné z:
-http://www.allaboutux.org/ux-definitions
 
 83
 
-[73] Bootstrap - The world’s most popular mobile-first and responsive front-end framework [online]. [cit. 2016-07-01]. Dostupné z: http://getbootstrap.com/
+[72] User experience definitions. All About UX [online]. [cit. 2016-07-01]. Dostupné z:
+http://www.allaboutux.org/ux-definitions
+[73] Bootstrap - The world’s most popular mobile-first and responsive front-end framework [online]. [cit. 2016-07-01]. Dostupné z: http://getbootstrap.com/
 [74] Development:architecture:user interface
 Find
 
@@ -3219,14 +3204,15 @@ In:
 (CA):
 z:
 
-https://cs.wikipedia.org/wiki/Open Archives Initiative Protocol for Metadata Harvesting
+https://cs.wikipedia.org/wiki/Open Archives Initiative Protocol for Metadata Harve
+sting
 [80] Open Archives Initiative Protocol for Metadata Harvesting [online]. Cornell University Library, 2016 [cit. 2016-07-01]. Dostupné z: https://www.openarchives.org/pmh/
-[81] Indexing:oai-pmh [VuFind Documentation]. VuFind - Search. Discover. Share. [online]. Villanova University’s Falvey Memorial Library, 2016 [cit. 2016-07-01]. Dostupné
-z: https://vufind.org/wiki/indexing:oai-pmh
 
 84
 
-[82] KOCMAN, Jiří. Jak na démona Cron. In: Interval.cz — Svět Internetu, Technologií a Bezpečnosti [online]. ZONER software, a.s., 2002 [cit. 2016-06-30]. Dostupné z:
+[81] Indexing:oai-pmh [VuFind Documentation]. VuFind - Search. Discover. Share. [online]. Villanova University’s Falvey Memorial Library, 2016 [cit. 2016-07-01]. Dostupné
+z: https://vufind.org/wiki/indexing:oai-pmh
+[82] KOCMAN, Jiří. Jak na démona Cron. In: Interval.cz — Svět Internetu, Technologií a Bezpečnosti [online]. ZONER software, a.s., 2002 [cit. 2016-06-30]. Dostupné z:
 https://www.interval.cz/clanky/jak-na-demona-cron/
 [83] Cron. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA): Wikimedia
 Foundation, 2001- [cit. 2016-07-19]. Dostupné z: https://cs.wikipedia.org/wiki/Cron
@@ -3277,11 +3263,10 @@ z:
 http://www.linuxsoft.cz/article.php?id article=1963
 [90] Zabbix :: The Enterprise-Class Open Source Network Monitoring Solution [online].
 Zabbix LLC, 2016 [cit. 2016-06-30]. Dostupné z: http://www.zabbix.com/
-[91] Git - Správa verzí. Git [online]. [cit. 2016-06-13]. Dostupné z: https://gitscm.com/book/cs/v1/Úvod-Správa-verzí
-
 85
 
-[92] Apache Subversion. In: Wikipedia: the free encyclopedia [online]. San Francisco
+[91] Git - Správa verzí. Git [online]. [cit. 2016-06-13]. Dostupné z: https://gitscm.com/book/cs/v1/Úvod-Správa-verzí
+[92] Apache Subversion. In: Wikipedia: the free encyclopedia [online]. San Francisco
 
 (CA):
 
